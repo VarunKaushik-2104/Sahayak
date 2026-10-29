@@ -1,0 +1,2394 @@
+{
+ "m7_int": {
+  "lesson": {
+   "title": "Positive and negative together",
+   "points": [
+    "When two integers have the same sign, add them and keep that sign.",
+    "When the signs are different, subtract the smaller size from the bigger and keep the sign of the bigger one.",
+    "Subtracting a number is the same as adding its opposite, so 5 − (−3) = 5 + 3.",
+    "Multiplying or dividing: same signs give a positive answer, different signs give a negative answer."
+   ],
+   "story": "You owe the kirana shopkeeper ₹50, which is −50 for you. If he cancels ₹20 of your debt, he is taking away −20, and you are richer: −50 − (−20) = −30.",
+   "example": {
+    "q": "Evaluate −8 − (−3) + 5 × (−2).",
+    "steps": [
+     "Do multiplication first: 5 × (−2) = −10.",
+     "Subtracting −3 is adding 3: −8 + 3 = −5.",
+     "Now add: −5 + (−10) = −15."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is (−7) + (−5)?",
+    "why": "Both numbers are negative, so add 7 and 5 to get 12 and keep the negative sign: −12.",
+    "o": [
+     {
+      "t": "12",
+      "m": "added 7 and 5 but dropped the negative sign",
+      "g": "m6_int"
+     },
+     {
+      "t": "−2",
+      "m": "subtracted the numbers as if the signs were different",
+      "g": "m6_int"
+     },
+     {
+      "t": "−12",
+      "ok": 1
+     },
+     {
+      "t": "2",
+      "m": "subtracted 5 from 7 and ignored the signs",
+      "g": "m6_int"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is (−6) × (−4)?",
+    "why": "The product of two negative integers is positive, so (−6) × (−4) = 24.",
+    "o": [
+     {
+      "t": "24",
+      "ok": 1
+     },
+     {
+      "t": "−24",
+      "m": "thought a negative times a negative stays negative",
+      "g": "m6_int"
+     },
+     {
+      "t": "−10",
+      "m": "added the numbers instead of multiplying",
+      "g": "m6_int"
+     },
+     {
+      "t": "10",
+      "m": "added 6 and 4 and ignored the signs",
+      "g": "m6_int"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is 9 − (−6)?",
+    "why": "Subtracting a negative number is the same as adding its opposite: 9 + 6 = 15.",
+    "o": [
+     {
+      "t": "3",
+      "m": "treated the problem as 9 − 6 and ignored the negative sign",
+      "g": "m6_int"
+     },
+     {
+      "t": "−15",
+      "m": "added 9 and 6 but put a negative sign in front",
+      "g": "m6_int"
+     },
+     {
+      "t": "−3",
+      "m": "calculated 6 − 9 instead of 9 + 6",
+      "g": "m6_int"
+     },
+     {
+      "t": "15",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is (−36) ÷ 9?",
+    "why": "Dividing a negative integer by a positive integer gives a negative answer: 36 ÷ 9 = 4, so the answer is −4.",
+    "o": [
+     {
+      "t": "4",
+      "m": "divided 36 by 9 and forgot that the answer is negative",
+      "g": "m6_int"
+     },
+     {
+      "t": "−4",
+      "ok": 1
+     },
+     {
+      "t": "−27",
+      "m": "subtracted 9 from −36 instead of dividing",
+      "g": "m6_int"
+     },
+     {
+      "t": "−324",
+      "m": "multiplied −36 by 9 instead of dividing",
+      "g": "m6_int"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "At 6 am the temperature in Srinagar was −3°C. By noon it rose by 8°C, and by night it fell by 10°C. What was the night temperature?",
+    "why": "−3 + 8 = 5, and then 5 − 10 = −5. So the night temperature was −5°C.",
+    "o": [
+     {
+      "t": "15°C",
+      "m": "treated the fall of 10° as another rise and ignored the sign of −3",
+      "g": "m6_int"
+     },
+     {
+      "t": "−5°C",
+      "ok": 1
+     },
+     {
+      "t": "5°C",
+      "m": "stopped after the rise and forgot the fall at night",
+      "g": "m6_int"
+     },
+     {
+      "t": "−21°C",
+      "m": "treated the rise of 8° as a fall",
+      "g": "m6_int"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Evaluate (−5) × (−3) − 4 × (−2).",
+    "why": "(−5) × (−3) = 15 and 4 × (−2) = −8. So 15 − (−8) = 15 + 8 = 23.",
+    "o": [
+     {
+      "t": "7",
+      "m": "calculated 15 − 8 and did not change the sign of −8",
+      "g": "m6_int"
+     },
+     {
+      "t": "−7",
+      "m": "took (−5) × (−3) as −15 and then added 8",
+      "g": "m6_int"
+     },
+     {
+      "t": "−23",
+      "m": "took (−5) × (−3) as −15 and then subtracted 8",
+      "g": "m6_int"
+     },
+     {
+      "t": "23",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The sum of two integers is −2. One of them is 9. What is the other integer?",
+    "why": "Other = −2 − 9 = −11. Check: 9 + (−11) = −2.",
+    "o": [
+     {
+      "t": "−11",
+      "ok": 1
+     },
+     {
+      "t": "11",
+      "m": "found the difference of 2 and 9 as a size only and dropped the sign",
+      "g": "m6_int"
+     },
+     {
+      "t": "7",
+      "m": "added 9 to −2 instead of subtracting it",
+      "g": "m6_int"
+     },
+     {
+      "t": "−7",
+      "m": "subtracted 2 from 9 and wrote a negative sign",
+      "g": "m6_int"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "In a mall, the lift starts at floor 2. It goes down 5 floors, up 3 floors and then down 4 floors. Basement floors are negative. Where does it stop?",
+    "why": "2 − 5 = −3, then −3 + 3 = 0, then 0 − 4 = −4. It stops at floor −4, the 4th basement.",
+    "o": [
+     {
+      "t": "Floor 4",
+      "m": "treated the last move down as a move up: 2 − 5 + 3 + 4",
+      "g": "m6_int"
+     },
+     {
+      "t": "Floor 0",
+      "m": "stopped after the second move and ignored the last move",
+      "g": "m6_int"
+     },
+     {
+      "t": "Floor −4",
+      "ok": 1
+     },
+     {
+      "t": "Floor −10",
+      "m": "treated every move as a move down",
+      "g": "m6_int"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Solve (−12) + 7 − (−5). Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Change subtracting (−5) into adding 5",
+       "ok": 1
+      },
+      {
+       "t": "Change subtracting (−5) into subtracting 5",
+       "m": "ignored the negative sign on 5",
+       "g": "m6_int"
+      },
+      {
+       "t": "Multiply 7 and (−5) first",
+       "m": "used multiplication where only addition and subtraction are given",
+       "g": "m6_int"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "What is the working?",
+     "o": [
+      {
+       "t": "−12 + 7 = 5, then 5 + 5 = 10",
+       "m": "gave the wrong sign to −12 + 7, taking it as positive",
+       "g": "m6_int"
+      },
+      {
+       "t": "−12 + 7 = −5, then −5 + 5 = 0",
+       "ok": 1
+      },
+      {
+       "t": "−12 + 7 = −5, then −5 − 5 = −10",
+       "m": "kept subtracting 5 instead of adding it",
+       "g": "m6_int"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the answer?",
+     "o": [
+      {
+       "t": "−10",
+       "m": "subtracted 5 instead of adding it",
+       "g": "m6_int"
+      },
+      {
+       "t": "24",
+       "m": "ignored all the signs and added 12, 7 and 5",
+       "g": "m6_int"
+      },
+      {
+       "t": "0",
+       "ok": 1
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "పూర్ణసంఖ్యలపై ప్రక్రియలు",
+   "hi": "पूर्णांकों पर संक्रियाएँ"
+  }
+ },
+ "m7_frac": {
+  "lesson": {
+   "title": "Fractions and decimals at work",
+   "points": [
+    "To add or subtract fractions, first make the denominators the same, then add or subtract the numerators.",
+    "To multiply fractions, multiply the numerators and multiply the denominators.",
+    "To divide by a fraction, multiply by its reciprocal (flip it).",
+    "For decimals, line up the decimal points to add or subtract; to multiply, count the total decimal places."
+   ],
+   "story": "A kirana shopkeeper has 3 kg of sugar and packs it in 1/4 kg packets. The number of packets is 3 ÷ 1/4 = 3 × 4 = 12 packets.",
+   "example": {
+    "q": "Find 2/3 ÷ 4/9.",
+    "steps": [
+     "Dividing by 4/9 means multiplying by 9/4.",
+     "2/3 × 9/4 = 18/12.",
+     "18/12 = 3/2 = 1 1/2."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is 3/7 + 2/7?",
+    "why": "The denominators are the same, so add the numerators and keep the denominator: (3 + 2)/7 = 5/7.",
+    "o": [
+     {
+      "t": "5/7",
+      "ok": 1
+     },
+     {
+      "t": "5/14",
+      "m": "added the denominators as well as the numerators",
+      "g": "m6_frac"
+     },
+     {
+      "t": "6/49",
+      "m": "multiplied the numerators and the denominators",
+      "g": "m6_frac"
+     },
+     {
+      "t": "6/7",
+      "m": "multiplied the numerators and kept the denominator",
+      "g": "m6_frac"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is 0.5 × 0.2?",
+    "why": "5 × 2 = 10. There is 1 decimal place in each number, so 2 in the answer: 0.10 = 0.1.",
+    "o": [
+     {
+      "t": "1",
+      "m": "multiplied 5 and 2 and forgot to place the decimal point",
+      "g": "m6_frac"
+     },
+     {
+      "t": "0.01",
+      "m": "put too many decimal places in the answer",
+      "g": "m6_frac"
+     },
+     {
+      "t": "0.7",
+      "m": "added the numbers instead of multiplying",
+      "g": "m6_frac"
+     },
+     {
+      "t": "0.1",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is 2/3 × 3/8?",
+    "why": "Multiply the numerators and the denominators: 6/24 = 1/4.",
+    "o": [
+     {
+      "t": "16/9",
+      "m": "flipped the second fraction as if dividing",
+      "g": "m6_frac"
+     },
+     {
+      "t": "1/4",
+      "ok": 1
+     },
+     {
+      "t": "5/11",
+      "m": "added the numerators and the denominators",
+      "g": "m6_frac"
+     },
+     {
+      "t": "6/11",
+      "m": "multiplied the numerators but added the denominators",
+      "g": "m6_frac"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is 6 ÷ 3/4?",
+    "why": "Dividing by 3/4 means multiplying by 4/3: 6 × 4/3 = 8.",
+    "o": [
+     {
+      "t": "4 1/2",
+      "m": "multiplied 6 by 3/4 instead of dividing",
+      "g": "m6_frac"
+     },
+     {
+      "t": "8",
+      "ok": 1
+     },
+     {
+      "t": "2",
+      "m": "divided 6 by 3 and ignored the 4",
+      "g": "m6_frac"
+     },
+     {
+      "t": "24",
+      "m": "multiplied 6 by 4 and ignored the 3",
+      "g": "m6_frac"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is 12.75 + 3.6?",
+    "why": "Line up the decimal points: 12.75 + 3.60 = 16.35.",
+    "o": [
+     {
+      "t": "13.11",
+      "m": "added the digits without lining up the decimal points",
+      "g": "m6_frac"
+     },
+     {
+      "t": "15.81",
+      "m": "read 3.6 as 3.06 when adding",
+      "g": "m6_frac"
+     },
+     {
+      "t": "48.75",
+      "m": "ignored the decimal point in 3.6 and used 36",
+      "g": "m6_frac"
+     },
+     {
+      "t": "16.35",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "One batch of laddoos needs 3/4 cup of sugar. How much sugar is needed for 2 1/2 batches?",
+    "why": "2 1/2 = 5/2. So 3/4 × 5/2 = 15/8 = 1 7/8 cups.",
+    "o": [
+     {
+      "t": "1 7/8 cups",
+      "ok": 1
+     },
+     {
+      "t": "3 1/4 cups",
+      "m": "added 3/4 and 2 1/2 instead of multiplying",
+      "g": "m6_frac"
+     },
+     {
+      "t": "2 cups",
+      "m": "multiplied only the whole part by 3/4 and then added the 1/2",
+      "g": "m6_frac"
+     },
+     {
+      "t": "3/10 cup",
+      "m": "divided 3/4 by 5/2 instead of multiplying",
+      "g": "m6_frac"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Ravi has 2.5 kg of rice. He uses 3/4 kg. How much rice is left?",
+    "why": "3/4 kg = 0.75 kg. So 2.5 − 0.75 = 1.75 kg.",
+    "o": [
+     {
+      "t": "1.25 kg",
+      "m": "subtracted 3/4 only from the 2 and dropped the 0.5",
+      "g": "m6_frac"
+     },
+     {
+      "t": "2.25 kg",
+      "m": "took 3/4 as 0.25",
+      "g": "m6_frac"
+     },
+     {
+      "t": "1.75 kg",
+      "ok": 1
+     },
+     {
+      "t": "3.25 kg",
+      "m": "added 3/4 instead of subtracting",
+      "g": "m6_frac"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A ribbon 7.5 m long is cut into pieces of 3/4 m each. How many pieces are made?",
+    "why": "3/4 m = 0.75 m. So 7.5 ÷ 0.75 = 10 pieces.",
+    "o": [
+     {
+      "t": "5.625",
+      "m": "multiplied 7.5 by 0.75 instead of dividing",
+      "g": "m6_frac"
+     },
+     {
+      "t": "0.1",
+      "m": "divided 0.75 by 7.5, the wrong way round",
+      "g": "m6_frac"
+     },
+     {
+      "t": "10",
+      "ok": 1
+     },
+     {
+      "t": "6.75",
+      "m": "subtracted 0.75 from 7.5 instead of dividing",
+      "g": "m6_frac"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Solve 3/4 + 5/6. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Add the numerators and add the denominators",
+       "m": "added tops and bottoms separately",
+       "g": "m6_frac"
+      },
+      {
+       "t": "Write both fractions with the common denominator 12",
+       "ok": 1
+      },
+      {
+       "t": "Multiply the two fractions",
+       "m": "multiplied instead of adding",
+       "g": "m6_frac"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "What is the working?",
+     "o": [
+      {
+       "t": "3/4 = 3/12 and 5/6 = 5/12, so the sum is 8/12",
+       "m": "changed the denominators but not the numerators",
+       "g": "m6_frac"
+      },
+      {
+       "t": "9/12 + 10/12 = 19/24",
+       "m": "added the denominators after finding the common denominator",
+       "g": "m6_frac"
+      },
+      {
+       "t": "3/4 = 9/12 and 5/6 = 10/12, so 9/12 + 10/12 = 19/12",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the answer?",
+     "o": [
+      {
+       "t": "1 7/12",
+       "ok": 1
+      },
+      {
+       "t": "19/24",
+       "m": "added the denominators in the final step",
+       "g": "m6_frac"
+      },
+      {
+       "t": "2/3",
+       "m": "used 8/12 from wrongly scaled fractions",
+       "g": "m6_frac"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "భిన్నాలు, దశాంశాలపై ప్రక్రియలు",
+   "hi": "भिन्नों और दशमलवों पर संक्रियाएँ"
+  }
+ },
+ "m7_rat": {
+  "lesson": {
+   "title": "Numbers of the form p/q",
+   "points": [
+    "A rational number is p/q, where p and q are integers and q is not 0.",
+    "Multiplying or dividing the top and bottom by the same non-zero number gives an equivalent rational number.",
+    "Standard form means lowest terms with a positive denominator, like −2/5.",
+    "To compare or add rational numbers, make the denominators the same first. There are endless rational numbers between any two."
+   ],
+   "story": "A well's water is 7/2 m below the ground. We write the water level as −7/2 m. A ladder that goes 3/2 m deeper takes you to −5 m.",
+   "example": {
+    "q": "Which is greater: −3/4 or −5/6?",
+    "steps": [
+     "The LCM of 4 and 6 is 12, so −3/4 = −9/12 and −5/6 = −10/12.",
+     "On the number line, −9 is to the right of −10.",
+     "So −9/12 > −10/12, which means −3/4 > −5/6."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "A rational number is a number that can be written as p/q. What must be true about p and q?",
+    "why": "p and q are integers and the denominator q cannot be 0, because division by zero is not defined.",
+    "o": [
+     {
+      "t": "p and q are natural numbers",
+      "m": "forgot that negative numbers and zero can also be the numerator",
+      "g": "m7_int"
+     },
+     {
+      "t": "p and q are integers and p ≠ 0",
+      "m": "thought the numerator cannot be zero instead of the denominator",
+      "g": "m7_frac"
+     },
+     {
+      "t": "p and q are both fractions",
+      "m": "mixed up rational numbers with fractions of fractions",
+      "g": "m7_frac"
+     },
+     {
+      "t": "p and q are integers and q ≠ 0",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which of these is equal to −3/5?",
+    "why": "A negative sign can sit on the numerator or the denominator: 3/(−5) = −3/5.",
+    "o": [
+     {
+      "t": "(−3)/(−5)",
+      "m": "thought two negative signs still give a negative number",
+      "g": "m7_int"
+     },
+     {
+      "t": "3/(−5)",
+      "ok": 1
+     },
+     {
+      "t": "3/5",
+      "m": "dropped the negative sign",
+      "g": "m7_int"
+     },
+     {
+      "t": "(−5)/3",
+      "m": "swapped the numerator and denominator",
+      "g": "m7_frac"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the standard form of 12/(−30)?",
+    "why": "Standard form has a positive denominator and is in lowest terms. Divide by −6: 12/(−30) = −2/5.",
+    "o": [
+     {
+      "t": "2/(−5)",
+      "m": "reduced the fraction but left the denominator negative",
+      "g": "m7_int"
+     },
+     {
+      "t": "−2/5",
+      "ok": 1
+     },
+     {
+      "t": "−6/15",
+      "m": "divided by 2 only, so it was not in lowest terms",
+      "g": "m7_frac"
+     },
+     {
+      "t": "2/5",
+      "m": "lost the negative sign while simplifying",
+      "g": "m7_int"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which of these numbers is greater than −2/3?",
+    "why": "−1/2 = −3/6 and −2/3 = −4/6, and −3/6 is to the right on the number line. So −1/2 > −2/3.",
+    "o": [
+     {
+      "t": "−3/4",
+      "m": "ignored the negative sign and chose a fraction that looks bigger than 2/3",
+      "g": "m7_int"
+     },
+     {
+      "t": "−5/6",
+      "m": "ignored the negative sign and thought 5/6 is more than 2/3",
+      "g": "m7_int"
+     },
+     {
+      "t": "−7/9",
+      "m": "thought 7/9 is bigger than 2/3, so −7/9 must be bigger",
+      "g": "m7_int"
+     },
+     {
+      "t": "−1/2",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which rational number lies between 2/5 and 3/5?",
+    "why": "2/5 = 4/10 and 3/5 = 6/10. 1/2 = 5/10 lies between them.",
+    "o": [
+     {
+      "t": "1/2",
+      "ok": 1
+     },
+     {
+      "t": "3/10",
+      "m": "compared only the numerators and thought 3 is bigger than 2",
+      "g": "m7_frac"
+     },
+     {
+      "t": "4/5",
+      "m": "picked another fraction with denominator 5 without checking the order",
+      "g": "m7_frac"
+     },
+     {
+      "t": "1/5",
+      "m": "picked a fraction with denominator 5 without checking whether it is below 2/5",
+      "g": "m7_frac"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "What is −3/4 + 5/6?",
+    "why": "The LCM of 4 and 6 is 12. −3/4 = −9/12 and 5/6 = 10/12. Sum = 1/12.",
+    "o": [
+     {
+      "t": "2/10",
+      "m": "added the numerators and added the denominators",
+      "g": "m7_frac"
+     },
+     {
+      "t": "−1/12",
+      "m": "put the negative sign on the final answer instead of the smaller term",
+      "g": "m7_int"
+     },
+     {
+      "t": "1/12",
+      "ok": 1
+     },
+     {
+      "t": "19/12",
+      "m": "ignored the negative sign and added 9/12 and 10/12",
+      "g": "m7_int"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "What is (−5/6) ÷ (−10/3)?",
+    "why": "Dividing means multiplying by the reciprocal: (−5/6) × (−3/10) = 15/60 = 1/4. Negative ÷ negative is positive.",
+    "o": [
+     {
+      "t": "−1/4",
+      "m": "thought a negative divided by a negative is negative",
+      "g": "m7_int"
+     },
+     {
+      "t": "25/9",
+      "m": "multiplied by −10/3 without flipping it",
+      "g": "m7_frac"
+     },
+     {
+      "t": "1/4",
+      "ok": 1
+     },
+     {
+      "t": "4",
+      "m": "flipped the final answer instead of only the divisor",
+      "g": "m7_frac"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "At night the temperature in Leh was −7/2°C. By noon it rose by 9/4°C. What was the temperature at noon?",
+    "why": "−7/2 = −14/4. Then −14/4 + 9/4 = −5/4°C.",
+    "o": [
+     {
+      "t": "−5/4°C",
+      "ok": 1
+     },
+     {
+      "t": "−23/4°C",
+      "m": "subtracted 9/4 instead of adding it",
+      "g": "m7_int"
+     },
+     {
+      "t": "5/4°C",
+      "m": "found the difference but gave it a positive sign",
+      "g": "m7_int"
+     },
+     {
+      "t": "1/3°C",
+      "m": "added the numerators and the denominators",
+      "g": "m7_frac"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Simplify (−3/8) + (5/12). Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Add −3 + 5 and 8 + 12 to get 2/20",
+       "m": "added numerators and denominators separately",
+       "g": "m7_frac"
+      },
+      {
+       "t": "Multiply the two rational numbers",
+       "m": "multiplied instead of adding",
+       "g": "m7_frac"
+      },
+      {
+       "t": "Write both with the common denominator 24 (LCM of 8 and 12)",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "What is the working?",
+     "o": [
+      {
+       "t": "−3/8 = −9/24 and 5/12 = 10/24, so the sum is 1/24",
+       "ok": 1
+      },
+      {
+       "t": "−9/24 + 10/24 = −1/24",
+       "m": "gave the answer the sign of the smaller number",
+       "g": "m7_int"
+      },
+      {
+       "t": "−9/24 + 10/24 = 19/24",
+       "m": "ignored the negative sign",
+       "g": "m7_int"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the answer?",
+     "o": [
+      {
+       "t": "−1/24",
+       "m": "gave the answer the wrong sign",
+       "g": "m7_int"
+      },
+      {
+       "t": "1/24",
+       "ok": 1
+      },
+      {
+       "t": "1/10",
+       "m": "got 2/20 by adding tops and bottoms and simplified",
+       "g": "m7_frac"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "పరిమేయ సంఖ్యలు",
+   "hi": "परिमेय संख्याएँ"
+  }
+ },
+ "m7_ratio": {
+  "lesson": {
+   "title": "Comparing amounts",
+   "points": [
+    "A ratio compares two quantities of the same kind, like 3 : 5. Write it in simplest form by dividing by the HCF.",
+    "A proportion says two ratios are equal. If a : b = c : d, then a × d = b × c.",
+    "Percent means per hundred, so 25% = 25/100.",
+    "Profit or loss percent is worked out on the cost price. Discount comes off the marked price."
+   ],
+   "story": "A Diwali sale board says 20% off. A ₹500 kurta loses 20/100 × 500 = ₹100, so you pay ₹400.",
+   "example": {
+    "q": "A shirt costs ₹800. After a 15% discount, what do you pay?",
+    "steps": [
+     "Discount = 15/100 × 800 = ₹120.",
+     "Selling price = 800 − 120.",
+     "You pay ₹680."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the ratio 18 : 24 in its simplest form?",
+    "why": "The HCF of 18 and 24 is 6. Dividing both by 6 gives 3 : 4.",
+    "o": [
+     {
+      "t": "9 : 12",
+      "m": "divided both by 2 only, so it was not in simplest form",
+      "g": "m6_ratio"
+     },
+     {
+      "t": "3 : 4",
+      "ok": 1
+     },
+     {
+      "t": "6 : 8",
+      "m": "divided both by 3 only, so it was not in simplest form",
+      "g": "m6_ratio"
+     },
+     {
+      "t": "4 : 3",
+      "m": "wrote the ratio in the wrong order",
+      "g": "m6_ratio"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is 25% of 200?",
+    "why": "25% means 25/100. 25/100 × 200 = 50.",
+    "o": [
+     {
+      "t": "25",
+      "m": "used the percentage number as the answer",
+      "g": "m7_frac"
+     },
+     {
+      "t": "50",
+      "ok": 1
+     },
+     {
+      "t": "8",
+      "m": "divided 200 by 25 instead of finding 25 per hundred",
+      "g": "m7_frac"
+     },
+     {
+      "t": "5000",
+      "m": "multiplied 25 by 200 and forgot to divide by 100",
+      "g": "m7_frac"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is 40% written as a fraction in lowest terms?",
+    "why": "40% = 40/100. Dividing top and bottom by 20 gives 2/5.",
+    "o": [
+     {
+      "t": "4/10",
+      "m": "wrote 40/100 as 4/10 and did not reduce it fully",
+      "g": "m7_frac"
+     },
+     {
+      "t": "2/50",
+      "m": "divided 40 by 20 but divided 100 by only 2",
+      "g": "m7_frac"
+     },
+     {
+      "t": "4/100",
+      "m": "removed one zero from 40 only",
+      "g": "m7_frac"
+     },
+     {
+      "t": "2/5",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "5 notebooks cost ₹120. What is the cost of 8 such notebooks?",
+    "why": "One notebook costs 120 ÷ 5 = ₹24. So 8 notebooks cost 24 × 8 = ₹192.",
+    "o": [
+     {
+      "t": "₹192",
+      "ok": 1
+     },
+     {
+      "t": "₹75",
+      "m": "multiplied by 5/8 instead of 8/5, so the proportion was upside down",
+      "g": "m6_ratio"
+     },
+     {
+      "t": "₹123",
+      "m": "added 3 more notebooks to the price instead of scaling it",
+      "g": "m6_ratio"
+     },
+     {
+      "t": "₹960",
+      "m": "multiplied the cost of 5 notebooks by 8",
+      "g": "m6_ratio"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "In a class of 40 students, the ratio of boys to girls is 3 : 5. How many girls are there?",
+    "why": "Total parts = 3 + 5 = 8. One part = 40 ÷ 8 = 5. Girls = 5 × 5 = 25.",
+    "o": [
+     {
+      "t": "15",
+      "m": "found the number of boys instead of girls",
+      "g": "m6_ratio"
+     },
+     {
+      "t": "8",
+      "m": "divided 40 by 5 and not by the total of the parts",
+      "g": "m6_ratio"
+     },
+     {
+      "t": "25",
+      "ok": 1
+     },
+     {
+      "t": "24",
+      "m": "took 3/5 of 40 instead of 5/8",
+      "g": "m6_ratio"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A shopkeeper buys a bag for ₹500 and sells it for ₹600. What is the profit percent?",
+    "why": "Profit = ₹100. Profit % = 100/500 × 100 = 20%. Profit percent is on the cost price.",
+    "o": [
+     {
+      "t": "16 2/3%",
+      "m": "found the profit as a percent of the selling price",
+      "g": "m7_frac"
+     },
+     {
+      "t": "120%",
+      "m": "divided the selling price by the cost price and called it profit",
+      "g": "m7_frac"
+     },
+     {
+      "t": "20%",
+      "ok": 1
+     },
+     {
+      "t": "100%",
+      "m": "took the profit amount of ₹100 as the percent",
+      "g": "m7_frac"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The population of a village is 12,000. It increases by 5%. What is the new population?",
+    "why": "Increase = 5% of 12,000 = 600. New population = 12,000 + 600 = 12,600.",
+    "o": [
+     {
+      "t": "12,600",
+      "ok": 1
+     },
+     {
+      "t": "600",
+      "m": "gave only the increase and not the new population",
+      "g": "m7_frac"
+     },
+     {
+      "t": "12,005",
+      "m": "added 5 instead of 5 per cent",
+      "g": "m7_frac"
+     },
+     {
+      "t": "11,400",
+      "m": "subtracted the increase instead of adding it",
+      "g": "m7_frac"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "What is the simple interest on ₹2,000 at 5% per year for 3 years?",
+    "why": "SI = P × R × T / 100 = 2000 × 5 × 3 / 100 = ₹300.",
+    "o": [
+     {
+      "t": "₹100",
+      "m": "calculated the interest for one year only",
+      "g": "m7_frac"
+     },
+     {
+      "t": "₹2,300",
+      "m": "gave the amount instead of the interest",
+      "g": "m7_frac"
+     },
+     {
+      "t": "₹30,000",
+      "m": "forgot to divide by 100",
+      "g": "m7_frac"
+     },
+     {
+      "t": "₹300",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "A jacket is marked ₹1,200. Find its selling price after a 25% discount. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Find 25% of 1,200 and subtract it from 1,200",
+       "ok": 1
+      },
+      {
+       "t": "Add 25% of 1,200 to 1,200",
+       "m": "added the discount instead of subtracting it",
+       "g": "m7_frac"
+      },
+      {
+       "t": "Subtract 25 from 1,200",
+       "m": "took 25 as a rupee amount instead of a percent",
+       "g": "m7_frac"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "What is the working?",
+     "o": [
+      {
+       "t": "1,200 ÷ 25 = 48, and 1,200 − 48 = 1,152",
+       "m": "divided by 25 instead of finding 25 per hundred",
+       "g": "m7_frac"
+      },
+      {
+       "t": "25/100 × 1,200 = 300, and 1,200 − 300 = 900",
+       "ok": 1
+      },
+      {
+       "t": "25/100 × 1,200 = 300, and 1,200 + 300 = 1,500",
+       "m": "added the discount to the marked price",
+       "g": "m7_frac"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the selling price?",
+     "o": [
+      {
+       "t": "₹300",
+       "m": "gave the discount instead of the selling price",
+       "g": "m7_frac"
+      },
+      {
+       "t": "₹1,500",
+       "m": "added the discount instead of subtracting it",
+       "g": "m7_frac"
+      },
+      {
+       "t": "₹900",
+       "ok": 1
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "నిష్పత్తి, అనుపాతం మరియు శాతాలు",
+   "hi": "अनुपात, समानुपात और प्रतिशत"
+  }
+ },
+ "m7_expr": {
+  "lesson": {
+   "title": "Letters that stand for numbers",
+   "points": [
+    "An expression is made of terms joined by + or −. Each term has a coefficient, like 5 in 5x.",
+    "Like terms have the same variable and the same power. Only like terms can be added or subtracted.",
+    "A minus sign before a bracket changes the sign of every term inside it.",
+    "To find the value of an expression, put the number in place of the letter and calculate."
+   ],
+   "story": "At a kirana shop, x kg of rice at ₹40 per kg and y kg of dal at ₹100 per kg cost 40x + 100y rupees. The bill changes when x and y change.",
+   "example": {
+    "q": "Subtract (2x − 3y) from (5x + y).",
+    "steps": [
+     "Write (5x + y) − (2x − 3y).",
+     "Remove brackets and change the signs: 5x + y − 2x + 3y.",
+     "Combine like terms: 3x + 4y."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the coefficient of x in the term −7x?",
+    "why": "The coefficient is the number multiplying the variable, including its sign. In −7x it is −7.",
+    "o": [
+     {
+      "t": "7",
+      "m": "dropped the negative sign of the coefficient",
+      "g": "m7_int"
+     },
+     {
+      "t": "−7",
+      "ok": 1
+     },
+     {
+      "t": "x",
+      "m": "gave the variable instead of the number multiplying it",
+      "g": "m6_alg"
+     },
+     {
+      "t": "1",
+      "m": "took the power of x as the coefficient",
+      "g": "m6_alg"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which pair of terms are like terms?",
+    "why": "Like terms have the same variable with the same power. 4x² and −9x² both have x².",
+    "o": [
+     {
+      "t": "4x and 4x²",
+      "m": "matched terms by coefficient and ignored the powers",
+      "g": "m6_alg"
+     },
+     {
+      "t": "4x and 4y",
+      "m": "matched terms by coefficient and ignored the variables",
+      "g": "m6_alg"
+     },
+     {
+      "t": "4xy and 4x",
+      "m": "thought terms with a common letter are like terms",
+      "g": "m6_alg"
+     },
+     {
+      "t": "4x² and −9x²",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Simplify 5a + 3b − 2a + b.",
+    "why": "Combine like terms: (5a − 2a) + (3b + b) = 3a + 4b.",
+    "o": [
+     {
+      "t": "3a + 4b",
+      "ok": 1
+     },
+     {
+      "t": "3a + 3b",
+      "m": "forgot that b means 1b and left it out",
+      "g": "m6_alg"
+     },
+     {
+      "t": "7a + 4b",
+      "m": "added 5a and 2a instead of subtracting",
+      "g": "m7_int"
+     },
+     {
+      "t": "7ab",
+      "m": "added all the coefficients as if all terms were alike",
+      "g": "m6_alg"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Find the value of 3x² − 2x + 1 when x = −2.",
+    "why": "3 × (−2)² = 12 and −2x = −2 × (−2) = +4. So 12 + 4 + 1 = 17.",
+    "o": [
+     {
+      "t": "9",
+      "m": "took −2x as −4 and not +4",
+      "g": "m7_int"
+     },
+     {
+      "t": "−7",
+      "m": "took (−2)² as −4",
+      "g": "m7_int"
+     },
+     {
+      "t": "17",
+      "ok": 1
+     },
+     {
+      "t": "−15",
+      "m": "took (−2)² as −4 and −2x as −4",
+      "g": "m7_int"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "The sides of a triangle are (x + 2), (2x − 1) and (3x + 4). What is its perimeter?",
+    "why": "Add the sides: x + 2x + 3x = 6x and 2 − 1 + 4 = 5. Perimeter = 6x + 5.",
+    "o": [
+     {
+      "t": "11x",
+      "m": "added all the coefficients and constants into one term",
+      "g": "m6_alg"
+     },
+     {
+      "t": "6x + 7",
+      "m": "ignored the minus sign in 2x − 1",
+      "g": "m7_int"
+     },
+     {
+      "t": "6x + 5",
+      "ok": 1
+     },
+     {
+      "t": "6x − 3",
+      "m": "took +4 as −4",
+      "g": "m7_int"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Subtract 3x − 4y from 7x + 2y.",
+    "why": "(7x + 2y) − (3x − 4y) = 7x + 2y − 3x + 4y = 4x + 6y.",
+    "o": [
+     {
+      "t": "4x + 6y",
+      "ok": 1
+     },
+     {
+      "t": "4x − 2y",
+      "m": "did not change the sign of −4y when subtracting",
+      "g": "m7_int"
+     },
+     {
+      "t": "10x − 2y",
+      "m": "added the two expressions instead of subtracting",
+      "g": "m6_alg"
+     },
+     {
+      "t": "−4x − 6y",
+      "m": "subtracted in the wrong order",
+      "g": "m6_alg"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A notebook costs ₹n and a pen costs ₹p. Meena buys 4 notebooks and 3 pens, and Rani buys 2 notebooks and 5 pens. What is the total cost for both?",
+    "why": "Notebooks: 4n + 2n = 6n. Pens: 3p + 5p = 8p. Total = 6n + 8p.",
+    "o": [
+     {
+      "t": "₹14np",
+      "m": "added all the numbers and joined the different variables",
+      "g": "m6_alg"
+     },
+     {
+      "t": "₹(8n + 6p)",
+      "m": "paired the counts with the wrong items",
+      "g": "m6_alg"
+     },
+     {
+      "t": "₹(6n + 3p)",
+      "m": "left out Rani's pens",
+      "g": "m6_alg"
+     },
+     {
+      "t": "₹(6n + 8p)",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "If a = 3 and b = −2, what is the value of 2a² − 3ab + b²?",
+    "why": "2a² = 18. −3ab = −3 × 3 × (−2) = +18. b² = 4. Total = 18 + 18 + 4 = 40.",
+    "o": [
+     {
+      "t": "4",
+      "m": "took −3ab as −18",
+      "g": "m7_int"
+     },
+     {
+      "t": "40",
+      "ok": 1
+     },
+     {
+      "t": "32",
+      "m": "took b² as −4",
+      "g": "m7_int"
+     },
+     {
+      "t": "58",
+      "m": "took 2a² as (2 × 3)² = 36",
+      "g": "m6_alg"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Simplify (4x + 3) + (2x − 5) − (x − 1). Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Remove the brackets without changing any sign",
+       "m": "forgot that a minus sign before a bracket changes every sign inside",
+       "g": "m7_int"
+      },
+      {
+       "t": "Remove the brackets, changing the signs inside the bracket that has a minus before it",
+       "ok": 1
+      },
+      {
+       "t": "Multiply the three expressions together",
+       "m": "multiplied instead of adding and subtracting",
+       "g": "m6_alg"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "What is the working?",
+     "o": [
+      {
+       "t": "4x + 3 + 2x − 5 − x − 1 = 5x − 3",
+       "m": "changed the sign of x only and not of −1",
+       "g": "m7_int"
+      },
+      {
+       "t": "4x + 3 + 2x − 5 − x + 1 = 7x − 1",
+       "m": "added x instead of subtracting it",
+       "g": "m7_int"
+      },
+      {
+       "t": "4x + 3 + 2x − 5 − x + 1 = (4x + 2x − x) + (3 − 5 + 1) = 5x − 1",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the answer?",
+     "o": [
+      {
+       "t": "5x − 1",
+       "ok": 1
+      },
+      {
+       "t": "5x − 3",
+       "m": "did not change the sign of the last term in the bracket",
+       "g": "m7_int"
+      },
+      {
+       "t": "7x − 1",
+       "m": "treated −x as +x",
+       "g": "m7_int"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "బీజీయ వ్యక్తీకరణలు",
+   "hi": "बीजीय व्यंजक"
+  }
+ },
+ "m7_eq": {
+  "lesson": {
+   "title": "Keeping the balance",
+   "points": [
+    "An equation is like a balance: both sides are equal. Whatever you do to one side, do to the other side too.",
+    "To undo adding, subtract; to undo multiplying, divide.",
+    "Moving a term to the other side changes its sign.",
+    "Check your answer by putting it back in the equation."
+   ],
+   "story": "A kirana scale has a 1 kg weight and a bag of rice on one pan, and 3 kg on the other pan. Take 1 kg off both pans and the rice is 2 kg. That is solving x + 1 = 3.",
+   "example": {
+    "q": "Solve 3x − 5 = 16.",
+    "steps": [
+     "Add 5 to both sides: 3x = 21.",
+     "Divide both sides by 3: x = 7.",
+     "Check: 3 × 7 − 5 = 16. Correct."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Solve x + 9 = 15.",
+    "why": "Subtract 9 from both sides: x = 15 − 9 = 6.",
+    "o": [
+     {
+      "t": "x = 24",
+      "m": "added 9 to both sides instead of subtracting",
+      "g": "m7_expr"
+     },
+     {
+      "t": "x = −6",
+      "m": "worked out 9 − 15 instead of 15 − 9",
+      "g": "m7_expr"
+     },
+     {
+      "t": "x = 135",
+      "m": "multiplied 9 and 15",
+      "g": "m7_expr"
+     },
+     {
+      "t": "x = 6",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Solve 4x = 28.",
+    "why": "Divide both sides by 4: x = 28 ÷ 4 = 7.",
+    "o": [
+     {
+      "t": "x = 7",
+      "ok": 1
+     },
+     {
+      "t": "x = 24",
+      "m": "subtracted 4 from 28",
+      "g": "m7_expr"
+     },
+     {
+      "t": "x = 32",
+      "m": "added 4 to 28",
+      "g": "m7_expr"
+     },
+     {
+      "t": "x = 112",
+      "m": "multiplied 28 by 4",
+      "g": "m7_expr"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Solve 2x + 3 = 11.",
+    "why": "Subtract 3: 2x = 8. Divide by 2: x = 4.",
+    "o": [
+     {
+      "t": "x = 7",
+      "m": "added 3 to the right side instead of subtracting",
+      "g": "m7_expr"
+     },
+     {
+      "t": "x = 8",
+      "m": "subtracted 3 but forgot to divide by 2",
+      "g": "m7_expr"
+     },
+     {
+      "t": "x = 4",
+      "ok": 1
+     },
+     {
+      "t": "x = 2.5",
+      "m": "divided only 11 by 2 and then subtracted 3",
+      "g": "m7_expr"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Solve x/3 − 2 = 4.",
+    "why": "Add 2: x/3 = 6. Multiply by 3: x = 18.",
+    "o": [
+     {
+      "t": "x = 6",
+      "m": "subtracted 2 instead of adding it to the right side",
+      "g": "m7_expr"
+     },
+     {
+      "t": "x = 12",
+      "m": "forgot the −2 and just multiplied 4 by 3",
+      "g": "m7_expr"
+     },
+     {
+      "t": "x = 18",
+      "ok": 1
+     },
+     {
+      "t": "x = 14",
+      "m": "multiplied the right side by 3 but not the −2",
+      "g": "m7_expr"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Solve 5(x − 2) = 20.",
+    "why": "Divide by 5: x − 2 = 4. Add 2: x = 6. Check: 5 × 4 = 20.",
+    "o": [
+     {
+      "t": "x = 6",
+      "ok": 1
+     },
+     {
+      "t": "x = 4",
+      "m": "divided by 5 and forgot to add the 2",
+      "g": "m7_expr"
+     },
+     {
+      "t": "x = 4.4",
+      "m": "multiplied 5 by x only and not by −2",
+      "g": "m7_expr"
+     },
+     {
+      "t": "x = 2",
+      "m": "divided by 5 and then subtracted 2 again",
+      "g": "m7_expr"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Twice a number increased by 7 gives 25. What is the number?",
+    "why": "2x + 7 = 25, so 2x = 18 and x = 9.",
+    "o": [
+     {
+      "t": "16",
+      "m": "added 7 to 25 instead of subtracting before dividing",
+      "g": "m7_expr"
+     },
+     {
+      "t": "5.5",
+      "m": "wrote 2(x + 7) = 25 instead of 2x + 7 = 25",
+      "g": "m7_expr"
+     },
+     {
+      "t": "18",
+      "m": "subtracted 7 but forgot to divide by 2",
+      "g": "m7_expr"
+     },
+     {
+      "t": "9",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Anita has 3 times as many marbles as Bhanu. Together they have 48 marbles. How many does Bhanu have?",
+    "why": "Let Bhanu have x marbles. x + 3x = 48, so 4x = 48 and x = 12.",
+    "o": [
+     {
+      "t": "16",
+      "m": "divided 48 by 3 and ignored Bhanu's own marbles",
+      "g": "m7_expr"
+     },
+     {
+      "t": "12",
+      "ok": 1
+     },
+     {
+      "t": "36",
+      "m": "gave Anita's marbles instead of Bhanu's",
+      "g": "m7_expr"
+     },
+     {
+      "t": "24",
+      "m": "divided 48 by 2 as if they had equal marbles",
+      "g": "m7_expr"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The perimeter of a rectangle is 50 cm. Its length is 5 cm more than its breadth. What is the breadth?",
+    "why": "Let the breadth be b. 2(b + b + 5) = 50, so 4b + 10 = 50, 4b = 40 and b = 10 cm.",
+    "o": [
+     {
+      "t": "15 cm",
+      "m": "gave the length instead of the breadth",
+      "g": "m7_expr"
+     },
+     {
+      "t": "10 cm",
+      "ok": 1
+     },
+     {
+      "t": "22.5 cm",
+      "m": "used b + (b + 5) = 50, ignoring that perimeter has two of each side",
+      "g": "m7_expr"
+     },
+     {
+      "t": "12.5 cm",
+      "m": "forgot the extra 5 cm and used 4b = 50",
+      "g": "m7_expr"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Solve 5x − 7 = 18. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Subtract 7 from both sides",
+       "m": "used the wrong operation and made the 7 bigger on the left",
+       "g": "m7_expr"
+      },
+      {
+       "t": "Divide 18 by 5 first",
+       "m": "divided only the right side and ignored the −7",
+       "g": "m7_expr"
+      },
+      {
+       "t": "Add 7 to both sides",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "What is the working?",
+     "o": [
+      {
+       "t": "5x = 18 + 7 = 25, so x = 25 ÷ 5 = 5",
+       "ok": 1
+      },
+      {
+       "t": "5x = 18 − 7 = 11, so x = 11/5",
+       "m": "subtracted 7 instead of adding it",
+       "g": "m7_expr"
+      },
+      {
+       "t": "5x = 25, so x = 25 − 5 = 20",
+       "m": "subtracted 5 instead of dividing by 5",
+       "g": "m7_expr"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the answer?",
+     "o": [
+      {
+       "t": "x = 11/5",
+       "m": "got 5x = 11 by subtracting 7",
+       "g": "m7_expr"
+      },
+      {
+       "t": "x = 5",
+       "ok": 1
+      },
+      {
+       "t": "x = 20",
+       "m": "subtracted 5 from 25 instead of dividing",
+       "g": "m7_expr"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "సరళ సమీకరణాలు",
+   "hi": "सरल समीकरण"
+  }
+ },
+ "m7_tri": {
+  "lesson": {
+   "title": "Three sides, three angles",
+   "points": [
+    "The three angles of any triangle add up to 180°.",
+    "An exterior angle is equal to the sum of the two interior opposite angles.",
+    "The sum of any two sides of a triangle is always greater than the third side.",
+    "In a right-angled triangle, (hypotenuse)² = (one side)² + (other side)²."
+   ],
+   "story": "You want to walk from your house to the temple. Going straight is shorter than going via the market. That is why one side of a triangle is always shorter than the other two sides together.",
+   "example": {
+    "q": "In triangle ABC, ∠A = 50° and ∠B = 60°. Find ∠C and the exterior angle at C.",
+    "steps": [
+     "∠C = 180° − (50° + 60°) = 70°.",
+     "The exterior angle at C is 180° − 70° = 110°.",
+     "Check: it also equals ∠A + ∠B = 110°."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the sum of the three angles of a triangle?",
+    "why": "The three interior angles of any triangle add up to 180°.",
+    "o": [
+     {
+      "t": "180°",
+      "ok": 1
+     },
+     {
+      "t": "360°",
+      "m": "used the angle sum of a quadrilateral",
+      "g": "m6_geo"
+     },
+     {
+      "t": "90°",
+      "m": "recalled the size of a right angle instead",
+      "g": "m6_geo"
+     },
+     {
+      "t": "270°",
+      "m": "added three right angles",
+      "g": "m6_geo"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "A triangle with all three sides equal is called",
+    "why": "In an equilateral triangle all three sides are equal, and each angle is 60°.",
+    "o": [
+     {
+      "t": "an isosceles triangle",
+      "m": "mixed it up with a triangle that has only two equal sides",
+      "g": "m6_geo"
+     },
+     {
+      "t": "a scalene triangle",
+      "m": "mixed it up with a triangle that has no equal sides",
+      "g": "m6_geo"
+     },
+     {
+      "t": "an equilateral triangle",
+      "ok": 1
+     },
+     {
+      "t": "a right-angled triangle",
+      "m": "mixed up names based on sides with names based on angles",
+      "g": "m6_geo"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Two angles of a triangle are 45° and 80°. What is the third angle?",
+    "why": "Third angle = 180° − (45° + 80°) = 180° − 125° = 55°.",
+    "o": [
+     {
+      "t": "125°",
+      "m": "added the two angles and stopped",
+      "g": "m6_geo"
+     },
+     {
+      "t": "135°",
+      "m": "subtracted only 45° from 180°",
+      "g": "m6_geo"
+     },
+     {
+      "t": "55°",
+      "ok": 1
+     },
+     {
+      "t": "100°",
+      "m": "subtracted only 80° from 180°",
+      "g": "m6_geo"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which set of lengths can be the sides of a triangle?",
+    "why": "In a triangle, the sum of any two sides is greater than the third. 3 + 4 > 5, 3 + 5 > 4 and 4 + 5 > 3.",
+    "o": [
+     {
+      "t": "3 cm, 4 cm, 5 cm",
+      "ok": 1
+     },
+     {
+      "t": "2 cm, 3 cm, 6 cm",
+      "m": "thought any three lengths can form a triangle",
+      "g": "m6_geo"
+     },
+     {
+      "t": "4 cm, 4 cm, 8 cm",
+      "m": "thought the sum of two sides equal to the third side is allowed",
+      "g": "m6_geo"
+     },
+     {
+      "t": "1 cm, 2 cm, 3 cm",
+      "m": "thought the sum of two sides equal to the third side is allowed",
+      "g": "m6_geo"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "An exterior angle of a triangle is 120°. One interior opposite angle is 50°. What is the other interior opposite angle?",
+    "why": "The exterior angle equals the sum of the two interior opposite angles. So the other angle = 120° − 50° = 70°.",
+    "o": [
+     {
+      "t": "170°",
+      "m": "added the exterior angle and the interior angle",
+      "g": "m6_geo"
+     },
+     {
+      "t": "60°",
+      "m": "subtracted the exterior angle from 180° and stopped",
+      "g": "m6_geo"
+     },
+     {
+      "t": "130°",
+      "m": "subtracted 50° from 180°",
+      "g": "m6_geo"
+     },
+     {
+      "t": "70°",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "In an isosceles triangle, the angle between the two equal sides is 40°. What is each of the other two angles?",
+    "why": "The remaining angle sum is 180° − 40° = 140°. The two base angles are equal, so each is 70°.",
+    "o": [
+     {
+      "t": "140°",
+      "m": "found 180° − 40° but did not share it between the two angles",
+      "g": "m6_geo"
+     },
+     {
+      "t": "70°",
+      "ok": 1
+     },
+     {
+      "t": "40°",
+      "m": "thought all the angles are equal to the given angle",
+      "g": "m6_geo"
+     },
+     {
+      "t": "50°",
+      "m": "used 90° − 40° as for a right-angled triangle",
+      "g": "m6_geo"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The angles of a triangle are in the ratio 2 : 3 : 4. What is the largest angle?",
+    "why": "Total parts = 9. One part = 180° ÷ 9 = 20°. The largest angle = 4 × 20° = 80°.",
+    "o": [
+     {
+      "t": "60°",
+      "m": "gave the middle angle (3 × 20°)",
+      "g": "m6_geo"
+     },
+     {
+      "t": "80°",
+      "ok": 1
+     },
+     {
+      "t": "45°",
+      "m": "divided 180° by 4 only",
+      "g": "m6_geo"
+     },
+     {
+      "t": "90°",
+      "m": "divided 180° by 2 only",
+      "g": "m6_geo"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Two sides of a triangle are 7 cm and 12 cm. Which of these can be the third side?",
+    "why": "The third side must be more than 12 − 7 = 5 cm and less than 12 + 7 = 19 cm. Only 10 cm fits.",
+    "o": [
+     {
+      "t": "4 cm",
+      "m": "thought any length less than 7 cm is fine",
+      "g": "m6_geo"
+     },
+     {
+      "t": "5 cm",
+      "m": "used the difference but forgot it must be strictly more",
+      "g": "m6_geo"
+     },
+     {
+      "t": "19 cm",
+      "m": "used the sum but forgot it must be strictly less",
+      "g": "m6_geo"
+     },
+     {
+      "t": "10 cm",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "The angles of a triangle are x, (x + 10)° and (x + 20)°. Find the smallest angle. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Add the three angles and put the total equal to 180°",
+       "ok": 1
+      },
+      {
+       "t": "Add the three angles and put the total equal to 360°",
+       "m": "used the angle sum of a quadrilateral",
+       "g": "m6_geo"
+      },
+      {
+       "t": "Add the three angles and put the total equal to 90°",
+       "m": "used a right angle as the total",
+       "g": "m6_geo"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "What is the working?",
+     "o": [
+      {
+       "t": "3x + 30 = 180, so 3x = 210",
+       "m": "added 30 to 180 instead of subtracting",
+       "g": "m6_geo"
+      },
+      {
+       "t": "x + x + 10 + x + 20 = 180, so 3x + 30 = 180 and 3x = 150",
+       "ok": 1
+      },
+      {
+       "t": "3x + 30 = 180, so x = 150",
+       "m": "subtracted 30 but forgot to divide by 3",
+       "g": "m6_geo"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the smallest angle?",
+     "o": [
+      {
+       "t": "60°",
+       "m": "gave the middle angle x + 10 instead of the smallest",
+       "g": "m6_geo"
+      },
+      {
+       "t": "70°",
+       "m": "gave the largest angle x + 20 instead of the smallest",
+       "g": "m6_geo"
+      },
+      {
+       "t": "50°",
+       "ok": 1
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "త్రిభుజాలు మరియు వాటి ధర్మాలు",
+   "hi": "त्रिभुज और उनके गुण"
+  }
+ },
+ "m7_mens": {
+  "lesson": {
+   "title": "Fields, rotis and parks",
+   "points": [
+    "Perimeter is the distance around a shape. Area is the space inside it.",
+    "Area of a rectangle = length × breadth. Area of a parallelogram = base × height. Area of a triangle = 1/2 × base × height.",
+    "For a circle, circumference = 2πr and area = πr². Use π = 22/7 or 3.14.",
+    "Area is measured in square units: 1 m² = 10,000 cm²."
+   ],
+   "story": "A round roti of radius 7 cm has a rim of 2 × 22/7 × 7 = 44 cm. The roti itself covers 22/7 × 7 × 7 = 154 cm² on the tawa.",
+   "example": {
+    "q": "Find the area and circumference of a circle of radius 14 cm.",
+    "steps": [
+     "Area = πr² = 22/7 × 14 × 14 = 616 cm².",
+     "Circumference = 2πr = 2 × 22/7 × 14.",
+     "Circumference = 88 cm."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the area of a rectangle 12 m long and 5 m wide?",
+    "why": "Area = length × breadth = 12 × 5 = 60 m².",
+    "o": [
+     {
+      "t": "34 m²",
+      "m": "found the perimeter 2(12 + 5) and gave it as the area",
+      "g": "m6_mens"
+     },
+     {
+      "t": "17 m²",
+      "m": "added the length and the breadth",
+      "g": "m6_mens"
+     },
+     {
+      "t": "60 m²",
+      "ok": 1
+     },
+     {
+      "t": "30 m²",
+      "m": "halved the product as for a triangle",
+      "g": "m6_mens"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is the circumference of a circle of radius 7 cm? (Use π = 22/7)",
+    "why": "Circumference = 2πr = 2 × 22/7 × 7 = 44 cm.",
+    "o": [
+     {
+      "t": "154 cm",
+      "m": "used πr² and gave the area",
+      "g": "m6_mens"
+     },
+     {
+      "t": "22 cm",
+      "m": "used πr instead of 2πr",
+      "g": "m6_mens"
+     },
+     {
+      "t": "44 cm",
+      "ok": 1
+     },
+     {
+      "t": "14 cm",
+      "m": "gave the diameter",
+      "g": "m6_mens"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the area of a rectangle of length 2 1/2 m and breadth 1 1/2 m?",
+    "why": "2 1/2 = 5/2 and 1 1/2 = 3/2. Area = 5/2 × 3/2 = 15/4 = 3 3/4 m².",
+    "o": [
+     {
+      "t": "3 3/4 m²",
+      "ok": 1
+     },
+     {
+      "t": "2 1/4 m²",
+      "m": "multiplied the whole parts and the fraction parts separately: 2 × 1 + 1/2 × 1/2",
+      "g": "m7_frac"
+     },
+     {
+      "t": "4 m²",
+      "m": "added the length and the breadth",
+      "g": "m6_mens"
+     },
+     {
+      "t": "8 m²",
+      "m": "found the perimeter instead of the area",
+      "g": "m6_mens"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A parallelogram has base 15 cm, slant side 9 cm and height 8 cm. What is its area?",
+    "why": "Area of a parallelogram = base × height = 15 × 8 = 120 cm². The slant side is not used.",
+    "o": [
+     {
+      "t": "135 cm²",
+      "m": "multiplied the base by the slant side instead of the height",
+      "g": "m6_mens"
+     },
+     {
+      "t": "72 cm²",
+      "m": "multiplied the slant side by the height",
+      "g": "m6_mens"
+     },
+     {
+      "t": "48 cm²",
+      "m": "found the perimeter 2(15 + 9)",
+      "g": "m6_mens"
+     },
+     {
+      "t": "120 cm²",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Convert 2.5 m² into cm².",
+    "why": "1 m = 100 cm, so 1 m² = 100 × 100 = 10,000 cm². Then 2.5 × 10,000 = 25,000 cm².",
+    "o": [
+     {
+      "t": "250 cm²",
+      "m": "multiplied by 100 as for length",
+      "g": "m6_mens"
+     },
+     {
+      "t": "25,000 cm²",
+      "ok": 1
+     },
+     {
+      "t": "2,500 cm²",
+      "m": "multiplied by 1,000",
+      "g": "m6_mens"
+     },
+     {
+      "t": "250,000 cm²",
+      "m": "multiplied by 100,000",
+      "g": "m6_mens"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A circular park has a diameter of 14 m. What is its area? (Use π = 22/7)",
+    "why": "Radius = 14 ÷ 2 = 7 m. Area = πr² = 22/7 × 7 × 7 = 154 m².",
+    "o": [
+     {
+      "t": "616 m²",
+      "m": "used the diameter 14 as the radius",
+      "g": "m6_mens"
+     },
+     {
+      "t": "154 m²",
+      "ok": 1
+     },
+     {
+      "t": "44 m²",
+      "m": "found the circumference 2πr instead of the area",
+      "g": "m6_mens"
+     },
+     {
+      "t": "49 m²",
+      "m": "found r² and forgot to multiply by π",
+      "g": "m6_mens"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A rectangular park is 50 m long and 30 m wide. Fencing costs ₹20 per metre. What is the total cost of fencing all four sides?",
+    "why": "Perimeter = 2(50 + 30) = 160 m. Cost = 160 × 20 = ₹3,200.",
+    "o": [
+     {
+      "t": "₹30,000",
+      "m": "found the area 50 × 30 and multiplied by 20",
+      "g": "m6_mens"
+     },
+     {
+      "t": "₹1,600",
+      "m": "used only length + breadth, which is half the perimeter",
+      "g": "m6_mens"
+     },
+     {
+      "t": "₹1,000",
+      "m": "fenced only the length of 50 m",
+      "g": "m6_mens"
+     },
+     {
+      "t": "₹3,200",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The area of a triangle is 54 cm² and its base is 12 cm. What is its height?",
+    "why": "Area = 1/2 × base × height. 54 = 1/2 × 12 × h = 6h, so h = 9 cm.",
+    "o": [
+     {
+      "t": "9 cm",
+      "ok": 1
+     },
+     {
+      "t": "4.5 cm",
+      "m": "forgot the 1/2 and divided 54 by 12",
+      "g": "m6_mens"
+     },
+     {
+      "t": "324 cm",
+      "m": "multiplied 1/2 × 54 × 12 instead of dividing",
+      "g": "m6_mens"
+     },
+     {
+      "t": "108 cm",
+      "m": "doubled the area and did not divide by the base",
+      "g": "m6_mens"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Find the area of a circular garden of radius 21 m. (Use π = 22/7) Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Use the formula 2πr",
+       "m": "used the circumference formula for the area",
+       "g": "m6_mens"
+      },
+      {
+       "t": "Use the formula area = πr²",
+       "ok": 1
+      },
+      {
+       "t": "Use the formula πd",
+       "m": "used the diameter formula which gives the circumference",
+       "g": "m6_mens"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "What is the working?",
+     "o": [
+      {
+       "t": "22/7 × 21 = 66",
+       "m": "forgot to multiply by the radius a second time",
+       "g": "m6_mens"
+      },
+      {
+       "t": "22/7 × 42 × 42 = 5,544",
+       "m": "used the diameter in place of the radius",
+       "g": "m6_mens"
+      },
+      {
+       "t": "22/7 × 21 × 21 = 22 × 3 × 21 = 1,386",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the area?",
+     "o": [
+      {
+       "t": "1,386 m²",
+       "ok": 1
+      },
+      {
+       "t": "132 m²",
+       "m": "gave the circumference 2πr",
+       "g": "m6_mens"
+      },
+      {
+       "t": "66 m²",
+       "m": "found only πr",
+       "g": "m6_mens"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "సమతల ఆకారాల చుట్టుకొలత మరియు వైశాల్యం",
+   "hi": "समतल आकृतियों का परिमाप और क्षेत्रफल"
+  }
+ }
+}

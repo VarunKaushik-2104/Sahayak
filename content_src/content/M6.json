@@ -1,0 +1,1890 @@
+{
+ "m6_num": {
+  "lesson": {
+   "title": "Factors, multiples and primes",
+   "points": [
+    "A factor divides a number exactly. A multiple is what you get by multiplying the number by 1, 2, 3 and so on.",
+    "A prime number has exactly two factors: 1 and itself. 2 is the smallest prime and the only even prime. 1 is not prime.",
+    "HCF is the highest common factor and LCM is the lowest common multiple of two or more numbers.",
+    "A number is divisible by 3 (or 9) when the sum of its digits is divisible by 3 (or 9)."
+   ],
+   "story": "Two buses leave the Hyderabad bus stand together. One goes every 6 minutes and the other every 8 minutes. They leave together again after the LCM of 6 and 8, which is 24 minutes.",
+   "example": {
+    "q": "Find the HCF and LCM of 12 and 18.",
+    "steps": [
+     "Write the prime factors: 12 = 2 × 2 × 3 and 18 = 2 × 3 × 3.",
+     "HCF = the common primes multiplied = 2 × 3 = 6.",
+     "LCM = every prime at its highest count = 2 × 2 × 3 × 3 = 36."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which of these is a prime number?",
+    "why": "29 has no factors other than 1 and 29. The others are divisible by 3: 21 = 3 × 7, 27 = 3 × 9 and 39 = 3 × 13.",
+    "o": [
+     {
+      "t": "21",
+      "m": "assumed every odd number is prime without testing for factors"
+     },
+     {
+      "t": "27",
+      "m": "saw a 7 at the end and assumed numbers ending in 7 are prime"
+     },
+     {
+      "t": "29",
+      "ok": 1
+     },
+     {
+      "t": "39",
+      "m": "checked divisibility only by 2 and 5 and forgot to test 3"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is the smallest prime number?",
+    "why": "A prime has exactly two factors. 1 has only one factor, so it is not prime. 2 has factors 1 and 2, so 2 is the smallest prime.",
+    "o": [
+     {
+      "t": "2",
+      "ok": 1
+     },
+     {
+      "t": "1",
+      "m": "thought 1 is prime because it is divisible only by itself"
+     },
+     {
+      "t": "0",
+      "m": "took the smallest whole number as the smallest prime"
+     },
+     {
+      "t": "3",
+      "m": "thought 2 cannot be prime because it is even"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the HCF of 12 and 18?",
+    "why": "Factors of 12: 1, 2, 3, 4, 6, 12. Factors of 18: 1, 2, 3, 6, 9, 18. The highest common one is 6.",
+    "o": [
+     {
+      "t": "36",
+      "m": "found the LCM instead of the HCF"
+     },
+     {
+      "t": "3",
+      "m": "listed a common factor but did not pick the highest one"
+     },
+     {
+      "t": "2",
+      "m": "took the smallest common prime factor as the HCF"
+     },
+     {
+      "t": "6",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the LCM of 4 and 6?",
+    "why": "Multiples of 4: 4, 8, 12, ... Multiples of 6: 6, 12, ... The first common multiple is 12.",
+    "o": [
+     {
+      "t": "24",
+      "m": "multiplied the two numbers instead of finding the lowest common multiple"
+     },
+     {
+      "t": "12",
+      "ok": 1
+     },
+     {
+      "t": "2",
+      "m": "found the HCF instead of the LCM"
+     },
+     {
+      "t": "6",
+      "m": "took the larger number as the LCM without checking if 4 divides it"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which of these numbers is divisible by 9?",
+    "why": "3 + 4 + 5 + 6 = 18, which is divisible by 9, so 3,456 is divisible by 9 (3,456 = 9 × 384).",
+    "o": [
+     {
+      "t": "1,236",
+      "m": "used the rule for 3 (digit sum 12 is divisible by 3) but 12 is not divisible by 9"
+     },
+     {
+      "t": "3,456",
+      "ok": 1
+     },
+     {
+      "t": "4,579",
+      "m": "saw a 9 at the end and assumed the number is divisible by 9"
+     },
+     {
+      "t": "3,190",
+      "m": "assumed a number ending in 0 is divisible by 9 without adding the digits"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Three bells ring every 6, 8 and 12 minutes. They ring together at 9:00 a.m. When will they next ring together?",
+    "why": "The next common time is after the LCM of 6, 8 and 12. LCM = 24 minutes, so they ring together at 9:24 a.m.",
+    "o": [
+     {
+      "t": "9:48 a.m.",
+      "m": "multiplied 6 and 8 instead of finding the LCM of all three numbers"
+     },
+     {
+      "t": "9:02 a.m.",
+      "m": "found the HCF (2) instead of the LCM"
+     },
+     {
+      "t": "9:12 a.m.",
+      "m": "took the largest interval, 12, as the LCM without checking 8"
+     },
+     {
+      "t": "9:24 a.m.",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Meena has 36 laddus and 48 pedas. She packs them in identical boxes, each with the same number of laddus and the same number of pedas, with none left over. What is the greatest number of boxes?",
+    "why": "We need the HCF of 36 and 48, which is 12. So 12 boxes, each with 3 laddus and 4 pedas.",
+    "o": [
+     {
+      "t": "12",
+      "ok": 1
+     },
+     {
+      "t": "144",
+      "m": "found the LCM instead of the HCF"
+     },
+     {
+      "t": "6",
+      "m": "found a common factor but not the highest one"
+     },
+     {
+      "t": "3",
+      "m": "gave the number of laddus in each box instead of the number of boxes"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "What is the smallest 4-digit number that is divisible by 12?",
+    "why": "1,000 ÷ 12 leaves a remainder of 4, so add 8 to reach the next multiple: 1,008 = 12 × 84.",
+    "o": [
+     {
+      "t": "996",
+      "m": "picked the multiple of 12 just below 1,000, which has only 3 digits"
+     },
+     {
+      "t": "1,200",
+      "m": "chose a round number divisible by 12 without looking for a smaller one"
+     },
+     {
+      "t": "1,008",
+      "ok": 1
+     },
+     {
+      "t": "1,012",
+      "m": "added 12 to 1,000 without checking that the result is divisible by 12"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Find the HCF of 24 and 36 using prime factorisation. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Multiply 24 and 36 to get the HCF",
+       "m": "confused the HCF with a product of the numbers"
+      },
+      {
+       "t": "Write both numbers as products of prime factors",
+       "ok": 1
+      },
+      {
+       "t": "Add the two numbers and divide by 2",
+       "m": "used the average of the numbers, which is not the HCF"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "Which prime factorisation is correct?",
+     "o": [
+      {
+       "t": "24 = 2 × 3 × 4 and 36 = 2 × 3 × 6",
+       "m": "stopped at composite factors such as 4 and 6 instead of primes"
+      },
+      {
+       "t": "24 = 2 × 2 × 2 × 3 and 36 = 2 × 3 × 3 × 3",
+       "m": "made an error while factorising 36 (2 × 27 is 54, not 36)"
+      },
+      {
+       "t": "24 = 2 × 2 × 2 × 3 and 36 = 2 × 2 × 3 × 3",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "Which primes are common, and what is the HCF?",
+     "o": [
+      {
+       "t": "Common primes: 2, 2, 3, so HCF = 12",
+       "ok": 1
+      },
+      {
+       "t": "All primes together: 2 × 2 × 2 × 3 × 3, so HCF = 72",
+       "m": "took every prime at its highest count, which gives the LCM"
+      },
+      {
+       "t": "Common primes: 2 and 3 once each, so HCF = 6",
+       "m": "counted each common prime once and ignored that 2 is repeated in both numbers"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "సంపూర్ణ సంఖ్యలు, కారణాంకాలు మరియు గుణిజాలు",
+   "hi": "पूर्ण संख्याएँ, गुणनखंड और गुणज"
+  }
+ },
+ "m6_int": {
+  "lesson": {
+   "title": "Numbers below zero",
+   "points": [
+    "Integers are the numbers ... −3, −2, −1, 0, 1, 2, 3 ... They include negative numbers, zero and positive numbers.",
+    "On a number line, numbers grow towards the right. So −2 is greater than −5, and every negative number is less than 0.",
+    "Adding a positive number moves right. Subtracting a positive number moves left, even past zero.",
+    "To compare negative numbers, the one closer to zero is greater."
+   ],
+   "story": "On a winter night in Leh the temperature is −5°C, while in Chennai it is 28°C. Colder means further left on the number line, so −5 is far smaller than 28.",
+   "example": {
+    "q": "Find 3 − 8.",
+    "steps": [
+     "Start at 3 on the number line.",
+     "Move 8 steps to the left: 3 steps reach 0 and 5 more steps go below zero.",
+     "You land on −5, so 3 − 8 = −5."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which of these numbers is smaller than −5?",
+    "why": "On the number line, −8 lies to the left of −5, so −8 is smaller. −2, 0 and 3 are all to the right of −5.",
+    "o": [
+     {
+      "t": "−8",
+      "ok": 1
+     },
+     {
+      "t": "−2",
+      "m": "thought −2 is smaller because 2 is less than 5"
+     },
+     {
+      "t": "0",
+      "m": "thought zero is lower than negative numbers"
+     },
+     {
+      "t": "3",
+      "m": "ignored the minus sign and compared 3 with 5"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "On a number line, which integer lies just to the right of −4?",
+    "why": "Moving right increases the value by 1, so the next integer after −4 is −3.",
+    "o": [
+     {
+      "t": "−5",
+      "m": "moved left instead of right"
+     },
+     {
+      "t": "3",
+      "m": "dropped the minus sign after moving one step"
+     },
+     {
+      "t": "0",
+      "m": "thought just to the right of a negative number means zero"
+     },
+     {
+      "t": "−3",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is (−7) + 4?",
+    "why": "Start at −7 and move 4 steps right: −6, −5, −4, −3. The answer is −3.",
+    "o": [
+     {
+      "t": "3",
+      "m": "subtracted 4 from 7 and ignored that the larger number is negative"
+     },
+     {
+      "t": "−3",
+      "ok": 1
+     },
+     {
+      "t": "−11",
+      "m": "added the numbers 7 and 4 and kept the minus sign"
+     },
+     {
+      "t": "11",
+      "m": "added the numbers and ignored the minus sign"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is 6 − 9?",
+    "why": "6 − 9 goes 3 below zero, so the answer is −3.",
+    "o": [
+     {
+      "t": "3",
+      "m": "used whole-number subtraction (larger minus smaller) and forgot the result goes below zero",
+      "g": "m6_num"
+     },
+     {
+      "t": "−3",
+      "ok": 1
+     },
+     {
+      "t": "−15",
+      "m": "added 6 and 9 and put a minus sign"
+     },
+     {
+      "t": "15",
+      "m": "added 6 and 9 instead of subtracting"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which list shows the numbers −2, 5, −7 and 0 in increasing order (smallest first)?",
+    "why": "−7 is the smallest, then −2, then 0, then 5.",
+    "o": [
+     {
+      "t": "−2, −7, 0, 5",
+      "m": "ordered the negatives by the size of the digit, treating −2 as smaller than −7"
+     },
+     {
+      "t": "5, 0, −2, −7",
+      "m": "wrote the numbers in decreasing order instead of increasing"
+     },
+     {
+      "t": "0, −2, −7, 5",
+      "m": "treated zero as the smallest and then ordered the negatives by digit size"
+     },
+     {
+      "t": "−7, −2, 0, 5",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A lift in a mall starts at the ground floor (0). It goes up 5 floors and then down 8 floors. Basements are negative levels. At which level does it stop?",
+    "why": "0 + 5 = 5, then 5 − 8 = −3. The lift is at level −3, the third basement.",
+    "o": [
+     {
+      "t": "−3",
+      "ok": 1
+     },
+     {
+      "t": "3",
+      "m": "subtracted 5 from 8 and ignored that the lift went below the ground floor"
+     },
+     {
+      "t": "−13",
+      "m": "added 5 and 8 and made the result negative"
+     },
+     {
+      "t": "13",
+      "m": "added 5 and 8 and ignored the direction of the second move"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "At 6 a.m. the temperature in Leh is −8°C. By noon it rises by 5°C and by midnight it falls by 9°C. What is the temperature at midnight?",
+    "why": "−8 + 5 = −3, then −3 − 9 = −12. The temperature is −12°C.",
+    "o": [
+     {
+      "t": "−22°C",
+      "m": "treated the rise of 5°C as another fall"
+     },
+     {
+      "t": "6°C",
+      "m": "added the fall of 9°C instead of subtracting it"
+     },
+     {
+      "t": "−12°C",
+      "ok": 1
+     },
+     {
+      "t": "4°C",
+      "m": "ignored the minus sign on the starting temperature and computed 8 + 5 − 9"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Which of these statements is correct?",
+    "why": "−12 is further left than −4 on the number line, so −12 < −4. In the other options the sign was ignored or zero was misplaced.",
+    "o": [
+     {
+      "t": "−2 < −9",
+      "m": "thought −2 is smaller because 2 is less than 9"
+     },
+     {
+      "t": "0 < −6",
+      "m": "thought zero is smaller than negative numbers"
+     },
+     {
+      "t": "−12 < −4",
+      "ok": 1
+     },
+     {
+      "t": "3 < −10",
+      "m": "compared 3 with 10 and ignored the minus sign"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Find the value of −6 + 10 − 7. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the best way to start?",
+     "o": [
+      {
+       "t": "Ignore the signs and add 6, 10 and 7",
+       "m": "dropped the signs, so negative and positive numbers were treated alike"
+      },
+      {
+       "t": "Subtract 7 from 6 first and then add 10 with the sign dropped",
+       "m": "changed the order of the terms and lost the sign of the first number"
+      },
+      {
+       "t": "Work from left to right and keep each sign with its number",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "Which working is correct?",
+     "o": [
+      {
+       "t": "−6 + 10 = 4, then 4 − 7 = −3",
+       "ok": 1
+      },
+      {
+       "t": "−6 + 10 = 16, then 16 − 7 = 9",
+       "m": "added 6 and 10 as if both were positive"
+      },
+      {
+       "t": "−6 + 10 = 4, then 4 − 7 = 3",
+       "m": "subtracted the smaller number from the larger and forgot the answer goes below zero",
+       "g": "m6_num"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the value?",
+     "o": [
+      {
+       "t": "3",
+       "m": "lost the minus sign when 4 − 7 went below zero"
+      },
+      {
+       "t": "−3",
+       "ok": 1
+      },
+      {
+       "t": "−23",
+       "m": "treated every number as negative and added them all"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "పూర్ణాంకాలు (రుణ సంఖ్యలు)",
+   "hi": "पूर्णांक (ऋणात्मक संख्याएँ)"
+  }
+ },
+ "m6_frac": {
+  "lesson": {
+   "title": "Parts of a whole",
+   "points": [
+    "A fraction a/b means a equal parts out of b. Multiplying or dividing the top and bottom by the same number gives an equivalent fraction.",
+    "To add or subtract fractions with different denominators, first make the denominators equal using their LCM.",
+    "Decimals are fractions with denominators 10, 100, 1000. For example 0.3 = 3/10 and 0.03 = 3/100.",
+    "When adding or subtracting decimals, line up the decimal points so the places match."
+   ],
+   "story": "Amma cuts a roti into 4 equal parts and you eat 3. You ate 3/4 of the roti, which is the same as 0.75 of it.",
+   "example": {
+    "q": "Find 1/2 + 1/3.",
+    "steps": [
+     "The LCM of 2 and 3 is 6, so make both denominators 6.",
+     "1/2 = 3/6 and 1/3 = 2/6.",
+     "Add the numerators: 3/6 + 2/6 = 5/6."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which fraction is equivalent to 2/3?",
+    "why": "Multiply the top and bottom by 2: 2/3 = 4/6. The others change the top and bottom by different amounts.",
+    "o": [
+     {
+      "t": "3/4",
+      "m": "added 1 to both the numerator and the denominator"
+     },
+     {
+      "t": "2/6",
+      "m": "multiplied only the denominator"
+     },
+     {
+      "t": "4/9",
+      "m": "multiplied the numerator by 2 and the denominator by 3"
+     },
+     {
+      "t": "4/6",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Write 3/10 as a decimal.",
+    "why": "Tenths take one place after the decimal point, so 3/10 = 0.3.",
+    "o": [
+     {
+      "t": "0.03",
+      "m": "put the 3 in the hundredths place instead of the tenths place"
+     },
+     {
+      "t": "0.3",
+      "ok": 1
+     },
+     {
+      "t": "3.10",
+      "m": "wrote the numerator and denominator on either side of the decimal point"
+     },
+     {
+      "t": "10.3",
+      "m": "wrote the denominator first and the numerator after the decimal point"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is 1/2 + 1/3?",
+    "why": "The common denominator is 6: 3/6 + 2/6 = 5/6.",
+    "o": [
+     {
+      "t": "2/5",
+      "m": "added the numerators and the denominators separately"
+     },
+     {
+      "t": "5/6",
+      "ok": 1
+     },
+     {
+      "t": "1/6",
+      "m": "multiplied the fractions instead of adding them"
+     },
+     {
+      "t": "2/6",
+      "m": "added the numerators and used the product of the denominators without converting"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which of these fractions is the greatest?",
+    "why": "In decimals: 3/4 = 0.75, 2/3 = 0.67, 5/8 = 0.625 and 3/10 = 0.3. So 3/4 is the greatest.",
+    "o": [
+     {
+      "t": "3/10",
+      "m": "thought the fraction with the biggest denominator is the biggest"
+     },
+     {
+      "t": "5/8",
+      "m": "chose the fraction with the biggest numerator"
+     },
+     {
+      "t": "2/3",
+      "m": "chose the fraction with the smallest denominator"
+     },
+     {
+      "t": "3/4",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is 0.7 + 0.35?",
+    "why": "Line up the decimal points: 0.70 + 0.35 = 1.05.",
+    "o": [
+     {
+      "t": "1.05",
+      "ok": 1
+     },
+     {
+      "t": "0.42",
+      "m": "added 7 and 35 without respecting place value"
+     },
+     {
+      "t": "10.5",
+      "m": "placed the decimal point in the wrong position"
+     },
+     {
+      "t": "1.5",
+      "m": "treated 0.05 as 0.5, a place-value slip"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Priya has 3 1/2 m of ribbon and uses 1 3/4 m for a decoration. How much ribbon is left?",
+    "why": "3 1/2 = 3 2/4, so borrow 1: 2 6/4 − 1 3/4 = 1 3/4 m.",
+    "o": [
+     {
+      "t": "2 1/4 m",
+      "m": "subtracted the smaller fraction from the larger (3/4 − 2/4) instead of borrowing"
+     },
+     {
+      "t": "2 1/2 m",
+      "m": "subtracted only the whole numbers and ignored the fraction 3/4"
+     },
+     {
+      "t": "1 3/4 m",
+      "ok": 1
+     },
+     {
+      "t": "1 1/4 m",
+      "m": "borrowed 1 as 2/4 instead of 4/4"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A shopkeeper buys 2.5 kg of rice, 1.75 kg of dal and 0.8 kg of sugar. What is the total weight?",
+    "why": "2.50 + 1.75 + 0.80 = 5.05 kg. The tenths add up to 20, so write 0 and carry 2.",
+    "o": [
+     {
+      "t": "4.05 kg",
+      "m": "forgot to carry 2 from the tenths column"
+     },
+     {
+      "t": "4.33 kg",
+      "m": "read 0.8 as 0.08 and added"
+     },
+     {
+      "t": "5.05 kg",
+      "ok": 1
+     },
+     {
+      "t": "6.05 kg",
+      "m": "carried an extra 1 from the tenths column"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A class has 36 students and 2/3 of them are in the cricket club. How many students are NOT in the club?",
+    "why": "1/3 of 36 = 12. Students in the club = 2 × 12 = 24, so 36 − 24 = 12 are not in it.",
+    "o": [
+     {
+      "t": "12",
+      "ok": 1
+     },
+     {
+      "t": "24",
+      "m": "gave the number of students in the club instead of those not in it"
+     },
+     {
+      "t": "18",
+      "m": "divided 36 by 2 instead of by 3"
+     },
+     {
+      "t": "54",
+      "m": "multiplied 36 by 3/2, inverting the fraction"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Find 3/4 + 5/6. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Find the LCM of 4 and 6 and make both denominators equal",
+       "ok": 1
+      },
+      {
+       "t": "Add the numerators and add the denominators",
+       "m": "added tops and bottoms separately, which does not give the sum of fractions"
+      },
+      {
+       "t": "Multiply the two fractions",
+       "m": "used multiplication instead of addition"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "Which working is correct?",
+     "o": [
+      {
+       "t": "3/4 = 3/12 and 5/6 = 5/12",
+       "m": "changed the denominators to 12 but left the numerators unchanged"
+      },
+      {
+       "t": "3/4 = 9/12 and 5/6 = 10/12",
+       "ok": 1
+      },
+      {
+       "t": "3/4 = 6/12 and 5/6 = 10/12",
+       "m": "multiplied 3 by 2 although the denominator 4 was multiplied by 3"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the sum?",
+     "o": [
+      {
+       "t": "19/24",
+       "m": "used the product 24 as the denominator after converting to twelfths",
+       "g": "m6_num"
+      },
+      {
+       "t": "8/10",
+       "m": "added the numerators and the denominators separately"
+      },
+      {
+       "t": "19/12 = 1 7/12",
+       "ok": 1
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "భిన్నాలు మరియు దశాంశాలు",
+   "hi": "भिन्न और दशमलव"
+  }
+ },
+ "m6_ratio": {
+  "lesson": {
+   "title": "Comparing quantities",
+   "points": [
+    "A ratio compares two quantities of the same kind, written a : b. Order matters: 3 : 2 is not the same as 2 : 3.",
+    "Simplify a ratio by dividing both terms by their common factor, just like a fraction.",
+    "Two ratios that are equal form a proportion, for example 2 : 3 = 4 : 6.",
+    "To share a total in a ratio, add the parts, find the value of one part, then multiply."
+   ],
+   "story": "For one glass of lassi, Dadi mixes 1 cup of curd with 2 cups of water. The ratio of curd to water is 1 : 2. For 3 glasses she uses 3 cups of curd and 6 cups of water, so the ratio stays the same.",
+   "example": {
+    "q": "Share ₹ 500 between Anil and Sunita in the ratio 2 : 3.",
+    "steps": [
+     "Total parts = 2 + 3 = 5.",
+     "One part = 500 ÷ 5 = ₹ 100.",
+     "Anil gets 2 × 100 = ₹ 200 and Sunita gets 3 × 100 = ₹ 300."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "A basket has 4 apples and 6 oranges. What is the ratio of apples to oranges in simplest form?",
+    "why": "4 : 6 divided by the common factor 2 gives 2 : 3.",
+    "o": [
+     {
+      "t": "3 : 2",
+      "m": "wrote the ratio in the wrong order"
+     },
+     {
+      "t": "2 : 3",
+      "ok": 1
+     },
+     {
+      "t": "4 : 6",
+      "m": "did not divide both terms by their common factor",
+      "g": "m6_frac"
+     },
+     {
+      "t": "2 : 5",
+      "m": "compared apples to the total number of fruits (4 : 10)"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which pair of ratios forms a proportion?",
+    "why": "3 : 5 and 9 : 15 are equal, because both terms are multiplied by 3.",
+    "o": [
+     {
+      "t": "3 : 5 and 6 : 8",
+      "m": "added 3 to both terms instead of multiplying"
+     },
+     {
+      "t": "3 : 5 and 9 : 15",
+      "ok": 1
+     },
+     {
+      "t": "3 : 5 and 9 : 14",
+      "m": "multiplied the first term by 3 but not the second by the same number"
+     },
+     {
+      "t": "3 : 5 and 5 : 3",
+      "m": "used the reverse ratio, which is a different ratio"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Anil and Sunita share ₹ 500 in the ratio 2 : 3. How much does Sunita get?",
+    "why": "Total parts = 5, one part = ₹ 100, so Sunita gets 3 × 100 = ₹ 300.",
+    "o": [
+     {
+      "t": "₹ 200",
+      "m": "gave Anil's share instead of Sunita's"
+     },
+     {
+      "t": "₹ 250",
+      "m": "shared the money equally and ignored the ratio"
+     },
+     {
+      "t": "₹ 1,500",
+      "m": "multiplied 500 by 3 instead of splitting it into 5 parts"
+     },
+     {
+      "t": "₹ 300",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "5 pens cost ₹ 40. What is the cost of 8 pens at the same rate?",
+    "why": "One pen costs 40 ÷ 5 = ₹ 8, so 8 pens cost 8 × 8 = ₹ 64.",
+    "o": [
+     {
+      "t": "₹ 64",
+      "ok": 1
+     },
+     {
+      "t": "₹ 45",
+      "m": "added 3 to the cost because there are 3 more pens"
+     },
+     {
+      "t": "₹ 320",
+      "m": "multiplied the total cost 40 by 8"
+     },
+     {
+      "t": "₹ 8",
+      "m": "stopped after finding the cost of one pen"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "In a class of 40 students, 24 are girls. What is the ratio of boys to girls?",
+    "why": "Boys = 40 − 24 = 16. Ratio 16 : 24 = 2 : 3 after dividing by 8.",
+    "o": [
+     {
+      "t": "3 : 2",
+      "m": "wrote girls to boys instead of boys to girls"
+     },
+     {
+      "t": "3 : 5",
+      "m": "compared girls to the whole class (24 : 40)"
+     },
+     {
+      "t": "2 : 3",
+      "ok": 1
+     },
+     {
+      "t": "2 : 5",
+      "m": "compared boys to the whole class (16 : 40)"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Rice and dal are mixed in the ratio 3 : 2 to make 20 kg of mixture. How much dal is in it?",
+    "why": "Total parts = 5, one part = 20 ÷ 5 = 4 kg, so dal = 2 × 4 = 8 kg.",
+    "o": [
+     {
+      "t": "12 kg",
+      "m": "gave the weight of rice instead of dal"
+     },
+     {
+      "t": "10 kg",
+      "m": "split the mixture equally and ignored the ratio"
+     },
+     {
+      "t": "8 kg",
+      "ok": 1
+     },
+     {
+      "t": "4 kg",
+      "m": "found the value of one part and stopped"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "On a map, 1 cm stands for 5 km. Two towns are 7.5 cm apart on the map. What is the actual distance?",
+    "why": "Distance = 7.5 × 5 = 37.5 km.",
+    "o": [
+     {
+      "t": "37.5 km",
+      "ok": 1
+     },
+     {
+      "t": "1.5 km",
+      "m": "divided 7.5 by 5 instead of multiplying"
+     },
+     {
+      "t": "12.5 km",
+      "m": "added 5 and 7.5 instead of multiplying"
+     },
+     {
+      "t": "35 km",
+      "m": "ignored the 0.5 in 7.5 and multiplied only 7 by 5",
+      "g": "m6_frac"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The ages of a father and his son are in the ratio 7 : 2. The son is 8 years old. How old is the father?",
+    "why": "One part = 8 ÷ 2 = 4 years, so the father is 7 × 4 = 28 years old.",
+    "o": [
+     {
+      "t": "13 years",
+      "m": "added the difference of the ratio terms (7 − 2 = 5) to the son's age"
+     },
+     {
+      "t": "56 years",
+      "m": "multiplied the father's ratio term 7 by the son's age 8"
+     },
+     {
+      "t": "4 years",
+      "m": "found the value of one part and stopped"
+     },
+     {
+      "t": "28 years",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Divide ₹ 1,200 between Ravi and Sita in the ratio 3 : 5. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Divide 1,200 by 3 and by 5 separately",
+       "m": "treated each ratio term as a separate divisor of the whole amount"
+      },
+      {
+       "t": "Add the ratio terms to get the total number of parts: 3 + 5 = 8",
+       "ok": 1
+      },
+      {
+       "t": "Multiply 3 × 5 to get the number of parts",
+       "m": "multiplied the ratio terms instead of adding them"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "Which working is correct?",
+     "o": [
+      {
+       "t": "1,200 ÷ 3 = 400 and 1,200 ÷ 5 = 240",
+       "m": "divided the total by each term instead of by the sum of the terms"
+      },
+      {
+       "t": "1,200 ÷ 8 = 150 per part; Ravi = 5 × 150, Sita = 3 × 150",
+       "m": "swapped the ratio terms between the two people"
+      },
+      {
+       "t": "1,200 ÷ 8 = 150 per part; Ravi = 3 × 150, Sita = 5 × 150",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "How much does each person get?",
+     "o": [
+      {
+       "t": "Ravi ₹ 450 and Sita ₹ 750",
+       "ok": 1
+      },
+      {
+       "t": "Ravi ₹ 750 and Sita ₹ 450",
+       "m": "gave the larger share to the person with the smaller ratio term"
+      },
+      {
+       "t": "Ravi ₹ 400 and Sita ₹ 800",
+       "m": "took 1,200 ÷ 3 as Ravi's share and gave the rest to Sita"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "నిష్పత్తి మరియు అనుపాతం",
+   "hi": "अनुपात और समानुपात"
+  }
+ },
+ "m6_alg": {
+  "lesson": {
+   "title": "Letters that stand for numbers",
+   "points": [
+    "A variable is a letter, like x or n, that stands for a number that can change. 3n means 3 × n.",
+    "Patterns follow a rule. If a pattern goes 5, 8, 11, 14, it adds 3 each time, and its rule is 3n + 2.",
+    "Like terms can be added: 2a + 3a = 5a. The letter stays the same.",
+    "To solve an equation, do the opposite operation on both sides to keep it balanced."
+   ],
+   "story": "At a kirana shop one packet of biscuits costs ₹ 10. For n packets you pay 10n rupees. If you pay ₹ 50, then 10n = 50 and n = 5 packets.",
+   "example": {
+    "q": "Solve x + 7 = 15.",
+    "steps": [
+     "x + 7 = 15 means a number plus 7 gives 15.",
+     "Subtract 7 from both sides: x + 7 − 7 = 15 − 7.",
+     "So x = 8. Check: 8 + 7 = 15."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which expression means 5 more than x?",
+    "why": "'More than' means add, so 5 more than x is x + 5.",
+    "o": [
+     {
+      "t": "5x",
+      "m": "read 'more than' as multiplication"
+     },
+     {
+      "t": "x + 5",
+      "ok": 1
+     },
+     {
+      "t": "x − 5",
+      "m": "subtracted instead of adding"
+     },
+     {
+      "t": "x ÷ 5",
+      "m": "divided x by 5 instead of adding 5"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is the value of 3n when n = 4?",
+    "why": "3n means 3 × n, so 3 × 4 = 12.",
+    "o": [
+     {
+      "t": "34",
+      "m": "wrote the 3 and the 4 side by side"
+     },
+     {
+      "t": "7",
+      "m": "added 3 and 4 instead of multiplying"
+     },
+     {
+      "t": "81",
+      "m": "treated 3n as 3 to the power 4"
+     },
+     {
+      "t": "12",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which rule gives the pattern 5, 8, 11, 14, ... where n is the position (n = 1, 2, 3, ...)?",
+    "why": "The pattern adds 3 each time, so start with 3n. For n = 1, 3n = 3 but we need 5, so add 2: 3n + 2. Check n = 2: 8.",
+    "o": [
+     {
+      "t": "3n + 2",
+      "ok": 1
+     },
+     {
+      "t": "3n",
+      "m": "used the common difference alone and did not adjust for the first term"
+     },
+     {
+      "t": "n + 4",
+      "m": "matched the first term only and did not check the later terms"
+     },
+     {
+      "t": "3n + 5",
+      "m": "added the first term 5 instead of the correction needed"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Solve 3x = 21.",
+    "why": "Divide both sides by 3: x = 21 ÷ 3 = 7. Check: 3 × 7 = 21.",
+    "o": [
+     {
+      "t": "x = 63",
+      "m": "multiplied both sides by 3 instead of dividing"
+     },
+     {
+      "t": "x = 18",
+      "m": "subtracted 3 from 21"
+     },
+     {
+      "t": "x = 7",
+      "ok": 1
+     },
+     {
+      "t": "x = 24",
+      "m": "added 3 to 21"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Simplify 2a + 3a.",
+    "why": "Both terms have the letter a, so add the numbers: 2 + 3 = 5, giving 5a.",
+    "o": [
+     {
+      "t": "5a²",
+      "m": "multiplied the letters as well as adding the numbers"
+     },
+     {
+      "t": "6a",
+      "m": "multiplied 2 and 3 instead of adding"
+     },
+     {
+      "t": "5a",
+      "ok": 1
+     },
+     {
+      "t": "23a",
+      "m": "put the numbers 2 and 3 side by side"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Squares are made in a row with matchsticks. 1 square uses 4 sticks, 2 squares use 7 sticks and 3 squares use 10 sticks. How many sticks are needed for 10 squares?",
+    "why": "Each new square adds 3 sticks, so n squares need 3n + 1 sticks. For 10 squares: 3 × 10 + 1 = 31.",
+    "o": [
+     {
+      "t": "31",
+      "ok": 1
+     },
+     {
+      "t": "40",
+      "m": "used 4 sticks for each square and ignored the shared sides"
+     },
+     {
+      "t": "30",
+      "m": "used 3n and forgot the extra stick at the start"
+     },
+     {
+      "t": "34",
+      "m": "added 3 sticks ten times to the first square's 4 sticks"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Ramu is x years old. His father is 4 years more than three times Ramu's age. Which expression gives the father's age?",
+    "why": "Three times Ramu's age is 3x, and 4 more gives 3x + 4.",
+    "o": [
+     {
+      "t": "4x + 3",
+      "m": "swapped the roles of 3 and 4"
+     },
+     {
+      "t": "3(x + 4)",
+      "m": "added 4 to Ramu's age before multiplying by 3"
+     },
+     {
+      "t": "7x",
+      "m": "added the numbers 3 and 4 and attached them to x"
+     },
+     {
+      "t": "3x + 4",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A taxi charges ₹ 20 as base fare plus ₹ 10 for each km. The total fare is ₹ 90. How many km was the trip?",
+    "why": "Take away the base fare: 90 − 20 = 70. Then 70 ÷ 10 = 7 km. Check: 20 + 10 × 7 = 90.",
+    "o": [
+     {
+      "t": "9 km",
+      "m": "divided the whole fare by 10 and ignored the base fare"
+     },
+     {
+      "t": "7 km",
+      "ok": 1
+     },
+     {
+      "t": "11 km",
+      "m": "added the base fare to the total before dividing"
+     },
+     {
+      "t": "70 km",
+      "m": "subtracted the base fare but did not divide by the rate per km"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Solve 4x − 5 = 19. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What should you do first?",
+     "o": [
+      {
+       "t": "Subtract 5 from both sides",
+       "m": "used the same operation as the sign instead of the opposite one"
+      },
+      {
+       "t": "Add 4 to both sides",
+       "m": "tried to remove the 4 by adding, but it is multiplying x"
+      },
+      {
+       "t": "Add 5 to both sides to remove the −5",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "Which line is correct after the first step?",
+     "o": [
+      {
+       "t": "4x = 24",
+       "ok": 1
+      },
+      {
+       "t": "4x = 14",
+       "m": "subtracted 5 from 19 instead of adding"
+      },
+      {
+       "t": "x = 24",
+       "m": "added 5 to 19 but forgot that 4 is multiplying x"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is x?",
+     "o": [
+      {
+       "t": "x = 20",
+       "m": "subtracted 4 from 24 instead of dividing"
+      },
+      {
+       "t": "x = 6",
+       "ok": 1
+      },
+      {
+       "t": "x = 3.5",
+       "m": "used 4x = 14, which came from subtracting 5 instead of adding"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "నమూనాలు మరియు ప్రాథమిక బీజగణితం",
+   "hi": "प्रतिरूप और आधारभूत बीजगणित"
+  }
+ },
+ "m6_geo": {
+  "lesson": {
+   "title": "Lines, angles and shapes",
+   "points": [
+    "A right angle is 90°, a straight angle is 180° and a full turn is 360°.",
+    "Two angles are complementary if they add up to 90° and supplementary if they add up to 180°.",
+    "The three angles of any triangle add up to 180°. A triangle is equilateral (3 equal sides), isosceles (2 equal sides) or scalene (no equal sides).",
+    "A line of symmetry splits a shape into two matching halves, like a fold line."
+   ],
+   "story": "Fold a square piece of paper on a rangoli design: along the middle, along the other middle, or along either diagonal. Each fold makes two matching halves, so a square has 4 lines of symmetry.",
+   "example": {
+    "q": "Two angles of a triangle are 50° and 60°. Find the third angle.",
+    "steps": [
+     "The three angles of a triangle add up to 180°.",
+     "The two known angles add up to 50° + 60° = 110°.",
+     "The third angle = 180° − 110° = 70°."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the measure of a right angle?",
+    "why": "A right angle is one quarter of a full turn: 360° ÷ 4 = 90°.",
+    "o": [
+     {
+      "t": "180°",
+      "m": "confused a right angle with a straight angle"
+     },
+     {
+      "t": "360°",
+      "m": "confused a right angle with a full turn"
+     },
+     {
+      "t": "45°",
+      "m": "took half of a right angle"
+     },
+     {
+      "t": "90°",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "A triangle with all three sides equal is called",
+    "why": "Equilateral means 'equal sides'. All three sides, and all three angles, are equal.",
+    "o": [
+     {
+      "t": "equilateral",
+      "ok": 1
+     },
+     {
+      "t": "isosceles",
+      "m": "confused it with the triangle that has only two equal sides"
+     },
+     {
+      "t": "scalene",
+      "m": "thought scalene means all sides are equal; it actually means no sides are equal"
+     },
+     {
+      "t": "right-angled",
+      "m": "named the triangle by an angle instead of by its sides"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Two angles of a triangle are 50° and 60°. What is the third angle?",
+    "why": "The sum is 180°, so the third angle is 180° − (50° + 60°) = 70°.",
+    "o": [
+     {
+      "t": "110°",
+      "m": "added the two given angles and stopped"
+     },
+     {
+      "t": "130°",
+      "m": "subtracted only one of the angles from 180°"
+     },
+     {
+      "t": "70°",
+      "ok": 1
+     },
+     {
+      "t": "250°",
+      "m": "used 360° instead of 180° for the angle sum"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the complement of 35°?",
+    "why": "Complementary angles add up to 90°, so the complement is 90° − 35° = 55°.",
+    "o": [
+     {
+      "t": "145°",
+      "m": "found the supplement (180° − 35°) instead of the complement"
+     },
+     {
+      "t": "125°",
+      "m": "added 90° to 35°"
+     },
+     {
+      "t": "55°",
+      "ok": 1
+     },
+     {
+      "t": "35°",
+      "m": "assumed complementary angles are always equal"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "How many lines of symmetry does a square have?",
+    "why": "A square has 2 diagonal lines and 2 lines through the midpoints of opposite sides, making 4 in all.",
+    "o": [
+     {
+      "t": "4",
+      "ok": 1
+     },
+     {
+      "t": "2",
+      "m": "counted only the two diagonals"
+     },
+     {
+      "t": "6",
+      "m": "counted the 4 sides and the 2 diagonals as lines of symmetry"
+     },
+     {
+      "t": "8",
+      "m": "counted each line twice, once for each direction"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Two angles of a triangle are 40° and 70°. What kind of triangle is it?",
+    "why": "The third angle is 180° − 110° = 70°. Two angles are equal, so it is isosceles, and all angles are below 90°, so it is acute-angled.",
+    "o": [
+     {
+      "t": "Scalene and acute-angled",
+      "m": "did not find the third angle and thought the triangle has no equal angles because 40° is not 70°"
+     },
+     {
+      "t": "Equilateral",
+      "m": "thought every triangle with acute angles is equilateral"
+     },
+     {
+      "t": "Isosceles and right-angled",
+      "m": "assumed every isosceles triangle has a 90° angle"
+     },
+     {
+      "t": "Isosceles and acute-angled",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Two adjacent angles on a straight line measure x and 2x. What is the larger angle?",
+    "why": "They add up to 180°: x + 2x = 3x = 180°, so x = 60° and the larger angle is 2x = 120°.",
+    "o": [
+     {
+      "t": "60°",
+      "m": "gave the value of x instead of the larger angle 2x"
+     },
+     {
+      "t": "120°",
+      "ok": 1
+     },
+     {
+      "t": "90°",
+      "m": "divided 180° by 2 and ignored that the angles are unequal"
+     },
+     {
+      "t": "240°",
+      "m": "used 360° instead of 180° for angles on a straight line"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "At 4 o'clock, what is the smaller angle between the hour hand and the minute hand of a clock?",
+    "why": "The clock face is 360° with 12 hours, so each hour is 30°. At 4 o'clock the hands are 4 hours apart: 4 × 30° = 120°.",
+    "o": [
+     {
+      "t": "240°",
+      "m": "gave the larger (reflex) angle instead of the smaller angle"
+     },
+     {
+      "t": "120°",
+      "ok": 1
+     },
+     {
+      "t": "90°",
+      "m": "confused 4 o'clock with 3 o'clock"
+     },
+     {
+      "t": "60°",
+      "m": "used 15° per hour instead of 30°"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "In triangle ABC, angle A = 65° and angle B = 45°. Find angle C and say whether the triangle is acute-angled, right-angled or obtuse-angled. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "Which fact should you use?",
+     "o": [
+      {
+       "t": "The three angles of a triangle add up to 180°, so C = 180° − (A + B)",
+       "ok": 1
+      },
+      {
+       "t": "The three angles of a triangle add up to 360°",
+       "m": "confused the triangle angle sum with a full turn"
+      },
+      {
+       "t": "Angle C = A + B",
+       "m": "thought the third angle equals the sum of the other two"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "Which working is correct?",
+     "o": [
+      {
+       "t": "A + B = 110°, so C = 360° − 110° = 250°",
+       "m": "used 360° as the angle sum of a triangle"
+      },
+      {
+       "t": "A + B = 110°, so C = 180° − 110° = 70°",
+       "ok": 1
+      },
+      {
+       "t": "A + B = 110°, so C = 110°",
+       "m": "stopped after adding A and B and called it C"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the final answer?",
+     "o": [
+      {
+       "t": "C = 110°, and the triangle is obtuse-angled",
+       "m": "used A + B as the third angle and found an angle larger than 90°"
+      },
+      {
+       "t": "C = 70°, and the triangle is right-angled",
+       "m": "found C correctly but called the triangle right-angled although no angle is 90°"
+      },
+      {
+       "t": "C = 70°, and the triangle is acute-angled because all three angles are less than 90°",
+       "ok": 1
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "ప్రాథమిక జ్యామితి: రేఖలు, కోణాలు మరియు ఆకారాలు",
+   "hi": "आधारभूत ज्यामिति: रेखाएँ, कोण और आकृतियाँ"
+  }
+ },
+ "m6_mens": {
+  "lesson": {
+   "title": "Around and inside shapes",
+   "points": [
+    "Perimeter is the distance around a shape. For a rectangle it is 2 × (length + breadth) and for a square it is 4 × side.",
+    "Area is the space inside a shape, measured in square units like cm² or m². Rectangle area = length × breadth and square area = side × side.",
+    "Area of a triangle = 1/2 × base × height.",
+    "Use perimeter for fencing or borders and area for tiling or painting."
+   ],
+   "story": "To put a border of lace around a dupatta, you need its perimeter. To know how many square tiles cover a kitchen floor, you need its area.",
+   "example": {
+    "q": "A rectangular field is 40 m long and 25 m wide. Find its perimeter and area.",
+    "steps": [
+     "Perimeter = 2 × (40 + 25) = 2 × 65 = 130 m.",
+     "Area = length × breadth = 40 × 25 = 1,000.",
+     "So the perimeter is 130 m and the area is 1,000 m²."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the perimeter of a square of side 7 cm?",
+    "why": "Perimeter of a square = 4 × side = 4 × 7 = 28 cm.",
+    "o": [
+     {
+      "t": "28 cm",
+      "ok": 1
+     },
+     {
+      "t": "49 cm",
+      "m": "multiplied the side by itself, which gives the area"
+     },
+     {
+      "t": "14 cm",
+      "m": "added only two sides"
+     },
+     {
+      "t": "21 cm",
+      "m": "added only three sides"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is the area of a rectangle 8 m long and 5 m wide?",
+    "why": "Area = length × breadth = 8 × 5 = 40 m².",
+    "o": [
+     {
+      "t": "26 m²",
+      "m": "calculated the perimeter 2 × (8 + 5) instead of the area"
+     },
+     {
+      "t": "13 m²",
+      "m": "added the length and the width"
+     },
+     {
+      "t": "40 m²",
+      "ok": 1
+     },
+     {
+      "t": "80 m²",
+      "m": "doubled the area by using 2 × 8 × 5"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the perimeter of a rectangle 12 cm long and 9 cm wide?",
+    "why": "Perimeter = 2 × (12 + 9) = 2 × 21 = 42 cm.",
+    "o": [
+     {
+      "t": "108 cm",
+      "m": "multiplied length and width, which gives the area"
+     },
+     {
+      "t": "21 cm",
+      "m": "added length and width and forgot to double"
+     },
+     {
+      "t": "42 cm",
+      "ok": 1
+     },
+     {
+      "t": "33 cm",
+      "m": "added only three sides (12 + 12 + 9)"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the area of a square whose perimeter is 36 cm?",
+    "why": "Side = 36 ÷ 4 = 9 cm, so area = 9 × 9 = 81 cm².",
+    "o": [
+     {
+      "t": "81 cm²",
+      "ok": 1
+     },
+     {
+      "t": "9 cm²",
+      "m": "found the side and stopped"
+     },
+     {
+      "t": "324 cm²",
+      "m": "halved the perimeter to get the side (18) and then squared it"
+     },
+     {
+      "t": "1,296 cm²",
+      "m": "squared the perimeter instead of the side"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the area of a triangle with base 10 cm and height 6 cm?",
+    "why": "Area = 1/2 × base × height = 1/2 × 10 × 6 = 30 cm².",
+    "o": [
+     {
+      "t": "60 cm²",
+      "m": "forgot the 1/2 in the triangle formula"
+     },
+     {
+      "t": "16 cm²",
+      "m": "added the base and the height"
+     },
+     {
+      "t": "15 cm²",
+      "m": "halved both the base and the height"
+     },
+     {
+      "t": "30 cm²",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A rectangular park is 40 m long and 25 m wide. Fencing costs ₹ 20 per metre. What is the cost of fencing the whole boundary?",
+    "why": "Perimeter = 2 × (40 + 25) = 130 m. Cost = 130 × 20 = ₹ 2,600.",
+    "o": [
+     {
+      "t": "₹ 20,000",
+      "m": "used the area (1,000 m²) instead of the perimeter"
+     },
+     {
+      "t": "₹ 2,600",
+      "ok": 1
+     },
+     {
+      "t": "₹ 1,300",
+      "m": "used half the perimeter (40 + 25 = 65 m)"
+     },
+     {
+      "t": "₹ 2,100",
+      "m": "fenced only three sides of the park"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A hall 6 m long and 4 m wide is covered with square tiles of side 50 cm. How many tiles are needed?",
+    "why": "Along the length: 600 ÷ 50 = 12 tiles. Along the width: 400 ÷ 50 = 8 tiles. Total = 12 × 8 = 96 tiles.",
+    "o": [
+     {
+      "t": "48",
+      "m": "divided the area 24 m² by the tile side 0.5 m instead of by the tile area"
+     },
+     {
+      "t": "96",
+      "ok": 1
+     },
+     {
+      "t": "960",
+      "m": "took the tile area as 250 cm² (50 × 5) instead of 2,500 cm²"
+     },
+     {
+      "t": "20",
+      "m": "added the number of tiles along the length and the width"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A rectangular plot is 30 m by 20 m. A square flower bed of side 5 m is made inside it. What is the area left for the lawn?",
+    "why": "Plot area = 30 × 20 = 600 m². Flower bed area = 5 × 5 = 25 m². Lawn = 600 − 25 = 575 m².",
+    "o": [
+     {
+      "t": "595 m²",
+      "m": "subtracted the side of the flower bed (5) instead of its area"
+     },
+     {
+      "t": "580 m²",
+      "m": "subtracted the perimeter of the flower bed (20) instead of its area"
+     },
+     {
+      "t": "625 m²",
+      "m": "added the flower bed area instead of subtracting it"
+     },
+     {
+      "t": "575 m²",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "A rectangle has a perimeter of 60 m and a length of 18 m. Find its area. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Multiply 18 by 60 to get the area directly",
+       "m": "used the perimeter as if it were the width"
+      },
+      {
+       "t": "Use the perimeter to find the width: length + width = 60 ÷ 2 = 30 m",
+       "ok": 1
+      },
+      {
+       "t": "Subtract 18 from 60 to get the width",
+       "m": "forgot that the perimeter counts the length and width twice"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "Which working gives the correct width?",
+     "o": [
+      {
+       "t": "Width = 60 − 18 = 42 m",
+       "m": "subtracted the length from the whole perimeter"
+      },
+      {
+       "t": "Width = 60 − 36 = 24 m",
+       "m": "found 2 × width and did not halve it"
+      },
+      {
+       "t": "Width = 30 − 18 = 12 m",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the area?",
+     "o": [
+      {
+       "t": "18 × 12 = 216 m²",
+       "ok": 1
+      },
+      {
+       "t": "18 × 24 = 432 m²",
+       "m": "used 24 m as the width"
+      },
+      {
+       "t": "18 × 42 = 756 m²",
+       "m": "used 42 m as the width"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "చుట్టుకొలత మరియు వైశాల్యం",
+   "hi": "परिमाप और क्षेत्रफल"
+  }
+ }
+}

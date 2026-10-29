@@ -1,0 +1,1498 @@
+{
+ "s7_nutr": {
+  "lesson": {
+   "title": "How living things get food",
+   "points": [
+    "Green plants make their own food by photosynthesis, so they are called autotrophs.",
+    "In photosynthesis, chlorophyll in the leaf uses sunlight, carbon dioxide and water to make carbohydrate (food) and releases oxygen.",
+    "Animals cannot make food, so they depend on plants or other animals. Some plants are parasites, saprotrophs or live in symbiosis.",
+    "In humans, food moves from mouth to food pipe, stomach, small intestine and large intestine. Digestion is completed and food is absorbed in the small intestine."
+   ],
+   "story": "A leaf is a small kitchen. Sunlight is the gas stove, water and carbon dioxide are the ingredients, and chlorophyll is the cook who prepares food for the whole plant.",
+   "example": {
+    "q": "Name the raw materials and the products of photosynthesis.",
+    "steps": [
+     "Raw materials: carbon dioxide (entering through stomata on the leaf) and water (taken in by the roots).",
+     "Energy: sunlight, which is trapped by chlorophyll in the green leaf.",
+     "Products: food in the form of carbohydrate (stored as starch) and oxygen, which goes out into the air."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which green pigment in leaves traps sunlight for photosynthesis?",
+    "why": "Chlorophyll is the green pigment in leaves that traps the energy of sunlight.",
+    "o": [
+     {
+      "t": "Haemoglobin",
+      "m": "Confused it with the red pigment found in blood."
+     },
+     {
+      "t": "Chlorophyll",
+      "ok": 1
+     },
+     {
+      "t": "Stomata",
+      "m": "Mixed up a pigment with the tiny pores on a leaf.",
+      "g": "s6_plant"
+     },
+     {
+      "t": "Cellulose",
+      "m": "Thought the material of plant cell walls was the pigment."
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "In humans, digestion is completed and digested food is absorbed in the:",
+    "why": "Digestion is completed in the small intestine, and its inner walls (villi) absorb the digested food into the blood.",
+    "o": [
+     {
+      "t": "Stomach",
+      "m": "Thought the stomach, which churns food, also absorbs it."
+     },
+     {
+      "t": "Large intestine",
+      "m": "Mixed up absorption of food with absorption of water in the large intestine."
+     },
+     {
+      "t": "Food pipe (oesophagus)",
+      "m": "Thought the food pipe digests food while passing it down."
+     },
+     {
+      "t": "Small intestine",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Amarbel (Cuscuta) is a yellow, leafless climber that takes ready-made food from the plant it grows on. It is a:",
+    "why": "Cuscuta lacks chlorophyll and feeds on its host plant, so it is a parasite.",
+    "o": [
+     {
+      "t": "Parasite",
+      "ok": 1
+     },
+     {
+      "t": "Saprotroph",
+      "m": "Thought it feeds on dead and decaying matter like fungi do."
+     },
+     {
+      "t": "Autotroph",
+      "m": "Thought every plant makes its own food.",
+      "g": "s6_plant"
+     },
+     {
+      "t": "Insectivorous plant",
+      "m": "Mixed it up with the pitcher plant, which traps insects."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Meena chews a piece of plain chapati for a few minutes and it begins to taste sweet. Why?",
+    "why": "Saliva in the mouth turns starch of the chapati into sugar, which tastes sweet.",
+    "o": [
+     {
+      "t": "The teeth change the starch into sugar by grinding it",
+      "m": "Thought chewing alone (mechanical action) changes starch into sugar.",
+      "g": "s6_food"
+     },
+     {
+      "t": "Chapati contains sugar that was added while cooking",
+      "m": "Assumed sugar was already present and ignored what saliva does.",
+      "g": "s6_food"
+     },
+     {
+      "t": "Saliva changes the starch in chapati into sugar",
+      "ok": 1
+     },
+     {
+      "t": "Saliva changes the proteins in chapati into starch",
+      "m": "Reversed the change and mixed up which nutrient saliva acts on."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Through which tiny pores on a leaf does carbon dioxide enter for photosynthesis?",
+    "why": "Stomata are tiny pores on the leaf surface through which carbon dioxide enters and oxygen leaves.",
+    "o": [
+     {
+      "t": "Root hairs",
+      "m": "Thought roots take in all raw materials, including gases.",
+      "g": "s6_plant"
+     },
+     {
+      "t": "Veins",
+      "m": "Thought the veins, which carry water, are the openings for air.",
+      "g": "s6_plant"
+     },
+     {
+      "t": "Petals",
+      "m": "Thought the flower takes in the gas for making food.",
+      "g": "s6_plant"
+     },
+     {
+      "t": "Stomata",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Rhizobium bacteria live in the root nodules of pea plants and give them nitrogen. The plant gives the bacteria food and shelter. This relationship is called:",
+    "why": "When two organisms live together and both benefit, it is called symbiosis.",
+    "o": [
+     {
+      "t": "Parasitism",
+      "m": "Thought living inside a plant always harms the plant."
+     },
+     {
+      "t": "Symbiosis",
+      "ok": 1
+     },
+     {
+      "t": "Saprotrophic nutrition",
+      "m": "Thought bacteria always feed on dead and rotting matter."
+     },
+     {
+      "t": "Holozoic nutrition",
+      "m": "Thought any organism that takes in food is holozoic, ignoring that this is animal-type feeding."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A leaf from a plant kept in a dark cupboard for several days is boiled and tested with iodine solution. What is seen and why?",
+    "why": "Without sunlight there is no photosynthesis, so no starch is made, and iodine does not turn blue-black.",
+    "o": [
+     {
+      "t": "Blue-black, because chlorophyll can make starch even without light",
+      "m": "Thought chlorophyll makes food without sunlight.",
+      "g": "s6_plant"
+     },
+     {
+      "t": "Blue-black, because iodine itself turns sugar into starch",
+      "m": "Thought iodine produces starch instead of only detecting it.",
+      "g": "s6_food"
+     },
+     {
+      "t": "No blue-black colour, because without light no photosynthesis and no starch",
+      "ok": 1
+     },
+     {
+      "t": "No blue-black colour, because starch is made only at night",
+      "m": "Mixed up day and night, thinking photosynthesis happens in the dark."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A cow swallows grass quickly and later brings it back to the mouth to chew. Why?",
+    "why": "Ruminants like cows store swallowed grass in the rumen, where it is partly digested; they then chew this cud again so that cellulose-rich grass is digested well.",
+    "o": [
+     {
+      "t": "The partly digested food (cud) is chewed again so the cellulose-rich grass can be digested",
+      "ok": 1
+     },
+     {
+      "t": "The first chewing leaves waste, which the cow chews and passes out as cud",
+      "m": "Thought cud is waste material."
+     },
+     {
+      "t": "The cow makes milk from the cud, so it has to chew it again",
+      "m": "Thought chewing cud is how milk is made."
+     },
+     {
+      "t": "Grass is not swallowed at all; the cow only tastes it before spitting it out",
+      "m": "Ignored that the cow swallows grass and stores it in the rumen."
+     }
+    ]
+   }
+  ],
+  "steps": null,
+  "tags": {
+   "te": "మొక్కలు మరియు జంతువులలో పోషణ",
+   "hi": "पौधों और जंतुओं में पोषण"
+  }
+ },
+ "s7_heat": {
+  "lesson": {
+   "title": "Hot, cold and how heat travels",
+   "points": [
+    "Temperature tells us how hot or cold a thing is. It is measured with a thermometer in degrees Celsius (°C).",
+    "A clinical thermometer measures body temperature and reads from 35°C to 42°C. Normal human body temperature is about 37°C. A laboratory thermometer reads from −10°C to 110°C.",
+    "Heat flows from a hotter to a colder place. In solids it moves by conduction, in liquids and gases by convection, and the Sun's heat reaches us by radiation, which needs no medium.",
+    "Dark colours absorb more heat and light colours reflect more heat. Wool is a poor conductor and traps air, so it keeps us warm."
+   ],
+   "story": "A steel spoon left in hot sabzi soon becomes too hot to hold, but the wooden handle of the ladle stays comfortable. Heat travels easily along metal but not along wood.",
+   "example": {
+    "q": "Why do we wear light-coloured cotton clothes in a hot summer but dark woollen clothes in winter?",
+    "steps": [
+     "In summer the Sun's heat is strong. Light colours reflect most of it, so we feel cooler.",
+     "In winter dark colours absorb more heat and help us feel warmer.",
+     "Wool is a poor conductor of heat and traps air in it, so body heat does not escape easily."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "The normal temperature of a healthy human body is about:",
+    "why": "The normal body temperature is about 37°C, which lies in the 35°C to 42°C range of a clinical thermometer.",
+    "o": [
+     {
+      "t": "35°C",
+      "m": "Took the lowest mark of the clinical thermometer as the normal value."
+     },
+     {
+      "t": "42°C",
+      "m": "Took the highest mark of the clinical thermometer as the normal value."
+     },
+     {
+      "t": "98.6°C",
+      "m": "Used the Fahrenheit value of 98.6 but wrote it as degrees Celsius."
+     },
+     {
+      "t": "37°C",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "A clinical thermometer is used to measure the human body temperature. Its scale ranges from:",
+    "why": "A clinical thermometer reads from 35°C to 42°C, because human body temperature lies within this range.",
+    "o": [
+     {
+      "t": "35°C to 42°C",
+      "ok": 1
+     },
+     {
+      "t": "−10°C to 110°C",
+      "m": "Gave the range of a laboratory thermometer."
+     },
+     {
+      "t": "0°C to 100°C",
+      "m": "Thought it covers the freezing and boiling points of water."
+     },
+     {
+      "t": "20°C to 60°C",
+      "m": "Guessed a range without linking it to body temperature."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A steel spoon kept in a pan of hot dal becomes hot at the other end too. Heat reaches the handle mainly by:",
+    "why": "In solids, especially metals, heat travels from the hot part to the cooler part by conduction.",
+    "o": [
+     {
+      "t": "Convection",
+      "m": "Thought particles of the metal move along the spoon, as in liquids."
+     },
+     {
+      "t": "Radiation",
+      "m": "Thought the spoon gets heat only as waves without touching the dal."
+     },
+     {
+      "t": "Conduction",
+      "ok": 1
+     },
+     {
+      "t": "Evaporation",
+      "m": "Mixed up heat transfer with a change of state of the dal.",
+      "g": "s6_mat"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Why is it better to wear light-coloured clothes in summer?",
+    "why": "Light colours reflect more heat than dark colours, so less heat reaches the body.",
+    "o": [
+     {
+      "t": "Light colours absorb more heat and take it away from the body",
+      "m": "Thought absorbing heat makes a surface cooler."
+     },
+     {
+      "t": "Light-coloured clothes are always made of thicker cloth",
+      "m": "Linked colour with thickness of cloth instead of with heat reflection."
+     },
+     {
+      "t": "Light colours produce cold that cools the body",
+      "m": "Thought colours can produce coldness by themselves."
+     },
+     {
+      "t": "Light colours reflect most of the heat falling on them",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "The heat of the Sun reaches the Earth through the empty space by:",
+    "why": "Space has no air or matter, so heat comes to Earth by radiation, which needs no medium.",
+    "o": [
+     {
+      "t": "Conduction",
+      "m": "Thought heat always travels by touching particles, forgetting there is no matter in space."
+     },
+     {
+      "t": "Radiation",
+      "ok": 1
+     },
+     {
+      "t": "Convection",
+      "m": "Thought hot air currents carry heat all the way from the Sun."
+     },
+     {
+      "t": "Reflection",
+      "m": "Mixed up reflection of light with the way heat travels."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "On a hot afternoon, a cool breeze blows from the sea towards the land. Why?",
+    "why": "Land heats up faster than water. Air above the land becomes hot and rises, and cooler air from the sea moves in to take its place.",
+    "o": [
+     {
+      "t": "Air above the sea gets hotter than the land and rises, pulling air from the land",
+      "m": "Reversed the roles of land and water in heating."
+     },
+     {
+      "t": "The sea sends out cold radiation which pushes the air towards the land",
+      "m": "Thought the sea gives out cold as if it were a heat source."
+     },
+     {
+      "t": "Warm air over the land rises, and cooler air from the sea rushes in",
+      "ok": 1
+     },
+     {
+      "t": "Water vapour is lighter than the land, so it pushes the air inland",
+      "m": "Confused moisture in the air with the cause of air movement."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Water in a pan is heated only from the bottom, yet the whole water becomes hot. This mainly happens because:",
+    "why": "Heated water at the bottom becomes lighter and rises while cooler water from the top sinks, setting up convection currents.",
+    "o": [
+     {
+      "t": "Hot water rises and cooler water sinks, forming convection currents",
+      "ok": 1
+     },
+     {
+      "t": "Water is a good conductor, so heat passes quickly through each layer",
+      "m": "Thought water conducts heat well; liquids are poor conductors."
+     },
+     {
+      "t": "Heat from the stove reaches the top of the water by radiation alone",
+      "m": "Ignored the movement of water and gave radiation as the only reason."
+     },
+     {
+      "t": "The pan lid pushes the heat back down into the water",
+      "m": "Thought the lid is the reason for heating the whole water."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Rani feels warm in a woollen sweater on a cold morning in Shimla. The best reason is that:",
+    "why": "Wool is a poor conductor of heat and traps air between its fibres, so body heat does not easily escape.",
+    "o": [
+     {
+      "t": "Wool produces heat of its own and passes it to the body",
+      "m": "Thought wool is a source of heat."
+     },
+     {
+      "t": "Wool traps air and is a poor conductor, so body heat stays in",
+      "ok": 1
+     },
+     {
+      "t": "Wool is a good conductor and brings outside warmth to the body",
+      "m": "Mixed up good and poor conductors.",
+      "g": "s6_mat"
+     },
+     {
+      "t": "Wool absorbs the cold from outside and stores it away",
+      "m": "Thought cold is a substance that clothes can soak up."
+     }
+    ]
+   }
+  ],
+  "steps": null,
+  "tags": {
+   "te": "ఉష్ణం మరియు ఉష్ణోగ్రత",
+   "hi": "ऊष्मा और तापमान"
+  }
+ },
+ "s7_acid": {
+  "lesson": {
+   "title": "Acids, bases and salts",
+   "points": [
+    "Acids taste sour, like lemon, tamarind and curd. Bases taste bitter and feel soapy, like baking soda and soap solution. We must never taste unknown substances.",
+    "Indicators show if a substance is acidic or basic. Acids turn blue litmus red and bases turn red litmus blue. Turmeric turns red with bases. China rose turns magenta with acids and green with bases.",
+    "A neutral substance, like pure water, does not change the colour of litmus.",
+    "When an acid and a base react, they cancel each other's effect. This is neutralisation, and it forms salt and water and gives out heat."
+   ],
+   "story": "When a red ant bites, it leaves formic acid on your skin and it burns. Dadi puts a paste of baking soda on it. The mild base cancels the acid and the burning goes away.",
+   "example": {
+    "q": "Why is slaked lime spread on a farmer's field when the soil is too acidic?",
+    "steps": [
+     "Excess acid in the soil is harmful for the growth of many plants.",
+     "Slaked lime (calcium hydroxide) is a base, so it reacts with the acid in the soil.",
+     "This is neutralisation. The acid is cancelled and the soil becomes suitable for crops again."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "A solution turns blue litmus paper red. The solution is:",
+    "why": "Acids turn blue litmus red, so the solution is acidic.",
+    "o": [
+     {
+      "t": "Acidic",
+      "ok": 1
+     },
+     {
+      "t": "Basic",
+      "m": "Mixed up the colour changes of acids and bases on litmus."
+     },
+     {
+      "t": "Neutral",
+      "m": "Thought any colour change on litmus means the solution is neutral."
+     },
+     {
+      "t": "Distilled water",
+      "m": "Thought a colour change shows pure water, which does not change litmus."
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which acid is present in curd?",
+    "why": "Curd contains lactic acid, which gives it a sour taste.",
+    "o": [
+     {
+      "t": "Citric acid",
+      "m": "Mixed up with the acid in lemon and orange."
+     },
+     {
+      "t": "Acetic acid",
+      "m": "Mixed up with the acid in vinegar."
+     },
+     {
+      "t": "Lactic acid",
+      "ok": 1
+     },
+     {
+      "t": "Tartaric acid",
+      "m": "Mixed up with the acid in tamarind."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A yellow turmeric paper dipped in soap solution turns red. This shows that soap solution is:",
+    "why": "Turmeric turns red only with bases, so soap solution is basic.",
+    "o": [
+     {
+      "t": "Acidic",
+      "m": "Thought turmeric turns red with acids, as red litmus does."
+     },
+     {
+      "t": "Neutral",
+      "m": "Thought a colour change on turmeric means a neutral solution."
+     },
+     {
+      "t": "An acid and a base at the same time",
+      "m": "Thought one colour change can show both acid and base."
+     },
+     {
+      "t": "Basic",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A red ant bite leaves formic acid on the skin. What gives the most relief?",
+    "why": "Formic acid is neutralised by a mild base such as baking soda.",
+    "o": [
+     {
+      "t": "Vinegar",
+      "m": "Thought another acid would remove the acid."
+     },
+     {
+      "t": "Moist baking soda paste",
+      "ok": 1
+     },
+     {
+      "t": "Lemon juice",
+      "m": "Thought a sour liquid would remove the acid."
+     },
+     {
+      "t": "Sugar solution",
+      "m": "Thought a neutral sweet liquid neutralises the acid."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "When hydrochloric acid reacts with sodium hydroxide, the products are:",
+    "why": "An acid and a base react to form salt and water. Here the salt is common salt.",
+    "o": [
+     {
+      "t": "Sodium and chlorine gas",
+      "m": "Thought the acid and base only break into their elements."
+     },
+     {
+      "t": "A stronger acid and a stronger base",
+      "m": "Thought mixing makes the two substances stronger instead of cancelling."
+     },
+     {
+      "t": "Common salt and water",
+      "ok": 1
+     },
+     {
+      "t": "Only water",
+      "m": "Forgot that a salt is formed along with water."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A farmer finds that his field soil is too acidic. Which substance should he add to treat it?",
+    "why": "Acidic soil is neutralised by adding a base such as slaked lime or quicklime.",
+    "o": [
+     {
+      "t": "Slaked lime",
+      "ok": 1
+     },
+     {
+      "t": "Lemon juice",
+      "m": "Thought a sour liquid would improve the soil."
+     },
+     {
+      "t": "Common salt",
+      "m": "Thought salt neutralises acids because it is called a salt."
+     },
+     {
+      "t": "Vinegar",
+      "m": "Thought adding more acid would balance the soil."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Why does a person with acidity (indigestion) take a tablet or syrup of milk of magnesia?",
+    "why": "Excess acid in the stomach causes indigestion. Milk of magnesia is a base that neutralises the excess acid.",
+    "o": [
+     {
+      "t": "It is an acid that helps digest more food",
+      "m": "Thought adding acid helps cure too much acid."
+     },
+     {
+      "t": "It is a base and neutralises the excess acid in the stomach",
+      "ok": 1
+     },
+     {
+      "t": "It is a salt that dissolves the food in the stomach",
+      "m": "Mixed up the role of a salt with that of an antacid."
+     },
+     {
+      "t": "It cools the stomach by absorbing the heat",
+      "m": "Thought acidity is only an excess of heat."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A drop of China rose solution turns green in liquid P and stays magenta (dark pink) in liquid Q. What can be concluded?",
+    "why": "China rose turns green with a base and magenta with an acid, so P is basic and Q is acidic.",
+    "o": [
+     {
+      "t": "P is acidic and Q is basic",
+      "m": "Reversed the colours of China rose with acids and bases."
+     },
+     {
+      "t": "P is neutral and Q is acidic",
+      "m": "Thought green means a neutral substance."
+     },
+     {
+      "t": "Both P and Q are basic",
+      "m": "Thought any colour change in China rose means a base."
+     },
+     {
+      "t": "P is basic and Q is acidic",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": null,
+  "tags": {
+   "te": "ఆమ్లాలు, క్షారాలు మరియు లవణాలు",
+   "hi": "अम्ल, क्षारक और लवण"
+  }
+ },
+ "s7_chem": {
+  "lesson": {
+   "title": "Physical and chemical changes",
+   "points": [
+    "In a physical change, only properties like shape, size, colour or state change. No new substance forms, and it is often easy to reverse. Melting ice and dissolving sugar are examples.",
+    "In a chemical change, one or more new substances form with new properties. It is usually difficult to reverse. Burning, cooking, rusting and curdling of milk are examples.",
+    "Rusting needs both oxygen (air) and water. We prevent it by painting, greasing or coating iron with zinc (galvanisation).",
+    "Chemical changes can give out heat, light, gas, a new smell or a change of colour."
+   ],
+   "story": "An ice gola melts in your hand and you can freeze it again: that is physical. But a roti cooked on a tawa can never become dough again: that is chemical.",
+   "example": {
+    "q": "Is rusting of an iron gate a physical or a chemical change? Give reasons.",
+    "steps": [
+     "Iron reacts with oxygen and water in the air.",
+     "A new reddish-brown substance, rust (iron oxide), forms. It is not iron and has different properties.",
+     "We cannot get the iron back by simply reversing the change, so rusting is a chemical change."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which of these is a chemical change?",
+    "why": "Rusting forms a new substance, rust, so it is a chemical change.",
+    "o": [
+     {
+      "t": "Melting of ice",
+      "m": "Thought a change of state forms a new substance.",
+      "g": "s6_mat"
+     },
+     {
+      "t": "Tearing of a paper",
+      "m": "Thought a change in shape and size makes a new substance."
+     },
+     {
+      "t": "Rusting of an iron gate",
+      "ok": 1
+     },
+     {
+      "t": "Dissolving sugar in water",
+      "m": "Thought that since sugar vanishes, a new substance must have formed.",
+      "g": "s6_sep"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which two things are needed for iron to rust?",
+    "why": "Rusting needs both oxygen (from air) and water (moisture).",
+    "o": [
+     {
+      "t": "Only oxygen",
+      "m": "Thought dry air alone can rust iron."
+     },
+     {
+      "t": "Only water",
+      "m": "Thought water alone is enough, ignoring the air."
+     },
+     {
+      "t": "Carbon dioxide and sunlight",
+      "m": "Mixed up rusting with the needs of photosynthesis."
+     },
+     {
+      "t": "Oxygen and water",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Milk kept overnight in a warm kitchen becomes curd. Why is this a chemical change?",
+    "why": "Curd is a new substance with a new taste, and milk cannot be got back from it.",
+    "o": [
+     {
+      "t": "The liquid milk became a semi-solid",
+      "m": "Thought a change in state alone makes a change chemical."
+     },
+     {
+      "t": "A new substance with new properties forms and milk cannot be got back",
+      "ok": 1
+     },
+     {
+      "t": "It took a long time to happen",
+      "m": "Thought slow changes are chemical and fast ones are physical."
+     },
+     {
+      "t": "The milk became cooler overnight",
+      "m": "Thought a change in temperature alone makes a change chemical."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Salt is dissolved in water and the water is then evaporated, leaving white salt behind. Dissolving salt in water is a:",
+    "why": "The salt can be recovered unchanged by evaporation, so no new substance formed. It is a physical change.",
+    "o": [
+     {
+      "t": "Chemical change, as the salt vanished and was destroyed",
+      "m": "Thought that disappearing in water means the salt was destroyed.",
+      "g": "s6_sep"
+     },
+     {
+      "t": "Chemical change, as evaporation forms a new substance",
+      "m": "Thought evaporation forms a new substance, not just a change of state.",
+      "g": "s6_sep"
+     },
+     {
+      "t": "Physical change, as no new substance forms and salt is recovered",
+      "ok": 1
+     },
+     {
+      "t": "Chemical change, as heat was needed to get the salt back",
+      "m": "Thought any change that needs heat is chemical."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "The gas produced when vinegar is poured on baking soda is passed through lime water. What is observed?",
+    "why": "The gas is carbon dioxide, which turns lime water milky.",
+    "o": [
+     {
+      "t": "The lime water turns milky",
+      "ok": 1
+     },
+     {
+      "t": "The lime water turns blue",
+      "m": "Expected a colour change as with a litmus test."
+     },
+     {
+      "t": "The lime water remains clear because the gas is hydrogen",
+      "m": "Thought the gas is hydrogen and has no effect on lime water."
+     },
+     {
+      "t": "The lime water starts boiling",
+      "m": "Thought a chemical change always gives out so much heat."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A clean iron nail is kept in blue copper sulphate solution for an hour. What is seen?",
+    "why": "Iron reacts with copper sulphate: a brown coating of copper forms on the nail and the blue solution turns pale green. New substances form, so it is a chemical change.",
+    "o": [
+     {
+      "t": "The nail turns blue and the solution becomes a darker blue",
+      "m": "Thought copper sulphate simply sticks to the nail as a physical change."
+     },
+     {
+      "t": "A brownish coating on the nail and the blue colour fades to pale green",
+      "ok": 1
+     },
+     {
+      "t": "Nothing happens as iron cannot react with a dissolved substance",
+      "m": "Thought solids cannot react with substances dissolved in water.",
+      "g": "s6_mat"
+     },
+     {
+      "t": "The solution turns red as the nail rusts in it",
+      "m": "Mixed up this reaction with rusting."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A fisherman paints the iron body of his boat. How does the paint help?",
+    "why": "Paint keeps iron away from oxygen and water, which are both needed for rusting.",
+    "o": [
+     {
+      "t": "It gives the iron extra oxygen to stay strong",
+      "m": "Thought oxygen protects iron when it actually causes rust."
+     },
+     {
+      "t": "It changes rust back into iron",
+      "m": "Thought paint can reverse a chemical change."
+     },
+     {
+      "t": "It makes the iron hotter so water dries up",
+      "m": "Thought heat from paint dries up the water."
+     },
+     {
+      "t": "It stops air and water from touching the iron",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Which list has only chemical changes?",
+    "why": "Cooking dal, ripening of mango and rusting form new substances. Each of the other lists contains a physical change.",
+    "o": [
+     {
+      "t": "Cooking dal, ripening of mango, rusting of a bucket",
+      "ok": 1
+     },
+     {
+      "t": "Boiling water, cooking dal, burning coal",
+      "m": "Thought boiling water to steam forms a new substance."
+     },
+     {
+      "t": "Freezing water, ripening of mango, rusting of a bucket",
+      "m": "Thought freezing changes the properties so much that it is chemical."
+     },
+     {
+      "t": "Crushing chalk, burning coal, souring of milk",
+      "m": "Thought that crushing chalk forms a new substance."
+     }
+    ]
+   }
+  ],
+  "steps": null,
+  "tags": {
+   "te": "భౌతిక మరియు రసాయన మార్పులు",
+   "hi": "भौतिक एवं रासायनिक परिवर्तन"
+  }
+ },
+ "s7_motion": {
+  "lesson": {
+   "title": "Speed, time and motion",
+   "points": [
+    "Speed is the distance travelled in one unit of time: speed = distance ÷ time. Its units are metre per second (m/s) or kilometre per hour (km/h).",
+    "If an object covers equal distances in equal intervals of time, its motion is uniform. If not, it is non-uniform.",
+    "A pendulum moving to and fro is oscillating. The time for one oscillation is its time period = total time ÷ number of oscillations.",
+    "A speedometer in a vehicle shows speed and an odometer shows the distance covered."
+   ],
+   "story": "Imagine a bus on a highway with kilometre stones. If it crosses 60 stones in 1 hour, it moves at 60 km/h. But in traffic it speeds up and slows down, so its motion is non-uniform.",
+   "example": {
+    "q": "A train covers 240 km in 4 hours. Find its speed.",
+    "steps": [
+     "Write the formula: speed = distance ÷ time.",
+     "Put the values: speed = 240 km ÷ 4 h.",
+     "Speed = 60 km/h."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which of these is a unit of speed?",
+    "why": "Speed is distance per unit time, so m/s and km/h are its units.",
+    "o": [
+     {
+      "t": "Metre (m)",
+      "m": "Gave a unit of distance instead of speed."
+     },
+     {
+      "t": "Second (s)",
+      "m": "Gave a unit of time instead of speed."
+     },
+     {
+      "t": "Kilogram (kg)",
+      "m": "Gave a unit of mass instead of speed."
+     },
+     {
+      "t": "Metre per second (m/s)",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "The speed of a moving object is found by:",
+    "why": "Speed is the distance covered in one unit of time, that is distance ÷ time.",
+    "o": [
+     {
+      "t": "Dividing the time taken by the distance covered",
+      "m": "Turned the formula upside down."
+     },
+     {
+      "t": "Dividing the distance covered by the time taken",
+      "ok": 1
+     },
+     {
+      "t": "Multiplying the distance by the time taken",
+      "m": "Multiplied the two quantities instead of dividing."
+     },
+     {
+      "t": "Subtracting the time taken from the distance",
+      "m": "Subtracted quantities that have different units."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A bus covers 150 km in 3 hours. Its speed is:",
+    "why": "Speed = 150 km ÷ 3 h = 50 km/h.",
+    "o": [
+     {
+      "t": "450 km/h",
+      "m": "Multiplied distance by time instead of dividing."
+     },
+     {
+      "t": "0.02 km/h",
+      "m": "Divided time by distance instead of distance by time."
+     },
+     {
+      "t": "50 km/h",
+      "ok": 1
+     },
+     {
+      "t": "147 km/h",
+      "m": "Subtracted time from distance."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A pendulum completes 20 oscillations in 40 seconds. Its time period is:",
+    "why": "Time period = 40 s ÷ 20 = 2 s.",
+    "o": [
+     {
+      "t": "2 s",
+      "ok": 1
+     },
+     {
+      "t": "800 s",
+      "m": "Multiplied 20 by 40 instead of dividing."
+     },
+     {
+      "t": "0.5 s",
+      "m": "Divided the number of oscillations by the time."
+     },
+     {
+      "t": "60 s",
+      "m": "Added the two numbers."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A ball rolls 4 m in the 1st second, 4 m in the 2nd second and 4 m in the 3rd second. Its motion is:",
+    "why": "It covers equal distances in equal intervals of time, so the motion is uniform.",
+    "o": [
+     {
+      "t": "Non-uniform, because the total distance keeps growing",
+      "m": "Looked at total distance instead of the distance in each second."
+     },
+     {
+      "t": "Uniform",
+      "ok": 1
+     },
+     {
+      "t": "Non-uniform, because it is moving on the ground",
+      "m": "Thought only motion in the air can be uniform."
+     },
+     {
+      "t": "Oscillatory, because it repeats the same distance",
+      "m": "Thought repeating equal distances is a to-and-fro motion."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Ravi's scooter covers 45 km in 1.5 h and Imran's car covers 80 km in 2 h. Which is faster, and by how much?",
+    "why": "Scooter: 45 ÷ 1.5 = 30 km/h. Car: 80 ÷ 2 = 40 km/h. The car is faster by 10 km/h.",
+    "o": [
+     {
+      "t": "The car, by 35 km/h",
+      "m": "Compared only the distances: 80 − 45."
+     },
+     {
+      "t": "The scooter, as it took less time",
+      "m": "Compared only the time taken, not the distance."
+     },
+     {
+      "t": "The scooter, by 0.008 h/km",
+      "m": "Divided time by distance and picked the larger value as faster."
+     },
+     {
+      "t": "The car, by 10 km/h",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A cyclist rides at a steady speed of 12 km/h for 30 minutes. The distance covered is:",
+    "why": "30 minutes = 0.5 h. Distance = speed × time = 12 × 0.5 = 6 km.",
+    "o": [
+     {
+      "t": "6 km",
+      "ok": 1
+     },
+     {
+      "t": "360 km",
+      "m": "Multiplied 12 by 30 without changing minutes to hours."
+     },
+     {
+      "t": "0.4 km",
+      "m": "Divided the speed by the time in minutes."
+     },
+     {
+      "t": "42 km",
+      "m": "Added speed and time."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A car travels 10 km in the first hour, 30 km in the second hour and 20 km in the third hour. Which is correct?",
+    "why": "Total distance = 60 km in 3 h, so average speed = 20 km/h. Distances in equal hours are different, so it is non-uniform.",
+    "o": [
+     {
+      "t": "Uniform motion; speed is 20 km/h",
+      "m": "Thought a steady average value means motion is uniform."
+     },
+     {
+      "t": "Non-uniform motion; average speed is 30 km/h",
+      "m": "Took the largest distance as the average speed."
+     },
+     {
+      "t": "Non-uniform motion; average speed is 20 km/h",
+      "ok": 1
+     },
+     {
+      "t": "Non-uniform motion; average speed is 10 km/h",
+      "m": "Took the first hour's distance as the average speed."
+     }
+    ]
+   }
+  ],
+  "steps": null,
+  "tags": {
+   "te": "చలనం మరియు కాలం",
+   "hi": "गति और समय"
+  }
+ },
+ "s7_elec": {
+  "lesson": {
+   "title": "What electric current can do",
+   "points": [
+    "When current flows through a wire, the wire gets hot. This is the heating effect. Electric heaters, irons and toasters use it, and the filament of a bulb glows because it gets very hot.",
+    "A fuse is a thin wire that melts if too much current flows, breaking the circuit. This protects the appliances. MCBs now do this job too.",
+    "A current-carrying wire behaves like a magnet and deflects a compass needle. This is the magnetic effect, discovered by Oersted.",
+    "An electromagnet is an insulated wire coiled around a soft iron piece. It is a magnet only while current flows. Electric bells and cranes use it."
+   ],
+   "story": "The fuse in a house is like the safety valve of a pressure cooker. When too much current, like too much steam, builds up, the fuse gives way first and protects everything else.",
+   "example": {
+    "q": "How can you make an electromagnet?",
+    "steps": [
+     "Take a long insulated copper wire and wind it into a coil around a soft iron nail.",
+     "Join the two ends of the wire to a cell through a switch.",
+     "When the switch is closed, current flows and the nail behaves like a magnet. When the switch is opened, it loses its magnetism."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "An electric iron becomes hot when it is switched on. This is due to the:",
+    "why": "Current flowing through the heating element of the iron makes it hot. This is the heating effect of current.",
+    "o": [
+     {
+      "t": "Magnetic effect of electric current",
+      "m": "Thought a magnet inside the iron makes it hot."
+     },
+     {
+      "t": "Heating effect of electric current",
+      "ok": 1
+     },
+     {
+      "t": "Friction between the plug pins and the socket",
+      "m": "Thought rubbing of the plug pins makes it hot."
+     },
+     {
+      "t": "Light given by the red indicator lamp",
+      "m": "Thought the small indicator lamp heats the iron."
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which of these devices works on the magnetic effect of electric current?",
+    "why": "An electric bell has an electromagnet and so works on the magnetic effect of current.",
+    "o": [
+     {
+      "t": "Electric heater",
+      "m": "Thought every electrical device works by the magnetic effect."
+     },
+     {
+      "t": "Toaster",
+      "m": "Thought every electrical device works by the magnetic effect."
+     },
+     {
+      "t": "Electric bell",
+      "ok": 1
+     },
+     {
+      "t": "Electric geyser",
+      "m": "Mixed up the heating effect with the magnetic effect."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Why does the wire in a fuse melt when too much current flows through it?",
+    "why": "Excess current heats the thin fuse wire, which has a low melting point, so it melts and breaks the circuit.",
+    "o": [
+     {
+      "t": "Excess current heats the wire so much that it melts and cuts off the supply",
+      "ok": 1
+     },
+     {
+      "t": "Excess current makes the wire a magnet that pulls itself apart",
+      "m": "Thought the magnetic effect of current breaks the wire."
+     },
+     {
+      "t": "Too little current cannot keep the wire warm, so it breaks",
+      "m": "Thought the fuse melts when current is low."
+     },
+     {
+      "t": "The wire melts as it gets sunlight inside the meter box",
+      "m": "Thought the melting is due to outside heat."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which material is best as the core of an electromagnet?",
+    "why": "A piece of soft iron is strongly magnetised by the coil and loses it when the current stops.",
+    "o": [
+     {
+      "t": "Copper rod",
+      "m": "Thought a good conductor of electricity makes the best core."
+     },
+     {
+      "t": "Soft iron",
+      "ok": 1
+     },
+     {
+      "t": "Wooden stick",
+      "m": "Thought any rod inside the coil works equally well."
+     },
+     {
+      "t": "Plastic pipe",
+      "m": "Thought an insulator can be magnetised by the coil."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A bulb is connected to a cell through a switch which is in the OFF position. The bulb does not glow because:",
+    "why": "With the switch OFF, the circuit is open (incomplete), so no current flows.",
+    "o": [
+     {
+      "t": "The cell has stopped working for good",
+      "m": "Thought the cell loses its charge when the switch is OFF.",
+      "g": "s6_elec"
+     },
+     {
+      "t": "The bulb needs more than one cell to glow",
+      "m": "Thought a single cell can never light a bulb.",
+      "g": "s6_elec"
+     },
+     {
+      "t": "Current flows only in the wires, never in the bulb",
+      "m": "Thought the bulb is not part of the path of current.",
+      "g": "s6_elec"
+     },
+     {
+      "t": "The circuit is open, so no current flows",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Why is an electromagnet, and not a permanent magnet, used in a crane to lift scrap iron?",
+    "why": "An electromagnet can be switched on to lift the iron and switched off to drop it.",
+    "o": [
+     {
+      "t": "It can be switched on to lift the iron and off to drop it",
+      "ok": 1
+     },
+     {
+      "t": "A permanent magnet cannot attract iron",
+      "m": "Thought only electromagnets attract iron."
+     },
+     {
+      "t": "An electromagnet attracts all materials, including wood",
+      "m": "Thought a magnet attracts everything."
+     },
+     {
+      "t": "An electromagnet never loses its strength",
+      "m": "Thought an electromagnet keeps its magnetism even when off."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "In an electric bell, why does the hammer keep striking the gong again and again while the button is pressed?",
+    "why": "The electromagnet pulls the strip and the hammer hits the gong. This breaks the circuit, the magnet loses its pull and the strip springs back. The circuit is complete again and it repeats.",
+    "o": [
+     {
+      "t": "The person keeps pressing and releasing the button very fast",
+      "m": "Thought the repeated sound is made by the hand and not by the bell."
+     },
+     {
+      "t": "A permanent magnet inside keeps pulling the hammer",
+      "m": "Thought a bell uses a permanent magnet and not an electromagnet."
+     },
+     {
+      "t": "Each strike breaks the circuit, the strip springs back and completes it again",
+      "ok": 1
+     },
+     {
+      "t": "The current in the bell keeps changing its direction",
+      "m": "Thought the repeated striking comes from the changing direction of current."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A compass needle placed below a wire deflects when the switch is closed and returns to its old position when the switch is opened. This shows:",
+    "why": "The wire shows magnetic effect only while the current flows.",
+    "o": [
+     {
+      "t": "The wire became a permanent magnet",
+      "m": "Thought the wire stays magnetised after the current stops."
+     },
+     {
+      "t": "The needle was pulled by the cell and not by the wire",
+      "m": "Thought the cell attracts the needle."
+     },
+     {
+      "t": "Heat from the wire turned the needle",
+      "m": "Thought the movement is due to the heating effect."
+     },
+     {
+      "t": "A current-carrying wire shows a magnetic effect only while current flows",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": null,
+  "tags": {
+   "te": "విద్యుత్ ప్రవాహం మరియు దాని ప్రభావాలు",
+   "hi": "विद्युत धारा और इसके प्रभाव"
+  }
+ },
+ "s7_light": {
+  "lesson": {
+   "title": "Reflection and mirrors",
+   "points": [
+    "When light falls on a polished surface it bounces back. This is reflection. The angle of incidence equals the angle of reflection, and both are measured from the normal.",
+    "A plane mirror forms an image that is virtual, upright and of the same size. It is as far behind the mirror as the object is in front, and left and right are swapped (lateral inversion).",
+    "A concave mirror curves inwards and can give an enlarged image. It is used in torches, by dentists and as shaving mirrors. A convex mirror bulges outwards and gives a smaller, upright image with a wide view. It is used as a rear-view mirror.",
+    "A virtual image cannot be caught on a screen."
+   ],
+   "story": "Stand in front of the bathroom mirror and raise your right hand. The image seems to raise its left hand. That is lateral inversion, and it is the reason AMBULANCE is written reversed on vans.",
+   "example": {
+    "q": "A ray falls on a plane mirror with an angle of incidence of 40°. Find the angle of reflection and the angle between the incident and the reflected ray.",
+    "steps": [
+     "By the law of reflection, angle of reflection = angle of incidence = 40°.",
+     "The angle between the two rays = 40° + 40°.",
+     "So the angle between the incident and the reflected ray is 80°."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "According to the law of reflection, the angle of reflection is equal to the:",
+    "why": "The angle of reflection is always equal to the angle of incidence, both measured from the normal.",
+    "o": [
+     {
+      "t": "Angle between the incident ray and the mirror surface",
+      "m": "Measured the angle from the mirror surface instead of from the normal."
+     },
+     {
+      "t": "Angle of the mirror itself",
+      "m": "Thought it depends on how the mirror is tilted instead of on the incident ray."
+     },
+     {
+      "t": "Angle of incidence",
+      "ok": 1
+     },
+     {
+      "t": "Right angle (90°) always",
+      "m": "Thought the reflected ray always leaves at 90°."
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which type of mirror is used as a rear-view mirror in vehicles?",
+    "why": "A convex mirror gives a smaller, upright image and a wide view of the road behind.",
+    "o": [
+     {
+      "t": "Convex mirror",
+      "ok": 1
+     },
+     {
+      "t": "Plane mirror",
+      "m": "Thought the mirror used at home is also used in vehicles."
+     },
+     {
+      "t": "Concave mirror",
+      "m": "Thought a mirror that magnifies is better for the driver."
+     },
+     {
+      "t": "Rough, uneven glass",
+      "m": "Thought a surface with diffused reflection can give a clear image."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Aarav stands 3 m in front of a plane mirror. How far is he from his image?",
+    "why": "The image is 3 m behind the mirror, so the distance between him and the image is 3 + 3 = 6 m.",
+    "o": [
+     {
+      "t": "3 m",
+      "m": "Gave only the distance from him to the mirror."
+     },
+     {
+      "t": "6 m",
+      "ok": 1
+     },
+     {
+      "t": "1.5 m",
+      "m": "Halved the distance instead of doubling it."
+     },
+     {
+      "t": "0 m",
+      "m": "Thought the image forms on the surface of the mirror."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A ray of light strikes a plane mirror so that the angle of incidence is 35°. The angle between the incident ray and the reflected ray is:",
+    "why": "Angle of reflection = 35°, so the angle between the rays = 35° + 35° = 70°.",
+    "o": [
+     {
+      "t": "35°",
+      "m": "Gave only the angle of incidence."
+     },
+     {
+      "t": "55°",
+      "m": "Measured from the mirror surface, 90° − 35°."
+     },
+     {
+      "t": "145°",
+      "m": "Subtracted the angle from 180°."
+     },
+     {
+      "t": "70°",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "The word AMBULANCE is written laterally inverted on the front of the vehicle. Why?",
+    "why": "A driver ahead sees the word the right way round in his rear-view mirror because of lateral inversion.",
+    "o": [
+     {
+      "t": "A driver in front reads it correctly in his rear-view mirror",
+      "ok": 1
+     },
+     {
+      "t": "It makes the letters look bigger in the mirror",
+      "m": "Thought a mirror always enlarges the letters."
+     },
+     {
+      "t": "It makes the word shine brighter in the dark",
+      "m": "Thought writing it reversed makes it shine."
+     },
+     {
+      "t": "A mirror turns words upside down, so it is written upside down",
+      "m": "Mixed up lateral inversion with turning an image upside down."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A dentist examines a tooth using a mirror held close to it. Which mirror is used and why?",
+    "why": "A concave mirror held close to an object gives an enlarged, upright image.",
+    "o": [
+     {
+      "t": "Convex mirror, as it always gives an enlarged image",
+      "m": "Thought a mirror that bulges outwards enlarges the image."
+     },
+     {
+      "t": "Plane mirror, as its image is larger than the tooth",
+      "m": "Thought a plane mirror magnifies the image."
+     },
+     {
+      "t": "Concave mirror, as it gives an enlarged image of a close tooth",
+      "ok": 1
+     },
+     {
+      "t": "Convex mirror, as it covers a wide area of the mouth",
+      "m": "Thought a wider view is better, though a convex mirror reduces the image."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Which description fits the image formed by a plane mirror?",
+    "why": "The image is virtual, upright, the same size as the object and laterally inverted.",
+    "o": [
+     {
+      "t": "Real, upright, smaller, laterally inverted",
+      "m": "Thought the image can be caught on a screen and made smaller."
+     },
+     {
+      "t": "Virtual, upside down, same size, laterally inverted",
+      "m": "Confused lateral inversion with turning the image upside down."
+     },
+     {
+      "t": "Real, laterally inverted, larger than the object",
+      "m": "Thought a mirror image can be real and enlarged."
+     },
+     {
+      "t": "Virtual, upright, same size, laterally inverted",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A periscope lets a person see over a wall. It does so by using:",
+    "why": "A periscope has two plane mirrors placed so that light is reflected twice, bringing the view over the wall to the eye.",
+    "o": [
+     {
+      "t": "One concave mirror that bends light round the wall",
+      "m": "Thought light can bend around corners by itself."
+     },
+     {
+      "t": "Two plane mirrors that reflect the light twice",
+      "ok": 1
+     },
+     {
+      "t": "A convex mirror that shrinks the wall in the image",
+      "m": "Thought a convex mirror removes obstacles from the view."
+     },
+     {
+      "t": "A lens that makes the wall transparent",
+      "m": "Thought a lens can make an opaque wall see-through."
+     }
+    ]
+   }
+  ],
+  "steps": null,
+  "tags": {
+   "te": "కాంతి: పరావర్తనం మరియు దర్పణాలు",
+   "hi": "प्रकाश: परावर्तन और दर्पण"
+  }
+ }
+}

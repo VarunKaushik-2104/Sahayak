@@ -1,0 +1,618 @@
+{
+ "board": "Telangana State Board",
+ "book": "SCERT Telangana",
+ "classes": {
+  "6": {
+   "Maths": [
+    {
+     "name": "Playing with Numbers",
+     "topics": [
+      "m6_num"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Integers",
+     "topics": [
+      "m6_int"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Fractions and Decimals",
+     "topics": [
+      "m6_frac"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Ratio and Proportion",
+     "topics": [
+      "m6_ratio"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Introduction to Algebra",
+     "topics": [
+      "m6_alg"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Basic Geometrical Ideas",
+     "topics": [
+      "m6_geo"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Measures of Lines and Angles",
+     "topics": [
+      "m6_geo"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Perimeter and Area",
+     "topics": [
+      "m6_mens"
+     ],
+     "verified": true
+    }
+   ],
+   "Science": [
+    {
+     "name": "Materials and Things",
+     "topics": [
+      "s6_mat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Separation of Substances",
+     "topics": [
+      "s6_sep"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Our Food",
+     "topics": [
+      "s6_food"
+     ],
+     "verified": true
+    },
+    {
+     "name": "What Do Animals Eat?",
+     "topics": [
+      "s6_food"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Plants: Parts and Functions",
+     "topics": [
+      "s6_plant"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Learning How to Measure",
+     "topics": [
+      "s6_motion"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Light, Shadows and Images",
+     "topics": [
+      "s6_light"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Simple Electric Circuits",
+     "topics": [
+      "s6_elec"
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "7": {
+   "Maths": [
+    {
+     "name": "Integers",
+     "topics": [
+      "m7_int"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Fractions, Decimals and Rational Numbers",
+     "topics": [
+      "m7_frac",
+      "m7_rat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Simple Equations",
+     "topics": [
+      "m7_eq"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Triangle and its Properties",
+     "topics": [
+      "m7_tri"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Congruency of Triangles",
+     "topics": [
+      "m7_tri"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Ratio-Applications",
+     "topics": [
+      "m7_ratio"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Algebraic Expressions",
+     "topics": [
+      "m7_expr"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Area and Perimeter",
+     "topics": [
+      "m7_mens"
+     ],
+     "verified": true
+    }
+   ],
+   "Science": [
+    {
+     "name": "Nutrition In Plants",
+     "topics": [
+      "s7_nutr"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Heat – Measurement",
+     "topics": [
+      "s7_heat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Acids And Bases",
+     "topics": [
+      "s7_acid"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Changes Around Us",
+     "topics": [
+      "s7_chem"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Motion And Time",
+     "topics": [
+      "s7_motion"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Electricity",
+     "topics": [
+      "s7_elec"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Reflection Of Light",
+     "topics": [
+      "s7_light"
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "8": {
+   "Maths": [
+    {
+     "name": "Linear Equations in One Variable",
+     "topics": [
+      "m8_lin"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Exponents and Powers",
+     "topics": [
+      "m8_exp"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Comparing Quantities using Proportion",
+     "topics": [
+      "m8_pct"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Square Roots and Cube Roots",
+     "topics": [
+      "m8_sq"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Frequency Distribution Tables and Graphs",
+     "topics": [
+      "m8_data"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Area of Plane Figures",
+     "topics": [
+      "m8_mens"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Surface Areas and Volumes (Cube-Cuboid)",
+     "topics": [
+      "m8_mens"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Algebraic Expressions",
+     "topics": [
+      "m8_alg"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Construction of Quadrilaterals",
+     "topics": [
+      "m8_quad"
+     ],
+     "verified": true
+    }
+   ],
+   "Science": [
+    {
+     "name": "Cell – The Basic Unit of Life",
+     "topics": [
+      "s8_cell"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Reproduction in Animals",
+     "topics": [
+      "s8_repro"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Reaching the Age of Adolescence",
+     "topics": [
+      "s8_repro"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Force",
+     "topics": [
+      "s8_force"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Friction",
+     "topics": [
+      "s8_force"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Sound",
+     "topics": [
+      "s8_sound"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Metals and non-metals",
+     "topics": [
+      "s8_metal"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Combustion, fuels and Flame",
+     "topics": [
+      "s8_comb"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Refraction of Light at Plain Surfaces",
+     "topics": [
+      "s8_light"
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "9": {
+   "Maths": [
+    {
+     "name": "Real Numbers",
+     "topics": [
+      "m9_num"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Polynomials and Factorisation",
+     "topics": [
+      "m9_poly"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Co-ordinate Geometry",
+     "topics": [
+      "m9_coord"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Linear Equation in Two Variables",
+     "topics": [
+      "m9_lin2"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Triangles",
+     "topics": [
+      "m9_tri"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Statistics",
+     "topics": [
+      "m9_stat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Probability",
+     "topics": [
+      "m9_stat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Surface Areas and Volumes",
+     "topics": [
+      "m9_mens"
+     ],
+     "verified": true
+    }
+   ],
+   "Science": [
+    {
+     "name": "Matter Around Us",
+     "topics": [
+      "s9_matter"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Atoms and Molecules",
+     "topics": [
+      "s9_atom"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Motion",
+     "topics": [
+      "s9_motion"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Laws of Motion",
+     "topics": [
+      "s9_force"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Gravitation",
+     "topics": [
+      "s9_work"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Work and Energy",
+     "topics": [
+      "s9_work"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Sound",
+     "topics": [
+      "s9_sound"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Cell: Its structure and functions",
+     "topics": [
+      "s9_cell"
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "10": {
+   "Maths": [
+    {
+     "name": "Pair of Linear Equations in Two Variables",
+     "topics": [
+      "m10_pair"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Quadratic Equations",
+     "topics": [
+      "m10_quad"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Progressions",
+     "topics": [
+      "m10_ap"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Similar Triangles",
+     "topics": [
+      "m10_simtri"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Trigonometry Introduction",
+     "topics": [
+      "m10_trig"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Applications of Trigonometry",
+     "topics": [
+      "m10_trig"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Mensuration",
+     "topics": [
+      "m10_mens"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Statistics",
+     "topics": [
+      "m10_prob"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Probability",
+     "topics": [
+      "m10_prob"
+     ],
+     "verified": true
+    }
+   ],
+   "Science": [
+    {
+     "name": "Chemical Equations",
+     "topics": [
+      "s10_chem"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Acids, Bases and Salts",
+     "topics": [
+      "s10_acid"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Principles of Metallurgy",
+     "topics": [
+      "s10_metal"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Carbon and its compounds",
+     "topics": [
+      "s10_carbon"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Nutrition",
+     "topics": [
+      "s10_life"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Reflection of light at a curved surface",
+     "topics": [
+      "s10_light"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Refraction of light at a curved surface",
+     "topics": [
+      "s10_light"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Electric Current",
+     "topics": [
+      "s10_elec"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Heredity and Evolution",
+     "topics": [
+      "s10_heredity"
+     ],
+     "verified": true
+    }
+   ]
+  }
+ }
+}

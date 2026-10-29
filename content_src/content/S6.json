@@ -1,0 +1,1486 @@
+{
+ "s6_mat": {
+  "lesson": {
+   "title": "Sorting materials by their properties",
+   "points": [
+    "We sort materials into groups by their properties, such as shine, hardness, solubility in water, floating or sinking, and transparency.",
+    "Metals have a shiny surface, which is called lustre. Iron and stone are hard, while cotton and sponge are soft.",
+    "Transparent materials (clear glass, air) let us see clearly through them. Translucent materials (butter paper) let only some light pass. Opaque materials (wood, metal, cardboard) do not let light pass.",
+    "Salt and sugar dissolve in water, so they are soluble. Sand and chalk powder do not dissolve, so they are insoluble. A cork floats on water, but an iron nail sinks."
+   ],
+   "story": "In Amma's kitchen, the steel glass shines, sugar vanishes in the tea, a stone in the rice sinks in the water and the steel plate hides what is behind it. She is sorting materials by their properties without even knowing it.",
+   "example": {
+    "q": "Sort salt, sand, sugar and chalk powder into soluble and insoluble in water.",
+    "steps": [
+     "Take four glasses of water and add one spoonful of each substance to its own glass.",
+     "Stir each glass well and wait for a minute. Salt and sugar disappear, because they dissolve in water.",
+     "Sand and chalk powder remain as particles and settle down. So salt and sugar are soluble; sand and chalk powder are insoluble."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which of these is a transparent material?",
+    "why": "Clear window glass lets us see clearly through it, so it is transparent.",
+    "o": [
+     {
+      "t": "Cardboard",
+      "m": "Thought any thin, flat sheet lets us see through it."
+     },
+     {
+      "t": "Clear window glass",
+      "ok": 1
+     },
+     {
+      "t": "Butter paper",
+      "m": "Confused translucent with transparent, since some light passes through butter paper but objects look blurred."
+     },
+     {
+      "t": "A wooden plank",
+      "m": "Mixed up opaque with transparent."
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "The shine on the surface of metals such as silver and copper is called:",
+    "why": "The shining surface of metals is called lustre.",
+    "o": [
+     {
+      "t": "Solubility",
+      "m": "Mixed up shine with dissolving in water."
+     },
+     {
+      "t": "Opacity",
+      "m": "Thought the property of blocking light is the same as shine."
+     },
+     {
+      "t": "Hardness",
+      "m": "Thought a shiny surface always means a hard material."
+     },
+     {
+      "t": "Lustre",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which pair of substances will both dissolve in water?",
+    "why": "Salt and sugar are both soluble in water, whereas sand and chalk powder are not.",
+    "o": [
+     {
+      "t": "Salt and sugar",
+      "ok": 1
+     },
+     {
+      "t": "Sand and salt",
+      "m": "Thought sand dissolves in water just like salt does."
+     },
+     {
+      "t": "Chalk powder and sugar",
+      "m": "Thought a fine powder always dissolves in water."
+     },
+     {
+      "t": "Sand and chalk powder",
+      "m": "Thought any solid made of tiny grains disappears when stirred in water."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which of these will sink when dropped in water?",
+    "why": "An iron nail is heavy for its size and sinks, while cork, a dry leaf and thermocol float.",
+    "o": [
+     {
+      "t": "A piece of cork",
+      "m": "Thought every solid object sinks in water."
+     },
+     {
+      "t": "A dry leaf",
+      "m": "Thought a thin, light object soaks up water and sinks at once."
+     },
+     {
+      "t": "An iron nail",
+      "ok": 1
+     },
+     {
+      "t": "A piece of thermocol",
+      "m": "Thought a hard, solid-looking piece sinks like a stone."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A sheet of butter paper is placed over a printed page and the letters look blurred but can still be seen. Butter paper is:",
+    "why": "Butter paper lets only some light pass through it, so objects look blurred. Such a material is translucent.",
+    "o": [
+     {
+      "t": "Transparent",
+      "m": "Thought that seeing anything at all through a material makes it transparent."
+     },
+     {
+      "t": "Opaque",
+      "m": "Thought that blurred vision means no light passes through."
+     },
+     {
+      "t": "Luminous",
+      "m": "Mixed up a property of a material with a source of light that gives out its own light."
+     },
+     {
+      "t": "Translucent",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Which pair correctly classifies frosted glass (as in a bathroom window) and a wooden door?",
+    "why": "Frosted glass lets some light through but we cannot see clearly, so it is translucent. Wood blocks light, so it is opaque.",
+    "o": [
+     {
+      "t": "Frosted glass is transparent, wooden door is opaque",
+      "m": "Thought that glass is always transparent whatever its surface is like."
+     },
+     {
+      "t": "Frosted glass is translucent, wooden door is opaque",
+      "ok": 1
+     },
+     {
+      "t": "Frosted glass is opaque, wooden door is translucent",
+      "m": "Reversed the two, thinking glass blocks light more than wood."
+     },
+     {
+      "t": "Both are opaque, because both are solid",
+      "m": "Thought every solid object blocks all light."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Meena stirs a spoonful of sand and a spoonful of sugar in a glass of water. What will she see after some time?",
+    "why": "Sugar is soluble and disappears into the water. Sand is insoluble and settles at the bottom.",
+    "o": [
+     {
+      "t": "Both sand and sugar disappear",
+      "m": "Thought all tiny grains dissolve when stirred."
+     },
+     {
+      "t": "Both settle at the bottom",
+      "m": "Thought solids always stay as grains in water."
+     },
+     {
+      "t": "Sugar disappears, sand settles at the bottom",
+      "ok": 1
+     },
+     {
+      "t": "Sand disappears, sugar settles at the bottom",
+      "m": "Reversed which of the two substances is soluble."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A school wants a classroom window that lets in daylight but does not let people outside see clearly into the room. Which material is best?",
+    "why": "Frosted (translucent) glass lets light in but blurs the view, so it gives light and privacy.",
+    "o": [
+     {
+      "t": "Frosted (translucent) glass",
+      "ok": 1
+     },
+     {
+      "t": "Clear transparent glass",
+      "m": "Forgot that transparent glass lets people outside see everything clearly."
+     },
+     {
+      "t": "A thin steel sheet",
+      "m": "Thought a shiny metal sheet lets light pass through."
+     },
+     {
+      "t": "A wooden board",
+      "m": "Ignored that an opaque material blocks all the light and makes the room dark."
+     }
+    ]
+   }
+  ],
+  "steps": null,
+  "tags": {
+   "te": "పదార్థాల వర్గీకరణ మరియు వాటి ధర్మాలు",
+   "hi": "पदार्थों का वर्गीकरण और उनके गुण"
+  }
+ },
+ "s6_food": {
+  "lesson": {
+   "title": "Food: where it comes from and what it contains",
+   "points": [
+    "All our food comes from plants and animals. We eat roots (carrot), stems (sugarcane), leaves (spinach), flowers (cauliflower), fruits and seeds. Animals give milk, eggs and meat, and bees make honey from nectar.",
+    "Herbivores eat only plants (cow, goat), carnivores eat only animals (lion, tiger) and omnivores eat both (humans, crows).",
+    "Food contains carbohydrates, proteins, fats, vitamins and minerals. Carbohydrates and fats give energy, proteins help growth and repair, and vitamins and minerals protect the body from disease.",
+    "Lack of a nutrient causes a deficiency disease, such as scurvy (vitamin C), rickets (vitamin D), anaemia (iron) and goitre (iodine). A balanced diet has all nutrients in the right amounts, along with roughage and water."
+   ],
+   "story": "A thali is like a cricket team. Roti and rice are the big hitters who give energy, dal and curd build the body, and vegetables and fruits are the fielders who protect it. A team with only batsmen cannot win.",
+   "example": {
+    "q": "How can you test whether a slice of potato contains starch?",
+    "steps": [
+     "Cut a thin slice of potato and place it on a plate.",
+     "Put 2 to 3 drops of dilute iodine solution on it.",
+     "The slice turns blue-black. This colour change shows that starch is present."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Honey is made by bees from:",
+    "why": "Bees collect nectar from flowers and convert it into honey.",
+    "o": [
+     {
+      "t": "Nectar of flowers",
+      "ok": 1
+     },
+     {
+      "t": "Leaves of plants",
+      "m": "Thought bees collect the honey from leaves."
+     },
+     {
+      "t": "Sugar mixed with water",
+      "m": "Thought bees make honey out of ordinary sugar."
+     },
+     {
+      "t": "Fruit juice",
+      "m": "Thought bees gather ready-made honey from ripe fruits."
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Animals that eat both plants and animals are called:",
+    "why": "Omnivores eat both plants and animals. Humans and crows are omnivores.",
+    "o": [
+     {
+      "t": "Herbivores",
+      "m": "Thought animals that eat some plants feed only on plants."
+     },
+     {
+      "t": "Carnivores",
+      "m": "Thought any animal that eats meat eats only meat."
+     },
+     {
+      "t": "Omnivores",
+      "ok": 1
+     },
+     {
+      "t": "Decomposers",
+      "m": "Mixed up a feeding group with organisms that break down dead matter."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which nutrient mainly helps in the growth and repair of the body?",
+    "why": "Proteins build new cells and repair worn-out ones, so they are called body-building nutrients.",
+    "o": [
+     {
+      "t": "Carbohydrates",
+      "m": "Thought the main energy-giving food also builds the body."
+     },
+     {
+      "t": "Fats",
+      "m": "Thought a food that stores energy also repairs the body."
+     },
+     {
+      "t": "Vitamins",
+      "m": "Thought vitamins build muscles because they are essential."
+     },
+     {
+      "t": "Proteins",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A drop of iodine solution turns blue-black when put on a food item. The item contains:",
+    "why": "Iodine solution turns blue-black in the presence of starch.",
+    "o": [
+     {
+      "t": "Protein",
+      "m": "Mixed up the iodine test with the copper sulphate and caustic soda test for proteins."
+     },
+     {
+      "t": "Starch",
+      "ok": 1
+     },
+     {
+      "t": "Fat",
+      "m": "Mixed up the iodine test with the oil-stain test done on paper."
+     },
+     {
+      "t": "Vitamin C",
+      "m": "Thought iodine solution detects vitamins."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which of these is a root that we eat as a vegetable?",
+    "why": "A carrot is the root of the carrot plant. Cauliflower is a flower, spinach is a leaf and potato is a stem.",
+    "o": [
+     {
+      "t": "Potato",
+      "m": "Thought anything that grows under the soil must be a root."
+     },
+     {
+      "t": "Cauliflower",
+      "m": "Thought a vegetable with a white, bulky head is a root."
+     },
+     {
+      "t": "Carrot",
+      "ok": 1
+     },
+     {
+      "t": "Spinach",
+      "m": "Thought all green vegetables come from the roots."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Ravi ate only polished rice, with no fruits or vegetables, for months. His gums began to bleed. He most likely lacks:",
+    "why": "Bleeding gums are a sign of scurvy, which is caused by lack of vitamin C. Fruits and vegetables like amla and lemon give vitamin C.",
+    "o": [
+     {
+      "t": "Vitamin C",
+      "ok": 1
+     },
+     {
+      "t": "Vitamin D",
+      "m": "Linked weakness of the body with the vitamin got from sunlight, which affects bones."
+     },
+     {
+      "t": "Iodine",
+      "m": "Linked a problem of the throat and neck with the body's tissues."
+     },
+     {
+      "t": "Iron",
+      "m": "Linked blood-related problems with bleeding gums."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Neha's meals are mostly rice and potato curry. To add mainly proteins to her diet, she should add:",
+    "why": "Dal, milk, eggs and fish are rich in proteins. Rice and potato mostly give carbohydrates.",
+    "o": [
+     {
+      "t": "Sugar",
+      "m": "Thought sweet foods give body-building nutrients."
+     },
+     {
+      "t": "Dal",
+      "ok": 1
+     },
+     {
+      "t": "Extra rice",
+      "m": "Thought more of the same energy food would supply proteins."
+     },
+     {
+      "t": "Butter",
+      "m": "Thought a rich, heavy food builds the body."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Sunita looks pale and feels tired all the time. The doctor says she has anaemia and advises spinach and jaggery. Which nutrient is she lacking?",
+    "why": "Anaemia is caused by lack of iron, and spinach and jaggery are good sources of iron.",
+    "o": [
+     {
+      "t": "Calcium",
+      "m": "Linked tiredness with weak bones and teeth."
+     },
+     {
+      "t": "Iodine",
+      "m": "Linked her illness with the swelling of the neck."
+     },
+     {
+      "t": "Vitamin A",
+      "m": "Linked her illness with eyesight problems."
+     },
+     {
+      "t": "Iron",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": null,
+  "tags": {
+   "te": "ఆహారం: ఆహార వనరులు మరియు ఆహార అనుఘటకాలు",
+   "hi": "भोजन: भोजन के स्रोत और भोजन के घटक"
+  }
+ },
+ "s6_sep": {
+  "lesson": {
+   "title": "Separating the useful from the unwanted",
+   "points": [
+    "Most things around us are mixtures. We separate the useful part from the non-useful part by handpicking, threshing, winnowing and sieving.",
+    "In winnowing, wind blows away the lighter husk while the heavier grain falls down. Sieving separates particles of different sizes.",
+    "Insoluble solids settle at the bottom in sedimentation, and the clear liquid is poured out in decantation. Filtration with filter paper or cloth removes fine insoluble particles. Evaporation gets a dissolved solid (like salt) from its solution.",
+    "When no more solute dissolves in a solution at a given temperature, it is a saturated solution. Heating the water lets it dissolve more."
+   ],
+   "story": "Amma first picks stones out of rice, then washes it in a vessel, lets it settle and pours the dirty water out. At the sea coast, people fill shallow pans with sea water and let the Sun dry it to get salt.",
+   "example": {
+    "q": "How can you get back both the sand and the salt from a mixture of the two?",
+    "steps": [
+     "Add water to the mixture and stir well. The salt dissolves but the sand does not.",
+     "Filter the mixture. The sand stays on the filter paper and the salt solution passes through as the filtrate.",
+     "Heat the filtrate so that the water evaporates. The salt is left behind in the dish."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Separating husk from grain by blowing wind over the mixture is called:",
+    "why": "In winnowing, the lighter husk is blown away by wind and the heavier grain falls down.",
+    "o": [
+     {
+      "t": "Threshing",
+      "m": "Mixed up the two farm methods, since threshing frees the grains from the stalks."
+     },
+     {
+      "t": "Sieving",
+      "m": "Thought wind is used with a sieve."
+     },
+     {
+      "t": "Handpicking",
+      "m": "Thought the husk is removed by picking it up by hand."
+     },
+     {
+      "t": "Winnowing",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which method is used to get salt from sea water?",
+    "why": "When sea water is left in shallow pans, the water evaporates and the salt is left behind.",
+    "o": [
+     {
+      "t": "Winnowing",
+      "m": "Thought wind separates a dissolved solid from a liquid."
+     },
+     {
+      "t": "Evaporation",
+      "ok": 1
+     },
+     {
+      "t": "Decantation",
+      "m": "Forgot that salt is dissolved in water and cannot settle down to be poured off.",
+      "g": "s6_mat"
+     },
+     {
+      "t": "Sieving",
+      "m": "Thought a sieve can hold back the dissolved salt.",
+      "g": "s6_mat"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Muddy pond water is left to stand for some time and the clear water is then gently poured out. These two steps are called:",
+    "why": "Heavier particles settling at the bottom is sedimentation. Pouring out the clear water is decantation.",
+    "o": [
+     {
+      "t": "Evaporation and condensation",
+      "m": "Thought removing the dirt needs the water to be turned into vapour."
+     },
+     {
+      "t": "Threshing and winnowing",
+      "m": "Mixed up farm methods with methods of separating a solid from a liquid."
+     },
+     {
+      "t": "Sedimentation and decantation",
+      "ok": 1
+     },
+     {
+      "t": "Filtration and evaporation",
+      "m": "Thought a filter is needed even though the dirt settles on its own."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which method separates a mixture of fine sand and small stones of different sizes?",
+    "why": "A sieve lets the fine sand pass through and holds back the bigger stones.",
+    "o": [
+     {
+      "t": "Sieving",
+      "ok": 1
+     },
+     {
+      "t": "Evaporation",
+      "m": "Thought heating is needed to separate two dry solids."
+     },
+     {
+      "t": "Condensation",
+      "m": "Mixed up a change of state with separating particles by size."
+     },
+     {
+      "t": "Decantation",
+      "m": "Thought pouring is enough, though no liquid is present."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which of these mixtures can be separated by filtering through a clean cloth?",
+    "why": "Chalk powder does not dissolve, so its fine particles are caught by the cloth. Dissolved salt and sugar pass through the cloth.",
+    "o": [
+     {
+      "t": "Salt dissolved in water",
+      "m": "Thought dissolved salt gets caught in the cloth.",
+      "g": "s6_mat"
+     },
+     {
+      "t": "Chalk powder stirred in water",
+      "ok": 1
+     },
+     {
+      "t": "Sugar dissolved in water",
+      "m": "Thought a dissolved solid stays as particles that a filter can hold back.",
+      "g": "s6_mat"
+     },
+     {
+      "t": "Lemon juice mixed with water",
+      "m": "Thought two liquids that mix can be separated by a filter.",
+      "g": "s6_mat"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "What is the correct way to get both sand and salt back from a dry mixture of the two?",
+    "why": "Water dissolves the salt but not the sand. Filtering removes the sand, and evaporating the filtrate leaves the salt.",
+    "o": [
+     {
+      "t": "Heat the dry mixture and then filter it",
+      "m": "Thought heating separates two dry solids and then a filter can be used."
+     },
+     {
+      "t": "Add water, evaporate everything, then filter",
+      "m": "Evaporated before removing the sand, so the sand and salt were mixed again.",
+      "g": "s6_mat"
+     },
+     {
+      "t": "Winnow the mixture and then sieve it",
+      "m": "Thought wind can separate two heavy solids of similar weight."
+     },
+     {
+      "t": "Add water, filter, then evaporate the filtrate",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A farmer harvests wheat. In which order does he separate the grains from the stalks and then the husk from the grains?",
+    "why": "First threshing frees the grains from the stalks, and then winnowing blows away the lighter husk.",
+    "o": [
+     {
+      "t": "Threshing, then winnowing",
+      "ok": 1
+     },
+     {
+      "t": "Winnowing, then threshing",
+      "m": "Reversed the order, although husk cannot be separated before grains are freed from the stalks."
+     },
+     {
+      "t": "Sieving, then threshing",
+      "m": "Thought a sieve is the first step on the harvested crop."
+     },
+     {
+      "t": "Handpicking, then evaporation",
+      "m": "Thought evaporation is used for dry grains."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Rani keeps adding salt to water in a glass and stirring. After some time, some salt remains at the bottom even after stirring well. The solution is:",
+    "why": "When no more salt can dissolve at that temperature, the solution is saturated.",
+    "o": [
+     {
+      "t": "Unsaturated",
+      "m": "Thought a solution with salt at the bottom can still dissolve more at the same temperature."
+     },
+     {
+      "t": "Insoluble",
+      "m": "Thought that undissolved salt at the bottom means salt is not soluble at all.",
+      "g": "s6_mat"
+     },
+     {
+      "t": "Saturated",
+      "ok": 1
+     },
+     {
+      "t": "Condensed",
+      "m": "Mixed up condensation (vapour turning to liquid) with a strong solution."
+     }
+    ]
+   }
+  ],
+  "steps": null,
+  "tags": {
+   "te": "పదార్థాల వేర్పాటు",
+   "hi": "पदार्थों का पृथक्करण"
+  }
+ },
+ "s6_plant": {
+  "lesson": {
+   "title": "Parts of a plant and what they do",
+   "points": [
+    "Plants are of three kinds. Herbs are small with green, tender stems. Shrubs have hard but not very thick stems that branch near the base. Trees are tall with a thick, hard trunk. Climbers and creepers have weak stems.",
+    "Roots hold the plant in the soil and absorb water and minerals. A tap root has one main root with side roots (mustard, carrot). Fibrous roots are a cluster of thin roots (wheat, grass).",
+    "The stem carries water and minerals up to the leaves and carries food to other parts. Leaves make food by photosynthesis and give out water vapour through tiny pores called stomata.",
+    "A flower has sepals, petals, stamens (male part) and a pistil (female part). Leaves with net-like veins usually belong to plants with tap roots, and leaves with parallel veins to plants with fibrous roots."
+   ],
+   "story": "A plant is like a house with a borewell. The roots are the borewell, the stem is the pipe that lifts the water, and the leaves are the kitchen where the food is cooked.",
+   "example": {
+    "q": "A plant has leaves with a net-like pattern of veins. What kind of root does it most likely have, and how can you tell?",
+    "steps": [
+     "Look at the veins of the leaf. A net-like pattern is called reticulate venation.",
+     "Plants with reticulate venation generally have a tap root, with one main root and many side roots, like a mustard plant.",
+     "Plants with parallel veins (grass, wheat) generally have fibrous roots instead."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which part of a plant absorbs water and minerals from the soil?",
+    "why": "The roots absorb water and minerals from the soil and also hold the plant firmly.",
+    "o": [
+     {
+      "t": "Stem",
+      "m": "Thought the stem, which carries water upwards, is also what takes water from the soil."
+     },
+     {
+      "t": "Root",
+      "ok": 1
+     },
+     {
+      "t": "Leaf",
+      "m": "Thought the leaves drink water as the plant's mouth."
+     },
+     {
+      "t": "Flower",
+      "m": "Thought flowers take in water for forming fruits."
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "The tiny pores on the surface of leaves, through which water vapour escapes, are called:",
+    "why": "Stomata are tiny pores on leaves. Water vapour leaves through them in transpiration.",
+    "o": [
+     {
+      "t": "Veins",
+      "m": "Thought the lines on a leaf are what let out the water vapour."
+     },
+     {
+      "t": "Petioles",
+      "m": "Mixed up the leaf stalk with the pores on the leaf."
+     },
+     {
+      "t": "Stomata",
+      "ok": 1
+     },
+     {
+      "t": "Sepals",
+      "m": "Mixed up a part of the flower with a part of the leaf."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which of these plants has fibrous roots?",
+    "why": "Wheat has fibrous roots, a cluster of thin roots of similar size. Mustard, carrot and gram have tap roots.",
+    "o": [
+     {
+      "t": "Wheat",
+      "ok": 1
+     },
+     {
+      "t": "Mustard",
+      "m": "Thought all crop plants have a single main root."
+     },
+     {
+      "t": "Carrot",
+      "m": "Thought a thick edible root means a fibrous root system."
+     },
+     {
+      "t": "Gram",
+      "m": "Thought all plants that give seeds have fibrous roots."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A pea plant has a weak stem and climbs up a fence using tendrils. It is called a:",
+    "why": "Plants with weak stems that climb up a support are called climbers.",
+    "o": [
+     {
+      "t": "Creeper",
+      "m": "Thought all weak-stemmed plants are creepers, though creepers spread along the ground."
+     },
+     {
+      "t": "Climber",
+      "ok": 1
+     },
+     {
+      "t": "Shrub",
+      "m": "Thought any small plant with branches is a shrub."
+     },
+     {
+      "t": "Tree",
+      "m": "Thought a plant that goes up high must be a tree."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which part of a flower is the male part?",
+    "why": "The stamen produces pollen and is the male part of the flower. The pistil is the female part.",
+    "o": [
+     {
+      "t": "Pistil",
+      "m": "Mixed up the male and female parts of a flower."
+     },
+     {
+      "t": "Petal",
+      "m": "Thought the colourful part makes the pollen."
+     },
+     {
+      "t": "Sepal",
+      "m": "Thought the green outer part makes the pollen."
+     },
+     {
+      "t": "Stamen",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A celery stalk is kept in water coloured with red ink. After some hours, red lines can be seen inside the stem and in the leaves. This shows that the stem:",
+    "why": "The coloured water rises through the stem to the leaves, which shows that the stem carries water upwards.",
+    "o": [
+     {
+      "t": "Carries water up to the leaves",
+      "ok": 1
+     },
+     {
+      "t": "Stores food for the plant",
+      "m": "Thought the colour in the stem means the stem is storing something, like food."
+     },
+     {
+      "t": "Makes food by photosynthesis",
+      "m": "Thought the stem is the part that cooks the food."
+     },
+     {
+      "t": "Absorbs water from the soil",
+      "m": "Mixed up the work of the stem with the work of the roots."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A leafy branch is covered with a clear polythene bag and tied. After some hours, drops of water collect inside the bag. This shows that leaves:",
+    "why": "Leaves give out water vapour through stomata (transpiration). The vapour cools and forms drops on the bag.",
+    "o": [
+     {
+      "t": "Absorb water vapour from the air",
+      "m": "Thought the water drops show that the leaves take in water from the air."
+     },
+     {
+      "t": "Take in carbon dioxide",
+      "m": "Thought the drops are caused by carbon dioxide."
+     },
+     {
+      "t": "Give out water vapour",
+      "ok": 1
+     },
+     {
+      "t": "Make food using sunlight",
+      "m": "Thought the drops are a product of food-making."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A student finds that a leaf has parallel veins. Which root system does the plant most likely have?",
+    "why": "Plants whose leaves have parallel veins (grass, maize) generally have fibrous roots.",
+    "o": [
+     {
+      "t": "A tap root",
+      "m": "Reversed the link, since tap roots go with net-like veins."
+     },
+     {
+      "t": "Roots that grow only in the air",
+      "m": "Mixed up with plants like banyan that have roots growing in the air."
+     },
+     {
+      "t": "No roots, only a stem",
+      "m": "Thought a plant with narrow leaves does not need roots."
+     },
+     {
+      "t": "Fibrous roots",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": null,
+  "tags": {
+   "te": "మొక్కలు: భాగాలు మరియు వాటి విధులు",
+   "hi": "पौधे: भाग और उनके कार्य"
+  }
+ },
+ "s6_motion": {
+  "lesson": {
+   "title": "Measuring length and describing motion",
+   "points": [
+    "Earlier people used a cubit, handspan, foot or pace to measure length. These differ from person to person, so we use standard units. The SI unit of length is the metre (m). 1 m = 100 cm, 1 cm = 10 mm and 1 km = 1000 m.",
+    "While measuring with a scale, place the object along it with one end at the zero mark, or note the other mark and subtract. Keep the eye directly above the mark being read. A curved line is measured with a thread, which is then straightened and measured.",
+    "Motion can be in a straight line (rectilinear), along a circle (circular), spinning about a fixed point (rotational) or to and fro again and again (periodic or oscillatory).",
+    "Whether an object is at rest or in motion depends on what we compare it with. A person sitting in a moving bus is at rest with respect to the bus but moving with respect to the trees outside."
+   ],
+   "story": "If the cloth seller at the market measured your kurta cloth with his own handspan, you and your neighbour would get different lengths for the same price. That is why every shop uses a metre tape.",
+   "example": {
+    "q": "A road is 2.5 km long. Express its length in metres and in centimetres.",
+    "steps": [
+     "Use 1 km = 1000 m. So 2.5 km = 2.5 × 1000 = 2500 m.",
+     "Use 1 m = 100 cm. So 2500 m = 2500 × 100 = 250000 cm.",
+     "The road is 2500 m or 250000 cm long."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "The SI unit of length is the:",
+    "why": "The SI unit of length is the metre.",
+    "o": [
+     {
+      "t": "Centimetre",
+      "m": "Took a smaller, commonly used unit to be the SI unit."
+     },
+     {
+      "t": "Kilometre",
+      "m": "Took the unit used for road distances as the SI unit."
+     },
+     {
+      "t": "Foot",
+      "m": "Used a non-SI unit that people use in daily life."
+     },
+     {
+      "t": "Metre",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "A child sitting on a swing moves to and fro again and again. This is an example of:",
+    "why": "The motion of a swing repeats after a fixed time, so it is a periodic (oscillatory) motion.",
+    "o": [
+     {
+      "t": "Periodic motion",
+      "ok": 1
+     },
+     {
+      "t": "Rectilinear motion",
+      "m": "Thought a path that goes both ways is a straight line."
+     },
+     {
+      "t": "Circular motion",
+      "m": "Thought any curved path is a circular motion."
+     },
+     {
+      "t": "Rotational motion",
+      "m": "Thought the swing is spinning about a fixed point like a top."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "How many centimetres are there in 4.5 m?",
+    "why": "1 m = 100 cm, so 4.5 m = 4.5 × 100 = 450 cm.",
+    "o": [
+     {
+      "t": "45 cm",
+      "m": "Divided or multiplied by 10 instead of 100."
+     },
+     {
+      "t": "4500 cm",
+      "m": "Multiplied by 1000 instead of 100."
+     },
+     {
+      "t": "450 cm",
+      "ok": 1
+     },
+     {
+      "t": "0.045 cm",
+      "m": "Divided by 100 instead of multiplying."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "While reading the length of a pencil on a ruler, where should the eye be?",
+    "why": "The eye should be directly above the mark being read, looking straight down, to avoid a wrong reading.",
+    "o": [
+     {
+      "t": "A little to the left of the mark",
+      "m": "Thought the angle of the eye does not change the reading."
+     },
+     {
+      "t": "A little to the right of the mark",
+      "m": "Thought looking from the side gives a more clear view."
+     },
+     {
+      "t": "Anywhere, as the reading is always the same",
+      "m": "Thought the position of the eye never matters."
+     },
+     {
+      "t": "Directly above the mark, looking straight down",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which of these is an example of rotational motion?",
+    "why": "The blades of a ceiling fan spin about a fixed point, which is rotational motion.",
+    "o": [
+     {
+      "t": "A car moving on a straight road",
+      "m": "Mixed up straight-line motion with spinning about a point."
+     },
+     {
+      "t": "Blades of a ceiling fan turning",
+      "ok": 1
+     },
+     {
+      "t": "A ball falling straight down",
+      "m": "Thought any motion that goes quickly is rotation."
+     },
+     {
+      "t": "A pendulum swinging to and fro",
+      "m": "Thought any repeating motion is rotation."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Ravi wants to find the length of a curved path drawn on a map. Which is the best method?",
+    "why": "A thread laid along the curve can be straightened and measured on a ruler, which gives the length of the curved path.",
+    "o": [
+     {
+      "t": "Place a ruler straight between the two ends",
+      "m": "Measured only the straight-line distance between ends and not the curve."
+     },
+     {
+      "t": "Count the number of handspans along the curve",
+      "m": "Used a non-standard unit that differs from person to person."
+     },
+     {
+      "t": "Lay a thread along the curve, then straighten it and measure it on a ruler",
+      "ok": 1
+     },
+     {
+      "t": "Measure the paper's edge with a ruler",
+      "m": "Thought the length of the path is the same as the size of the map."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The zero end of a ruler is broken. A book's one end is at the 2.0 cm mark and the other end is at the 17.5 cm mark. What is the length of the book?",
+    "why": "Length = 17.5 cm − 2.0 cm = 15.5 cm.",
+    "o": [
+     {
+      "t": "15.5 cm",
+      "ok": 1
+     },
+     {
+      "t": "17.5 cm",
+      "m": "Read only the second end and ignored the starting mark."
+     },
+     {
+      "t": "19.5 cm",
+      "m": "Added the two readings instead of subtracting them."
+     },
+     {
+      "t": "15.0 cm",
+      "m": "Made a mistake in subtracting the two readings."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A passenger sits in a bus moving steadily along a straight road. Which statement is correct?",
+    "why": "The passenger does not change position with respect to the bus, so is at rest with respect to it. With respect to a tree outside, the passenger's position changes, so is in motion.",
+    "o": [
+     {
+      "t": "At rest with respect to the tree but moving with respect to the bus",
+      "m": "Reversed the two reference points."
+     },
+     {
+      "t": "At rest with respect to the bus but moving with respect to a tree",
+      "ok": 1
+     },
+     {
+      "t": "Always at rest, since the passenger is not moving the body",
+      "m": "Thought that rest or motion does not depend on what we compare with."
+     },
+     {
+      "t": "Moving with respect to the bus but also with respect to the tree",
+      "m": "Thought that the passenger moves with respect to the seat as well."
+     }
+    ]
+   }
+  ],
+  "steps": null,
+  "tags": {
+   "te": "చలనం మరియు దూరాల కొలత",
+   "hi": "गति और दूरियों का मापन"
+  }
+ },
+ "s6_light": {
+  "lesson": {
+   "title": "Light, shadows and reflection",
+   "points": [
+    "Objects that give out light of their own, like the Sun, stars, a lamp or a candle flame, are luminous. The Moon, a table or a book is non-luminous. We see them when light from a source falls on them and reaches our eyes.",
+    "Light travels in straight lines. An opaque object in its path stops the light and a shadow forms on a screen behind it. A shadow needs a source of light, an opaque object and a screen.",
+    "The nearer an object is to the source of light, the bigger its shadow. A pinhole camera forms an upside-down (inverted) image.",
+    "A mirror reflects light. The image in a plane mirror is the same size as the object, and left and right appear interchanged."
+   ],
+   "story": "During a power cut, children make shadow puppets on the wall with a lamp. When the hand is moved close to the lamp, the shadow becomes huge, and when it is moved close to the wall it shrinks.",
+   "example": {
+    "q": "We can see the Moon at night although it has no light of its own. Explain how.",
+    "steps": [
+     "The Moon is non-luminous. It does not make its own light.",
+     "The Sun is luminous. Sunlight falls on the Moon and is reflected by its surface.",
+     "This reflected light travels to our eyes and so we see the Moon."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which of these is a luminous object?",
+    "why": "A burning candle gives out its own light, so it is luminous. The Moon and a mirror only reflect light.",
+    "o": [
+     {
+      "t": "The Moon",
+      "m": "Thought that anything bright in the sky makes its own light."
+     },
+     {
+      "t": "A mirror",
+      "m": "Thought shiny things shine on their own."
+     },
+     {
+      "t": "A burning candle",
+      "ok": 1
+     },
+     {
+      "t": "A white wall",
+      "m": "Thought that a brightly lit object is a source of light."
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Light travels in:",
+    "why": "Light travels in straight lines. That is why we get shadows with sharp edges.",
+    "o": [
+     {
+      "t": "Curved paths",
+      "m": "Thought light bends round corners to reach us."
+     },
+     {
+      "t": "Zig-zag paths",
+      "m": "Thought light changes direction on its own."
+     },
+     {
+      "t": "Circles",
+      "m": "Thought light goes around objects in circles."
+     },
+     {
+      "t": "Straight lines",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which three things are needed to form a shadow?",
+    "why": "A shadow forms when an opaque object blocks the light from a source and falls on a screen.",
+    "o": [
+     {
+      "t": "A source of light, a transparent object and a screen",
+      "m": "Thought a transparent object blocks the light."
+     },
+     {
+      "t": "A source of light, an opaque object and a screen",
+      "ok": 1
+     },
+     {
+      "t": "A mirror, an opaque object and a screen",
+      "m": "Thought a shadow is formed by reflection from a mirror."
+     },
+     {
+      "t": "An opaque object and a screen only",
+      "m": "Forgot that a source of light is needed."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "The image formed in a pinhole camera is:",
+    "why": "Light travels in straight lines through the pinhole, so the top of the object forms the bottom of the image. The image is inverted.",
+    "o": [
+     {
+      "t": "Upright, as the object",
+      "m": "Thought the image is like the one seen in a mirror."
+     },
+     {
+      "t": "Absent, as the hole is too small",
+      "m": "Thought a tiny hole cannot let enough light in to form an image."
+     },
+     {
+      "t": "Upside down (inverted)",
+      "ok": 1
+     },
+     {
+      "t": "Upright and larger than the object",
+      "m": "Thought a camera always makes the image bigger."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which statement about the image in a plane mirror is correct?",
+    "why": "The image in a plane mirror is the same size as the object, with left and right sides interchanged.",
+    "o": [
+     {
+      "t": "Same size as the object, with left and right interchanged",
+      "ok": 1
+     },
+     {
+      "t": "Smaller than the object, but upright",
+      "m": "Thought the image is smaller because it seems to be farther away."
+     },
+     {
+      "t": "Larger than the object and upside down",
+      "m": "Mixed up a plane mirror with a pinhole camera."
+     },
+     {
+      "t": "Same size as the object, with top and bottom interchanged",
+      "m": "Thought the image is turned upside down and not sideways."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Why can we see the Moon at night, although it is non-luminous?",
+    "why": "The Moon reflects sunlight, and this light reaches our eyes.",
+    "o": [
+     {
+      "t": "It makes its own light like a star",
+      "m": "Thought that the Moon is a luminous object."
+     },
+     {
+      "t": "It reflects the light of the Sun towards us",
+      "ok": 1
+     },
+     {
+      "t": "It is lit by the light of stars",
+      "m": "Thought starlight is what makes the Moon bright."
+     },
+     {
+      "t": "It absorbs the Sun's light and glows in the dark",
+      "m": "Thought the Moon stores sunlight during the day and gives it out at night."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A ball is held between a lamp and a wall near the lamp. Rani slowly moves the ball towards the wall. What happens to the shadow of the ball on the wall?",
+    "why": "The nearer the object is to the light source, the bigger the shadow. So as the ball moves away from the lamp, the shadow becomes smaller.",
+    "o": [
+     {
+      "t": "It becomes bigger",
+      "m": "Thought that moving an object towards the screen makes its shadow larger."
+     },
+     {
+      "t": "It stays the same size",
+      "m": "Thought the shadow size depends only on the size of the ball."
+     },
+     {
+      "t": "It disappears when the ball nears the wall",
+      "m": "Thought that shadows form only in the space between the object and screen."
+     },
+     {
+      "t": "It becomes smaller",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The word AMBULANCE is written laterally inverted (reversed) on the front of the vehicle. Why?",
+    "why": "A driver ahead sees the reflection in the rear-view mirror, where left and right are interchanged again, so the word can be read correctly.",
+    "o": [
+     {
+      "t": "So that drivers ahead can read it properly in their rear-view mirrors",
+      "ok": 1
+     },
+     {
+      "t": "So that the letters look bigger",
+      "m": "Thought that reversed letters take more space."
+     },
+     {
+      "t": "So that more light is reflected from it",
+      "m": "Thought that reversed letters reflect more light."
+     },
+     {
+      "t": "It is only for decoration",
+      "m": "Thought the reversal has no real purpose."
+     }
+    ]
+   }
+  ],
+  "steps": null,
+  "tags": {
+   "te": "కాంతి, నీడలు మరియు పరావర్తనం",
+   "hi": "प्रकाश, छाया और परावर्तन"
+  }
+ },
+ "s6_elec": {
+  "lesson": {
+   "title": "Electricity and circuits",
+   "points": [
+    "An electric cell is a source of electricity. It has two terminals, a positive terminal (metal cap) and a negative terminal (metal disc). A battery is a combination of two or more cells.",
+    "A bulb has a thin filament between its two terminals, and the filament glows when electricity passes through it. A bulb glows only when the circuit is closed, that is, a complete path joins the two terminals of the cell through the bulb.",
+    "A switch opens or closes the circuit. In the OFF position there is a gap, so the current cannot flow.",
+    "Conductors let electricity pass through them (metals like copper and iron). Insulators do not (plastic, rubber, dry wood, glass). We should never use mains electricity for experiments and never touch switches with wet hands."
+   ],
+   "story": "A circuit is like the round track in a school relay race. If the track is complete, the baton goes from runner to runner and back to the start. If there is a gap anywhere, the race stops.",
+   "example": {
+    "q": "A bulb is joined to a cell by wires and a switch, but it does not glow even when the switch is ON. Give possible reasons.",
+    "steps": [
+     "The filament of the bulb may be broken (a fused bulb), so the path inside the bulb is not complete.",
+     "A wire may be loose or may not be touching a terminal, leaving a gap in the circuit.",
+     "The cell may have run out of its chemicals, so it cannot push the electricity through the circuit."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which of these is a good conductor of electricity?",
+    "why": "Copper is a metal, and metals are good conductors of electricity. Rubber, dry wood and plastic are insulators.",
+    "o": [
+     {
+      "t": "A rubber glove",
+      "m": "Thought a soft, flexible material carries current."
+     },
+     {
+      "t": "A dry wooden stick",
+      "m": "Thought a long, straight stick can carry current."
+     },
+     {
+      "t": "A copper wire",
+      "ok": 1
+     },
+     {
+      "t": "A plastic ruler",
+      "m": "Saw plastic around electric wires and thought plastic carries the current."
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "The metal cap of an electric cell is its:",
+    "why": "The metal cap of a cell is its positive terminal. The metal disc at the other end is the negative terminal.",
+    "o": [
+     {
+      "t": "Positive terminal",
+      "ok": 1
+     },
+     {
+      "t": "Negative terminal",
+      "m": "Mixed up the two terminals of the cell."
+     },
+     {
+      "t": "Filament",
+      "m": "Mixed up a part of a cell with a part of a bulb."
+     },
+     {
+      "t": "Switch",
+      "m": "Thought the metal cap turns the cell on and off."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A bulb will glow only when:",
+    "why": "A bulb glows when there is a complete closed path from one terminal of the cell, through the bulb, to the other terminal.",
+    "o": [
+     {
+      "t": "One wire joins the bulb to one terminal of the cell",
+      "m": "Thought one wire is enough for the bulb to glow."
+     },
+     {
+      "t": "A complete closed path joins the two cell terminals through the bulb",
+      "ok": 1
+     },
+     {
+      "t": "The switch is in the OFF position",
+      "m": "Thought an open switch lets the current pass."
+     },
+     {
+      "t": "The bulb is kept far from the cell",
+      "m": "Thought the bulb gets electricity without any connection."
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A bulb, a cell and a switch are joined correctly and the switch is ON, but the bulb does not glow. Which is the most likely reason?",
+    "why": "If the filament is broken, there is a gap in the circuit and the bulb will not glow.",
+    "o": [
+     {
+      "t": "The switch is in the ON position",
+      "m": "Thought that a closed switch stops the current."
+     },
+     {
+      "t": "The wires have a plastic covering",
+      "m": "Forgot that the covering is only outside, while the metal inside conducts."
+     },
+     {
+      "t": "The cell has two terminals",
+      "m": "Thought that a cell with two terminals cannot light a bulb."
+     },
+     {
+      "t": "The filament of the bulb is broken",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which set contains only insulators?",
+    "why": "A plastic comb, a rubber band and a dry wooden stick are all poor conductors, so they are insulators.",
+    "o": [
+     {
+      "t": "Plastic comb, rubber band, dry wooden stick",
+      "ok": 1
+     },
+     {
+      "t": "Iron nail, rubber band, glass",
+      "m": "Counted a metal as an insulator since it is solid and hard."
+     },
+     {
+      "t": "Copper coin, plastic scale, paper",
+      "m": "Thought a shiny coin does not let current pass."
+     },
+     {
+      "t": "Aluminium foil, wood, thermocol",
+      "m": "Counted a thin metal sheet as an insulator."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "An electrician uses a screwdriver with a plastic handle when repairing a switch. Why?",
+    "why": "Plastic is an insulator, so it does not let current pass to the electrician's hand, which protects from an electric shock.",
+    "o": [
+     {
+      "t": "Plastic is a conductor and carries the current away",
+      "m": "Thought a conductor in the handle makes it safe."
+     },
+     {
+      "t": "Plastic makes the screwdriver shiny",
+      "m": "Thought the handle is only for appearance."
+     },
+     {
+      "t": "Plastic is an insulator and protects from electric shock",
+      "ok": 1
+     },
+     {
+      "t": "Plastic makes the screwdriver heavier",
+      "m": "Thought that more weight makes the tool safer."
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A student replaces a piece of copper wire in a working circuit with a dry cotton thread. The bulb stops glowing. Why?",
+    "why": "Dry cotton thread is an insulator, so it does not allow the electric current to pass and the circuit is not complete.",
+    "o": [
+     {
+      "t": "The thread is conducting but is too long",
+      "m": "Thought that a conductor with some length stops the current."
+     },
+     {
+      "t": "The thread is thinner, so the bulb became dim and then went off",
+      "m": "Thought a thread conducts a little and then fails."
+     },
+     {
+      "t": "The thread gets burnt by the current",
+      "m": "Thought the thread was burnt because the current passed through it."
+     },
+     {
+      "t": "Dry cotton thread is an insulator and breaks the path of the current",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Why does a bulb not glow when the switch is in the OFF position?",
+    "why": "In the OFF position the switch leaves a gap in the circuit, so the path for the current is broken.",
+    "o": [
+     {
+      "t": "The switch takes out the chemicals of the cell",
+      "m": "Thought the switch changes something inside the cell."
+     },
+     {
+      "t": "The switch leaves a gap and the circuit is broken",
+      "ok": 1
+     },
+     {
+      "t": "The switch turns the wires into insulators",
+      "m": "Thought the switch changes the material of the wire."
+     },
+     {
+      "t": "The switch removes the filament from the bulb",
+      "m": "Thought the switch changes something inside the bulb."
+     }
+    ]
+   }
+  ],
+  "steps": null,
+  "tags": {
+   "te": "విద్యుత్తు మరియు వలయాలు",
+   "hi": "विद्युत तथा परिपथ"
+  }
+ }
+}

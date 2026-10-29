@@ -1,0 +1,1847 @@
+{
+ "s10_chem": {
+  "tags": {
+   "te": "రసాయన చర్యలు మరియు సమీకరణాలు",
+   "hi": "रासायनिक अभिक्रियाएँ एवं समीकरण"
+  },
+  "lesson": {
+   "title": "Reactions and balanced equations",
+   "points": [
+    "In a chemical reaction old substances change into new substances. Signs include a change in colour, a gas given off, a precipitate forming, or a change in temperature.",
+    "A chemical equation must be balanced: the number of atoms of each element is the same on both sides, because mass is neither created nor destroyed in a reaction.",
+    "Main types are combination (A + B → AB), decomposition (AB → A + B), displacement (a more reactive element replaces a less reactive one) and double displacement (two compounds exchange ions). Reactions that give out heat are exothermic and those that absorb heat are endothermic.",
+    "Gain of oxygen (or loss of hydrogen) is oxidation, and loss of oxygen (or gain of hydrogen) is reduction. Rusting of iron and rancidity of oils are everyday oxidation changes."
+   ],
+   "story": "A new iron gate turns reddish-brown after a few monsoons. The iron has slowly reacted with oxygen and moisture to form rust, a new substance, and no amount of wiping brings the shiny iron back.",
+   "example": {
+    "q": "Balance the equation H₂ + O₂ → H₂O.",
+    "steps": [
+     "Count atoms. Left: H = 2, O = 2. Right: H = 2, O = 1.",
+     "Put 2 before H₂O to make oxygen equal: H₂ + O₂ → 2H₂O. Now O = 2 on both sides, but H = 4 on the right.",
+     "Put 2 before H₂: 2H₂ + O₂ → 2H₂O.",
+     "Check: H = 4 and O = 2 on both sides, so the equation is balanced."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which observation shows that a chemical reaction has taken place?",
+    "why": "A new substance, hydrogen gas, is formed when zinc reacts with dilute sulphuric acid. Gas bubbles are a sign of a chemical change.",
+    "o": [
+     {
+      "t": "Sugar seems to disappear when stirred into a glass of water",
+      "m": "Thought a substance vanishing into water means a new substance formed, but dissolving is a physical change"
+     },
+     {
+      "t": "Ice turns into water when kept in a warm room",
+      "m": "Treated a change of state as a chemical change although no new substance forms"
+     },
+     {
+      "t": "Gas bubbles appear when zinc granules are put in dilute sulphuric acid",
+      "ok": 1
+     },
+     {
+      "t": "A steel spoon becomes warm when dipped in hot tea",
+      "m": "Took a temperature rise from heat transfer as a sign of a reaction"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which of these is a combination reaction?",
+    "why": "In CaO + H₂O → Ca(OH)₂, two substances join to form a single product, which is the meaning of a combination reaction.",
+    "o": [
+     {
+      "t": "CaO + H₂O → Ca(OH)₂",
+      "ok": 1
+     },
+     {
+      "t": "2H₂O → 2H₂ + O₂",
+      "m": "Mixed up decomposition, where one compound splits into two products, with combination"
+     },
+     {
+      "t": "Zn + CuSO₄ → ZnSO₄ + Cu",
+      "m": "Called a displacement reaction a combination because two reactants are involved"
+     },
+     {
+      "t": "NaCl + AgNO₃ → AgCl + NaNO₃",
+      "m": "Thought an exchange of ions is just two substances combining; it is double displacement"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which is the correctly balanced equation for N₂ + H₂ → NH₃?",
+    "why": "N₂ + 3H₂ → 2NH₃ has 2 nitrogen and 6 hydrogen atoms on each side.",
+    "o": [
+     {
+      "t": "N₂ + H₂ → 2NH₃",
+      "m": "Balanced only nitrogen and left hydrogen with 2 atoms on the left but 6 on the right",
+      "g": "s9_atom"
+     },
+     {
+      "t": "N₂ + 3H₂ → NH₃",
+      "m": "Balanced only hydrogen on the left side and forgot that there are 2 nitrogen atoms in N₂",
+      "g": "s9_atom"
+     },
+     {
+      "t": "N + 3H → NH₃",
+      "m": "Wrote nitrogen and hydrogen as single atoms, forgetting they exist as N₂ and H₂ molecules",
+      "g": "s9_atom"
+     },
+     {
+      "t": "N₂ + 3H₂ → 2NH₃",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "An iron nail is kept in copper sulphate solution. The blue colour fades and a brownish layer forms on the nail. What type of reaction is this?",
+    "why": "Iron is more reactive than copper, so it replaces copper from copper sulphate: Fe + CuSO₄ → FeSO₄ + Cu. This is a displacement reaction.",
+    "o": [
+     {
+      "t": "Decomposition reaction",
+      "m": "Thought the fading colour means the compound simply broke down on its own"
+     },
+     {
+      "t": "Displacement reaction",
+      "ok": 1
+     },
+     {
+      "t": "Combination reaction",
+      "m": "Thought the iron and copper sulphate just joined into one product"
+     },
+     {
+      "t": "Double displacement reaction",
+      "m": "Thought two compounds exchanged ions, but here a single element replaces another element"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which of these is an exothermic reaction?",
+    "why": "Burning of cooking gas gives out heat and light, so it is exothermic. The other three take in energy.",
+    "o": [
+     {
+      "t": "Decomposition of limestone on strong heating",
+      "m": "Thought a reaction that needs heating must also give out heat, but it absorbs heat",
+      "g": "s8_comb"
+     },
+     {
+      "t": "Electrolysis of water",
+      "m": "Thought any reaction involving energy releases heat, but electrolysis needs electrical energy to be supplied"
+     },
+     {
+      "t": "Photosynthesis in a green leaf",
+      "m": "Overlooked that photosynthesis absorbs energy from sunlight"
+     },
+     {
+      "t": "Burning of cooking gas in a kitchen stove",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "In a closed vessel, 4 g of hydrogen reacts completely with 32 g of oxygen to form water (2H₂ + O₂ → 2H₂O). What mass of water is formed?",
+    "why": "Mass is conserved in a chemical reaction. Total mass before = 4 + 32 = 36 g, so 36 g of water is formed.",
+    "o": [
+     {
+      "t": "32 g",
+      "m": "Counted only the mass of oxygen and ignored the hydrogen that also becomes part of water",
+      "g": "s9_atom"
+     },
+     {
+      "t": "36 g",
+      "ok": 1
+     },
+     {
+      "t": "28 g",
+      "m": "Subtracted the mass of hydrogen from oxygen instead of adding the reactant masses"
+     },
+     {
+      "t": "18 g",
+      "m": "Used the mass of one mole of water, 18 g, instead of adding the given reactant masses"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "In the reaction CuO + H₂ → Cu + H₂O, which substance is oxidised?",
+    "why": "Hydrogen gains oxygen to form water, so hydrogen is oxidised. Copper oxide loses oxygen, so it is reduced.",
+    "o": [
+     {
+      "t": "Hydrogen",
+      "ok": 1
+     },
+     {
+      "t": "Copper oxide",
+      "m": "Reversed the definitions and treated the substance that loses oxygen as oxidised"
+     },
+     {
+      "t": "Copper",
+      "m": "Picked a product, but oxidation is about what happens to a reactant"
+     },
+     {
+      "t": "Water",
+      "m": "Picked a product, but oxidation is about what happens to a reactant"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Three iron nails are kept for a week. A: in boiled water with a layer of oil on top. B: in dry air with anhydrous calcium chloride. C: in ordinary tap water open to air. Which nails rust?",
+    "why": "Rusting needs both air (oxygen) and water. Nail A has no air and nail B has no moisture, so only nail C rusts.",
+    "o": [
+     {
+      "t": "Only nail A",
+      "m": "Thought water alone is enough for rusting and ignored that boiled water with oil has no oxygen"
+     },
+     {
+      "t": "Only nail B",
+      "m": "Thought air alone is enough for rusting and ignored that moisture is also needed"
+     },
+     {
+      "t": "Only nail C",
+      "ok": 1
+     },
+     {
+      "t": "All three nails",
+      "m": "Believed iron always rusts and ignored that both air and water are needed together"
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s10_acid": {
+  "tags": {
+   "te": "ఆమ్లాలు, క్షారాలు, లవణాలు",
+   "hi": "अम्ल, क्षारक एवं लवण"
+  },
+  "lesson": {
+   "title": "Acids, bases and the pH scale",
+   "points": [
+    "Acids taste sour, turn blue litmus red and give H⁺ ions in water. Bases feel soapy, turn red litmus blue and give OH⁻ ions in water. A base that dissolves in water is called an alkali.",
+    "The pH scale runs from 0 to 14. pH below 7 is acidic, 7 is neutral and above 7 is basic. The lower the pH, the stronger the acid.",
+    "Acid + base → salt + water is neutralisation. Acid + metal → salt + hydrogen gas. Acid + metal carbonate → salt + water + carbon dioxide.",
+    "Common salt gives sodium hydroxide, chlorine and hydrogen on electrolysis of brine. Baking soda is NaHCO₃, washing soda is Na₂CO₃·10H₂O, bleaching powder is CaOCl₂, and Plaster of Paris is CaSO₄·½H₂O."
+   ],
+   "story": "After a heavy, spicy meal, many people take an antacid tablet. The tablet contains a mild base that neutralises the extra acid in the stomach and relieves the burning feeling.",
+   "example": {
+    "q": "Write the equation for dilute hydrochloric acid reacting with sodium hydroxide solution and say whether the final solution is acidic, basic or neutral.",
+    "steps": [
+     "Acid + base gives salt + water, so this is a neutralisation reaction.",
+     "HCl + NaOH → NaCl + H₂O",
+     "Common salt (NaCl) comes from a strong acid and a strong base.",
+     "So when exactly neutralised, the solution is neutral with pH 7."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the pH of a neutral solution such as pure water?",
+    "why": "The pH scale runs from 0 to 14. A value of 7 is neutral, below 7 is acidic and above 7 is basic.",
+    "o": [
+     {
+      "t": "7",
+      "ok": 1
+     },
+     {
+      "t": "0",
+      "m": "Thought neutral means zero, the start of the scale, but pH 0 is a very strong acid",
+      "g": "s7_acid"
+     },
+     {
+      "t": "14",
+      "m": "Took the end of the scale as neutral, but pH 14 is a very strong base",
+      "g": "s7_acid"
+     },
+     {
+      "t": "5",
+      "m": "Picked a value near the middle without remembering that the neutral point is exactly 7",
+      "g": "s7_acid"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which acid is present in sour curd (dahi)?",
+    "why": "Curd contains lactic acid. Lemon has citric acid, tamarind has tartaric acid and vinegar has acetic acid.",
+    "o": [
+     {
+      "t": "Citric acid",
+      "m": "Confused curd with lemon, the source of citric acid",
+      "g": "s7_acid"
+     },
+     {
+      "t": "Tartaric acid",
+      "m": "Confused curd with tamarind, the source of tartaric acid",
+      "g": "s7_acid"
+     },
+     {
+      "t": "Acetic acid",
+      "m": "Confused curd with vinegar, the source of acetic acid",
+      "g": "s7_acid"
+     },
+     {
+      "t": "Lactic acid",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Zinc granules are added to dilute hydrochloric acid. Which gas is released and how is it recognised?",
+    "why": "Zn + 2HCl → ZnCl₂ + H₂. Hydrogen burns with a pop sound when a lighted candle is brought near.",
+    "o": [
+     {
+      "t": "Oxygen, which relights a glowing splinter",
+      "m": "Assumed the metal reacts with the oxygen of the acid and releases oxygen gas",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Hydrogen, which burns with a pop sound",
+      "ok": 1
+     },
+     {
+      "t": "Carbon dioxide, which turns lime water milky",
+      "m": "Mixed up metals with carbonates; CO₂ needs a carbon source and none is present",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Chlorine, which bleaches litmus paper",
+      "m": "Assumed the chlorine of HCl escapes as a gas, but it stays in the solution as zinc chloride",
+      "g": "s10_chem"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Four solutions P, Q, R and S have pH values 2, 6, 9 and 13. Which one is the strongest acid?",
+    "why": "The lower the pH below 7, the stronger the acid. P with pH 2 is the strongest acid.",
+    "o": [
+     {
+      "t": "S",
+      "m": "Thought the largest pH number means the strongest acid, but pH 13 is a strong base",
+      "g": "s7_acid"
+     },
+     {
+      "t": "Q",
+      "m": "Picked the value closest to neutral as the strongest acid",
+      "g": "s7_acid"
+     },
+     {
+      "t": "R",
+      "m": "Thought any pH value above 7 shows an acid, but pH 9 is basic",
+      "g": "s7_acid"
+     },
+     {
+      "t": "P",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A bee sting injects an acid (methanoic acid). Which of these gives the most relief when rubbed on the sting?",
+    "why": "A mild base such as baking soda neutralises the acid and reduces the pain.",
+    "o": [
+     {
+      "t": "Vinegar",
+      "m": "Thought sour liquids cancel each other but vinegar is also an acid and adds to the problem",
+      "g": "s7_acid"
+     },
+     {
+      "t": "A paste of baking soda and water",
+      "ok": 1
+     },
+     {
+      "t": "Lemon juice",
+      "m": "Thought lemon juice cleans the sting, but it is acidic and makes it worse",
+      "g": "s7_acid"
+     },
+     {
+      "t": "Tamarind pulp",
+      "m": "Thought any kitchen item helps, but tamarind is acidic and cannot neutralise an acid",
+      "g": "s7_acid"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Plaster of Paris is mixed with water and left. It turns into a hard solid mass. What is the solid formed?",
+    "why": "CaSO₄·½H₂O takes in water to form gypsum: CaSO₄·½H₂O + 1½H₂O → CaSO₄·2H₂O. Gypsum is the hard mass.",
+    "o": [
+     {
+      "t": "Gypsum, CaSO₄·2H₂O",
+      "ok": 1
+     },
+     {
+      "t": "Calcium carbonate, CaCO₃",
+      "m": "Mixed up Plaster of Paris with limestone or chalk"
+     },
+     {
+      "t": "Calcium oxide, CaO",
+      "m": "Mixed up Plaster of Paris with quick lime, which is not made by adding water to it"
+     },
+     {
+      "t": "Calcium sulphate hemihydrate, CaSO₄·½H₂O",
+      "m": "Thought it just dries again into the same powder, ignoring that it takes up water to form gypsum",
+      "g": "s10_chem"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Electricity is passed through a concentrated solution of sodium chloride (brine). What are the products?",
+    "why": "The chlor-alkali process gives sodium hydroxide, chlorine gas at the anode and hydrogen gas at the cathode.",
+    "o": [
+     {
+      "t": "Sodium metal and chlorine only",
+      "m": "Mixed up brine with molten sodium chloride and forgot the water takes part",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Sodium hydroxide, oxygen and hydrogen",
+      "m": "Assumed the splitting of water gives oxygen, ignoring that chlorine is released instead",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Sodium hydroxide, chlorine and hydrogen",
+      "ok": 1
+     },
+     {
+      "t": "Sodium carbonate and chlorine",
+      "m": "Mixed up the chlor-alkali process with the making of washing soda",
+      "g": "s10_chem"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Tooth enamel starts corroding when the pH in the mouth falls below 5.5. Which habit best helps to prevent tooth decay?",
+    "why": "Bacteria turn sugar into acids that lower the pH. A slightly basic toothpaste neutralises this acid and protects enamel.",
+    "o": [
+     {
+      "t": "Rinsing the mouth with a sour cold drink",
+      "m": "Thought a refreshing drink cleans teeth but sour drinks are acidic and lower the pH further",
+      "g": "s7_acid"
+     },
+     {
+      "t": "Eating sweets frequently through the day",
+      "m": "Overlooked that bacteria turn the sugar into acid that attacks the enamel",
+      "g": "s7_acid"
+     },
+     {
+      "t": "Brushing after meals with a slightly basic toothpaste",
+      "ok": 1
+     },
+     {
+      "t": "Using an acidic mouthwash to kill germs",
+      "m": "Thought more acid kills germs and is safe, but it lowers the pH and corrodes the enamel",
+      "g": "s7_acid"
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s10_metal": {
+  "tags": {
+   "te": "లోహాలు మరియు అలోహాలు",
+   "hi": "धातु एवं अधातु"
+  },
+  "lesson": {
+   "title": "Metals, non-metals and reactivity",
+   "points": [
+    "Metals are usually shiny, malleable, ductile and good conductors of heat and electricity. Non-metals are usually brittle and poor conductors. Exceptions: mercury is a liquid metal, graphite conducts electricity, and diamond is the hardest natural substance.",
+    "The reactivity series, from most to least reactive, is K, Na, Ca, Mg, Al, Zn, Fe, Pb, H, Cu, Hg, Ag, Au. A more reactive metal displaces a less reactive metal from its salt solution.",
+    "Metals low in the series are found free or are extracted by heating. Metals in the middle are reduced from their oxides with carbon after roasting (sulphide ores) or calcination (carbonate ores). Very reactive metals like Na, Ca and Al are obtained by electrolysis of their molten compounds.",
+    "Oxides of Al and Zn are amphoteric because they react with both acids and bases. Alloys such as brass, bronze and steel are mixtures of metals with improved properties."
+   ],
+   "story": "A goldsmith's gold ornament stays bright for years, but a steel almirah rusts in the rains. Gold is very low in the reactivity series, while iron is higher and reacts with air and water.",
+   "example": {
+    "q": "Zinc is extracted from its ore zinc carbonate. Name the steps.",
+    "steps": [
+     "Zinc is in the middle of the reactivity series, so it can be reduced with carbon.",
+     "The carbonate ore is first heated strongly in limited air. This is calcination: ZnCO₃ → ZnO + CO₂.",
+     "The zinc oxide is then heated with carbon (reduction): ZnO + C → Zn + CO."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which of these non-metals conducts electricity?",
+    "why": "Graphite, an allotrope of carbon, is a non-metal that conducts electricity because of its free electrons.",
+    "o": [
+     {
+      "t": "Diamond",
+      "m": "Assumed all forms of carbon conduct electricity, but diamond is an insulator",
+      "g": "s8_metal"
+     },
+     {
+      "t": "Sulphur",
+      "m": "Assumed non-metals conduct because they are solids, but sulphur is a poor conductor",
+      "g": "s8_metal"
+     },
+     {
+      "t": "Iodine",
+      "m": "Took the shiny look of iodine as a sign that it conducts, but it does not",
+      "g": "s8_metal"
+     },
+     {
+      "t": "Graphite",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which of these is a metal that is liquid at room temperature?",
+    "why": "Mercury is the only metal that is liquid at room temperature. Bromine is also a liquid but it is a non-metal.",
+    "o": [
+     {
+      "t": "Bromine",
+      "m": "Forgot that bromine, the other liquid element, is a non-metal",
+      "g": "s8_metal"
+     },
+     {
+      "t": "Mercury",
+      "ok": 1
+     },
+     {
+      "t": "Sodium",
+      "m": "Thought the softness of sodium means it is a liquid, but it is a soft solid",
+      "g": "s8_metal"
+     },
+     {
+      "t": "Lead",
+      "m": "Thought a heavy soft metal melts easily, but lead is solid at room temperature",
+      "g": "s8_metal"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which of these metals reacts most vigorously with cold water?",
+    "why": "Sodium is very high in the reactivity series and reacts violently with cold water giving hydrogen. Magnesium reacts only with hot water.",
+    "o": [
+     {
+      "t": "Magnesium",
+      "m": "Thought magnesium reacts with cold water as strongly as sodium, but it needs hot water",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Iron",
+      "m": "Thought a commonly rusting metal reacts quickly with cold water, but it reacts only with steam",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Copper",
+      "m": "Thought a metal used for vessels still reacts with water, but copper does not react at all",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Sodium",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A student wants to displace copper from copper sulphate solution. Which of these metals can do it?",
+    "why": "Zinc is above copper in the reactivity series, so it displaces copper: Zn + CuSO₄ → ZnSO₄ + Cu.",
+    "o": [
+     {
+      "t": "Silver",
+      "m": "Thought a shiny, valuable metal is more reactive, but silver is below copper",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Zinc",
+      "ok": 1
+     },
+     {
+      "t": "Gold",
+      "m": "Thought a valuable metal is more reactive, but gold is at the bottom of the series",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Mercury",
+      "m": "Thought a liquid metal is more reactive, but mercury is below copper",
+      "g": "s10_chem"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Aluminium oxide reacts with both acids and bases. What type of oxide is it?",
+    "why": "Oxides that react with both acids and bases to form salt and water are called amphoteric oxides. Al₂O₃ and ZnO are examples.",
+    "o": [
+     {
+      "t": "Amphoteric oxide",
+      "ok": 1
+     },
+     {
+      "t": "Basic oxide",
+      "m": "Assumed all metal oxides are basic, forgetting that some also react with bases",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Acidic oxide",
+      "m": "Confused aluminium oxide with oxides of non-metals",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Neutral oxide",
+      "m": "Thought reacting with both acid and base cancels out, so the oxide must be neutral",
+      "g": "s10_chem"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Zinc carbonate ore is heated strongly in limited air to give zinc oxide, and the oxide is then reduced with carbon. What is the first step called?",
+    "why": "Heating a carbonate ore strongly in limited air to get the oxide is called calcination. Roasting is used for sulphide ores in excess air.",
+    "o": [
+     {
+      "t": "Roasting",
+      "m": "Mixed up calcination of carbonate ores with roasting of sulphide ores in excess air",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Electrolysis",
+      "m": "Assumed all metals are obtained by electrolysis, but that is for very reactive metals",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Calcination",
+      "ok": 1
+     },
+     {
+      "t": "Galvanisation",
+      "m": "Mixed up extraction with the coating of iron with zinc to prevent rusting",
+      "g": "s10_chem"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "In the thermit reaction Fe₂O₃ + 2Al → Al₂O₃ + 2Fe, which substance is the reducing agent?",
+    "why": "Aluminium is more reactive, takes oxygen from iron oxide and is itself oxidised. The substance that is oxidised is the reducing agent, so aluminium is the reducing agent.",
+    "o": [
+     {
+      "t": "Iron(III) oxide",
+      "m": "Thought the oxide that loses oxygen is the reducing agent, but it is the one that gets reduced",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Aluminium oxide",
+      "m": "Picked a product instead of identifying the reactant that is oxidised",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Aluminium",
+      "ok": 1
+     },
+     {
+      "t": "Iron",
+      "m": "Picked a product instead of identifying the reactant that is oxidised",
+      "g": "s10_chem"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Sodium and calcium cannot be extracted by heating their oxides with carbon. How are they obtained?",
+    "why": "These metals are very reactive and hold on to oxygen more strongly than carbon does. They are obtained by electrolysis of their molten chlorides.",
+    "o": [
+     {
+      "t": "Electrolysis of their molten chlorides",
+      "ok": 1
+     },
+     {
+      "t": "Reduction of their oxides with carbon",
+      "m": "Assumed carbon can reduce any metal oxide, but carbon is less reactive than these metals",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Heating their oxides alone in air",
+      "m": "Assumed that heating alone is enough, which works only for metals low in the series like mercury",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Displacement by copper from their salt solutions",
+      "m": "Assumed a less reactive metal can displace them, but only a more reactive metal can",
+      "g": "s10_chem"
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s10_carbon": {
+  "tags": {
+   "te": "కార్బన్ మరియు దాని సమ్మేళనాలు",
+   "hi": "कार्बन एवं उसके यौगिक"
+  },
+  "lesson": {
+   "title": "Carbon: bonds, series and reactions",
+   "points": [
+    "Carbon has 4 electrons in its outer shell. It is tetravalent and forms four covalent bonds by sharing electrons. It can join to other carbon atoms in long chains (catenation). Diamond, graphite and fullerene are allotropes of carbon.",
+    "Hydrocarbons: alkanes are CₙH₂ₙ₊₂ (single bonds), alkenes CₙH₂ₙ (a double bond) and alkynes CₙH₂ₙ₋₂ (a triple bond). Members of a homologous series differ by a CH₂ unit, which is 14 u.",
+    "Functional groups: alcohol –OH, aldehyde –CHO, ketone >C=O and carboxylic acid –COOH. Ethanol reacts with sodium to give hydrogen. Ethanoic acid reacts with sodium hydrogencarbonate to give carbon dioxide and with ethanol to give a sweet-smelling ester.",
+    "Soaps are sodium or potassium salts of long-chain fatty acids. They clean by forming micelles around oil. In hard water they form an insoluble scum with calcium and magnesium salts."
+   ],
+   "story": "In a kitchen, LPG burns with a clean blue flame, while a ghee lamp or candle gives a yellow, sooty flame. Both are carbon compounds, but the saturated gas burns cleanly and the unsaturated, carbon-rich fuels give soot.",
+   "example": {
+    "q": "Write the molecular formulae of the alkane and the alkene that have 4 carbon atoms.",
+    "steps": [
+     "Alkane: CₙH₂ₙ₊₂ with n = 4 gives C₄H₁₀ (2 × 4 + 2 = 10).",
+     "Alkene: CₙH₂ₙ with n = 4 gives C₄H₈ (2 × 4 = 8).",
+     "So butane is C₄H₁₀ and butene is C₄H₈."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "How many covalent bonds does a carbon atom normally form?",
+    "why": "Carbon has 4 electrons in its outer shell and shares all four, so it forms four covalent bonds.",
+    "o": [
+     {
+      "t": "2",
+      "m": "Counted the electrons in the first shell of carbon instead of its outer shell",
+      "g": "s9_atom"
+     },
+     {
+      "t": "4",
+      "ok": 1
+     },
+     {
+      "t": "3",
+      "m": "Confused carbon with nitrogen, which has a valency of 3",
+      "g": "s9_atom"
+     },
+     {
+      "t": "8",
+      "m": "Used the octet of 8 electrons as the number of bonds instead of the number of electrons shared",
+      "g": "s9_atom"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is the general formula of alkanes?",
+    "why": "Alkanes are saturated hydrocarbons with the general formula CₙH₂ₙ₊₂, for example CH₄ and C₂H₆.",
+    "o": [
+     {
+      "t": "CₙH₂ₙ",
+      "m": "Used the general formula of alkenes",
+      "g": "s9_atom"
+     },
+     {
+      "t": "CₙH₂ₙ₋₂",
+      "m": "Used the general formula of alkynes",
+      "g": "s9_atom"
+     },
+     {
+      "t": "CₙHₙ",
+      "m": "Guessed that carbon and hydrogen atoms are equal in number",
+      "g": "s9_atom"
+     },
+     {
+      "t": "CₙH₂ₙ₊₂",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A hydrocarbon has the molecular formula C₃H₄. To which family does it belong?",
+    "why": "For 3 carbons, CₙH₂ₙ₋₂ gives 2 × 3 − 2 = 4 hydrogen atoms. So C₃H₄ is an alkyne.",
+    "o": [
+     {
+      "t": "Alkane",
+      "m": "Took any hydrocarbon to be an alkane without checking hydrogen against 2n + 2 = 8",
+      "g": "s9_atom"
+     },
+     {
+      "t": "Alkyne",
+      "ok": 1
+     },
+     {
+      "t": "Alkene",
+      "m": "Used 2n = 6 hydrogen atoms for an alkene and did not notice only 4 are present",
+      "g": "s9_atom"
+     },
+     {
+      "t": "Alcohol",
+      "m": "Ignored that an alcohol needs an –OH group, while C₃H₄ has only carbon and hydrogen",
+      "g": "s9_atom"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which functional group is present in ethanoic acid (CH₃COOH)?",
+    "why": "Ethanoic acid contains the carboxylic acid group –COOH.",
+    "o": [
+     {
+      "t": "Carboxylic acid group, –COOH",
+      "ok": 1
+     },
+     {
+      "t": "Alcohol group, –OH",
+      "m": "Noticed only the OH at the end and ignored the C=O next to it"
+     },
+     {
+      "t": "Aldehyde group, –CHO",
+      "m": "Confused the –COOH group with the aldehyde group because both have a C=O"
+     },
+     {
+      "t": "Ketone group, >C=O",
+      "m": "Saw the C=O and ignored the –OH attached to the same carbon"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which pair of compounds belongs to the same homologous series?",
+    "why": "Propane (C₃H₈) and butane (C₄H₁₀) are both alkanes and differ by one CH₂ unit.",
+    "o": [
+     {
+      "t": "Ethane (C₂H₆) and ethene (C₂H₄)",
+      "m": "Thought equal carbon numbers put compounds in one series, but ethane and ethene have different bonding",
+      "g": "s9_atom"
+     },
+     {
+      "t": "Ethanol (C₂H₅OH) and ethanoic acid (CH₃COOH)",
+      "m": "Thought the same number of carbon atoms means the same series, but the functional groups differ",
+      "g": "s9_atom"
+     },
+     {
+      "t": "Propane (C₃H₈) and butane (C₄H₁₀)",
+      "ok": 1
+     },
+     {
+      "t": "Methane (CH₄) and methanol (CH₃OH)",
+      "m": "Thought a one-carbon difference of any kind is enough, but the functional groups differ",
+      "g": "s9_atom"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The molecular mass of butane (C₄H₁₀) is 58 u. What is the molecular mass of pentane (C₅H₁₂)? (C = 12, H = 1)",
+    "why": "Pentane has one more CH₂ unit: 58 + 14 = 72 u. Check: 5 × 12 + 12 × 1 = 72.",
+    "o": [
+     {
+      "t": "70 u",
+      "m": "Added only the mass of a carbon atom (12) and forgot the two extra hydrogen atoms",
+      "g": "s9_atom"
+     },
+     {
+      "t": "74 u",
+      "m": "Added 16 for a CH₄ unit instead of 14 for a CH₂ unit",
+      "g": "s9_atom"
+     },
+     {
+      "t": "72 u",
+      "ok": 1
+     },
+     {
+      "t": "86 u",
+      "m": "Added 28, the mass of two CH₂ units, for one more carbon atom",
+      "g": "s9_atom"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Sodium hydrogencarbonate is added to a colourless liquid. There is brisk fizzing, and the gas turns lime water milky. Which liquid is it most likely to be?",
+    "why": "Only acids release carbon dioxide from hydrogencarbonates. Of the options, ethanoic acid is the acid.",
+    "o": [
+     {
+      "t": "Ethanoic acid",
+      "ok": 1
+     },
+     {
+      "t": "Ethanol",
+      "m": "Thought the –OH of an alcohol makes it react with hydrogencarbonate like an acid"
+     },
+     {
+      "t": "Methanol",
+      "m": "Thought any carbon compound with an –OH group gives CO₂ with hydrogencarbonate"
+     },
+     {
+      "t": "Distilled water",
+      "m": "Thought water reacts with hydrogencarbonate to give CO₂, but a neutral liquid does not"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Why does soap form a scum instead of a good lather in hard water?",
+    "why": "Hard water contains calcium and magnesium salts. These react with soap to form an insoluble scum.",
+    "o": [
+     {
+      "t": "Sodium chloride in the water destroys the soap",
+      "m": "Thought common salt in water spoils soap, but the problem is calcium and magnesium salts"
+     },
+     {
+      "t": "Soap cannot dissolve in any kind of water",
+      "m": "Thought soap works only in distilled water, but soft water gives plenty of lather"
+     },
+     {
+      "t": "Hard water is acidic and turns the soap into acid",
+      "m": "Confused hardness with acidity, but it is caused by dissolved calcium and magnesium salts",
+      "g": "s10_chem"
+     },
+     {
+      "t": "Calcium and magnesium salts react with soap to form insoluble scum",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s10_life": {
+  "tags": {
+   "te": "జీవక్రియలు",
+   "hi": "जैव प्रक्रम"
+  },
+  "lesson": {
+   "title": "Life processes in plants and humans",
+   "points": [
+    "Nutrition: green plants make food by photosynthesis, 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂, using sunlight and chlorophyll. Gases enter through stomata. In humans, saliva, gastric juice (HCl and pepsin), bile, pancreatic juice and intestinal juice digest food, and villi absorb it.",
+    "Respiration: glucose is broken down to release energy as ATP. Aerobic respiration uses oxygen and gives CO₂ and water. Anaerobic respiration gives ethanol and CO₂ in yeast and lactic acid in muscles.",
+    "Transport: the human heart has four chambers and blood passes through it twice in one round (double circulation). Arteries carry blood away from the heart and veins carry it back. In plants, xylem carries water and minerals upwards and phloem carries food to all parts.",
+    "Excretion: each kidney has many nephrons. Blood is filtered in the glomerulus, useful substances are reabsorbed, and the wastes leave as urine through the ureter, bladder and urethra."
+   ],
+   "story": "If you chew a plain piece of roti for a minute, it begins to taste slightly sweet. Your saliva contains an enzyme that starts breaking starch into sugar before the food even reaches the stomach.",
+   "example": {
+    "q": "Trace the path of oxygen-rich blood in the human heart after it leaves the lungs.",
+    "steps": [
+     "Oxygen-rich blood from the lungs enters the left atrium through the pulmonary veins.",
+     "It passes to the left ventricle, which has a thick muscular wall.",
+     "The left ventricle pumps it into the aorta, which carries it to the whole body."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "In which part of the cell does most of the energy release of aerobic respiration take place?",
+    "why": "Mitochondria are called the powerhouses of the cell because most ATP is produced there.",
+    "o": [
+     {
+      "t": "Chloroplasts",
+      "m": "Confused respiration, which releases energy, with photosynthesis, which captures it in chloroplasts",
+      "g": "s9_cell"
+     },
+     {
+      "t": "Nucleus",
+      "m": "Thought the control centre of the cell also produces its energy",
+      "g": "s9_cell"
+     },
+     {
+      "t": "Ribosomes",
+      "m": "Mixed up making proteins with releasing energy from glucose",
+      "g": "s9_cell"
+     },
+     {
+      "t": "Mitochondria",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which blood vessels carry blood away from the heart?",
+    "why": "Arteries carry blood away from the heart. Veins bring blood back to the heart.",
+    "o": [
+     {
+      "t": "Veins",
+      "m": "Mixed up the direction of flow and thought veins carry blood away from the heart"
+     },
+     {
+      "t": "Arteries",
+      "ok": 1
+     },
+     {
+      "t": "Capillaries",
+      "m": "Picked the thinnest vessels, which join arteries to veins and exchange materials"
+     },
+     {
+      "t": "Lymph vessels",
+      "m": "Confused blood circulation with the lymph system, which collects tissue fluid"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Why does a roti taste sweeter the longer you chew it?",
+    "why": "Saliva contains salivary amylase, which breaks starch in the roti into sugar (maltose).",
+    "o": [
+     {
+      "t": "Salivary amylase breaks starch into sugar",
+      "ok": 1
+     },
+     {
+      "t": "Chewing alone turns starch into sugar",
+      "m": "Thought crushing food physically changes starch into sugar, but an enzyme is needed",
+      "g": "s7_nutr"
+     },
+     {
+      "t": "Saliva has hydrochloric acid that makes sugar",
+      "m": "Mixed up saliva with gastric juice, which has HCl, and thought acid forms sugar",
+      "g": "s7_nutr"
+     },
+     {
+      "t": "Roti already contains a lot of sugar that is slowly released",
+      "m": "Thought the sweetness is stored sugar and ignored that wheat flour is mostly starch",
+      "g": "s7_nutr"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which part of the nephron in the kidney filters the blood?",
+    "why": "The glomerulus is a cluster of thin-walled capillaries in the cup-shaped Bowman's capsule, where blood is filtered.",
+    "o": [
+     {
+      "t": "Ureter",
+      "m": "Thought the tube that carries urine from kidney to bladder does the filtering",
+      "g": "s9_cell"
+     },
+     {
+      "t": "Urinary bladder",
+      "m": "Thought the organ that stores urine also filters blood",
+      "g": "s9_cell"
+     },
+     {
+      "t": "Glomerulus",
+      "ok": 1
+     },
+     {
+      "t": "Urethra",
+      "m": "Thought the tube that passes urine out of the body does the filtering",
+      "g": "s9_cell"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "After a fast sprint, the leg muscles ache because of the build-up of which substance?",
+    "why": "When oxygen is short, muscle cells break down pyruvate to form lactic acid. Its build-up causes cramps and pain.",
+    "o": [
+     {
+      "t": "Ethanol",
+      "m": "Thought anaerobic respiration always gives ethanol, which is true only for yeast",
+      "g": "s9_cell"
+     },
+     {
+      "t": "Carbon dioxide and water only",
+      "m": "Gave the products of aerobic respiration even though oxygen was short",
+      "g": "s9_cell"
+     },
+     {
+      "t": "Lactic acid",
+      "ok": 1
+     },
+     {
+      "t": "Urea",
+      "m": "Mixed up the waste of protein breakdown, excreted by the kidneys, with muscle respiration"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "During photosynthesis in a leaf, 3 molecules of glucose are formed. How many molecules of CO₂ were used? (6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂)",
+    "why": "Each glucose needs 6 CO₂. So 3 glucose molecules need 3 × 6 = 18 CO₂ molecules.",
+    "o": [
+     {
+      "t": "18",
+      "ok": 1
+     },
+     {
+      "t": "3",
+      "m": "Matched each glucose molecule with one CO₂ molecule, ignoring the coefficient 6",
+      "g": "s7_nutr"
+     },
+     {
+      "t": "6",
+      "m": "Used the CO₂ needed for one glucose and forgot to multiply by 3",
+      "g": "s7_nutr"
+     },
+     {
+      "t": "9",
+      "m": "Added 6 and 3 instead of multiplying",
+      "g": "s7_nutr"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Which is the correct path of blood that has just returned from the lungs?",
+    "why": "Oxygen-rich blood returns from the lungs to the left atrium, moves to the left ventricle and is pumped into the aorta.",
+    "o": [
+     {
+      "t": "Lungs → right atrium → right ventricle → aorta",
+      "m": "Mixed up the sides; the right side of the heart handles blood coming from the body"
+     },
+     {
+      "t": "Body → left atrium → left ventricle → lungs",
+      "m": "Reversed the circuit, as blood from the body goes to the right side and then to the lungs"
+     },
+     {
+      "t": "Lungs → left ventricle → left atrium → aorta",
+      "m": "Reversed the order of chambers; blood enters the atrium first and then the ventricle"
+     },
+     {
+      "t": "Lungs → left atrium → left ventricle → aorta",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Which statement about transport in plants is correct?",
+    "why": "Xylem carries water and minerals from roots to leaves. Phloem carries the food made in leaves to other parts.",
+    "o": [
+     {
+      "t": "Xylem carries food from leaves, and phloem carries water from roots",
+      "m": "Swapped the jobs of xylem and phloem"
+     },
+     {
+      "t": "Xylem carries water and minerals upward, and phloem carries food from leaves to other parts",
+      "ok": 1
+     },
+     {
+      "t": "Both xylem and phloem carry only water",
+      "m": "Thought plants need to transport only water and ignored the food made in leaves"
+     },
+     {
+      "t": "Phloem carries water upward by transpiration pull",
+      "m": "Mixed up the transpiration pull in xylem with food transport in phloem"
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s10_light": {
+  "tags": {
+   "te": "కాంతి: పరావర్తనం మరియు వక్రీభవనం",
+   "hi": "प्रकाश: परावर्तन तथा अपवर्तन"
+  },
+  "lesson": {
+   "title": "Mirrors, lenses and refraction",
+   "points": [
+    "Light follows the laws of reflection: the angle of incidence equals the angle of reflection. A concave mirror converges light and a convex mirror diverges it. The focal length is half the radius of curvature, f = R/2.",
+    "Mirror formula: 1/v + 1/u = 1/f, and magnification m = −v/u. With the sign convention, distances are measured from the pole, and a real object in front of the mirror has u negative. A concave mirror has f negative and a convex mirror has f positive.",
+    "Refraction is the bending of light as it passes from one medium to another. Refractive index n = c/v, where c = 3 × 10⁸ m/s. Light bends towards the normal when it enters a denser medium.",
+    "Lens formula: 1/v − 1/u = 1/f, with m = v/u. Power of a lens P = 1/f with f in metres, measured in dioptres (D). A convex lens has positive power and a concave lens has negative power."
+   ],
+   "story": "The small mirror on a scooter shows a wide view of the road behind you with cars looking smaller. It is a convex mirror, which always forms a smaller, upright image and covers a large area.",
+   "example": {
+    "q": "An object is 30 cm in front of a concave mirror of focal length 10 cm. Find the image distance and magnification.",
+    "steps": [
+     "Sign convention: u = −30 cm and f = −10 cm.",
+     "1/v = 1/f − 1/u = −1/10 + 1/30 = −3/30 + 1/30 = −2/30 = −1/15, so v = −15 cm.",
+     "m = −v/u = −(−15)/(−30) = −0.5.",
+     "The image is 15 cm in front of the mirror, real, inverted and half the size of the object."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which type of mirror is used as a rear-view mirror in vehicles?",
+    "why": "A convex mirror always gives an upright, smaller image and has a wide field of view, so the driver sees more of the road.",
+    "o": [
+     {
+      "t": "Concave mirror",
+      "m": "Thought a mirror that enlarges is better for seeing behind, but a concave mirror gives a narrow view",
+      "g": "s8_light"
+     },
+     {
+      "t": "Convex mirror",
+      "ok": 1
+     },
+     {
+      "t": "Plane mirror",
+      "m": "Thought a flat mirror is best because the image is the same size, but its field of view is small",
+      "g": "s8_light"
+     },
+     {
+      "t": "Concave mirror, because it forms a real image",
+      "m": "Thought a real image helps the driver, but a mirror that gives a wide view is needed",
+      "g": "s8_light"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is the SI unit of the power of a lens?",
+    "why": "Power P = 1/f with f in metres, and its unit is the dioptre (D).",
+    "o": [
+     {
+      "t": "Dioptre",
+      "ok": 1
+     },
+     {
+      "t": "Metre",
+      "m": "Confused power with focal length, which is measured in metres",
+      "g": "s8_light"
+     },
+     {
+      "t": "Watt",
+      "m": "Confused the power of a lens with electrical power",
+      "g": "s8_light"
+     },
+     {
+      "t": "Newton",
+      "m": "Confused the power of a lens with force",
+      "g": "s8_light"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A concave mirror has a radius of curvature of 24 cm. What is its focal length in magnitude?",
+    "why": "f = R/2 = 24/2 = 12 cm.",
+    "o": [
+     {
+      "t": "24 cm",
+      "m": "Took the focal length to be equal to the radius of curvature",
+      "g": "s8_light"
+     },
+     {
+      "t": "48 cm",
+      "m": "Doubled the radius instead of halving it",
+      "g": "s8_light"
+     },
+     {
+      "t": "12 cm",
+      "ok": 1
+     },
+     {
+      "t": "6 cm",
+      "m": "Halved the radius twice",
+      "g": "s8_light"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "The speed of light in glass is 2 × 10⁸ m/s and in vacuum it is 3 × 10⁸ m/s. What is the refractive index of glass?",
+    "why": "n = c/v = (3 × 10⁸)/(2 × 10⁸) = 1.5.",
+    "o": [
+     {
+      "t": "0.67",
+      "m": "Divided the speed in glass by the speed in vacuum instead of the other way round",
+      "g": "s8_light"
+     },
+     {
+      "t": "5",
+      "m": "Added the two speed values instead of dividing them",
+      "g": "s8_light"
+     },
+     {
+      "t": "1.5",
+      "ok": 1
+     },
+     {
+      "t": "6",
+      "m": "Multiplied the two speed values instead of dividing them",
+      "g": "s8_light"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A ray of light goes from air into glass at an angle. How does it bend?",
+    "why": "Glass is optically denser than air. Light slows down in glass and bends towards the normal.",
+    "o": [
+     {
+      "t": "Towards the normal",
+      "ok": 1
+     },
+     {
+      "t": "Away from the normal",
+      "m": "Mixed up the rule and thought light bends away when it slows down",
+      "g": "s8_light"
+     },
+     {
+      "t": "It does not bend and goes straight",
+      "m": "Thought light changes direction only at a mirror and not on entering glass",
+      "g": "s8_light"
+     },
+     {
+      "t": "Along the surface of the glass",
+      "m": "Confused refraction with the special case of total internal reflection at the critical angle",
+      "g": "s8_light"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "An object is placed 30 cm in front of a concave mirror of focal length 20 cm. Where is the image and what is its nature?",
+    "why": "u = −30, f = −20. 1/v = 1/f − 1/u = −1/20 + 1/30 = −1/60, so v = −60 cm. m = −v/u = −2. The image is 60 cm in front of the mirror, real, inverted and magnified.",
+    "o": [
+     {
+      "t": "12 cm in front of the mirror, real, inverted and diminished",
+      "m": "Ignored the signs and added the reciprocals 1/20 + 1/30 to get 1/12",
+      "g": "s8_light"
+     },
+     {
+      "t": "60 cm behind the mirror, virtual, erect and magnified",
+      "m": "Read the negative sign of v as meaning behind the mirror",
+      "g": "s8_light"
+     },
+     {
+      "t": "50 cm in front of the mirror, real, inverted and magnified",
+      "m": "Added u and f instead of using the mirror formula",
+      "g": "s8_light"
+     },
+     {
+      "t": "60 cm in front of the mirror, real, inverted and magnified",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A diverging lens has a focal length of −50 cm. What is its power?",
+    "why": "f = −50 cm = −0.5 m. P = 1/f = 1/(−0.5) = −2 D.",
+    "o": [
+     {
+      "t": "+2 D",
+      "m": "Ignored the negative sign, but a diverging lens has negative power",
+      "g": "s8_light"
+     },
+     {
+      "t": "−2 D",
+      "ok": 1
+     },
+     {
+      "t": "−0.02 D",
+      "m": "Used the focal length in centimetres instead of metres",
+      "g": "s8_light"
+     },
+     {
+      "t": "−0.5 D",
+      "m": "Wrote the focal length in metres as the power without taking the reciprocal",
+      "g": "s8_light"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "An object is placed 15 cm in front of a convex lens of focal length 10 cm. Where is the image formed?",
+    "why": "u = −15, f = +10. 1/v = 1/f + 1/u = 1/10 − 1/15 = 1/30, so v = +30 cm. The image is real and inverted on the other side of the lens (m = −2).",
+    "o": [
+     {
+      "t": "6 cm on the same side as the object, virtual and erect",
+      "m": "Added 1/10 and 1/15 using wrong signs to get 1/6, then misread the sign",
+      "g": "s8_light"
+     },
+     {
+      "t": "25 cm on the other side of the lens, real and inverted",
+      "m": "Added u and f in size instead of using the lens formula",
+      "g": "s8_light"
+     },
+     {
+      "t": "30 cm on the same side as the object, virtual and erect",
+      "m": "Got the distance right but misjudged the side, since a positive v means the far side of the lens",
+      "g": "s8_light"
+     },
+     {
+      "t": "30 cm on the other side of the lens, real and inverted",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s10_elec": {
+  "tags": {
+   "te": "విద్యుత్",
+   "hi": "विद्युत"
+  },
+  "lesson": {
+   "title": "Current, resistance and power",
+   "points": [
+    "Electric current I = Q/t, measured in amperes (1 A = 1 coulomb per second). Potential difference V = W/Q is measured in volts. An ammeter is connected in series and a voltmeter in parallel.",
+    "Ohm's law: V = IR. Resistance of a wire R = ρl/A, so it increases with length and decreases with area. Resistivity ρ depends on the material and temperature, not on the size of the wire.",
+    "Series: R = R₁ + R₂ + ..., the same current flows through each resistor. Parallel: 1/R = 1/R₁ + 1/R₂ + ..., the same potential difference is across each resistor, and the total resistance is less than the smallest one.",
+    "Heating effect H = I²Rt. Power P = VI = I²R = V²/R, measured in watts. One kilowatt hour (1 unit) = 3.6 × 10⁶ J. A fuse has a low melting point and melts when the current is too high."
+   ],
+   "story": "During Diwali, a string of cheap series lights goes dark if one bulb fuses, as the current has no other path. The lights and fans in your house are in parallel, so each works even if another is switched off.",
+   "example": {
+    "q": "Resistors of 12 Ω and 6 Ω are connected in parallel to a 12 V battery. Find the total current.",
+    "steps": [
+     "For parallel resistors, R = (12 × 6)/(12 + 6) = 72/18 = 4 Ω.",
+     "Use Ohm's law: I = V/R.",
+     "I = 12/4 = 3 A.",
+     "Check: 12 V/12 Ω = 1 A and 12 V/6 Ω = 2 A, and 1 + 2 = 3 A."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which instrument measures electric current and how is it connected in a circuit?",
+    "why": "An ammeter measures current and is connected in series so that the whole current flows through it.",
+    "o": [
+     {
+      "t": "Ammeter, connected in series",
+      "ok": 1
+     },
+     {
+      "t": "Ammeter, connected in parallel",
+      "m": "Knew the instrument but connected it across the component, which would short the circuit",
+      "g": "s7_elec"
+     },
+     {
+      "t": "Voltmeter, connected in series",
+      "m": "Mixed up the voltmeter with the ammeter",
+      "g": "s7_elec"
+     },
+     {
+      "t": "Voltmeter, connected in parallel",
+      "m": "Mixed up the voltmeter, which measures potential difference, with the ammeter",
+      "g": "s7_elec"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Why is the wire used in an electric fuse made of a material with a low melting point?",
+    "why": "If the current becomes too large, the heating effect melts the fuse wire and breaks the circuit, protecting the appliances.",
+    "o": [
+     {
+      "t": "So that it can carry a very large current safely",
+      "m": "Thought a fuse should withstand any current, but its job is to break the circuit",
+      "g": "s7_elec"
+     },
+     {
+      "t": "So that it has very high resistance and saves energy",
+      "m": "Thought a fuse wire must have high resistance, but its role is protection",
+      "g": "s7_elec"
+     },
+     {
+      "t": "So that it melts and breaks the circuit when the current is too high",
+      "ok": 1
+     },
+     {
+      "t": "So that it becomes a magnet during a short circuit",
+      "m": "Mixed up the heating effect with the magnetic effect of current",
+      "g": "s7_elec"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A steady current of 2 A flows through a wire for 30 seconds. How much charge flows through it?",
+    "why": "Q = I × t = 2 × 30 = 60 C.",
+    "o": [
+     {
+      "t": "15 C",
+      "m": "Divided the time by the current instead of multiplying",
+      "g": "m8_lin"
+     },
+     {
+      "t": "32 C",
+      "m": "Added the current and the time",
+      "g": "m8_lin"
+     },
+     {
+      "t": "60 C",
+      "ok": 1
+     },
+     {
+      "t": "28 C",
+      "m": "Subtracted the current from the time",
+      "g": "m8_lin"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A heater draws a current of 5 A when connected to a 220 V supply. What is its resistance?",
+    "why": "R = V/I = 220/5 = 44 Ω.",
+    "o": [
+     {
+      "t": "44 Ω",
+      "ok": 1
+     },
+     {
+      "t": "1100 Ω",
+      "m": "Multiplied V and I instead of dividing V by I",
+      "g": "m8_lin"
+     },
+     {
+      "t": "225 Ω",
+      "m": "Added the voltage and the current",
+      "g": "m8_lin"
+     },
+     {
+      "t": "0.023 Ω",
+      "m": "Divided I by V instead of V by I",
+      "g": "m8_lin"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A wire of resistance R is replaced by another wire of the same material and same thickness but double the length. What is the new resistance?",
+    "why": "R = ρl/A. With the same ρ and A, doubling the length doubles the resistance to 2R.",
+    "o": [
+     {
+      "t": "R/2",
+      "m": "Thought a longer wire conducts better and so has less resistance",
+      "g": "s7_elec"
+     },
+     {
+      "t": "4R",
+      "m": "Squared the change in length, but resistance is directly proportional to length",
+      "g": "s7_elec"
+     },
+     {
+      "t": "R",
+      "m": "Thought resistance depends only on the material and not on the length",
+      "g": "s7_elec"
+     },
+     {
+      "t": "2R",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Resistors of 6 Ω and 3 Ω are connected in parallel. What is the equivalent resistance?",
+    "why": "1/R = 1/6 + 1/3 = 3/6 = 1/2, so R = 2 Ω. This is less than the smaller resistor.",
+    "o": [
+     {
+      "t": "9 Ω",
+      "m": "Added the resistances as if they were in series",
+      "g": "m8_lin"
+     },
+     {
+      "t": "2 Ω",
+      "ok": 1
+     },
+     {
+      "t": "0.5 Ω",
+      "m": "Found 1/R = 1/2 correctly but forgot to invert it to get R",
+      "g": "m8_lin"
+     },
+     {
+      "t": "4.5 Ω",
+      "m": "Took the average of the two resistances",
+      "g": "m8_lin"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A 2 kW geyser is used for 30 minutes every day for 30 days. If one unit of electricity costs ₹6, what is the cost of running the geyser?",
+    "why": "Energy per day = 2 kW × 0.5 h = 1 kWh. For 30 days it is 30 units. Cost = 30 × 6 = ₹180.",
+    "o": [
+     {
+      "t": "₹360",
+      "m": "Took the time as 1 hour per day instead of 30 minutes",
+      "g": "m8_lin"
+     },
+     {
+      "t": "₹6",
+      "m": "Calculated the cost of just one day instead of 30 days",
+      "g": "m8_lin"
+     },
+     {
+      "t": "₹10,800",
+      "m": "Used 30 minutes without converting it to hours",
+      "g": "m8_lin"
+     },
+     {
+      "t": "₹180",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A 6 V battery is connected to a 4 Ω resistor and a 2 Ω resistor in series. What is the potential difference across the 4 Ω resistor?",
+    "why": "Total R = 6 Ω, so I = 6/6 = 1 A. The potential difference across the 4 Ω resistor is V = IR = 1 × 4 = 4 V.",
+    "o": [
+     {
+      "t": "3 V",
+      "m": "Split the battery voltage equally between the two resistors",
+      "g": "s7_elec"
+     },
+     {
+      "t": "4 V",
+      "ok": 1
+     },
+     {
+      "t": "6 V",
+      "m": "Gave the full battery voltage to one resistor, but in series it is shared",
+      "g": "s7_elec"
+     },
+     {
+      "t": "1.5 V",
+      "m": "Divided the battery voltage by 4 Ω instead of using the current",
+      "g": "m8_lin"
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s10_heredity": {
+  "tags": {
+   "te": "అనువంశికత మరియు పరిణామం",
+   "hi": "आनुवंशिकता एवं जैव विकास"
+  },
+  "lesson": {
+   "title": "Heredity, Mendel and evolution",
+   "points": [
+    "Offspring resemble their parents because traits are passed on through genes. Gregor Mendel studied pea plants. In a cross between pure tall (TT) and pure dwarf (tt) plants, all F1 plants are tall, and the F2 generation has tall and dwarf plants in the ratio 3 : 1.",
+    "A trait that shows in F1 is dominant and the one that is hidden is recessive. In a dihybrid cross (round yellow × wrinkled green seeds), F2 shows the ratio 9 : 3 : 3 : 1, so traits are inherited independently.",
+    "Humans have 23 pairs of chromosomes, 22 pairs of autosomes and one pair of sex chromosomes. Females are XX and males are XY. All eggs carry X, and a sperm carries X or Y, so the father's sperm decides the sex of the child.",
+    "Variations that help survival are selected by nature, which is the basis of evolution. Homologous organs have the same basic structure but different functions (human arm and bat wing), while analogous organs have different structures but similar functions (wings of a bird and an insect). Fossils give evidence of evolution."
+   ],
+   "story": "A child may have the mother's eyes and the father's curly hair, and cousins in a family can differ in height. Each trait is controlled by a pair of genes, one from each parent, and different combinations give variety.",
+   "example": {
+    "q": "In pea plants, tall (T) is dominant over dwarf (t). Two heterozygous tall plants (Tt) are crossed. Of 400 offspring, how many are expected to be dwarf?",
+    "steps": [
+     "Gametes of each parent are T and t.",
+     "The offspring are TT, Tt, Tt and tt, in the ratio 1 : 2 : 1, which gives 3 tall : 1 dwarf.",
+     "Only tt plants are dwarf, which is 1 out of 4.",
+     "Expected dwarf plants = 1/4 × 400 = 100."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Who is known as the father of genetics for his experiments on pea plants?",
+    "why": "Gregor Johann Mendel did experiments on pea plants and gave the basic laws of inheritance.",
+    "o": [
+     {
+      "t": "Charles Darwin",
+      "m": "Mixed up the scientist of natural selection and evolution with the one who studied inheritance",
+      "g": "s8_repro"
+     },
+     {
+      "t": "Robert Hooke",
+      "m": "Mixed up the discoverer of cells with the scientist of inheritance",
+      "g": "s9_cell"
+     },
+     {
+      "t": "Gregor Mendel",
+      "ok": 1
+     },
+     {
+      "t": "Louis Pasteur",
+      "m": "Mixed up the scientist known for germ theory with the scientist of inheritance",
+      "g": "s8_repro"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "How many pairs of chromosomes are there in a normal human body cell?",
+    "why": "A human cell has 46 chromosomes, which is 23 pairs: 22 pairs of autosomes and one pair of sex chromosomes.",
+    "o": [
+     {
+      "t": "46 pairs",
+      "m": "Took the total number of chromosomes as the number of pairs",
+      "g": "s9_cell"
+     },
+     {
+      "t": "22 pairs",
+      "m": "Counted only the autosomes and left out the sex chromosomes",
+      "g": "s9_cell"
+     },
+     {
+      "t": "23 pairs",
+      "ok": 1
+     },
+     {
+      "t": "24 pairs",
+      "m": "Added one extra pair for each sex chromosome",
+      "g": "s9_cell"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What decides whether a human baby will be a boy or a girl?",
+    "why": "All eggs carry an X chromosome. A sperm carries either X (girl, XX) or Y (boy, XY), so the sperm decides the sex.",
+    "o": [
+     {
+      "t": "Whether the sperm carries an X or a Y chromosome",
+      "ok": 1
+     },
+     {
+      "t": "The mother, because the baby grows inside her",
+      "m": "Believed the mother decides the sex, but all her eggs carry only X",
+      "g": "s8_repro"
+     },
+     {
+      "t": "Whether the egg carries an X or a Y chromosome",
+      "m": "Thought the egg can carry either type, but all eggs carry only an X chromosome",
+      "g": "s9_cell"
+     },
+     {
+      "t": "The food the mother eats during pregnancy",
+      "m": "Believed diet decides the sex, but it is fixed at fertilisation by the sperm",
+      "g": "s8_repro"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A pure tall pea plant (TT) is crossed with a pure dwarf plant (tt). What do the F1 plants look like?",
+    "why": "Tallness is dominant. Every F1 plant is Tt, so all of them are tall.",
+    "o": [
+     {
+      "t": "All are dwarf",
+      "m": "Mixed up the dominant and recessive trait",
+      "g": "s8_repro"
+     },
+     {
+      "t": "Half are tall and half are dwarf",
+      "m": "Thought the two traits are shared equally in F1 instead of the dominant one showing",
+      "g": "s8_repro"
+     },
+     {
+      "t": "All are of medium height",
+      "m": "Believed the traits blend together, but Mendel found no blending",
+      "g": "s8_repro"
+     },
+     {
+      "t": "All are tall",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "The wings of a bird and the wings of an insect are used for flying but have a different origin and structure. What are such organs called?",
+    "why": "Organs with similar functions but different structure and origin are analogous organs.",
+    "o": [
+     {
+      "t": "Homologous organs",
+      "m": "Mixed up with organs of the same basic structure but different function, like human arm and bat wing",
+      "g": "s9_cell"
+     },
+     {
+      "t": "Analogous organs",
+      "ok": 1
+     },
+     {
+      "t": "Vestigial organs",
+      "m": "Mixed up with organs that have lost their function over time, like the appendix",
+      "g": "s9_cell"
+     },
+     {
+      "t": "Fossil organs",
+      "m": "Used a term that does not describe organs with similar function"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Two heterozygous tall pea plants (Tt) are crossed and give 800 offspring. How many dwarf plants are expected?",
+    "why": "The ratio of tall to dwarf is 3 : 1, so 1/4 of the plants are dwarf: 800 ÷ 4 = 200.",
+    "o": [
+     {
+      "t": "400",
+      "m": "Thought half the plants would be dwarf",
+      "g": "s8_repro"
+     },
+     {
+      "t": "600",
+      "m": "Gave the number of tall plants instead of dwarf plants",
+      "g": "s8_repro"
+     },
+     {
+      "t": "100",
+      "m": "Divided the total by 8 instead of by 4",
+      "g": "s8_repro"
+     },
+     {
+      "t": "200",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "In a dihybrid cross of round yellow (RRYY) and wrinkled green (rryy) seeds, the F1 plants are crossed. Out of 16 F2 plants, how many are expected to be round and yellow?",
+    "why": "The F2 ratio is 9 : 3 : 3 : 1, and the 9 are round yellow, which show both dominant traits.",
+    "o": [
+     {
+      "t": "3",
+      "m": "Gave the number for one of the two mixed groups, round green or wrinkled yellow",
+      "g": "s8_repro"
+     },
+     {
+      "t": "9",
+      "ok": 1
+     },
+     {
+      "t": "12",
+      "m": "Counted all round seeds, which includes the round green ones",
+      "g": "s8_repro"
+     },
+     {
+      "t": "1",
+      "m": "Gave the number of wrinkled green plants, the double recessive",
+      "g": "s8_repro"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "When an antibiotic is used again and again, resistant bacteria become common. Which explanation is correct?",
+    "why": "A few bacteria already carried a variation for resistance. They survived and multiplied, so natural selection made them more common.",
+    "o": [
+     {
+      "t": "A few bacteria already had a variation that helped them survive and so they multiplied",
+      "ok": 1
+     },
+     {
+      "t": "Bacteria decided to become resistant when they met the antibiotic",
+      "m": "Thought organisms change on purpose when needed, but variations arise by chance",
+      "g": "s9_cell"
+     },
+     {
+      "t": "The antibiotic turns every bacterium into a resistant one",
+      "m": "Thought the medicine causes the same change in all bacteria instead of selecting existing variants",
+      "g": "s9_cell"
+     },
+     {
+      "t": "All bacteria were resistant from the start",
+      "m": "Ignored variation; if all were resistant, the antibiotic would never have worked",
+      "g": "s9_cell"
+     }
+    ]
+   }
+  ],
+  "steps": null
+ }
+}

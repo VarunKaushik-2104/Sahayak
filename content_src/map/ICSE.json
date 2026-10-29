@@ -1,0 +1,896 @@
+{
+ "board": "ICSE",
+ "book": "Selina/CISCE",
+ "classes": {
+  "6": {
+   "Maths": [
+    {
+     "name": "Negative Numbers and Integers",
+     "topics": [
+      "m6_int"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Natural Numbers and Whole Numbers (Including Number Line and Patterns)",
+     "topics": [
+      "m6_num"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Playing with Numbers (Including H.C.F. and L.C.M.)",
+     "topics": [
+      "m6_num"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Fractions",
+     "topics": [
+      "m6_frac"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Decimal Fractions",
+     "topics": [
+      "m6_frac"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Ratio and Proportion (Including Unitary Method)",
+     "topics": [
+      "m6_ratio"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Framing Algebraic Expressions (Including Substitution and Linear Equations)",
+     "topics": [
+      "m6_alg"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Fundamental Concepts (Including Angles and their Properties)",
+     "topics": [
+      "m6_geo"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Perimeter and Area of Plane Figures",
+     "topics": [
+      "m6_mens"
+     ],
+     "verified": true
+    }
+   ],
+   "Science": [
+    {
+     "name": "Matter",
+     "topics": [
+      "s6_mat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Elements, Compounds, Symbols And Formulae",
+     "topics": [
+      "s6_mat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Pure Substances and Mixtures; Separation of Mixtures",
+     "topics": [
+      "s6_sep",
+      "s6_mat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "The Leaf",
+     "topics": [
+      "s6_plant"
+     ],
+     "verified": true
+    },
+    {
+     "name": "The Flower",
+     "topics": [
+      "s6_plant"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Cell – The Structure and Functions",
+     "topics": [
+      "s8_cell"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Physical Quantities and Measurement",
+     "topics": [
+      "s6_motion"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Light",
+     "topics": [
+      "s6_light"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Electricity and Magnetism",
+     "topics": [
+      "s6_elec"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Digestive System",
+     "topics": [
+      "s7_nutr"
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "7": {
+   "Maths": [
+    {
+     "name": "Integers",
+     "topics": [
+      "m7_int"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Fractions (Including Problems)",
+     "topics": [
+      "m7_frac"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Decimal Fractions (Decimals)",
+     "topics": [
+      "m7_frac"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Rational Numbers",
+     "topics": [
+      "m7_rat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Ratio and Proportion (Including Sharing in a Ratio)",
+     "topics": [
+      "m7_ratio"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Percent and Percentage",
+     "topics": [
+      "m7_ratio"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Profit, Loss and Discount",
+     "topics": [
+      "m8_pct"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Simple Interest",
+     "topics": [
+      "m8_pct"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Fundamental Concepts (Including Fundamental Operations)",
+     "topics": [
+      "m7_expr"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Simple Linear Equations (Including Word Problems)",
+     "topics": [
+      "m7_eq"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Triangles",
+     "topics": [
+      "m7_tri"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Pythagoras Theorem",
+     "topics": [
+      "m7_tri"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Mensuration (Perimeter and Area of Plane Figures)",
+     "topics": [
+      "m7_mens"
+     ],
+     "verified": true
+    }
+   ],
+   "Science": [
+    {
+     "name": "Photosynthesis and Respiration",
+     "topics": [
+      "s7_nutr"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Physical and Chemical Changes",
+     "topics": [
+      "s7_chem"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Metals and Non-metals",
+     "topics": [
+      "s8_metal"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Motion",
+     "topics": [
+      "s7_motion"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Heat",
+     "topics": [
+      "s7_heat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Light Energy",
+     "topics": [
+      "s7_light"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Sound",
+     "topics": [
+      "s8_sound"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Electricity and Magnetism",
+     "topics": [
+      "s7_elec"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Plant And Animal Tissues",
+     "topics": [
+      "s8_cell"
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "8": {
+   "Maths": [
+    {
+     "name": "Squares and Square Root",
+     "topics": [
+      "m8_sq"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Cubes and Cube Roots",
+     "topics": [
+      "m8_sq"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Exponents",
+     "topics": [
+      "m8_exp"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Algebraic Expressions",
+     "topics": [
+      "m8_alg"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Identities",
+     "topics": [
+      "m8_alg"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Linear Equations in one Variable",
+     "topics": [
+      "m8_lin"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Percent and Percentage",
+     "topics": [
+      "m8_pct"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Profit, Loss and Discount",
+     "topics": [
+      "m8_pct"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Interest",
+     "topics": [
+      "m8_pct"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Area of a Trapezium and a Polygon",
+     "topics": [
+      "m8_mens"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Surface Area, Volume and Capacity",
+     "topics": [
+      "m8_mens"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Data Handling",
+     "topics": [
+      "m8_data"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Probability",
+     "topics": [
+      "m8_data"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Understanding Shapes",
+     "topics": [
+      "m8_quad"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Special Types of Quadrilaterals",
+     "topics": [
+      "m8_quad"
+     ],
+     "verified": true
+    }
+   ],
+   "Science": [
+    {
+     "name": "Reproduction in Plants",
+     "topics": [
+      "s8_repro"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Reproduction in Humans",
+     "topics": [
+      "s8_repro"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Endocrine System and Adolescence",
+     "topics": [
+      "s8_repro"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Force and Pressure",
+     "topics": [
+      "s8_force"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Sound",
+     "topics": [
+      "s8_sound"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Light Energy",
+     "topics": [
+      "s8_light"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Heat Transfer",
+     "topics": [
+      "s7_heat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Matter",
+     "topics": [
+      "s9_matter"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Physical and Chemical Changes",
+     "topics": [
+      "s7_chem"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Carbon and Its Compounds",
+     "topics": [
+      "s10_carbon"
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "9": {
+   "Maths": [
+    {
+     "name": "Rational and Irrational Numbers",
+     "topics": [
+      "m9_num"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Indices [Exponents]",
+     "topics": [
+      "m9_num"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Expansions",
+     "topics": [
+      "m9_poly"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Factorisation",
+     "topics": [
+      "m9_poly"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Co-ordinate Geometry",
+     "topics": [
+      "m9_coord"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Distance Formula",
+     "topics": [
+      "m9_coord"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Simultaneous (Linear) Equations [Including Problems]",
+     "topics": [
+      "m9_lin2",
+      "m10_pair"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Graphical Solution [Solution of Simultaneous Linear Equations, Graphically]",
+     "topics": [
+      "m9_lin2",
+      "m10_pair"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Triangles [Congruency in Triangles]",
+     "topics": [
+      "m9_tri"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Isosceles Triangles [Including Inequalities]",
+     "topics": [
+      "m9_tri"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Area and Perimeter of Plane Figures",
+     "topics": [
+      "m9_mens"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Solids [Surface Area and Volume of 3-D Solids]",
+     "topics": [
+      "m9_mens"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Statistics",
+     "topics": [
+      "m9_stat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Mean and Median [For Ungrouped Data Only]",
+     "topics": [
+      "m9_stat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Trigonometrical Ratios [Sine, Consine, Tangent of an Angle and their Reciprocals]",
+     "topics": [
+      "m10_trig"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Solution of Right Triangles [Simple 2-D Problems Involving One Right-angled Triangle]",
+     "topics": [
+      "m10_trig"
+     ],
+     "verified": true
+    }
+   ],
+   "Science": [
+    {
+     "name": "Cell: The Unit Of Life",
+     "topics": [
+      "s9_cell"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Tissues: Plant And Animal Tissues",
+     "topics": [
+      "s9_cell"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Motion in One Dimension",
+     "topics": [
+      "s9_motion"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Laws of Motion",
+     "topics": [
+      "s9_force"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Heat and Energy",
+     "topics": [
+      "s9_work"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Propagation of Sound Waves",
+     "topics": [
+      "s9_sound"
+     ],
+     "verified": true
+    },
+    {
+     "name": "The Language of Chemistry",
+     "topics": [
+      "s9_atom"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Atomic Structure and Chemical Bonding",
+     "topics": [
+      "s9_atom"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Study of Gas Laws",
+     "topics": [
+      "s9_matter"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Chemical Changes and Reactions",
+     "topics": [
+      "s10_chem"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Reflection of Light",
+     "topics": [
+      "s10_light"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Current Electricity",
+     "topics": [
+      "s10_elec"
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "10": {
+   "Maths": [
+    {
+     "name": "Quadratic Equations",
+     "topics": [
+      "m10_quad"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Solving (simple) Problems (Based on Quadratic Equations)",
+     "topics": [
+      "m10_quad"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Remainder and Factor Theorems",
+     "topics": [
+      "m9_poly"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Arithmetic Progression",
+     "topics": [
+      "m10_ap"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Equation of a Line",
+     "topics": [
+      "m9_coord"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Section and Mid-Point Formula",
+     "topics": [
+      "m9_coord"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Similarity (With Applications to Maps and Models)",
+     "topics": [
+      "m10_simtri"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Trigonometrical Identities",
+     "topics": [
+      "m10_trig"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Height and Distances",
+     "topics": [
+      "m10_trig"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Cylinder, Cone and Sphere",
+     "topics": [
+      "m10_mens"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Probability",
+     "topics": [
+      "m10_prob",
+      "m9_stat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Measure of Central Tendency (Mean, Median, Quartiles and Mode)",
+     "topics": [
+      "m10_prob",
+      "m9_stat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Graphical Representation",
+     "topics": [
+      "m10_prob",
+      "m9_stat"
+     ],
+     "verified": true
+    }
+   ],
+   "Science": [
+    {
+     "name": "Work, Energy and Power",
+     "topics": [
+      "s9_work"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Refraction of Light at Plane Surfaces",
+     "topics": [
+      "s10_light"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Refraction through a Lens",
+     "topics": [
+      "s10_light"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Current Electricity",
+     "topics": [
+      "s10_elec"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Household Circuits",
+     "topics": [
+      "s10_elec"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Acids, Bases and Salts",
+     "topics": [
+      "s10_acid"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Metallurgy",
+     "topics": [
+      "s10_metal"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Organic Chemistry",
+     "topics": [
+      "s10_carbon"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Absorption by roots - The Processes Involved",
+     "topics": [
+      "s10_life"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Transpiration",
+     "topics": [
+      "s10_life"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Photosynthesis",
+     "topics": [
+      "s10_life"
+     ],
+     "verified": true
+    },
+    {
+     "name": "The Circulatory System",
+     "topics": [
+      "s10_life"
+     ],
+     "verified": true
+    },
+    {
+     "name": "The Excretory System",
+     "topics": [
+      "s10_life"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Genetics - Some Basic Fundamentals",
+     "topics": [
+      "s10_heredity"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Human Evolution",
+     "topics": [
+      "s10_heredity"
+     ],
+     "verified": true
+    }
+   ]
+  }
+ }
+}

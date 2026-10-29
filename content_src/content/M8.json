@@ -1,0 +1,2214 @@
+{
+ "m8_sq": {
+  "lesson": {
+   "title": "Squares and cubes",
+   "points": [
+    "The square of a number is the number multiplied by itself, so 7² = 7 × 7 = 49.",
+    "The cube of a number is the number multiplied by itself three times, so 4³ = 4 × 4 × 4 = 64.",
+    "A square root or cube root undoes squaring or cubing: √49 = 7 and ∛64 = 4.",
+    "To find a root, write the number as a product of primes and make groups: pairs for a square root, triples for a cube root."
+   ],
+   "story": "A floor is covered with square tiles in 12 rows of 12 tiles each. The number of tiles is 12² = 144, and going back from 144 tiles to the 12 tiles along one side is taking the square root.",
+   "example": {
+    "q": "Find √784 by prime factorisation.",
+    "steps": [
+     "Divide 784 by primes: 784 = 2 × 2 × 2 × 2 × 7 × 7.",
+     "Make pairs of equal primes: (2 × 2) × (2 × 2) × (7 × 7).",
+     "Take one prime from each pair and multiply: 2 × 2 × 7 = 28.",
+     "Check: 28 × 28 = 784, so √784 = 28."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the value of 13²?",
+    "why": "13² = 13 × 13 = 169.",
+    "o": [
+     {
+      "t": "169",
+      "ok": 1
+     },
+     {
+      "t": "26",
+      "m": "Multiplied 13 by 2 instead of multiplying 13 by itself",
+      "g": "m6_num"
+     },
+     {
+      "t": "39",
+      "m": "Multiplied 13 by 3 instead of by 13"
+     },
+     {
+      "t": "156",
+      "m": "Multiplied 13 by 12, the number before it"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is the cube root of 64?",
+    "why": "4 × 4 × 4 = 64, so ∛64 = 4.",
+    "o": [
+     {
+      "t": "8",
+      "m": "Found the square root of 64 instead of the cube root"
+     },
+     {
+      "t": "32",
+      "m": "Divided 64 by 2 and took that as the root"
+     },
+     {
+      "t": "16",
+      "m": "Squared the answer 4 and gave 4² instead of the root"
+     },
+     {
+      "t": "4",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which of these numbers is a perfect square?",
+    "why": "144 = 12 × 12. The others are not squares of whole numbers: 125 = 5³, 90 is not 9 × 10 times a square and 99 lies between 9² and 10².",
+    "o": [
+     {
+      "t": "125",
+      "m": "Confused a perfect cube (5³) with a perfect square"
+     },
+     {
+      "t": "90",
+      "m": "Thought any number ending in 0 is a perfect square, but zeros in a square come in pairs"
+     },
+     {
+      "t": "144",
+      "ok": 1
+     },
+     {
+      "t": "99",
+      "m": "Checked only that the last digit is 9 and assumed it is a square"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the units digit of 27²?",
+    "why": "The units digit of 27² comes from 7² = 49, so it is 9.",
+    "o": [
+     {
+      "t": "7",
+      "m": "Kept the units digit of 27 itself instead of squaring it"
+     },
+     {
+      "t": "9",
+      "ok": 1
+     },
+     {
+      "t": "4",
+      "m": "Doubled 7 to get 14 instead of squaring it"
+     },
+     {
+      "t": "3",
+      "m": "Cubed 7 (343) instead of squaring it"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the value of (−7)²?",
+    "why": "(−7)² = (−7) × (−7) = +49, because a negative times a negative is positive.",
+    "o": [
+     {
+      "t": "49",
+      "ok": 1
+     },
+     {
+      "t": "−49",
+      "m": "Kept the negative sign and forgot that two negatives multiply to a positive",
+      "g": "m7_int"
+     },
+     {
+      "t": "−14",
+      "m": "Multiplied −7 by 2 instead of by −7",
+      "g": "m7_int"
+     },
+     {
+      "t": "14",
+      "m": "Doubled 7 instead of squaring it"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "What is the smallest number by which 72 must be multiplied so that the product is a perfect square?",
+    "why": "72 = 2 × 2 × 2 × 3 × 3. The 3s are paired but one 2 is left alone. Multiplying by 2 gives 144 = 12².",
+    "o": [
+     {
+      "t": "3",
+      "m": "Picked the prime that is already paired instead of the unpaired one"
+     },
+     {
+      "t": "8",
+      "m": "Found a number that works (72 × 8 = 576 = 24²) but not the smallest one"
+     },
+     {
+      "t": "6",
+      "m": "Multiplied by every prime factor of 72 instead of only the unpaired prime"
+     },
+     {
+      "t": "2",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A square park has area 1764 m². How much fencing is needed to go once around it?",
+    "why": "Side = √1764 = 42 m. Perimeter = 4 × 42 = 168 m.",
+    "o": [
+     {
+      "t": "42 m",
+      "m": "Found the side but did not find the perimeter"
+     },
+     {
+      "t": "84 m",
+      "m": "Added only two sides (2 × 42)"
+     },
+     {
+      "t": "168 m",
+      "ok": 1
+     },
+     {
+      "t": "7056 m",
+      "m": "Multiplied the area by 4 instead of finding the side first"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A cube has volume 2744 cm³. What is its total surface area?",
+    "why": "Edge = ∛2744 = 14 cm. Surface area = 6 × 14² = 6 × 196 = 1176 cm².",
+    "o": [
+     {
+      "t": "84 cm²",
+      "m": "Computed 6 × 14 and forgot to square the edge"
+     },
+     {
+      "t": "1176 cm²",
+      "ok": 1
+     },
+     {
+      "t": "196 cm²",
+      "m": "Gave the area of one face only"
+     },
+     {
+      "t": "16464 cm²",
+      "m": "Multiplied the volume by 6 without finding the edge"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Find the square root of 576 by prime factorisation. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Write 576 as a product of prime factors and make pairs",
+       "ok": 1
+      },
+      {
+       "t": "Divide 576 by 2 once and take that as the root",
+       "m": "Treated halving as finding the square root"
+      },
+      {
+       "t": "Subtract 24 repeatedly until reaching zero",
+       "m": "Guessed a repeated-subtraction rule that does not give a square root"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "Which is the correct prime factorisation of 576?",
+     "o": [
+      {
+       "t": "2⁵ × 3²",
+       "m": "Counted one 2 too few while dividing (this gives 288)"
+      },
+      {
+       "t": "2⁶ × 3²",
+       "ok": 1
+      },
+      {
+       "t": "2⁴ × 3³",
+       "m": "Mixed up how many times 2 and 3 divide 576 (this gives 432)"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "Taking one prime from each pair, what is √576?",
+     "o": [
+      {
+       "t": "288",
+       "m": "Halved 576 instead of taking the square root"
+      },
+      {
+       "t": "12",
+       "m": "Took only half of the correct product while pairing the primes"
+      },
+      {
+       "t": "24",
+       "ok": 1
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "వర్గాలు, ఘనాలు మరియు వాటి మూలాలు",
+   "hi": "वर्ग, घन और उनके मूल"
+  }
+ },
+ "m8_exp": {
+  "lesson": {
+   "title": "Powers made easy",
+   "points": [
+    "aᵐ × aⁿ = aᵐ⁺ⁿ and aᵐ ÷ aⁿ = aᵐ⁻ⁿ: with the same base, add powers when multiplying and subtract when dividing.",
+    "(aᵐ)ⁿ = aᵐⁿ: a power of a power means multiply the powers.",
+    "a⁰ = 1 for any non-zero a, and a⁻ⁿ = 1/aⁿ, so 2⁻³ = 1/8.",
+    "Very big or very small numbers are written in standard form as k × 10ⁿ with 1 ≤ k < 10."
+   ],
+   "story": "A forwarded message is sent on to 2 new people, who each send it to 2 more, and so on. After 5 rounds, 2⁵ = 32 people get it, and going back one round divides by 2.",
+   "example": {
+    "q": "Simplify (2³ × 2⁵) ÷ 2⁴.",
+    "steps": [
+     "Same base in the product, so add the powers: 2³ × 2⁵ = 2⁸.",
+     "Now divide by 2⁴: subtract the powers, 2⁸ ÷ 2⁴ = 2⁴.",
+     "2⁴ = 16."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the value of 2⁻³?",
+    "why": "2⁻³ = 1/2³ = 1/8.",
+    "o": [
+     {
+      "t": "−8",
+      "m": "Thought a negative power makes the number negative",
+      "g": "m7_int"
+     },
+     {
+      "t": "1/8",
+      "ok": 1
+     },
+     {
+      "t": "−6",
+      "m": "Multiplied 2 by −3 instead of using the reciprocal of 2³",
+      "g": "m7_int"
+     },
+     {
+      "t": "1/6",
+      "m": "Multiplied 2 × 3 and put it under 1 instead of taking 2³"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is the value of 7⁰?",
+    "why": "Any non-zero number raised to the power 0 equals 1.",
+    "o": [
+     {
+      "t": "1",
+      "ok": 1
+     },
+     {
+      "t": "0",
+      "m": "Thought a zero power gives zero"
+     },
+     {
+      "t": "7",
+      "m": "Thought a zero power leaves the number unchanged"
+     },
+     {
+      "t": "70",
+      "m": "Wrote the 7 and the 0 side by side"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Simplify 3⁴ × 3².",
+    "why": "Same base, so add the powers: 3⁴ × 3² = 3⁴⁺² = 3⁶.",
+    "o": [
+     {
+      "t": "3⁸",
+      "m": "Multiplied the powers (4 × 2) instead of adding them"
+     },
+     {
+      "t": "9⁶",
+      "m": "Multiplied the bases 3 × 3 and added the powers"
+     },
+     {
+      "t": "9⁸",
+      "m": "Multiplied the bases and multiplied the powers"
+     },
+     {
+      "t": "3⁶",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Simplify (2³)⁴.",
+    "why": "A power of a power: multiply the exponents, 3 × 4 = 12, so (2³)⁴ = 2¹².",
+    "o": [
+     {
+      "t": "2⁷",
+      "m": "Added the powers 3 and 4 instead of multiplying them"
+     },
+     {
+      "t": "6⁴",
+      "m": "Multiplied the base 2 by the power 3 to get 6"
+     },
+     {
+      "t": "2¹²",
+      "ok": 1
+     },
+     {
+      "t": "2¹",
+      "m": "Subtracted the powers 4 − 3"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Write 0.00045 in standard form.",
+    "why": "Move the decimal 4 places to the right to get 4.5, so 0.00045 = 4.5 × 10⁻⁴.",
+    "o": [
+     {
+      "t": "4.5 × 10⁻³",
+      "m": "Counted one decimal place too few"
+     },
+     {
+      "t": "4.5 × 10⁻⁴",
+      "ok": 1
+     },
+     {
+      "t": "4.5 × 10⁴",
+      "m": "Used a positive power for a number smaller than 1"
+     },
+     {
+      "t": "45 × 10⁻⁵",
+      "m": "Left 45 in front, which is not between 1 and 10"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Simplify (2⁵ × 2⁻²) ÷ 2².",
+    "why": "2⁵ × 2⁻² = 2³. Then 2³ ÷ 2² = 2¹ = 2.",
+    "o": [
+     {
+      "t": "2",
+      "ok": 1
+     },
+     {
+      "t": "32",
+      "m": "Treated 2⁻² as 2² and got 2⁷ ÷ 2² = 2⁵",
+      "g": "m7_int"
+     },
+     {
+      "t": "1/2",
+      "m": "Subtracted the powers in the wrong order, 2 − 3 = −1"
+     },
+     {
+      "t": "1",
+      "m": "Said dividing powers of the same base always leaves 1"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Light travels at 3 × 10⁸ m/s. The Sun is about 1.5 × 10¹¹ m away. How long does sunlight take to reach Earth?",
+    "why": "Time = distance ÷ speed = (1.5 × 10¹¹) ÷ (3 × 10⁸) = 0.5 × 10³ = 500 s.",
+    "o": [
+     {
+      "t": "4.5 × 10¹⁹ s",
+      "m": "Multiplied distance and speed instead of dividing"
+     },
+     {
+      "t": "0.002 s",
+      "m": "Divided speed by distance instead of distance by speed"
+     },
+     {
+      "t": "0.5 s",
+      "m": "Divided 1.5 by 3 and forgot the 10³"
+     },
+     {
+      "t": "500 s",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "If (−3)ᵐ⁺¹ × (−3)⁵ = (−3)⁷, what is m?",
+    "why": "Add the powers: m + 1 + 5 = 7, so m + 6 = 7 and m = 1.",
+    "o": [
+     {
+      "t": "2",
+      "m": "Ignored the +1 in the power and solved m + 5 = 7"
+     },
+     {
+      "t": "6",
+      "m": "Subtracted only 1 from 7 and forgot to subtract 5"
+     },
+     {
+      "t": "1",
+      "ok": 1
+     },
+     {
+      "t": "12",
+      "m": "Added 7 and 5 instead of subtracting"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Simplify (3⁷ × 3⁻²) ÷ 3⁴ and find its value. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Multiply the powers 7 × (−2) because it is a product",
+       "m": "Multiplied the powers instead of adding them"
+      },
+      {
+       "t": "Add the powers in 3⁷ × 3⁻² because the bases are the same",
+       "ok": 1
+      },
+      {
+       "t": "Multiply the bases 3 × 3 to get 9",
+       "m": "Multiplied the bases instead of combining the powers"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "What does 3⁷ × 3⁻² simplify to?",
+     "o": [
+      {
+       "t": "3⁻¹⁴",
+       "m": "Multiplied the powers 7 and −2",
+       "g": "m7_int"
+      },
+      {
+       "t": "3⁹",
+       "m": "Treated 3⁻² as 3² and added the powers",
+       "g": "m7_int"
+      },
+      {
+       "t": "3⁵",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is 3⁵ ÷ 3⁴?",
+     "o": [
+      {
+       "t": "3",
+       "ok": 1
+      },
+      {
+       "t": "3⁹",
+       "m": "Added the powers when dividing"
+      },
+      {
+       "t": "1",
+       "m": "Said dividing powers of the same base always gives 1"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "ఘాతాంకాలు మరియు ఘాతాలు",
+   "hi": "घातांक और घात"
+  }
+ },
+ "m8_alg": {
+  "lesson": {
+   "title": "Identities save time",
+   "points": [
+    "To multiply expressions, multiply every term of one by every term of the other and then add the like terms.",
+    "(a + b)² = a² + 2ab + b² and (a − b)² = a² − 2ab + b².",
+    "(a + b)(a − b) = a² − b².",
+    "(x + a)(x + b) = x² + (a + b)x + ab. These identities make big calculations like 102² quick."
+   ],
+   "story": "A square rangoli has side (a + b) feet. It is split into a square of side a, a square of side b and two rectangles of a × b. That is why its area is a² + 2ab + b² and not just a² + b².",
+   "example": {
+    "q": "Find 102² using an identity.",
+    "steps": [
+     "Write 102 = 100 + 2.",
+     "Use (a + b)² = a² + 2ab + b² with a = 100, b = 2.",
+     "= 10000 + 2 × 100 × 2 + 4 = 10000 + 400 + 4.",
+     "= 10404."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which is the expansion of (a + b)²?",
+    "why": "(a + b)² = a² + 2ab + b².",
+    "o": [
+     {
+      "t": "a² + b²",
+      "m": "Dropped the middle term 2ab",
+      "g": "m7_expr"
+     },
+     {
+      "t": "a² − b²",
+      "m": "Used the difference of squares identity instead"
+     },
+     {
+      "t": "a² + 2ab + b²",
+      "ok": 1
+     },
+     {
+      "t": "a² + ab + b²",
+      "m": "Wrote ab instead of 2ab in the middle"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is (3x) × (4x²)?",
+    "why": "Multiply the numbers: 3 × 4 = 12. Add the powers: x × x² = x³. So 12x³.",
+    "o": [
+     {
+      "t": "7x³",
+      "m": "Added the coefficients 3 and 4 instead of multiplying",
+      "g": "m7_expr"
+     },
+     {
+      "t": "12x³",
+      "ok": 1
+     },
+     {
+      "t": "12x²",
+      "m": "Multiplied the powers (1 × 2) instead of adding them",
+      "g": "m7_expr"
+     },
+     {
+      "t": "12x",
+      "m": "Subtracted the powers instead of adding them",
+      "g": "m7_expr"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Simplify (x + 3)(x − 3).",
+    "why": "(x + 3)(x − 3) = x² − 3² = x² − 9.",
+    "o": [
+     {
+      "t": "x² − 9",
+      "ok": 1
+     },
+     {
+      "t": "x² + 9",
+      "m": "Made the product of +3 and −3 positive"
+     },
+     {
+      "t": "x² − 6",
+      "m": "Multiplied 3 by 2 instead of squaring it"
+     },
+     {
+      "t": "x² − 6x + 9",
+      "m": "Used the (x − 3)² identity"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Expand (2x − 3)².",
+    "why": "(2x − 3)² = (2x)² − 2(2x)(3) + 3² = 4x² − 12x + 9.",
+    "o": [
+     {
+      "t": "4x² − 9",
+      "m": "Left out the middle term and used the difference of squares"
+     },
+     {
+      "t": "4x² − 6x + 9",
+      "m": "Used 2x × 3 for the middle term and forgot the 2 in 2ab"
+     },
+     {
+      "t": "4x² + 12x + 9",
+      "m": "Ignored the minus sign in (2x − 3)"
+     },
+     {
+      "t": "4x² − 12x + 9",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Using (a + b)(a − b), what is 51 × 49?",
+    "why": "51 × 49 = (50 + 1)(50 − 1) = 50² − 1² = 2500 − 1 = 2499.",
+    "o": [
+     {
+      "t": "2501",
+      "m": "Added 1² instead of subtracting it"
+     },
+     {
+      "t": "2500",
+      "m": "Squared 50 but forgot to subtract 1²"
+     },
+     {
+      "t": "2499",
+      "ok": 1
+     },
+     {
+      "t": "2401",
+      "m": "Squared the smaller number 49 instead of using the identity"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "If a + b = 7 and ab = 12, what is a² + b²?",
+    "why": "a² + b² = (a + b)² − 2ab = 49 − 24 = 25.",
+    "o": [
+     {
+      "t": "49",
+      "m": "Took a² + b² to be the same as (a + b)²"
+     },
+     {
+      "t": "25",
+      "ok": 1
+     },
+     {
+      "t": "37",
+      "m": "Subtracted ab (12) instead of 2ab (24)"
+     },
+     {
+      "t": "73",
+      "m": "Added 2ab instead of subtracting it"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Using an identity, what is 103²?",
+    "why": "103² = (100 + 3)² = 10000 + 2 × 100 × 3 + 9 = 10000 + 600 + 9 = 10609.",
+    "o": [
+     {
+      "t": "10609",
+      "ok": 1
+     },
+     {
+      "t": "10009",
+      "m": "Wrote 100² + 3² and left out the middle term"
+     },
+     {
+      "t": "10309",
+      "m": "Used ab = 300 in the middle instead of 2ab = 600"
+     },
+     {
+      "t": "9409",
+      "m": "Used a minus sign and computed (100 − 3)²"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Simplify (x + 2)(x + 3) − (x − 1)(x + 4).",
+    "why": "First product = x² + 5x + 6. Second = x² + 3x − 4. Subtract: 5x − 3x = 2x and 6 − (−4) = 10, so 2x + 10.",
+    "o": [
+     {
+      "t": "2x + 2",
+      "m": "Treated −(−4) as −4, so got 6 − 4"
+     },
+     {
+      "t": "8x + 2",
+      "m": "Did not change the signs while subtracting the second bracket, and used 6 − 4"
+     },
+     {
+      "t": "8x + 10",
+      "m": "Did not change the sign of 3x while subtracting"
+     },
+     {
+      "t": "2x + 10",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Expand (3x + 2)². Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "Which identity should be used?",
+     "o": [
+      {
+       "t": "(a + b)² = a² + b² with a = 3x and b = 2",
+       "m": "Left out the middle term of the identity"
+      },
+      {
+       "t": "(a + b)(a − b) = a² − b² with a = 3x and b = 2",
+       "m": "Used the difference of squares for a perfect square"
+      },
+      {
+       "t": "(a + b)² = a² + 2ab + b² with a = 3x and b = 2",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "What is the middle term 2ab?",
+     "o": [
+      {
+       "t": "12x",
+       "ok": 1
+      },
+      {
+       "t": "6x",
+       "m": "Used ab and forgot the 2 in 2ab"
+      },
+      {
+       "t": "5x",
+       "m": "Added 3x and 2 instead of multiplying"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the full expansion?",
+     "o": [
+      {
+       "t": "9x² + 4",
+       "m": "Dropped the middle term"
+      },
+      {
+       "t": "9x² + 12x + 4",
+       "ok": 1
+      },
+      {
+       "t": "3x² + 12x + 4",
+       "m": "Squared 3x as 3x² instead of 9x²"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "బీజీయ సమాసాలు మరియు సర్వసమానతలు",
+   "hi": "बीजीय व्यंजक और सर्वसमिकाएँ"
+  }
+ },
+ "m8_lin": {
+  "lesson": {
+   "title": "Balancing equations",
+   "points": [
+    "An equation is like a balanced scale: whatever you do to one side, do to the other side as well.",
+    "Moving a term to the other side (transposing) changes its sign: + becomes − and × becomes ÷.",
+    "Collect the x terms on one side and the numbers on the other, then divide by the coefficient of x.",
+    "Check your answer by putting it back into the equation: both sides must be equal."
+   ],
+   "story": "A kirana shopkeeper balances a scale with a 2 kg weight and some rice on one pan and a 5 kg weight on the other. Taking 2 kg off both pans keeps the balance and shows the rice weighs 3 kg.",
+   "example": {
+    "q": "Solve 5x − 3 = 2x + 9.",
+    "steps": [
+     "Move 2x to the left side: 5x − 2x − 3 = 9.",
+     "Move −3 to the right side: 3x = 9 + 3 = 12.",
+     "Divide both sides by 3: x = 4.",
+     "Check: LHS = 5 × 4 − 3 = 17 and RHS = 2 × 4 + 9 = 17."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Solve x − 9 = 4.",
+    "why": "Add 9 to both sides: x = 4 + 9 = 13.",
+    "o": [
+     {
+      "t": "x = −5",
+      "m": "Subtracted 9 from 4 instead of adding 9",
+      "g": "m7_eq"
+     },
+     {
+      "t": "x = 5",
+      "m": "Worked out 9 − 4 and ignored which side the 9 was on",
+      "g": "m7_eq"
+     },
+     {
+      "t": "x = 36",
+      "m": "Multiplied 9 and 4 instead of adding",
+      "g": "m7_eq"
+     },
+     {
+      "t": "x = 13",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Solve 4x = 28.",
+    "why": "Divide both sides by 4: x = 28 ÷ 4 = 7.",
+    "o": [
+     {
+      "t": "x = 112",
+      "m": "Multiplied 28 by 4 instead of dividing",
+      "g": "m7_eq"
+     },
+     {
+      "t": "x = 24",
+      "m": "Subtracted 4 from 28",
+      "g": "m7_eq"
+     },
+     {
+      "t": "x = 7",
+      "ok": 1
+     },
+     {
+      "t": "x = 32",
+      "m": "Added 4 to 28",
+      "g": "m7_eq"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Solve 3x + 5 = 20.",
+    "why": "3x = 20 − 5 = 15, so x = 5.",
+    "o": [
+     {
+      "t": "x = 25/3",
+      "m": "Added 5 to 20 instead of subtracting it",
+      "g": "m7_eq"
+     },
+     {
+      "t": "x = 5",
+      "ok": 1
+     },
+     {
+      "t": "x = 15",
+      "m": "Subtracted 5 but forgot to divide by 3",
+      "g": "m7_eq"
+     },
+     {
+      "t": "x = 3",
+      "m": "Divided 15 by 5 instead of by 3",
+      "g": "m7_eq"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Solve 5x − 3 = 2x + 9.",
+    "why": "3x = 12, so x = 4.",
+    "o": [
+     {
+      "t": "x = 4",
+      "ok": 1
+     },
+     {
+      "t": "x = 2",
+      "m": "Moved −3 without changing its sign, so wrote 3x = 9 − 3",
+      "g": "m7_eq"
+     },
+     {
+      "t": "x = 12/7",
+      "m": "Added 2x to the left side instead of subtracting it",
+      "g": "m7_eq"
+     },
+     {
+      "t": "x = 12",
+      "m": "Got 3x = 12 but forgot to divide by 3",
+      "g": "m7_eq"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which equation says: five more than three times a number is 26?",
+    "why": "Three times a number is 3x. Five more means add 5: 3x + 5 = 26.",
+    "o": [
+     {
+      "t": "3(x + 5) = 26",
+      "m": "Put the 5 inside a bracket so it was multiplied by 3 too",
+      "g": "m7_eq"
+     },
+     {
+      "t": "5x + 3 = 26",
+      "m": "Swapped the roles of 3 and 5",
+      "g": "m7_eq"
+     },
+     {
+      "t": "3x − 5 = 26",
+      "m": "Read 'more than' as subtraction",
+      "g": "m7_eq"
+     },
+     {
+      "t": "3x + 5 = 26",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Solve x/2 + x/3 = 10.",
+    "why": "LCM of 2 and 3 is 6. 3x/6 + 2x/6 = 5x/6 = 10, so x = 10 × 6/5 = 12.",
+    "o": [
+     {
+      "t": "x = 25",
+      "m": "Added the fractions as (x + x)/(2 + 3) = 2x/5",
+      "g": "m7_frac"
+     },
+     {
+      "t": "x = 50",
+      "m": "Added the denominators and wrote x/5 = 10",
+      "g": "m7_frac"
+     },
+     {
+      "t": "x = 12",
+      "ok": 1
+     },
+     {
+      "t": "x = 60",
+      "m": "Got 5x/6 = 10 but multiplied by 6 and forgot to divide by 5",
+      "g": "m7_frac"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The sum of two consecutive whole numbers is 83. What is the smaller number?",
+    "why": "Let the numbers be x and x + 1. Then 2x + 1 = 83, 2x = 82, x = 41.",
+    "o": [
+     {
+      "t": "42",
+      "m": "Gave the larger of the two numbers"
+     },
+     {
+      "t": "41",
+      "ok": 1
+     },
+     {
+      "t": "41.5",
+      "m": "Divided 83 by 2 and ignored the extra 1"
+     },
+     {
+      "t": "82",
+      "m": "Found 2x = 82 but forgot to divide by 2"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A taxi charges a fixed ₹60 plus ₹15 for every km. A ride costs ₹285 in all. How many km was the ride?",
+    "why": "15x + 60 = 285, so 15x = 225 and x = 15 km.",
+    "o": [
+     {
+      "t": "15 km",
+      "ok": 1
+     },
+     {
+      "t": "23 km",
+      "m": "Added the fixed charge (285 + 60) instead of subtracting it",
+      "g": "m7_eq"
+     },
+     {
+      "t": "19 km",
+      "m": "Ignored the fixed charge and divided 285 by 15",
+      "g": "m7_eq"
+     },
+     {
+      "t": "225 km",
+      "m": "Subtracted 60 but forgot to divide by 15",
+      "g": "m7_eq"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Solve 2(x − 3) = x + 4. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Remove the bracket by multiplying 2 with both x and −3",
+       "ok": 1
+      },
+      {
+       "t": "Multiply 2 with x only and leave −3 alone",
+       "m": "Did not multiply every term in the bracket"
+      },
+      {
+       "t": "Cancel the 2 with the 4 on the other side",
+       "m": "Cancelled terms that are not factors of the whole side"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "What equation do you get after removing the bracket?",
+     "o": [
+      {
+       "t": "2x − 3 = x + 4",
+       "m": "Multiplied only x by 2 and left −3 as it was"
+      },
+      {
+       "t": "2x − 6 = x + 4",
+       "ok": 1
+      },
+      {
+       "t": "2x + 6 = x + 4",
+       "m": "Made a sign error and wrote +6 instead of −6"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "Solve 2x − 6 = x + 4.",
+     "o": [
+      {
+       "t": "x = −2",
+       "m": "Moved the terms with wrong signs and got 2x − x = 4 − 6",
+       "g": "m7_eq"
+      },
+      {
+       "t": "x = 5",
+       "m": "Divided 10 by 2 although the coefficient of x is 1",
+       "g": "m7_eq"
+      },
+      {
+       "t": "x = 10",
+       "ok": 1
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "ఒక చరరాశిలో రేఖీయ సమీకరణాలు",
+   "hi": "एक चर वाले रैखिक समीकरण"
+  }
+ },
+ "m8_pct": {
+  "lesson": {
+   "title": "Percent, profit and interest",
+   "points": [
+    "Per cent means out of 100. 25% of 80 is 25/100 × 80 = 20.",
+    "Profit or loss is always found on the cost price: Profit % = (Profit ÷ CP) × 100. Discount is taken off the marked price.",
+    "Simple interest SI = P × R × T / 100, where the interest is the same every year.",
+    "In compound interest the interest of each year is added to the principal, so Amount = P(1 + R/100)ⁿ and CI = Amount − P."
+   ],
+   "story": "During a Diwali sale a shirt marked ₹800 gets 10% off. The shopkeeper takes ₹80 off the marked price, and you pay ₹720.",
+   "example": {
+    "q": "A shopkeeper buys a fan for ₹800 and sells it for ₹920. Find the profit per cent.",
+    "steps": [
+     "Profit = SP − CP = 920 − 800 = ₹120.",
+     "Profit % = (120 ÷ 800) × 100.",
+     "= 15%."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is 25% of 80?",
+    "why": "25% of 80 = 25/100 × 80 = 20.",
+    "o": [
+     {
+      "t": "20",
+      "ok": 1
+     },
+     {
+      "t": "2000",
+      "m": "Multiplied 80 by 25 and forgot to divide by 100",
+      "g": "m7_ratio"
+     },
+     {
+      "t": "55",
+      "m": "Subtracted 25 from 80",
+      "g": "m7_ratio"
+     },
+     {
+      "t": "3.2",
+      "m": "Divided 80 by 25 instead of taking 25/100 of it",
+      "g": "m7_ratio"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is the simple interest on ₹1000 at 10% per year for 2 years?",
+    "why": "SI = 1000 × 10 × 2 / 100 = ₹200.",
+    "o": [
+     {
+      "t": "₹100",
+      "m": "Calculated for one year only"
+     },
+     {
+      "t": "₹1200",
+      "m": "Gave the amount instead of the interest"
+     },
+     {
+      "t": "₹2000",
+      "m": "Multiplied P, R and T and forgot to divide by 100"
+     },
+     {
+      "t": "₹200",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A bat is bought for ₹500 and sold for ₹450. What is the loss per cent?",
+    "why": "Loss = 500 − 450 = ₹50. Loss % = 50/500 × 100 = 10%.",
+    "o": [
+     {
+      "t": "11.1%",
+      "m": "Divided the loss by the selling price instead of the cost price"
+     },
+     {
+      "t": "50%",
+      "m": "Gave the loss amount as the percentage"
+     },
+     {
+      "t": "10%",
+      "ok": 1
+     },
+     {
+      "t": "90%",
+      "m": "Gave SP as a percentage of CP instead of the loss"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A bag is marked ₹1200 and a 15% discount is given. What is the selling price?",
+    "why": "Discount = 15/100 × 1200 = ₹180. SP = 1200 − 180 = ₹1020.",
+    "o": [
+     {
+      "t": "₹180",
+      "m": "Gave the discount amount instead of the selling price"
+     },
+     {
+      "t": "₹1020",
+      "ok": 1
+     },
+     {
+      "t": "₹1380",
+      "m": "Added the discount to the marked price"
+     },
+     {
+      "t": "₹1185",
+      "m": "Subtracted 15 rupees instead of 15%"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A shopkeeper buys a mixer for ₹250 and sells it at a 20% profit. What is the selling price?",
+    "why": "Profit = 20/100 × 250 = ₹50. SP = 250 + 50 = ₹300.",
+    "o": [
+     {
+      "t": "₹300",
+      "ok": 1
+     },
+     {
+      "t": "₹50",
+      "m": "Gave the profit amount instead of the selling price"
+     },
+     {
+      "t": "₹270",
+      "m": "Added 20 rupees instead of 20%"
+     },
+     {
+      "t": "₹200",
+      "m": "Subtracted the 20% instead of adding it, treating profit as loss"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Find the compound interest on ₹10000 for 2 years at 10% per year.",
+    "why": "Year 1 interest = 1000, amount = 11000. Year 2 interest = 1100, amount = 12100. CI = 12100 − 10000 = ₹2100.",
+    "o": [
+     {
+      "t": "₹2000",
+      "m": "Used simple interest, 10000 × 10 × 2 / 100"
+     },
+     {
+      "t": "₹12100",
+      "m": "Gave the amount instead of the interest"
+     },
+     {
+      "t": "₹1100",
+      "m": "Took only the second year's interest and forgot the first year's"
+     },
+     {
+      "t": "₹2100",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A shirt marked ₹800 gets a 10% discount, and then a further 10% discount on the reduced price. What is the final price?",
+    "why": "After the first discount: 800 × 0.9 = ₹720. After the second: 720 × 0.9 = ₹648.",
+    "o": [
+     {
+      "t": "₹640",
+      "m": "Added the two discounts to make one 20% discount"
+     },
+     {
+      "t": "₹720",
+      "m": "Applied only the first discount"
+     },
+     {
+      "t": "₹648",
+      "ok": 1
+     },
+     {
+      "t": "₹152",
+      "m": "Gave the total discount (80 + 72) instead of the price"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "After a 20% rise, the price of a bag of rice is ₹1800. What was the price before the rise?",
+    "why": "New price = 120% of old price, so old price = 1800 × 100/120 = ₹1500.",
+    "o": [
+     {
+      "t": "₹1440",
+      "m": "Took 20% off the new price instead of dividing by 120%"
+     },
+     {
+      "t": "₹1500",
+      "ok": 1
+     },
+     {
+      "t": "₹2160",
+      "m": "Added another 20% to the new price"
+     },
+     {
+      "t": "₹1780",
+      "m": "Subtracted 20 rupees instead of working with 20%"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Find the compound interest on ₹8000 for 2 years at 5% per year. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the correct approach?",
+     "o": [
+      {
+       "t": "Use P × R × T / 100",
+       "m": "Used the simple interest formula"
+      },
+      {
+       "t": "Find the amount using A = P(1 + R/100)ⁿ and subtract P",
+       "ok": 1
+      },
+      {
+       "t": "Find one year's interest and double it",
+       "m": "Ignored that the second year's interest is on a larger principal"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "What is the amount after 2 years?",
+     "o": [
+      {
+       "t": "₹8800",
+       "m": "Added simple interest (₹800) to the principal"
+      },
+      {
+       "t": "₹8400",
+       "m": "Found the amount after one year only"
+      },
+      {
+       "t": "₹8820",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the compound interest?",
+     "o": [
+      {
+       "t": "₹820",
+       "ok": 1
+      },
+      {
+       "t": "₹800",
+       "m": "Gave the simple interest instead"
+      },
+      {
+       "t": "₹8820",
+       "m": "Gave the amount instead of the interest"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "శాతాలు, లాభనష్టాలు మరియు వడ్డీ",
+   "hi": "प्रतिशत, लाभ-हानि और ब्याज"
+  }
+ },
+ "m8_mens": {
+  "lesson": {
+   "title": "Area, surface and volume",
+   "points": [
+    "Area of a trapezium = ½ × (sum of the parallel sides) × (distance between them).",
+    "Cuboid: volume = l × b × h and total surface area = 2(lb + bh + hl). Cube: volume = a³ and surface area = 6a².",
+    "Cylinder: curved surface area = 2πrh, total surface area = 2πr(r + h) and volume = πr²h.",
+    "Area is in square units, volume is in cubic units, and 1 m³ = 1000 litres."
+   ],
+   "story": "A rectangular water tank on a terrace is 2 m long, 1.5 m wide and 1 m deep. Its volume is 3 m³, so it holds 3000 litres, enough for many buckets of bath water.",
+   "example": {
+    "q": "Find the volume and total surface area of a cuboid 5 cm long, 4 cm wide and 3 cm high.",
+    "steps": [
+     "Volume = l × b × h = 5 × 4 × 3 = 60 cm³.",
+     "Total surface area = 2(lb + bh + hl) = 2(20 + 12 + 15).",
+     "= 2 × 47 = 94 cm²."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the volume of a cube of side 5 cm?",
+    "why": "Volume = 5 × 5 × 5 = 125 cm³.",
+    "o": [
+     {
+      "t": "15 cm³",
+      "m": "Multiplied 3 × 5 instead of cubing 5",
+      "g": "m7_mens"
+     },
+     {
+      "t": "125 cm³",
+      "ok": 1
+     },
+     {
+      "t": "25 cm³",
+      "m": "Squared the side instead of cubing it",
+      "g": "m7_mens"
+     },
+     {
+      "t": "150 cm³",
+      "m": "Found the surface area (6 × 25) instead of the volume",
+      "g": "m7_mens"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "A trapezium has parallel sides 8 cm and 12 cm and the distance between them is 5 cm. What is its area?",
+    "why": "Area = ½ × (8 + 12) × 5 = ½ × 20 × 5 = 50 cm².",
+    "o": [
+     {
+      "t": "50 cm²",
+      "ok": 1
+     },
+     {
+      "t": "100 cm²",
+      "m": "Forgot the ½ in the formula",
+      "g": "m7_mens"
+     },
+     {
+      "t": "30 cm²",
+      "m": "Used only one parallel side, ½ × 12 × 5",
+      "g": "m7_mens"
+     },
+     {
+      "t": "25 cm²",
+      "m": "Halved the sum of the sides and then halved again"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A tank is 2 m long, 1.5 m wide and 1 m deep. How many litres of water can it hold?",
+    "why": "Volume = 2 × 1.5 × 1 = 3 m³ = 3 × 1000 = 3000 litres.",
+    "o": [
+     {
+      "t": "3 litres",
+      "m": "Did not convert m³ to litres"
+     },
+     {
+      "t": "300 litres",
+      "m": "Multiplied by 100 instead of 1000"
+     },
+     {
+      "t": "30000 litres",
+      "m": "Multiplied by 10000 instead of 1000"
+     },
+     {
+      "t": "3000 litres",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A cylinder has radius 7 cm and height 10 cm. What is its curved surface area? (Use π = 22/7)",
+    "why": "CSA = 2πrh = 2 × 22/7 × 7 × 10 = 440 cm².",
+    "o": [
+     {
+      "t": "220 cm²",
+      "m": "Left out the 2 in 2πrh"
+     },
+     {
+      "t": "1540 cm²",
+      "m": "Used the volume formula πr²h"
+     },
+     {
+      "t": "440 cm²",
+      "ok": 1
+     },
+     {
+      "t": "748 cm²",
+      "m": "Used the total surface area 2πr(r + h)"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the total surface area of a cube of edge 4 cm?",
+    "why": "TSA = 6a² = 6 × 16 = 96 cm².",
+    "o": [
+     {
+      "t": "64 cm²",
+      "m": "Found the volume (4³) instead of the surface area"
+     },
+     {
+      "t": "96 cm²",
+      "ok": 1
+     },
+     {
+      "t": "16 cm²",
+      "m": "Gave the area of one face only"
+     },
+     {
+      "t": "48 cm²",
+      "m": "Added the lengths of all 12 edges instead of the area of the faces"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A cuboid is 10 cm long, 6 cm wide and 4 cm high. What is its total surface area?",
+    "why": "TSA = 2(lb + bh + hl) = 2(60 + 24 + 40) = 2 × 124 = 248 cm².",
+    "o": [
+     {
+      "t": "248 cm²",
+      "ok": 1
+     },
+     {
+      "t": "240 cm²",
+      "m": "Found the volume (10 × 6 × 4) instead of the surface area"
+     },
+     {
+      "t": "124 cm²",
+      "m": "Added the three face areas but forgot to double them"
+     },
+     {
+      "t": "168 cm²",
+      "m": "Doubled only two kinds of faces, 2(60 + 24), and left out the third pair"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A cylindrical tank has radius 1.4 m and height 5 m. How many litres can it hold? (Use π = 22/7)",
+    "why": "V = πr²h = 22/7 × 1.4 × 1.4 × 5 = 30.8 m³ = 30.8 × 1000 = 30800 litres.",
+    "o": [
+     {
+      "t": "30.8 litres",
+      "m": "Found 30.8 m³ but did not convert to litres"
+     },
+     {
+      "t": "3080 litres",
+      "m": "Multiplied m³ by 100 instead of 1000"
+     },
+     {
+      "t": "7700 litres",
+      "m": "Halved the radius again before squaring it"
+     },
+     {
+      "t": "30800 litres",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A trapezium-shaped field has parallel sides 30 m and 50 m, and they are 12 m apart. Levelling costs ₹5 per m². What is the total cost?",
+    "why": "Area = ½ × (30 + 50) × 12 = 480 m². Cost = 480 × 5 = ₹2400.",
+    "o": [
+     {
+      "t": "₹4800",
+      "m": "Forgot the ½ while finding the area"
+     },
+     {
+      "t": "₹480",
+      "m": "Gave the area in m² as the cost"
+     },
+     {
+      "t": "₹2400",
+      "ok": 1
+     },
+     {
+      "t": "₹1200",
+      "m": "Halved the cost a second time"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Find the total surface area of a closed cylinder of radius 7 cm and height 15 cm. (Use π = 22/7) Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "Which formula should be used?",
+     "o": [
+      {
+       "t": "πr²h",
+       "m": "Used the volume formula"
+      },
+      {
+       "t": "2πrh",
+       "m": "Used the curved surface area formula, which leaves out the two circular ends"
+      },
+      {
+       "t": "2πr(r + h)",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "Which is the correct substitution and simplification?",
+     "o": [
+      {
+       "t": "2 × 22/7 × 7 × (7 + 15) = 44 × 22",
+       "ok": 1
+      },
+      {
+       "t": "2 × 22/7 × 7 × 15 = 44 × 15",
+       "m": "Left out r while adding r + h"
+      },
+      {
+       "t": "2 × 22/7 × 7 × (7 × 15) = 44 × 105",
+       "m": "Multiplied r and h instead of adding them"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the total surface area?",
+     "o": [
+      {
+       "t": "660 cm²",
+       "m": "Gave only the curved surface area"
+      },
+      {
+       "t": "968 cm²",
+       "ok": 1
+      },
+      {
+       "t": "4620 cm²",
+       "m": "Multiplied r and h inside the bracket"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "క్షేత్రమితి: వైశాల్యం, ఉపరితల వైశాల్యం, ఘనపరిమాణం",
+   "hi": "क्षेत्रमिति: क्षेत्रफल, पृष्ठीय क्षेत्रफल और आयतन"
+  }
+ },
+ "m8_data": {
+  "lesson": {
+   "title": "Data and chance",
+   "points": [
+    "Mean = (sum of all values) ÷ (number of values). Mode is the value that occurs most often.",
+    "Median is the middle value after arranging the data in order. With an even number of values, it is the average of the two middle values.",
+    "In a pie chart, the angle for a part = (part ÷ whole) × 360°.",
+    "Probability = (number of favourable outcomes) ÷ (total equally likely outcomes). It is always between 0 and 1."
+   ],
+   "story": "A batter scores 12, 30, 18, 30 and 25 in five matches. The most common score is 30, the middle score is 25, and the average is 23. Each number tells the story a different way.",
+   "example": {
+    "q": "Find the mean, median and mode of 12, 30, 18, 30, 25.",
+    "steps": [
+     "Mean = (12 + 30 + 18 + 30 + 25) ÷ 5 = 115 ÷ 5 = 23.",
+     "Arrange in order: 12, 18, 25, 30, 30. The middle value is 25, so median = 25.",
+     "30 occurs twice, so mode = 30."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the mode of 3, 5, 5, 7, 9, 5, 3?",
+    "why": "5 occurs three times, more than any other value.",
+    "o": [
+     {
+      "t": "3",
+      "m": "Picked a value that repeats but not the one that repeats most"
+     },
+     {
+      "t": "7",
+      "m": "Took the middle position of the unsorted list"
+     },
+     {
+      "t": "5",
+      "ok": 1
+     },
+     {
+      "t": "9",
+      "m": "Gave the largest value instead of the most frequent"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "A fair coin is tossed once. What is the probability of getting a head?",
+    "why": "There are 2 equally likely outcomes and 1 of them is a head, so the probability is 1/2.",
+    "o": [
+     {
+      "t": "1",
+      "m": "Thought a head is certain to come"
+     },
+     {
+      "t": "1/2",
+      "ok": 1
+     },
+     {
+      "t": "2",
+      "m": "Divided total outcomes by favourable outcomes, giving a value above 1",
+      "g": "m7_frac"
+     },
+     {
+      "t": "1/4",
+      "m": "Counted four outcomes for a single toss",
+      "g": "m7_frac"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the mean of 4, 7, 9, 12 and 18?",
+    "why": "Sum = 50. Mean = 50 ÷ 5 = 10.",
+    "o": [
+     {
+      "t": "10",
+      "ok": 1
+     },
+     {
+      "t": "9",
+      "m": "Gave the median instead of the mean"
+     },
+     {
+      "t": "50",
+      "m": "Added the values and forgot to divide by 5"
+     },
+     {
+      "t": "12.5",
+      "m": "Divided the sum by 4 instead of 5"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the median of 12, 7, 20, 3 and 15?",
+    "why": "Arrange in order: 3, 7, 12, 15, 20. The middle value is 12.",
+    "o": [
+     {
+      "t": "20",
+      "m": "Took the middle of the list without arranging it in order"
+     },
+     {
+      "t": "11.4",
+      "m": "Gave the mean (57 ÷ 5) instead of the median"
+     },
+     {
+      "t": "15",
+      "m": "Took the value just after the middle"
+     },
+     {
+      "t": "12",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A family spends ₹5000 of its ₹20000 monthly income on food. What is the central angle for food in a pie chart?",
+    "why": "Angle = 5000/20000 × 360° = 1/4 × 360° = 90°.",
+    "o": [
+     {
+      "t": "25°",
+      "m": "Wrote the percentage (25%) as the angle",
+      "g": "m7_frac"
+     },
+     {
+      "t": "45°",
+      "m": "Halved the correct angle by mistake"
+     },
+     {
+      "t": "90°",
+      "ok": 1
+     },
+     {
+      "t": "180°",
+      "m": "Took half of the circle instead of a quarter",
+      "g": "m7_frac"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The mean of 5 numbers is 20. A sixth number, 32, is added. What is the new mean?",
+    "why": "Old sum = 5 × 20 = 100. New sum = 132. New mean = 132 ÷ 6 = 22.",
+    "o": [
+     {
+      "t": "26",
+      "m": "Averaged the old mean and the new number, (20 + 32) ÷ 2"
+     },
+     {
+      "t": "22",
+      "ok": 1
+     },
+     {
+      "t": "20",
+      "m": "Thought adding a number does not change the mean"
+     },
+     {
+      "t": "132",
+      "m": "Gave the new sum and did not divide by 6"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A bag has 5 red, 3 blue and 2 green marbles. One marble is picked at random. What is the probability that it is not blue?",
+    "why": "Total = 10. Not blue = 5 + 2 = 7. Probability = 7/10.",
+    "o": [
+     {
+      "t": "7/10",
+      "ok": 1
+     },
+     {
+      "t": "3/10",
+      "m": "Gave the probability of blue instead of not blue",
+      "g": "m7_frac"
+     },
+     {
+      "t": "1/2",
+      "m": "Gave the probability of red only",
+      "g": "m7_frac"
+     },
+     {
+      "t": "7/3",
+      "m": "Compared non-blue with blue marbles instead of the total",
+      "g": "m7_frac"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Two coins are tossed together. What is the probability of getting at least one head?",
+    "why": "Outcomes: HH, HT, TH, TT. At least one head in HH, HT and TH, so 3/4.",
+    "o": [
+     {
+      "t": "1/2",
+      "m": "Counted only two outcomes and ignored that HT and TH are different",
+      "g": "m7_frac"
+     },
+     {
+      "t": "1/4",
+      "m": "Counted only HH as favourable",
+      "g": "m7_frac"
+     },
+     {
+      "t": "2/3",
+      "m": "Treated 'no head, one head, two heads' as equally likely",
+      "g": "m7_frac"
+     },
+     {
+      "t": "3/4",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Find the median of 14, 9, 21, 7, 18, 12. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Arrange the values in order, then average the two middle values",
+       "ok": 1
+      },
+      {
+       "t": "Add all the values and divide by 6",
+       "m": "Found the mean instead of the median"
+      },
+      {
+       "t": "Pick the value that occurs most often",
+       "m": "Found the mode instead of the median"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "After arranging in order (7, 9, 12, 14, 18, 21), which are the two middle values?",
+     "o": [
+      {
+       "t": "21 and 7",
+       "m": "Took the middle two values of the unsorted list"
+      },
+      {
+       "t": "12 and 14",
+       "ok": 1
+      },
+      {
+       "t": "12 only",
+       "m": "Picked only one middle value even though there are 6 values"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the median?",
+     "o": [
+      {
+       "t": "14",
+       "m": "Took the upper of the two middle values"
+      },
+      {
+       "t": "13.5",
+       "m": "Gave the mean (81 ÷ 6) instead of the median"
+      },
+      {
+       "t": "13",
+       "ok": 1
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "దత్తాంశ నిర్వహణ మరియు సంభావ్యత",
+   "hi": "आँकड़ों का प्रबंधन और प्रायिकता"
+  }
+ },
+ "m8_quad": {
+  "lesson": {
+   "title": "Four-sided shapes",
+   "points": [
+    "The angles of a quadrilateral add up to 360°. Splitting it by a diagonal gives two triangles of 180° each.",
+    "For an n-sided polygon, the sum of interior angles is (n − 2) × 180°, and the exterior angles always add up to 360°.",
+    "In a parallelogram, opposite sides are equal and parallel, opposite angles are equal, and adjacent angles add up to 180°.",
+    "A rhombus has four equal sides and its diagonals cut each other at right angles. A rectangle has equal diagonals and four right angles."
+   ],
+   "story": "A kite-maker cuts a diamond-shaped frame from two bamboo sticks that cross each other at right angles in the middle. The sticks are the diagonals of the frame.",
+   "example": {
+    "q": "Three angles of a quadrilateral are 70°, 85° and 105°. Find the fourth angle.",
+    "steps": [
+     "The four angles add up to 360°.",
+     "Sum of the three given angles = 70 + 85 + 105 = 260°.",
+     "Fourth angle = 360° − 260° = 100°."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the sum of the interior angles of a quadrilateral?",
+    "why": "A diagonal splits a quadrilateral into 2 triangles, so the sum is 2 × 180° = 360°.",
+    "o": [
+     {
+      "t": "180°",
+      "m": "Used the angle sum of a triangle",
+      "g": "m7_tri"
+     },
+     {
+      "t": "270°",
+      "m": "Counted only three right angles"
+     },
+     {
+      "t": "540°",
+      "m": "Used the angle sum of a pentagon"
+     },
+     {
+      "t": "360°",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which quadrilateral has all four sides equal but its angles are not necessarily 90°?",
+    "why": "A rhombus has four equal sides and opposite angles equal, but its angles need not be right angles.",
+    "o": [
+     {
+      "t": "Rectangle",
+      "m": "Confused equal angles with equal sides"
+     },
+     {
+      "t": "Trapezium",
+      "m": "Thought a trapezium has equal sides because one pair of sides is parallel"
+     },
+     {
+      "t": "Rhombus",
+      "ok": 1
+     },
+     {
+      "t": "Kite",
+      "m": "Thought two pairs of equal adjacent sides means all sides are equal"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Three angles of a quadrilateral are 70°, 85° and 105°. What is the fourth angle?",
+    "why": "360° − (70° + 85° + 105°) = 360° − 260° = 100°.",
+    "o": [
+     {
+      "t": "260°",
+      "m": "Gave the sum of the three angles instead of the fourth angle"
+     },
+     {
+      "t": "100°",
+      "ok": 1
+     },
+     {
+      "t": "90°",
+      "m": "Assumed the missing angle is a right angle"
+     },
+     {
+      "t": "10°",
+      "m": "Used 270° instead of 360° as the total"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is each exterior angle of a regular hexagon?",
+    "why": "The exterior angles add up to 360° and a hexagon has 6 equal ones, so each is 360° ÷ 6 = 60°.",
+    "o": [
+     {
+      "t": "60°",
+      "ok": 1
+     },
+     {
+      "t": "120°",
+      "m": "Gave the interior angle instead of the exterior angle"
+     },
+     {
+      "t": "30°",
+      "m": "Divided 180° by 6 instead of 360° by 6"
+     },
+     {
+      "t": "72°",
+      "m": "Divided 360° by 5 using one side too few"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "In a parallelogram ABCD, angle A = 65°. What is angle B?",
+    "why": "Adjacent angles of a parallelogram add up to 180°, so angle B = 180° − 65° = 115°.",
+    "o": [
+     {
+      "t": "65°",
+      "m": "Took adjacent angles to be equal instead of opposite angles"
+     },
+     {
+      "t": "25°",
+      "m": "Used 90° instead of 180° for adjacent angles"
+     },
+     {
+      "t": "295°",
+      "m": "Used 360° instead of 180° for adjacent angles"
+     },
+     {
+      "t": "115°",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "What is the sum of the interior angles of a polygon with 8 sides?",
+    "why": "(n − 2) × 180° = 6 × 180° = 1080°.",
+    "o": [
+     {
+      "t": "1440°",
+      "m": "Used n × 180° instead of (n − 2) × 180°"
+     },
+     {
+      "t": "900°",
+      "m": "Used (n − 3) × 180°, taking away one triangle too many"
+     },
+     {
+      "t": "1080°",
+      "ok": 1
+     },
+     {
+      "t": "1260°",
+      "m": "Used (n − 1) × 180° instead of (n − 2) × 180°"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Each interior angle of a regular polygon is 150°. How many sides does it have?",
+    "why": "Exterior angle = 180° − 150° = 30°. Number of sides = 360° ÷ 30° = 12.",
+    "o": [
+     {
+      "t": "6",
+      "m": "Divided 180° by the exterior angle instead of 360°"
+     },
+     {
+      "t": "12",
+      "ok": 1
+     },
+     {
+      "t": "30",
+      "m": "Gave the exterior angle as the number of sides"
+     },
+     {
+      "t": "5",
+      "m": "Divided the interior angle by the exterior angle (150 ÷ 30)"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The diagonals of a rhombus are 12 cm and 16 cm. What is the length of its side?",
+    "why": "The diagonals bisect each other at right angles, so each side is the hypotenuse of a right triangle with legs 6 and 8: √(36 + 64) = 10 cm.",
+    "o": [
+     {
+      "t": "10 cm",
+      "ok": 1
+     },
+     {
+      "t": "14 cm",
+      "m": "Added the half-diagonals (6 + 8) instead of using Pythagoras",
+      "g": "m7_tri"
+     },
+     {
+      "t": "20 cm",
+      "m": "Used the full diagonals 12 and 16 as the two legs",
+      "g": "m7_tri"
+     },
+     {
+      "t": "28 cm",
+      "m": "Added the two full diagonals",
+      "g": "m7_tri"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Two adjacent angles of a parallelogram are in the ratio 2 : 3. Find the angles. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "Which fact should be used?",
+     "o": [
+      {
+       "t": "Adjacent angles add up to 360°, so 2k + 3k = 360°",
+       "m": "Used the angle sum of the whole quadrilateral for two angles"
+      },
+      {
+       "t": "Adjacent angles add up to 180°, so 2k + 3k = 180°",
+       "ok": 1
+      },
+      {
+       "t": "Adjacent angles add up to 90°, so 2k + 3k = 90°",
+       "m": "Assumed adjacent angles make a right angle"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "What is the value of k?",
+     "o": [
+      {
+       "t": "k = 72",
+       "m": "Divided 360° by 5 instead of 180° by 5"
+      },
+      {
+       "t": "k = 18",
+       "m": "Divided 90° by 5 instead of 180° by 5"
+      },
+      {
+       "t": "k = 36",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What are the two angles?",
+     "o": [
+      {
+       "t": "72° and 108°",
+       "ok": 1
+      },
+      {
+       "t": "144° and 216°",
+       "m": "Used 360° instead of 180° for the adjacent angles"
+      },
+      {
+       "t": "36° and 54°",
+       "m": "Used 90° as the sum of adjacent angles"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "చతుర్భుజాలు",
+   "hi": "चतुर्भुज को समझना"
+  }
+ }
+}

@@ -1,0 +1,655 @@
+{
+ "board": "CBSE",
+ "book": "NCERT",
+ "classes": {
+  "6": {
+   "Maths": [
+    {
+     "name": "Patterns in Mathematics",
+     "topics": [
+      "m6_alg"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Lines and Angles",
+     "topics": [
+      "m6_geo"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Number Play",
+     "topics": [
+      "m6_num"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Prime Time",
+     "topics": [
+      "m6_num"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Perimeter and Area",
+     "topics": [
+      "m6_mens"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Fractions",
+     "topics": [
+      "m6_frac"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Playing with Constructions",
+     "topics": [
+      "m6_geo"
+     ],
+     "verified": true
+    },
+    {
+     "name": "The Other Side of Zero",
+     "topics": [
+      "m6_int"
+     ],
+     "verified": true
+    }
+   ],
+   "Science": [
+    {
+     "name": "Diversity in the Living World",
+     "topics": [
+      "s6_plant"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Mindful Eating: A Path to a Healthy Body",
+     "topics": [
+      "s6_food"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Measurement of Length and Motion",
+     "topics": [
+      "s6_motion"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Materials Around Us",
+     "topics": [
+      "s6_mat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Temperature and its Measurement",
+     "topics": [
+      "s7_heat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Methods of Separation in Everyday Life",
+     "topics": [
+      "s6_sep"
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "7": {
+   "Maths": [
+    {
+     "name": "A Peek Beyond the Point",
+     "topics": [
+      "m7_frac"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Expressions Using Letter Numbers",
+     "topics": [
+      "m7_expr"
+     ],
+     "verified": true
+    },
+    {
+     "name": "A Tale of Three Intersecting Lines",
+     "topics": [
+      "m7_tri"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Working with Fractions",
+     "topics": [
+      "m7_frac"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Geometric Twins",
+     "topics": [
+      "m7_tri"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Operations with Integers",
+     "topics": [
+      "m7_int"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Finding Common Ground",
+     "topics": [
+      "m6_num"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Another Peek Beyond the Point",
+     "topics": [
+      "m7_frac"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Finding the Unknown",
+     "topics": [
+      "m7_eq",
+      "m8_lin"
+     ],
+     "verified": true
+    }
+   ],
+   "Science": [
+    {
+     "name": "Exploring Substances: Acidic, Basic, and Neutral",
+     "topics": [
+      "s7_acid"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Electricity: Circuits and their Components",
+     "topics": [
+      "s6_elec",
+      "s7_elec"
+     ],
+     "verified": true
+    },
+    {
+     "name": "The World of Metals and Non-metals",
+     "topics": [
+      "s8_metal"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Changes Around Us: Physical and Chemical",
+     "topics": [
+      "s7_chem"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Adolescence: A Stage of Growth and Change",
+     "topics": [
+      "s8_repro"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Heat Transfer in Nature",
+     "topics": [
+      "s7_heat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Measurement of Time and Motion",
+     "topics": [
+      "s7_motion"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Life Processes in Animals",
+     "topics": [
+      "s7_nutr"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Life Processes in Plants",
+     "topics": [
+      "s7_nutr",
+      "s6_plant"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Light: Shadows and Reflections",
+     "topics": [
+      "s7_light",
+      "s6_light"
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "8": {
+   "Maths": [
+    {
+     "name": "A Square and a Cube",
+     "topics": [
+      "m8_sq"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Power Play",
+     "topics": [
+      "m8_exp"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Quadrilaterals",
+     "topics": [
+      "m8_quad"
+     ],
+     "verified": true
+    },
+    {
+     "name": "We Distribute, Yet Things Multiply",
+     "topics": [
+      "m8_alg"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Proportional Reasoning-1",
+     "topics": [
+      "m7_ratio",
+      "m6_ratio"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Fractions in Disguise",
+     "topics": [
+      "m8_pct",
+      "m7_ratio"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Proportional Reasoning-2",
+     "topics": [
+      "m7_ratio"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Tales by Dots and Lines",
+     "topics": [
+      "m8_data"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Area",
+     "topics": [
+      "m8_mens",
+      "m7_mens"
+     ],
+     "verified": true
+    }
+   ],
+   "Science": [
+    {
+     "name": "The Invisible Living World: Beyond Our Naked Eye",
+     "topics": [
+      "s8_cell"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Electricity: Magnetic and Heating Effects",
+     "topics": [
+      "s7_elec"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Exploring Forces",
+     "topics": [
+      "s8_force"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Pressure, Winds, Storms, and Cyclones",
+     "topics": [
+      "s8_force"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Particulate Nature of Matter",
+     "topics": [
+      "s9_matter"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Nature of Matter: Elements, Compounds, and Mixtures",
+     "topics": [
+      "s9_atom"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Light: Mirrors and Lenses",
+     "topics": [
+      "s8_light"
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "9": {
+   "Maths": [
+    {
+     "name": "Orienting Yourself: The Use of Coordinates",
+     "topics": [
+      "m9_coord"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Introduction to Linear Polynomials",
+     "topics": [
+      "m9_poly"
+     ],
+     "verified": true
+    },
+    {
+     "name": "The World of Numbers",
+     "topics": [
+      "m9_num"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Exploring Algebraic Identities",
+     "topics": [
+      "m9_poly",
+      "m8_alg"
+     ],
+     "verified": true
+    },
+    {
+     "name": "The Mathematics of Maybe: Introduction to Probability",
+     "topics": [
+      "m9_stat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "How Quantities Combine: Understanding Data",
+     "topics": [
+      "m9_stat"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Two Variables, One Line",
+     "topics": [
+      "m9_lin2"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Math of Space: Surface Area and Volume",
+     "topics": [
+      "m9_mens"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Predicting What Comes Next: Exploring Sequences and Progressions",
+     "topics": [
+      "m10_ap"
+     ],
+     "verified": true
+    }
+   ],
+   "Science": [
+    {
+     "name": "Cell: The Building Block of Life",
+     "topics": [
+      "s9_cell"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Tissues in Action",
+     "topics": [
+      "s9_cell"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Describing Motion Around Us",
+     "topics": [
+      "s9_motion"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Exploring Mixtures and their Separation",
+     "topics": [
+      "s9_matter"
+     ],
+     "verified": true
+    },
+    {
+     "name": "How Forces Affect Motion",
+     "topics": [
+      "s9_force"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Work, Energy, and Simple Machines",
+     "topics": [
+      "s9_work"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Journey Inside the Atom",
+     "topics": [
+      "s9_atom"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Atomic Foundations of Matter",
+     "topics": [
+      "s9_atom"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Sound Waves: Characteristics and Applications",
+     "topics": [
+      "s9_sound",
+      "s8_sound"
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "10": {
+   "Maths": [
+    {
+     "name": "Real Numbers",
+     "topics": [
+      "m9_num"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Polynomials",
+     "topics": [
+      "m9_poly"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Pair of Linear Equations in Two Variables",
+     "topics": [
+      "m10_pair"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Quadratic Equations",
+     "topics": [
+      "m10_quad"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Arithmetic Progressions",
+     "topics": [
+      "m10_ap"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Triangles",
+     "topics": [
+      "m10_simtri"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Introduction to Trigonometry",
+     "topics": [
+      "m10_trig"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Surface Areas and Volumes",
+     "topics": [
+      "m10_mens"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Statistics",
+     "topics": [
+      "m10_prob"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Probability",
+     "topics": [
+      "m10_prob"
+     ],
+     "verified": true
+    }
+   ],
+   "Science": [
+    {
+     "name": "Chemical Reactions and Equations",
+     "topics": [
+      "s10_chem"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Acids, Bases and Salts",
+     "topics": [
+      "s10_acid"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Metals and Non-metals",
+     "topics": [
+      "s10_metal"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Carbon and its Compounds",
+     "topics": [
+      "s10_carbon"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Life Processes",
+     "topics": [
+      "s10_life"
+     ],
+     "verified": true
+    },
+    {
+     "name": "How do Organisms Reproduce?",
+     "topics": [
+      "s8_repro"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Heredity and Evolution",
+     "topics": [
+      "s10_heredity"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Light – Reflection and Refraction",
+     "topics": [
+      "s10_light"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Human Eye and Colourful World",
+     "topics": [
+      "s10_light",
+      "s8_light"
+     ],
+     "verified": true
+    },
+    {
+     "name": "Electricity",
+     "topics": [
+      "s10_elec"
+     ],
+     "verified": true
+    }
+   ]
+  }
+ }
+}

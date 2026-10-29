@@ -1,0 +1,2014 @@
+{
+ "m10_pair": {
+  "lesson": {
+   "title": "Two equations, two unknowns",
+   "points": [
+    "A pair of linear equations in x and y has the form a1x + b1y + c1 = 0 and a2x + b2y + c2 = 0. Its solution is a pair (x, y) that satisfies both equations together.",
+    "On a graph the pair is two straight lines. If they cross, there is exactly one solution. If they are parallel, there is no solution. If they lie on top of each other, there are infinitely many solutions.",
+    "Compare the ratios: a1/a2 ≠ b1/b2 gives one solution. a1/a2 = b1/b2 ≠ c1/c2 gives none. a1/a2 = b1/b2 = c1/c2 gives infinitely many.",
+    "To solve, use substitution or elimination: make the coefficient of one variable the same in both equations, then add or subtract to remove it."
+   ],
+   "story": "At a mela, one stall sells 2 samosas and 1 chai for ₹25, and another sells 1 samosa and 1 chai for ₹15. Each stall gives one equation, and only one price for each item fits both bills.",
+   "example": {
+    "q": "Solve x + y = 10 and x − y = 2.",
+    "steps": [
+     "Add the two equations: 2x = 12, so y disappears",
+     "x = 12 ÷ 2 = 6",
+     "Put x = 6 in x + y = 10: y = 4",
+     "Check in x − y: 6 − 4 = 2, which is correct"
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Two lines that represent a pair of linear equations meet at exactly one point. How many solutions does the pair have?",
+    "why": "Each point on a line is a solution of that equation. A point common to both lines satisfies both equations, so one meeting point means exactly one solution.",
+    "o": [
+     {
+      "t": "No solution",
+      "m": "thought lines that meet cannot give a solution, mixing this up with parallel lines",
+      "g": "m9_lin2"
+     },
+     {
+      "t": "Infinitely many solutions",
+      "m": "mixed up crossing lines with lines lying on top of each other",
+      "g": "m9_lin2"
+     },
+     {
+      "t": "Exactly one solution",
+      "ok": 1
+     },
+     {
+      "t": "Exactly two solutions",
+      "m": "thought each line contributes one solution to the pair",
+      "g": "m9_lin2"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which pair of values is the solution of x + y = 7 and x − y = 3?",
+    "why": "Adding the equations gives 2x = 10, so x = 5 and y = 2. Check: 5 + 2 = 7 and 5 − 2 = 3.",
+    "o": [
+     {
+      "t": "x = 5, y = 2",
+      "ok": 1
+     },
+     {
+      "t": "x = 4, y = 3",
+      "m": "checked only x + y = 7 and did not test x − y = 3",
+      "g": "m9_lin2"
+     },
+     {
+      "t": "x = 2, y = 5",
+      "m": "swapped the values of x and y",
+      "g": "m9_lin2"
+     },
+     {
+      "t": "x = 10, y = −3",
+      "m": "added the equations to get 2x = 10 but forgot to divide by 2",
+      "g": "m9_lin2"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "The pair 3x + 2y = 12 and 6x + 4y = 20 is given. What can you say about its solutions?",
+    "why": "Here a1/a2 = 1/2 and b1/b2 = 1/2, but c1/c2 = 12/20 = 3/5. The first two ratios are equal and the third is different, so the lines are parallel and there is no solution.",
+    "o": [
+     {
+      "t": "Exactly one solution",
+      "m": "assumed that two different equations always cross at one point",
+      "g": "m9_lin2"
+     },
+     {
+      "t": "Infinitely many solutions",
+      "m": "saw a1/a2 = b1/b2 and stopped without comparing the constants",
+      "g": "m9_lin2"
+     },
+     {
+      "t": "Exactly two solutions",
+      "m": "thought two equations always give two answers",
+      "g": "m9_lin2"
+     },
+     {
+      "t": "No solution, because the lines are parallel",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "For which value of k does the pair kx + 3y = 7 and 2x + 6y = 9 have no solution?",
+    "why": "No solution needs k/2 = 3/6 ≠ 7/9. From k/2 = 1/2 we get k = 1, and 7/9 ≠ 1/2, so the lines are parallel.",
+    "o": [
+     {
+      "t": "k = 2",
+      "m": "made the x coefficients of both equations equal instead of the ratios",
+      "g": "m9_lin2"
+     },
+     {
+      "t": "k = 1",
+      "ok": 1
+     },
+     {
+      "t": "k = 3",
+      "m": "set k equal to the coefficient of y in the first equation",
+      "g": "m9_lin2"
+     },
+     {
+      "t": "k = 4",
+      "m": "inverted the ratio of y coefficients and used 6/3 in place of 3/6"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Solve 3x + 2y = 16 and x + 2y = 8. What is the value of x?",
+    "why": "Subtract the second equation from the first: 2x = 8, so x = 4. Then 2y = 8 − 4 = 4, so y = 2.",
+    "o": [
+     {
+      "t": "8",
+      "m": "got 2x = 8 and forgot to divide by 2",
+      "g": "m9_lin2"
+     },
+     {
+      "t": "2",
+      "m": "solved correctly but reported the value of y"
+     },
+     {
+      "t": "12",
+      "m": "subtracted the left sides but added the right sides, getting 2x = 24",
+      "g": "m9_lin2"
+     },
+     {
+      "t": "4",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Two notebooks and three pens cost ₹48. Three notebooks and two pens cost ₹52. What is the cost of one notebook?",
+    "why": "Let notebook = x, pen = y. Then 2x + 3y = 48 and 3x + 2y = 52. Adding gives 5x + 5y = 100, so x + y = 20. Subtracting gives x − y = 4. So x = 12 and y = 8.",
+    "o": [
+     {
+      "t": "₹8",
+      "m": "solved correctly but reported the price of a pen"
+     },
+     {
+      "t": "₹12",
+      "ok": 1
+     },
+     {
+      "t": "₹10",
+      "m": "added to get 5 items for ₹100 and treated every item as the same price",
+      "g": "m9_lin2"
+     },
+     {
+      "t": "₹24",
+      "m": "ignored the pens and divided ₹48 by 2 notebooks",
+      "g": "m9_lin2"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The sum of the digits of a two-digit number is 9. The number is 27 more than the number formed by reversing its digits. What is the number?",
+    "why": "Let the digits be x (tens) and y (ones). x + y = 9 and (10x + y) − (10y + x) = 9(x − y) = 27, so x − y = 3. Then x = 6, y = 3 and the number is 63.",
+    "o": [
+     {
+      "t": "63",
+      "ok": 1
+     },
+     {
+      "t": "36",
+      "m": "took the tens and ones digits the wrong way round",
+      "g": "m9_lin2"
+     },
+     {
+      "t": "54",
+      "m": "split the digit sum as 5 and 4 and never used the 27 condition",
+      "g": "m9_lin2"
+     },
+     {
+      "t": "81",
+      "m": "picked the biggest tens digit hoping the number is larger, without testing the difference 27",
+      "g": "m9_lin2"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A boat goes 20 km downstream in 2 hours and returns 12 km upstream in 2 hours. What is the speed of the stream?",
+    "why": "Downstream speed = 10 km/h and upstream speed = 6 km/h. If boat speed is x and stream speed is y, x + y = 10 and x − y = 6. Subtracting, 2y = 4, so y = 2 km/h.",
+    "o": [
+     {
+      "t": "4 km/h",
+      "m": "subtracted 10 − 6 but did not halve the difference",
+      "g": "m9_lin2"
+     },
+     {
+      "t": "8 km/h",
+      "m": "found the speed of the boat in still water instead of the stream"
+     },
+     {
+      "t": "2 km/h",
+      "ok": 1
+     },
+     {
+      "t": "6 km/h",
+      "m": "took the upstream speed as the speed of the stream"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Solve 2x + y = 11 and x − y = 1. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the best first step?",
+     "o": [
+      {
+       "t": "Add the two equations, because the y terms (+y and −y) cancel",
+       "ok": 1
+      },
+      {
+       "t": "Add the two equations, because the x terms will cancel",
+       "m": "thought 2x and x cancel when added"
+      },
+      {
+       "t": "Subtract the equations, because the y terms will cancel",
+       "m": "subtracted although +y and −y become 2y and do not cancel"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "After the correct first step, what do you get?",
+     "o": [
+      {
+       "t": "3x = 10",
+       "m": "subtracted the right sides (11 − 1) while adding the left sides"
+      },
+      {
+       "t": "x = 12",
+       "m": "added the equations but forgot the 2x + x gives 3x, not x"
+      },
+      {
+       "t": "3x = 12",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the solution?",
+     "o": [
+      {
+       "t": "x = 3, y = 4",
+       "m": "swapped the values of x and y"
+      },
+      {
+       "t": "x = 4, y = 3",
+       "ok": 1
+      },
+      {
+       "t": "x = 4, y = 5",
+       "m": "wrote y = x + 1 instead of y = x − 1 when substituting"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "రెండు చరరాశులలో రేఖీయ సమీకరణాల జత",
+   "hi": "दो चरों वाले रैखिक समीकरण युग्म"
+  }
+ },
+ "m10_quad": {
+  "lesson": {
+   "title": "Equations with x squared",
+   "points": [
+    "A quadratic equation has the form ax² + bx + c = 0 where a ≠ 0. It can have at most two roots.",
+    "To solve by factorisation, split the middle term bx into two terms whose product is ac and whose sum is b. Then use: if p × q = 0, then p = 0 or q = 0.",
+    "The quadratic formula is x = (−b ± √(b² − 4ac)) / 2a. The expression D = b² − 4ac is called the discriminant.",
+    "If D > 0 there are two distinct real roots. If D = 0 the two roots are equal. If D < 0 there are no real roots."
+   ],
+   "story": "A farmer has a rectangular plot whose length is 3 m more than its breadth and whose area is 70 m². Writing area = length × breadth gives x(x + 3) = 70, which is a quadratic equation in the breadth x.",
+   "example": {
+    "q": "Solve x² − 5x + 6 = 0.",
+    "steps": [
+     "Find two numbers with product 6 and sum −5. They are −2 and −3",
+     "Split the middle term: x² − 2x − 3x + 6 = 0",
+     "Group: x(x − 2) − 3(x − 2) = 0, so (x − 2)(x − 3) = 0",
+     "So x = 2 or x = 3"
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which of these is a quadratic equation?",
+    "why": "A quadratic equation has x² as its highest power. x² − 3x + 2 = 0 fits. The others have highest power 3, 1 and 1 (x(x + 1) = x² + 3 simplifies to x = 3).",
+    "o": [
+     {
+      "t": "x² − 3x + 2 = 0",
+      "ok": 1
+     },
+     {
+      "t": "x³ − x = 0",
+      "m": "thought any equation with a power of x is quadratic",
+      "g": "m9_poly"
+     },
+     {
+      "t": "2x + 5 = 0",
+      "m": "did not notice that an equation with only x is linear, not quadratic",
+      "g": "m9_poly"
+     },
+     {
+      "t": "x(x + 1) = x² + 3",
+      "m": "saw x multiplied by a bracket and did not expand: the x² terms cancel and it is linear",
+      "g": "m9_poly"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is the discriminant of ax² + bx + c = 0?",
+    "why": "The discriminant is D = b² − 4ac. It tells us the nature of the roots.",
+    "o": [
+     {
+      "t": "b² + 4ac",
+      "m": "changed the minus sign to a plus sign"
+     },
+     {
+      "t": "4ac − b²",
+      "m": "wrote the two terms in the wrong order"
+     },
+     {
+      "t": "b − 4ac",
+      "m": "forgot to square b"
+     },
+     {
+      "t": "b² − 4ac",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What are the roots of x² − 7x + 12 = 0?",
+    "why": "x² − 3x − 4x + 12 = 0 gives (x − 3)(x − 4) = 0, so x = 3 or x = 4. Check: 3 × 4 = 12 and 3 + 4 = 7.",
+    "o": [
+     {
+      "t": "−3 and −4",
+      "m": "read the factors (x − 3)(x − 4) and wrote the numbers with negative signs",
+      "g": "m9_poly"
+     },
+     {
+      "t": "3 and 4",
+      "ok": 1
+     },
+     {
+      "t": "2 and 6",
+      "m": "found two numbers with product 12 but did not check that their sum is 7",
+      "g": "m9_poly"
+     },
+     {
+      "t": "7 and 12",
+      "m": "took the coefficients of the equation as the roots",
+      "g": "m9_poly"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the nature of the roots of 2x² − 4x + 3 = 0?",
+    "why": "D = b² − 4ac = 16 − 24 = −8. Since D < 0, there are no real roots.",
+    "o": [
+     {
+      "t": "Two distinct real roots",
+      "m": "worked out D as 16 + 24 = 40 by adding 4ac instead of subtracting"
+     },
+     {
+      "t": "Two equal real roots",
+      "m": "noticed that b² = 16 is a perfect square and wrongly took D = 0"
+     },
+     {
+      "t": "One positive and one negative root",
+      "m": "guessed from the signs of the coefficients without finding D",
+      "g": "m9_poly"
+     },
+     {
+      "t": "No real roots",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "For what value of k does x² − 6x + k = 0 have two equal roots?",
+    "why": "Equal roots need D = 0: 36 − 4k = 0, so k = 9.",
+    "o": [
+     {
+      "t": "k = 36",
+      "m": "set b² = k and forgot the factor 4 and the sign"
+     },
+     {
+      "t": "k = 9",
+      "ok": 1
+     },
+     {
+      "t": "k = 3",
+      "m": "halved b to get 3 but did not square it"
+     },
+     {
+      "t": "k = −9",
+      "m": "wrote D = 36 + 4k and solved 36 + 4k = 0"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The product of two consecutive positive integers is 132. What is the smaller integer?",
+    "why": "Let the integers be x and x + 1. x(x + 1) = 132 gives x² + x − 132 = 0, so (x + 12)(x − 11) = 0. Since x is positive, x = 11 (and 11 × 12 = 132).",
+    "o": [
+     {
+      "t": "11",
+      "ok": 1
+     },
+     {
+      "t": "12",
+      "m": "reported the larger integer instead of the smaller one"
+     },
+     {
+      "t": "66",
+      "m": "split 132 equally between the two integers (132 ÷ 2)"
+     },
+     {
+      "t": "−12",
+      "m": "gave the negative root even though the integers must be positive",
+      "g": "m9_poly"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The length of a rectangle is 3 m more than its breadth and its area is 70 m². What is its perimeter?",
+    "why": "x(x + 3) = 70 gives x² + 3x − 70 = 0, so (x + 10)(x − 7) = 0 and the breadth is 7 m. The length is 10 m, so the perimeter is 2(7 + 10) = 34 m.",
+    "o": [
+     {
+      "t": "17 m",
+      "m": "found the sum of length and breadth and forgot to double it"
+     },
+     {
+      "t": "14 m",
+      "m": "doubled the breadth only"
+     },
+     {
+      "t": "34 m",
+      "ok": 1
+     },
+     {
+      "t": "46 m",
+      "m": "used 10 as the breadth, so length 13, ignoring that the area would then be 130 m²",
+      "g": "m9_poly"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Using the quadratic formula, what are the roots of 2x² − 7x + 3 = 0?",
+    "why": "D = 49 − 24 = 25, √D = 5. x = (7 ± 5) / 4, so x = 3 or x = 1/2.",
+    "o": [
+     {
+      "t": "−3 and −1/2",
+      "m": "used −7 for −b instead of +7",
+      "g": "m9_poly"
+     },
+     {
+      "t": "6 and 1",
+      "m": "divided by 2 instead of 2a = 4"
+     },
+     {
+      "t": "3 and 1/2",
+      "ok": 1
+     },
+     {
+      "t": "8 and −9/2",
+      "m": "forgot to take the square root of 25 and used 25 directly"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Solve x² − 8x + 15 = 0 by factorisation. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Split −8x using two numbers with product −8 and sum 15",
+       "m": "swapped the roles of the middle coefficient and the constant term"
+      },
+      {
+       "t": "Split −8x using two numbers with product 15 and sum −8",
+       "ok": 1
+      },
+      {
+       "t": "Divide the whole equation by 8",
+       "m": "tried to remove the middle coefficient by dividing, which does not factorise it"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "Which factorised form is correct?",
+     "o": [
+      {
+       "t": "(x − 3)(x − 5) = 0",
+       "ok": 1
+      },
+      {
+       "t": "(x + 3)(x + 5) = 0",
+       "m": "forgot that the sum must be −8, so both numbers must be negative"
+      },
+      {
+       "t": "(x − 8)(x − 15) = 0",
+       "m": "put the coefficients 8 and 15 straight into the brackets"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What are the roots?",
+     "o": [
+      {
+       "t": "x = −3 or x = −5",
+       "m": "wrote the numbers in the brackets with the wrong sign"
+      },
+      {
+       "t": "x = 8 or x = 15",
+       "m": "took the coefficients as the roots"
+      },
+      {
+       "t": "x = 3 or x = 5",
+       "ok": 1
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "వర్గ సమీకరణాలు",
+   "hi": "द्विघात समीकरण"
+  }
+ },
+ "m10_ap": {
+  "lesson": {
+   "title": "Steps of equal size",
+   "points": [
+    "An arithmetic progression (AP) is a list of numbers where each term is got by adding the same number d to the term before it. d is called the common difference.",
+    "In the list a, a + d, a + 2d, ... the nth term is aₙ = a + (n − 1)d.",
+    "The sum of the first n terms is Sₙ = n/2 [2a + (n − 1)d]. It can also be written Sₙ = n/2 (first term + last term).",
+    "To test for an AP, subtract each term from the next. If the answer is always the same, it is an AP."
+   ],
+   "story": "You save ₹50 in the first week and then ₹10 more each week than the week before: 50, 60, 70, 80, ... Every step adds the same ₹10, so your savings form an AP with a = 50 and d = 10.",
+   "example": {
+    "q": "Find the 10th term of the AP 3, 7, 11, ...",
+    "steps": [
+     "First term a = 3 and d = 7 − 3 = 4",
+     "Use aₙ = a + (n − 1)d with n = 10",
+     "a₁₀ = 3 + 9 × 4 = 3 + 36",
+     "a₁₀ = 39"
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which of these lists is an arithmetic progression?",
+    "why": "In 5, 9, 13, 17 the difference is always 4. The other lists have differences 2, 4, 8; or 3, 5, 7; or 1, 2, 3, so they are not APs.",
+    "o": [
+     {
+      "t": "2, 4, 8, 16",
+      "m": "saw that each term is a fixed multiple of the one before and called it an AP"
+     },
+     {
+      "t": "1, 4, 9, 16",
+      "m": "noticed a pattern in the list but did not check for a constant difference"
+     },
+     {
+      "t": "1, 2, 4, 7",
+      "m": "saw that the terms increase steadily, but the gaps 1, 2, 3 are not equal"
+     },
+     {
+      "t": "5, 9, 13, 17",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is the common difference of the AP 12, 9, 6, 3?",
+    "why": "d = second term − first term = 9 − 12 = −3. The terms are going down, so d is negative.",
+    "o": [
+     {
+      "t": "3",
+      "m": "ignored the direction and gave the size of the step as positive"
+     },
+     {
+      "t": "−3",
+      "ok": 1
+     },
+     {
+      "t": "9",
+      "m": "took the total change from 12 to 3 as the common difference"
+     },
+     {
+      "t": "4",
+      "m": "divided the first term by the last term (12 ÷ 3)"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the 15th term of the AP 5, 8, 11, ...?",
+    "why": "a = 5, d = 3. a₁₅ = 5 + (15 − 1) × 3 = 5 + 42 = 47.",
+    "o": [
+     {
+      "t": "50",
+      "m": "used a + nd = 5 + 15 × 3 instead of a + (n − 1)d"
+     },
+     {
+      "t": "45",
+      "m": "multiplied n by d and forgot to add the first term"
+     },
+     {
+      "t": "120",
+      "m": "added the first term and d, then multiplied by n: (5 + 3) × 15"
+     },
+     {
+      "t": "47",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which term of the AP 4, 9, 14, ... is 99?",
+    "why": "4 + (n − 1) × 5 = 99 gives (n − 1) × 5 = 95, so n − 1 = 19 and n = 20.",
+    "o": [
+     {
+      "t": "19th term",
+      "m": "stopped at n − 1 = 19 and forgot to add 1",
+      "g": "m8_lin"
+     },
+     {
+      "t": "20th term",
+      "ok": 1
+     },
+     {
+      "t": "25th term",
+      "m": "divided 99 by 4 and rounded",
+      "g": "m8_lin"
+     },
+     {
+      "t": "18th term",
+      "m": "subtracted 1 twice while solving for n",
+      "g": "m8_lin"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the sum of the first 10 terms of the AP 2, 5, 8, ...?",
+    "why": "a = 2, d = 3. S₁₀ = 10/2 [2 × 2 + 9 × 3] = 5 × 31 = 155.",
+    "o": [
+     {
+      "t": "155",
+      "ok": 1
+     },
+     {
+      "t": "29",
+      "m": "found the 10th term and gave it as the sum"
+     },
+     {
+      "t": "310",
+      "m": "forgot the factor n/2 and used n only"
+     },
+     {
+      "t": "170",
+      "m": "used nd = 30 in place of (n − 1)d = 27"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "What is the sum of all multiples of 7 between 1 and 100?",
+    "why": "The multiples are 7, 14, ..., 98. This is an AP with a = 7, d = 7, and 7 + (n − 1) × 7 = 98 gives n = 14. S = 14/2 × (7 + 98) = 7 × 105 = 735.",
+    "o": [
+     {
+      "t": "637",
+      "m": "counted only 13 terms, stopping at 91 and leaving out 98",
+      "g": "m8_lin"
+     },
+     {
+      "t": "1470",
+      "m": "used n × (first + last) without halving"
+     },
+     {
+      "t": "735",
+      "ok": 1
+     },
+     {
+      "t": "686",
+      "m": "used 14 terms but took 91 as the last term instead of 98"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Ramesh saves ₹100 in the first month and ₹20 more each month than the previous month. How much does he save in 12 months in all?",
+    "why": "a = 100, d = 20, n = 12. S₁₂ = 12/2 [2 × 100 + 11 × 20] = 6 × 420 = ₹2520.",
+    "o": [
+     {
+      "t": "₹320",
+      "m": "found only the savings of the 12th month"
+     },
+     {
+      "t": "₹5040",
+      "m": "forgot to halve n in n/2"
+     },
+     {
+      "t": "₹2520",
+      "ok": 1
+     },
+     {
+      "t": "₹2640",
+      "m": "used 12 × 20 = 240 in place of 11 × 20 = 220"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "In an AP the 3rd term is 10 and the 7th term is 22. What are the first term a and common difference d?",
+    "why": "a + 2d = 10 and a + 6d = 22. Subtracting, 4d = 12, so d = 3, and a = 10 − 6 = 4.",
+    "o": [
+     {
+      "t": "a = 4, d = 3",
+      "ok": 1
+     },
+     {
+      "t": "a = 1, d = 3",
+      "m": "wrote the 3rd term as a + 3d instead of a + 2d"
+     },
+     {
+      "t": "a = 2, d = 4",
+      "m": "divided the difference 12 by 3 terms instead of 4 steps",
+      "g": "m8_lin"
+     },
+     {
+      "t": "a = 10, d = 3",
+      "m": "took the 3rd term as the first term"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Find the 25th term of the AP 6, 10, 14, ... Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "Which formula should be used?",
+     "o": [
+      {
+       "t": "aₙ = a + nd with a = 6, d = 4, n = 25",
+       "m": "used n steps from the first term instead of n − 1 steps"
+      },
+      {
+       "t": "aₙ = a × (n − 1) × d with a = 6, d = 4, n = 25",
+       "m": "multiplied all three numbers instead of adding to a"
+      },
+      {
+       "t": "aₙ = a + (n − 1)d with a = 6, d = 4, n = 25",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "Which expression is correct?",
+     "o": [
+      {
+       "t": "6 + 25 × 4",
+       "m": "counted 25 steps although the 25th term is 24 steps from the first"
+      },
+      {
+       "t": "6 + 24 × 4",
+       "ok": 1
+      },
+      {
+       "t": "6 + 24 + 4",
+       "m": "added n − 1 and d instead of multiplying them"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the 25th term?",
+     "o": [
+      {
+       "t": "102",
+       "ok": 1
+      },
+      {
+       "t": "106",
+       "m": "got 6 + 25 × 4"
+      },
+      {
+       "t": "34",
+       "m": "got 6 + 24 + 4"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "అంక శ్రేఢులు",
+   "hi": "समांतर श्रेढ़ी"
+  }
+ },
+ "m10_simtri": {
+  "lesson": {
+   "title": "Same shape, different size",
+   "points": [
+    "Two triangles are similar if their corresponding angles are equal and their corresponding sides are in the same ratio. They have the same shape but not always the same size.",
+    "Tests for similarity: AA (two angles equal), SSS (three pairs of sides in the same ratio) and SAS (one angle equal and the sides around it in the same ratio).",
+    "Basic Proportionality Theorem: a line drawn parallel to one side of a triangle divides the other two sides in the same ratio. The ratio of the areas of two similar triangles is the square of the ratio of their corresponding sides.",
+    "In a right-angled triangle, (hypotenuse)² = (side 1)² + (side 2)². This is the Pythagoras theorem."
+   ],
+   "story": "At the same time of day, a 1.5 m stick casts a shadow of 2 m and a tree casts a shadow of 12 m. The sun's rays make the same angle with the ground, so the two triangles are similar, and the tree is 1.5 × 12 ÷ 2 = 9 m tall.",
+   "example": {
+    "q": "In triangle ABC, DE is parallel to BC, with D on AB and E on AC. If AD = 4 cm, DB = 6 cm and AE = 3 cm, find EC.",
+    "steps": [
+     "Since DE is parallel to BC, AD/DB = AE/EC (Basic Proportionality Theorem)",
+     "Put in the values: 4/6 = 3/EC",
+     "Cross-multiply: 4 × EC = 6 × 3 = 18",
+     "EC = 18 ÷ 4 = 4.5 cm"
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which of these is a test for similarity of two triangles?",
+    "why": "The AA test says that if two angles of one triangle are equal to two angles of another, the triangles are similar. Equal perimeters or equal areas do not make triangles similar.",
+    "o": [
+     {
+      "t": "Two sides of one triangle equal two sides of the other",
+      "m": "thought two equal sides are enough, mixing this up with a congruence rule that also needs the angle between them",
+      "g": "m9_tri"
+     },
+     {
+      "t": "Two angles of one triangle equal two angles of the other",
+      "ok": 1
+     },
+     {
+      "t": "Both triangles have the same perimeter",
+      "m": "thought triangles with the same perimeter must have the same shape"
+     },
+     {
+      "t": "Both triangles have the same area",
+      "m": "thought triangles with the same area must have the same shape"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Two triangles are similar and their corresponding sides are in the ratio 2 : 3. What can you say about their corresponding angles?",
+    "why": "In similar triangles the corresponding angles are equal. Only the sides are in a fixed ratio.",
+    "o": [
+     {
+      "t": "They are in the ratio 2 : 3",
+      "m": "applied the ratio of the sides to the angles as well",
+      "g": "m7_ratio"
+     },
+     {
+      "t": "They are in the ratio 4 : 9",
+      "m": "used the ratio of areas for the angles",
+      "g": "m7_ratio"
+     },
+     {
+      "t": "They are in pairs that add up to 180°",
+      "m": "mixed up similar triangles with supplementary angles on a straight line",
+      "g": "m9_tri"
+     },
+     {
+      "t": "They are equal",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "In triangle ABC, DE is parallel to BC with D on AB and E on AC. If AD = 2 cm, DB = 3 cm and AE = 4 cm, what is EC?",
+    "why": "By the Basic Proportionality Theorem AD/DB = AE/EC, so 2/3 = 4/EC and EC = 4 × 3 ÷ 2 = 6 cm.",
+    "o": [
+     {
+      "t": "8/3 cm",
+      "m": "multiplied AE by AD/DB instead of dividing, which inverts the ratio",
+      "g": "m7_ratio"
+     },
+     {
+      "t": "6 cm",
+      "ok": 1
+     },
+     {
+      "t": "3 cm",
+      "m": "assumed EC equals DB because the lines are parallel",
+      "g": "m9_tri"
+     },
+     {
+      "t": "8 cm",
+      "m": "multiplied AD and AE and did not use the ratio at all",
+      "g": "m7_ratio"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Two triangles are similar. A side of 6 cm in the smaller triangle corresponds to a side of 9 cm in the larger one. If the perimeter of the smaller triangle is 20 cm, what is the perimeter of the larger?",
+    "why": "Perimeters of similar triangles are in the same ratio as corresponding sides: 9/6 = 3/2. So the perimeter is 20 × 3/2 = 30 cm.",
+    "o": [
+     {
+      "t": "30 cm",
+      "ok": 1
+     },
+     {
+      "t": "45 cm",
+      "m": "squared the ratio of sides, which is for areas and not for perimeters",
+      "g": "m7_ratio"
+     },
+     {
+      "t": "23 cm",
+      "m": "added the 3 cm difference between the sides to the perimeter",
+      "g": "m7_ratio"
+     },
+     {
+      "t": "40/3 cm",
+      "m": "multiplied by the inverted ratio 6/9 instead of 9/6",
+      "g": "m7_ratio"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Two similar triangles have areas 16 cm² and 36 cm². A side of the smaller triangle is 4 cm. What is the corresponding side of the larger triangle?",
+    "why": "The areas are in the ratio 16 : 36 = 4 : 9, so the sides are in the ratio √4 : √9 = 2 : 3. The side is 4 × 3/2 = 6 cm.",
+    "o": [
+     {
+      "t": "9 cm",
+      "m": "used the ratio of areas 36/16 as the ratio of sides without taking the square root",
+      "g": "m7_ratio"
+     },
+     {
+      "t": "16/9 cm",
+      "m": "used the inverted area ratio 16/36 without taking the square root",
+      "g": "m7_ratio"
+     },
+     {
+      "t": "6 cm",
+      "ok": 1
+     },
+     {
+      "t": "8/3 cm",
+      "m": "took the square root but then used the inverted ratio 2/3 instead of 3/2",
+      "g": "m7_ratio"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A pole 6 m high casts a shadow 4 m long. At the same time a tower casts a shadow 30 m long. How tall is the tower?",
+    "why": "The triangles formed by the objects and their shadows are similar, so height/shadow is the same: 6/4 = h/30, giving h = 6 × 30 ÷ 4 = 45 m.",
+    "o": [
+     {
+      "t": "20 m",
+      "m": "used the inverted ratio 4/6 and got 4 × 30 ÷ 6",
+      "g": "m7_ratio"
+     },
+     {
+      "t": "32 m",
+      "m": "thought the tower is taller by the same amount as its shadow is longer: 6 + (30 − 4)",
+      "g": "m7_ratio"
+     },
+     {
+      "t": "45 m",
+      "ok": 1
+     },
+     {
+      "t": "180 m",
+      "m": "multiplied the pole height by the tower's shadow without dividing by 4",
+      "g": "m7_ratio"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "In triangle ABC, DE is parallel to BC with D on AB and E on AC. If AD = 3 cm, AB = 9 cm and the area of triangle ADE is 5 cm², what is the area of triangle ABC?",
+    "why": "Triangle ADE is similar to ABC with side ratio 3/9 = 1/3, so the area ratio is 1/9. Area of ABC = 5 × 9 = 45 cm².",
+    "o": [
+     {
+      "t": "45 cm²",
+      "ok": 1
+     },
+     {
+      "t": "15 cm²",
+      "m": "used the ratio of sides 3 and did not square it for areas",
+      "g": "m9_tri"
+     },
+     {
+      "t": "40 cm²",
+      "m": "found the area of the quadrilateral DBCE instead of the whole triangle ABC"
+     },
+     {
+      "t": "20 cm²",
+      "m": "used AD : DB = 1 : 2 as the ratio of sides, instead of AD : AB = 1 : 3",
+      "g": "m7_ratio"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A ladder 13 m long reaches a window 12 m above the ground. How far is the foot of the ladder from the wall? (The ground is level and the wall is vertical.)",
+    "why": "The ladder, wall and ground make a right-angled triangle with hypotenuse 13 m. By the Pythagoras theorem, distance² = 13² − 12² = 169 − 144 = 25, so the distance is 5 m.",
+    "o": [
+     {
+      "t": "1 m",
+      "m": "subtracted the lengths 13 − 12 without using squares",
+      "g": "m9_tri"
+     },
+     {
+      "t": "25 m",
+      "m": "added the lengths 13 + 12 instead of using the Pythagoras theorem",
+      "g": "m9_tri"
+     },
+     {
+      "t": "√313 m",
+      "m": "added the squares 169 + 144 although 13 m is the hypotenuse",
+      "g": "m9_tri"
+     },
+     {
+      "t": "5 m",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "In triangle ABC, DE is parallel to BC, with D on AB and E on AC. If AD = 3 cm, DB = 5 cm and AE = 6 cm, find EC. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "Which statement should be used?",
+     "o": [
+      {
+       "t": "AD/DB = AE/EC, by the Basic Proportionality Theorem",
+       "ok": 1
+      },
+      {
+       "t": "AD/AB = AE/EC",
+       "m": "compared a part (AD) with the whole side AB on one line but a part (EC) on the other",
+       "g": "m7_ratio"
+      },
+      {
+       "t": "AD/DB = EC/AE",
+       "m": "inverted one of the two ratios",
+       "g": "m7_ratio"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "Which equation comes next?",
+     "o": [
+      {
+       "t": "3/8 = 6/EC",
+       "m": "used the whole side AB = 8 in place of DB",
+       "g": "m7_ratio"
+      },
+      {
+       "t": "3/5 = EC/6",
+       "m": "put EC and AE in the wrong places in the second ratio",
+       "g": "m7_ratio"
+      },
+      {
+       "t": "3/5 = 6/EC",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is EC?",
+     "o": [
+      {
+       "t": "3.6 cm",
+       "m": "multiplied 6 by 3/5 instead of dividing",
+       "g": "m7_ratio"
+      },
+      {
+       "t": "10 cm",
+       "ok": 1
+      },
+      {
+       "t": "16 cm",
+       "m": "found the whole side AC = 6 + 10 rather than EC"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "సరూప త్రిభుజాలు",
+   "hi": "समरूप त्रिभुज"
+  }
+ },
+ "m10_trig": {
+  "lesson": {
+   "title": "Ratios in a right triangle",
+   "points": [
+    "In a right-angled triangle, for an acute angle θ, the side opposite θ is the opposite side, the side next to θ is the adjacent side, and the longest side is the hypotenuse.",
+    "sin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse and tan θ = opposite/adjacent. Because of similar triangles, these ratios depend only on the angle and not on the size of the triangle.",
+    "Learn these values: sin 30° = 1/2, sin 45° = 1/√2, sin 60° = √3/2; cos 30° = √3/2, cos 45° = 1/√2, cos 60° = 1/2; tan 30° = 1/√3, tan 45° = 1, tan 60° = √3.",
+    "For every angle, sin²θ + cos²θ = 1. The angle of elevation is the angle between the horizontal and the line of sight to something above."
+   ],
+   "story": "A kite flies on a taut string 50 m long, and the string makes an angle of 30° with the ground. The kite's height is the side opposite the angle, so height = 50 × sin 30° = 50 × 1/2 = 25 m, without climbing anything to measure it.",
+   "example": {
+    "q": "In a right triangle the side opposite angle θ is 3 cm, the side adjacent to θ is 4 cm and the hypotenuse is 5 cm. Find sin θ, cos θ and tan θ.",
+    "steps": [
+     "sin θ = opposite/hypotenuse = 3/5",
+     "cos θ = adjacent/hypotenuse = 4/5",
+     "tan θ = opposite/adjacent = 3/4",
+     "Check: sin²θ + cos²θ = 9/25 + 16/25 = 1"
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "In a right-angled triangle, which ratio is sin θ for an acute angle θ?",
+    "why": "sin θ is the side opposite θ divided by the hypotenuse.",
+    "o": [
+     {
+      "t": "adjacent side/hypotenuse",
+      "m": "used the ratio for cos θ instead of sin θ"
+     },
+     {
+      "t": "opposite side/adjacent side",
+      "m": "used the ratio for tan θ instead of sin θ"
+     },
+     {
+      "t": "hypotenuse/opposite side",
+      "m": "turned the ratio upside down"
+     },
+     {
+      "t": "opposite side/hypotenuse",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is the value of sin 30°?",
+    "why": "From the standard table, sin 30° = 1/2.",
+    "o": [
+     {
+      "t": "√3/2",
+      "m": "gave the value of sin 60°, which is also cos 30°"
+     },
+     {
+      "t": "1/2",
+      "ok": 1
+     },
+     {
+      "t": "1/√2",
+      "m": "gave the value of sin 45°"
+     },
+     {
+      "t": "1",
+      "m": "gave the value of sin 90°"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "The two shorter sides of a right-angled triangle are 5 cm and 12 cm. For the angle θ opposite the 5 cm side, what is tan θ?",
+    "why": "tan θ = opposite/adjacent = 5/12. The hypotenuse is 13 cm, but it is not used in tan θ.",
+    "o": [
+     {
+      "t": "5/12",
+      "ok": 1
+     },
+     {
+      "t": "12/5",
+      "m": "turned the ratio upside down and divided adjacent by opposite"
+     },
+     {
+      "t": "5/13",
+      "m": "divided by the hypotenuse 13 and found sin θ"
+     },
+     {
+      "t": "12/13",
+      "m": "found the ratio adjacent/hypotenuse, which is cos θ"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the value of sin² 60° + cos² 60°?",
+    "why": "sin 60° = √3/2 and cos 60° = 1/2, so the sum is 3/4 + 1/4 = 1, as expected from sin²θ + cos²θ = 1.",
+    "o": [
+     {
+      "t": "1/2",
+      "m": "subtracted the squares, 3/4 − 1/4, instead of adding",
+      "g": "m8_sq"
+     },
+     {
+      "t": "(√3 + 1)/2",
+      "m": "added sin 60° and cos 60° without squaring them",
+      "g": "m8_sq"
+     },
+     {
+      "t": "1",
+      "ok": 1
+     },
+     {
+      "t": "√3/4",
+      "m": "multiplied sin 60° by cos 60° instead of squaring and adding",
+      "g": "m8_sq"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "For an acute angle θ, tan θ = 1. What is θ?",
+    "why": "tan θ = opposite/adjacent = 1 means the two sides are equal, which happens at θ = 45°.",
+    "o": [
+     {
+      "t": "30°",
+      "m": "mixed up tan 30° = 1/√3 with tan 45° = 1"
+     },
+     {
+      "t": "60°",
+      "m": "mixed up tan 60° = √3 with tan 45° = 1"
+     },
+     {
+      "t": "45°",
+      "ok": 1
+     },
+     {
+      "t": "90°",
+      "m": "remembered that sin 90° = 1 and used it for tan"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "For an acute angle θ, sin θ = 3/5. What is cos θ?",
+    "why": "Take opposite = 3 and hypotenuse = 5. The adjacent side is √(25 − 9) = 4, so cos θ = 4/5. Check: 9/25 + 16/25 = 1.",
+    "o": [
+     {
+      "t": "4/5",
+      "ok": 1
+     },
+     {
+      "t": "2/5",
+      "m": "found the third side as 5 − 3 = 2 by subtraction instead of the Pythagoras theorem",
+      "g": "m8_sq"
+     },
+     {
+      "t": "3/4",
+      "m": "gave opposite/adjacent, which is tan θ"
+     },
+     {
+      "t": "16/25",
+      "m": "found cos² θ = 1 − 9/25 but forgot to take the square root",
+      "g": "m8_sq"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A kite is flying on a taut string 50 m long. The string makes an angle of 30° with the level ground. How high is the kite above the ground?",
+    "why": "The height is opposite the 30° angle and the string is the hypotenuse, so height = 50 × sin 30° = 50 × 1/2 = 25 m.",
+    "o": [
+     {
+      "t": "25√3 m",
+      "m": "used cos 30° = √3/2 instead of sin 30°"
+     },
+     {
+      "t": "50 m",
+      "m": "took the height to be the same as the string length"
+     },
+     {
+      "t": "100 m",
+      "m": "divided 50 by sin 30° instead of multiplying"
+     },
+     {
+      "t": "25 m",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "From a point on level ground 30 m from the foot of a tower, the angle between the ground and the line to the top of the tower is 60°. What is the height of the tower?",
+    "why": "The height is opposite the 60° angle and 30 m is adjacent, so height/30 = tan 60° = √3. The height is 30√3 m.",
+    "o": [
+     {
+      "t": "10√3 m",
+      "m": "divided 30 by tan 60° instead of multiplying: 30/√3"
+     },
+     {
+      "t": "30√3 m",
+      "ok": 1
+     },
+     {
+      "t": "30 m",
+      "m": "used tan 45° = 1 instead of tan 60° = √3"
+     },
+     {
+      "t": "60 m",
+      "m": "found the distance to the top of the tower (30 ÷ cos 60°) rather than the height"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "In triangle ABC the angle at B is 90°, AB = 8 cm and BC = 6 cm. Find sin A. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What must be found first?",
+     "o": [
+      {
+       "t": "The hypotenuse AC, using AC² = AB² − BC²",
+       "m": "subtracted the squares although AC is the hypotenuse",
+       "g": "m8_sq"
+      },
+      {
+       "t": "The hypotenuse AC, using AC² = AB² + BC²",
+       "ok": 1
+      },
+      {
+       "t": "The angle A, using a calculator",
+       "m": "tried to find the angle first although sin A needs only the side ratio"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "What is the length of AC?",
+     "o": [
+      {
+       "t": "AC = √(64 + 36) = 10 cm",
+       "ok": 1
+      },
+      {
+       "t": "AC = 8 + 6 = 14 cm",
+       "m": "added the sides without squaring and taking the root",
+       "g": "m8_sq"
+      },
+      {
+       "t": "AC = √(64 − 36) = √28 cm",
+       "m": "subtracted the squares instead of adding them",
+       "g": "m8_sq"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is sin A?",
+     "o": [
+      {
+       "t": "4/5",
+       "m": "used the adjacent side AB (8) over the hypotenuse, which is cos A"
+      },
+      {
+       "t": "3/4",
+       "m": "used BC/AB, which is tan A"
+      },
+      {
+       "t": "3/5",
+       "ok": 1
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "త్రికోణమితి పరిచయం",
+   "hi": "त्रिकोणमिति का परिचय"
+  }
+ },
+ "m10_mens": {
+  "lesson": {
+   "title": "Solids joined together",
+   "points": [
+    "A combined solid is made by joining solids such as a cone, cylinder and hemisphere. Its volume is the sum of the volumes of the parts.",
+    "For the surface area, add only the surfaces you can see from outside. The faces where two solids are joined are hidden, so they are not counted.",
+    "Cylinder: V = πr²h, curved area 2πrh. Cone: V = 1/3 πr²h, curved area πrl, where l = √(r² + h²). Sphere: V = 4/3 πr³, area 4πr². Hemisphere: V = 2/3 πr³, curved area 2πr².",
+    "When a solid is melted and recast into another shape, its volume stays the same. Its surface area does change."
+   ],
+   "story": "A capsule in a medicine strip is a cylinder with a half-ball (hemisphere) at each end. Its shiny coating covers the curved surfaces only. The circles where the hemispheres meet the cylinder are inside, so they get no coating and are not counted.",
+   "example": {
+    "q": "A solid metal sphere of radius 3 cm is melted and recast into a cone of the same radius 3 cm. Find the height of the cone.",
+    "steps": [
+     "Volume of sphere = 4/3 π × 3³ = 36π cm³",
+     "Volume of cone = 1/3 π × 3² × h = 3πh",
+     "Volume stays the same, so 3πh = 36π",
+     "h = 12 cm"
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the curved surface area of a hemisphere of radius r?",
+    "why": "A hemisphere is half a sphere, so its curved surface area is half of 4πr², which is 2πr².",
+    "o": [
+     {
+      "t": "4πr²",
+      "m": "gave the surface area of a full sphere",
+      "g": "m9_mens"
+     },
+     {
+      "t": "2πr²",
+      "ok": 1
+     },
+     {
+      "t": "3πr²",
+      "m": "gave the total surface area, which includes the flat circular face",
+      "g": "m9_mens"
+     },
+     {
+      "t": "2/3 πr³",
+      "m": "gave the formula for the volume of a hemisphere",
+      "g": "m9_mens"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "A solid metal ball is melted and recast into a different shape. Which quantity stays the same?",
+    "why": "Melting does not add or remove metal, so the volume stays the same. The surface area, height and radius usually change.",
+    "o": [
+     {
+      "t": "Volume",
+      "ok": 1
+     },
+     {
+      "t": "Surface area",
+      "m": "thought the outer surface stays the same because the metal is only reshaped",
+      "g": "m9_mens"
+     },
+     {
+      "t": "Height",
+      "m": "thought the dimensions of the solid are unchanged by melting"
+     },
+     {
+      "t": "Radius",
+      "m": "thought the radius is fixed because the metal is the same"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A cone has radius 7 cm and height 24 cm. What is its slant height?",
+    "why": "l = √(r² + h²) = √(49 + 576) = √625 = 25 cm.",
+    "o": [
+     {
+      "t": "31 cm",
+      "m": "added the radius and height without using the Pythagoras theorem",
+      "g": "m9_mens"
+     },
+     {
+      "t": "17 cm",
+      "m": "subtracted the radius from the height",
+      "g": "m9_mens"
+     },
+     {
+      "t": "25 cm",
+      "ok": 1
+     },
+     {
+      "t": "625 cm",
+      "m": "added the squares but forgot to take the square root",
+      "g": "m9_mens"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the volume of a sphere of radius 6 cm?",
+    "why": "V = 4/3 π r³ = 4/3 × π × 216 = 288π cm³.",
+    "o": [
+     {
+      "t": "144π cm³",
+      "m": "gave the surface area 4πr² instead of the volume",
+      "g": "m9_mens"
+     },
+     {
+      "t": "48π cm³",
+      "m": "used r² instead of r³ in the volume formula",
+      "g": "m9_mens"
+     },
+     {
+      "t": "288π cm³",
+      "ok": 1
+     },
+     {
+      "t": "864π cm³",
+      "m": "used 4πr³ and left out the factor 1/3",
+      "g": "m9_mens"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A hemisphere of radius r is placed on top of a cylinder of the same radius. Which surfaces are counted in the total outer surface area of the combined solid?",
+    "why": "Count what is outside: the curved surface of the cylinder, the curved surface of the hemisphere and the bottom circle of the cylinder. The joined circle is hidden.",
+    "o": [
+     {
+      "t": "Curved area of cylinder + curved area of hemisphere + bottom circle",
+      "ok": 1
+     },
+     {
+      "t": "Total area of the cylinder + total area of the hemisphere",
+      "m": "counted the hidden joined faces, which are inside the solid",
+      "g": "m9_mens"
+     },
+     {
+      "t": "Only the curved surfaces of the cylinder and hemisphere",
+      "m": "forgot that the bottom circle of the cylinder is also outside",
+      "g": "m9_mens"
+     },
+     {
+      "t": "Curved area of cylinder + 4πr² of a full sphere",
+      "m": "completed the hemisphere into a full sphere",
+      "g": "m9_mens"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A capsule is a cylinder of radius 3.5 cm and length 10 cm with a hemisphere of the same radius at each end. What is its total outer surface area? (Use π = 22/7.)",
+    "why": "Cylinder curved area = 2πrh = 2 × 22/7 × 3.5 × 10 = 220 cm². Two hemispheres give 4πr² = 4 × 22/7 × 3.5² = 154 cm². Total = 220 + 154 = 374 cm².",
+    "o": [
+     {
+      "t": "297 cm²",
+      "m": "added only one hemisphere (77 cm²) to the cylinder",
+      "g": "m9_mens"
+     },
+     {
+      "t": "451 cm²",
+      "m": "also counted the two joining circles of the cylinder, which are hidden",
+      "g": "m9_mens"
+     },
+     {
+      "t": "528 cm²",
+      "m": "used 4πr² for each hemisphere so each hemisphere was counted as a full sphere",
+      "g": "m9_mens"
+     },
+     {
+      "t": "374 cm²",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A toy is a cone of radius 3 cm and height 4 cm placed on a hemisphere of radius 3 cm. What is its volume?",
+    "why": "Cone: 1/3 π × 3² × 4 = 12π. Hemisphere: 2/3 π × 3³ = 18π. Total = 30π cm³.",
+    "o": [
+     {
+      "t": "48π cm³",
+      "m": "used the volume of a whole sphere (36π) in place of the hemisphere",
+      "g": "m9_mens"
+     },
+     {
+      "t": "30π cm³",
+      "ok": 1
+     },
+     {
+      "t": "54π cm³",
+      "m": "left out the factor 1/3 in the cone volume, getting 36π for the cone",
+      "g": "m9_mens"
+     },
+     {
+      "t": "21π cm³",
+      "m": "used 1/3 πr³ for the hemisphere instead of 2/3 πr³",
+      "g": "m9_mens"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A solid metal sphere of radius 6 cm is melted and drawn into a long wire of diameter 0.4 cm. What is the length of the wire?",
+    "why": "Volume of sphere = 4/3 π × 6³ = 288π cm³. Wire radius = 0.2 cm, so πr²h = π × 0.04 × h = 288π. h = 7200 cm = 72 m.",
+    "o": [
+     {
+      "t": "36 m",
+      "m": "equated the surface area 144π (not the volume) of the sphere to the wire volume",
+      "g": "m9_mens"
+     },
+     {
+      "t": "18 m",
+      "m": "used the diameter 0.4 cm as the radius of the wire",
+      "g": "m9_mens"
+     },
+     {
+      "t": "216 m",
+      "m": "used 4πr³ for the sphere volume and left out the factor 1/3",
+      "g": "m9_mens"
+     },
+     {
+      "t": "72 m",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "A toy is a cone of radius 7 cm and height 24 cm standing on a hemisphere of radius 7 cm. Find its total outer surface area. (Use π = 22/7.) Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What should be added?",
+     "o": [
+      {
+       "t": "Total surface area of the cone + total surface area of the hemisphere",
+       "m": "counted the base of the cone and the flat face of the hemisphere, which are joined and hidden",
+       "g": "m9_mens"
+      },
+      {
+       "t": "Volume of the cone + volume of the hemisphere",
+       "m": "added volumes although the question asks for surface area",
+       "g": "m9_mens"
+      },
+      {
+       "t": "Curved area of the cone + curved area of the hemisphere",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "Which expression is correct?",
+     "o": [
+      {
+       "t": "22/7 × 7 × 24 + 2 × 22/7 × 7²",
+       "m": "used the height 24 in place of the slant height 25 in πrl",
+       "g": "m9_mens"
+      },
+      {
+       "t": "22/7 × 7 × 25 + 2 × 22/7 × 7²",
+       "ok": 1
+      },
+      {
+       "t": "22/7 × 7 × 25 + 4 × 22/7 × 7²",
+       "m": "used the area of a full sphere for the hemisphere",
+       "g": "m9_mens"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the total surface area?",
+     "o": [
+      {
+       "t": "858 cm²",
+       "ok": 1
+      },
+      {
+       "t": "836 cm²",
+       "m": "used 24 instead of the slant height 25 for the cone",
+       "g": "m9_mens"
+      },
+      {
+       "t": "1166 cm²",
+       "m": "used 4πr² for the hemisphere",
+       "g": "m9_mens"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "ఉపరితల వైశాల్యాలు మరియు ఘనపరిమాణాలు (సంయుక్త ఘనాలు)",
+   "hi": "पृष्ठीय क्षेत्रफल और आयतन (संयुक्त ठोस)"
+  }
+ },
+ "m10_prob": {
+  "lesson": {
+   "title": "Chance and averages",
+   "points": [
+    "Probability of an event E = (number of outcomes favourable to E) ÷ (total number of equally likely outcomes). It always lies from 0 (impossible) to 1 (sure), and P(not E) = 1 − P(E).",
+    "For grouped data, use the class mark x = (lower limit + upper limit)/2. Mean = Σfx ÷ Σf.",
+    "Median = l + ((n/2 − cf)/f) × h, where l is the lower limit of the median class, cf is the cumulative frequency before it, f its frequency and h its class width.",
+    "Mode = l + ((f₁ − f₀)/(2f₁ − f₀ − f₂)) × h, where f₁ is the frequency of the modal class, and f₀ and f₂ are the frequencies of the classes before and after it."
+   ],
+   "story": "In a school lucky draw 100 tickets are sold and you hold 5 of them. All tickets are equally likely to be picked, so your chance of winning is 5/100 = 1/20, and your chance of not winning is 1 − 1/20 = 19/20.",
+   "example": {
+    "q": "A bag has 3 red, 5 blue and 2 green balls. One ball is drawn at random. Find the probability that it is green.",
+    "steps": [
+     "Total number of balls = 3 + 5 + 2 = 10",
+     "Favourable outcomes (green balls) = 2",
+     "P(green) = 2/10",
+     "P(green) = 1/5"
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which of these cannot be the probability of an event?",
+    "why": "A probability must lie between 0 and 1 (both included). 3/2 is greater than 1, so it cannot be a probability.",
+    "o": [
+     {
+      "t": "3/2",
+      "ok": 1
+     },
+     {
+      "t": "0",
+      "m": "thought a probability of 0 is not allowed, though it means the event is impossible",
+      "g": "m9_stat"
+     },
+     {
+      "t": "1",
+      "m": "thought a probability must be less than 1, though 1 means the event is sure",
+      "g": "m9_stat"
+     },
+     {
+      "t": "2/3",
+      "m": "thought a fraction cannot be a probability",
+      "g": "m9_stat"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "A fair die is thrown once. What is the probability of getting a 4?",
+    "why": "There are 6 equally likely outcomes and only one of them is a 4, so P = 1/6.",
+    "o": [
+     {
+      "t": "4/6",
+      "m": "used the number 4 as the number of favourable outcomes",
+      "g": "m9_stat"
+     },
+     {
+      "t": "1/4",
+      "m": "put the number on the die in the denominator instead of the 6 outcomes",
+      "g": "m9_stat"
+     },
+     {
+      "t": "1/6",
+      "ok": 1
+     },
+     {
+      "t": "1/2",
+      "m": "said there are two outcomes, 4 or not 4, and treated them as equally likely",
+      "g": "m9_stat"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A bag has 4 red, 6 white and 5 black balls. One ball is drawn at random. What is the probability that it is not white?",
+    "why": "Total = 15 balls and 9 are not white, so P = 9/15 = 3/5. Check: 1 − 6/15 = 9/15.",
+    "o": [
+     {
+      "t": "2/5",
+      "m": "found the probability of white (6/15) and did not subtract it from 1",
+      "g": "m9_stat"
+     },
+     {
+      "t": "3/2",
+      "m": "divided the 9 non-white balls by the 6 white balls instead of by the total",
+      "g": "m9_stat"
+     },
+     {
+      "t": "3/5",
+      "ok": 1
+     },
+     {
+      "t": "4/15",
+      "m": "counted only the red balls as not white",
+      "g": "m9_stat"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A card is drawn at random from a well-shuffled pack of 52 playing cards. What is the probability that it is a face card (jack, queen or king)?",
+    "why": "Each of the 4 suits has 3 face cards, so there are 12 favourable cards. P = 12/52 = 3/13.",
+    "o": [
+     {
+      "t": "3/13",
+      "ok": 1
+     },
+     {
+      "t": "3/52",
+      "m": "counted only 3 face cards, forgetting there is one of each in all 4 suits",
+      "g": "m9_stat"
+     },
+     {
+      "t": "4/13",
+      "m": "also counted the 4 aces, getting 16 favourable cards",
+      "g": "m9_stat"
+     },
+     {
+      "t": "1/13",
+      "m": "counted only the 4 cards of one kind",
+      "g": "m9_stat"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A group of students has these marks: class 0–10 has 4 students, class 10–20 has 6 students and class 20–30 has 10 students. What is the mean mark, using class marks?",
+    "why": "Class marks are 5, 15 and 25. Σfx = 4 × 5 + 6 × 15 + 10 × 25 = 20 + 90 + 250 = 360 and Σf = 20. Mean = 360/20 = 18.",
+    "o": [
+     {
+      "t": "15",
+      "m": "took the simple average of the class marks 5, 15 and 25, ignoring the frequencies",
+      "g": "m9_stat"
+     },
+     {
+      "t": "120",
+      "m": "divided Σfx = 360 by the number of classes (3) instead of Σf",
+      "g": "m9_stat"
+     },
+     {
+      "t": "360",
+      "m": "found Σfx but forgot to divide by Σf",
+      "g": "m9_stat"
+     },
+     {
+      "t": "18",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Two fair dice are thrown together. What is the probability that the sum of the numbers is 8?",
+    "why": "There are 6 × 6 = 36 equally likely outcomes. The sum is 8 for (2,6), (3,5), (4,4), (5,3), (6,2), which is 5 outcomes. P = 5/36.",
+    "o": [
+     {
+      "t": "1/11",
+      "m": "treated the 11 possible sums (2 to 12) as equally likely",
+      "g": "m9_stat"
+     },
+     {
+      "t": "5/36",
+      "ok": 1
+     },
+     {
+      "t": "1/6",
+      "m": "counted 6 favourable outcomes, counting (4,4) twice",
+      "g": "m9_stat"
+     },
+     {
+      "t": "5/12",
+      "m": "took the total number of outcomes as 6 + 6 = 12 instead of 6 × 6",
+      "g": "m9_stat"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The marks of 50 students are grouped as: 0–10 has 8 students, 10–20 has 12, 20–30 has 25, 30–40 has 3 and 40–50 has 2. What is the median mark?",
+    "why": "n/2 = 25. The cumulative frequencies are 8, 20, 45, ..., so the median class is 20–30 with cf before it = 20 and f = 25. Median = 20 + (25 − 20)/25 × 10 = 22.",
+    "o": [
+     {
+      "t": "25",
+      "m": "took the mid-value of the median class instead of using the median formula",
+      "g": "m9_stat"
+     },
+     {
+      "t": "20.2",
+      "m": "forgot to multiply the fraction 5/25 by the class width 10",
+      "g": "m9_stat"
+     },
+     {
+      "t": "12",
+      "m": "used cf = 45, the cumulative frequency up to the median class, instead of the 20 before it",
+      "g": "m9_stat"
+     },
+     {
+      "t": "22",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "In a grouped frequency table the classes 20–30, 30–40 and 40–50 have frequencies 8, 12 and 6. The modal class is 30–40. What is the mode?",
+    "why": "l = 30, f₁ = 12, f₀ = 8, f₂ = 6, h = 10. Mode = 30 + (12 − 8)/(24 − 8 − 6) × 10 = 30 + 4/10 × 10 = 34.",
+    "o": [
+     {
+      "t": "35",
+      "m": "took the class mark of the modal class instead of using the mode formula",
+      "g": "m9_stat"
+     },
+     {
+      "t": "34",
+      "ok": 1
+     },
+     {
+      "t": "36",
+      "m": "swapped f₀ and f₂ in the formula, using (12 − 6) in the numerator",
+      "g": "m9_stat"
+     },
+     {
+      "t": "30.4",
+      "m": "forgot to multiply the fraction by the class width 10",
+      "g": "m9_stat"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "A number is picked at random from the numbers 1 to 20. Find the probability that it is a prime number. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "Which formula gives the probability?",
+     "o": [
+      {
+       "t": "P = favourable outcomes ÷ total outcomes",
+       "ok": 1
+      },
+      {
+       "t": "P = favourable outcomes ÷ unfavourable outcomes",
+       "m": "compared favourable with unfavourable outcomes instead of with all outcomes",
+       "g": "m9_stat"
+      },
+      {
+       "t": "P = total outcomes ÷ favourable outcomes",
+       "m": "turned the probability formula upside down",
+       "g": "m9_stat"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "How many favourable and total outcomes are there?",
+     "o": [
+      {
+       "t": "Primes 1, 2, 3, 5, 7, 11, 13, 17, 19: 9 favourable out of 20",
+       "m": "counted 1 as a prime number"
+      },
+      {
+       "t": "All odd numbers: 10 favourable out of 20",
+       "m": "thought every odd number is prime"
+      },
+      {
+       "t": "Primes 2, 3, 5, 7, 11, 13, 17, 19: 8 favourable out of 20",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the probability?",
+     "o": [
+      {
+       "t": "9/20",
+       "m": "counted 1 as a prime and got 9/20"
+      },
+      {
+       "t": "2/5",
+       "ok": 1
+      },
+      {
+       "t": "1/2",
+       "m": "counted all odd numbers and got 10/20"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "సంభావ్యత మరియు సాంఖ్యక శాస్త్రం",
+   "hi": "प्रायिकता और सांख्यिकी"
+  }
+ }
+}

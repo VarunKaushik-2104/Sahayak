@@ -1,0 +1,1491 @@
+{
+ "s8_cell": {
+  "tags": {
+   "te": "కణ నిర్మాణం మరియు విధులు",
+   "hi": "कोशिका की संरचना और कार्य"
+  },
+  "lesson": {
+   "title": "The tiny building blocks of life",
+   "points": [
+    "All living things are made of cells, the basic units of life.",
+    "Robert Hooke first saw cells in a slice of cork in 1665. Robert Brown later discovered the nucleus.",
+    "Every cell has a cell membrane, cytoplasm and a nucleus. Plant cells also have a cell wall, plastids (like chloroplasts) and a large vacuole.",
+    "Cells with no well-defined nucleus, such as bacteria, are prokaryotic. Cells with a nucleus are eukaryotic."
+   ],
+   "story": "Think of a cell as a small kirana shop. The shutter and door (cell membrane) decide what comes in and goes out, the floor and shelves (cytoplasm) hold everything, and the owner (nucleus) controls all the work.",
+   "example": {
+    "q": "A student peels a thin layer from an onion, stains it with safranin and sees box-like cells with a clear, thick outer boundary. Is it a plant cell or an animal cell?",
+    "steps": [
+     "Notice the thick boundary outside the cell membrane. This is the cell wall.",
+     "Only plant cells have a cell wall. Animal cells have just a thin cell membrane.",
+     "So the onion peel cells are plant cells."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Who first observed cells, in a thin slice of cork, in 1665?",
+    "why": "Robert Hooke saw tiny box-like compartments in cork under a simple microscope and named them cells.",
+    "o": [
+     {
+      "t": "Anton van Leeuwenhoek",
+      "m": "Confused the first person to see cells with the first person to see living cells in pond water"
+     },
+     {
+      "t": "Robert Brown",
+      "m": "Confused the discoverer of cells with the discoverer of the nucleus"
+     },
+     {
+      "t": "Robert Hooke",
+      "ok": 1
+     },
+     {
+      "t": "Matthias Schleiden",
+      "m": "Confused the observer of cells with a scientist who proposed that plants are made of cells"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which cell part is found in plant cells but not in animal cells?",
+    "why": "Plant cells have a rigid cell wall outside the cell membrane. Animal cells have only the cell membrane.",
+    "o": [
+     {
+      "t": "Cell wall",
+      "ok": 1
+     },
+     {
+      "t": "Nucleus",
+      "m": "Thought only plant cells have a nucleus"
+     },
+     {
+      "t": "Cell membrane",
+      "m": "Thought the membrane is only a plant feature because plants look more rigid"
+     },
+     {
+      "t": "Cytoplasm",
+      "m": "Thought animal cells have no jelly-like cytoplasm"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which part of the cell controls all its activities and carries the chromosomes?",
+    "why": "The nucleus is the control centre of the cell. It contains chromosomes that carry genes.",
+    "o": [
+     {
+      "t": "Cell membrane",
+      "m": "Took the outer boundary to be the controller because it decides what enters"
+     },
+     {
+      "t": "Cytoplasm",
+      "m": "Thought the place where activities happen is also what controls them"
+     },
+     {
+      "t": "Vacuole",
+      "m": "Thought the storage space of the cell directs its work"
+     },
+     {
+      "t": "Nucleus",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A bacterium has no well-defined nucleus; its genetic material lies free in the cytoplasm. Such a cell is called:",
+    "why": "A cell without a well-defined nucleus is prokaryotic. Bacteria are prokaryotes.",
+    "o": [
+     {
+      "t": "a eukaryotic cell",
+      "m": "Assumed every living cell has a well-defined nucleus"
+     },
+     {
+      "t": "a prokaryotic cell",
+      "ok": 1
+     },
+     {
+      "t": "an animal cell",
+      "m": "Assumed a cell that does not look like a plant cell must be an animal cell"
+     },
+     {
+      "t": "a dead cell",
+      "m": "Thought a cell without a nucleus must be dead"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Why do the leaves of most plants look green?",
+    "why": "Leaf cells contain chloroplasts, plastids holding the green pigment chlorophyll, which is used to make food.",
+    "o": [
+     {
+      "t": "Their cell walls are made of a green material",
+      "m": "Thought the cell wall gives the leaf its colour"
+     },
+     {
+      "t": "Their cells contain chloroplasts holding the green pigment chlorophyll",
+      "ok": 1
+     },
+     {
+      "t": "Their vacuoles store green dye absorbed from the soil",
+      "m": "Thought plants take their colour from the soil instead of making chlorophyll",
+      "g": "s7_nutr"
+     },
+     {
+      "t": "Their nuclei are filled with a green pigment",
+      "m": "Thought the nucleus holds the pigments of the cell"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Under a microscope a student sees a cell with a rigid outer boundary, a large central vacuole and green plastids. Which statement fits best?",
+    "why": "A cell wall, a large vacuole and chloroplasts are typical of plant cells.",
+    "o": [
+     {
+      "t": "It is an animal cell, because it has a nucleus and cytoplasm",
+      "m": "Used only features common to all cells and ignored the plant-only ones"
+     },
+     {
+      "t": "It is a bacterial cell, because it has a cell wall",
+      "m": "Treated any cell wall as proof of a bacterium"
+     },
+     {
+      "t": "It is an animal cell, because large vacuoles occur only in animals",
+      "m": "Thought a large vacuole is an animal-cell feature"
+     },
+     {
+      "t": "It is a plant cell, because these three features occur in plant cells",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A mouse and an elephant are compared. Which statement about their cells is correct?",
+    "why": "Cell size is not related to the size of the animal. An elephant is bigger because it has many more cells.",
+    "o": [
+     {
+      "t": "Their cells are of similar size; the elephant has many more cells",
+      "ok": 1
+     },
+     {
+      "t": "The elephant's cells are far larger than the mouse's cells",
+      "m": "Thought bigger animals have proportionally bigger cells"
+     },
+     {
+      "t": "The elephant's cells are far smaller, so that more can fit in",
+      "m": "Reversed the idea and guessed that big animals have tiny cells"
+     },
+     {
+      "t": "The elephant is made of one huge cell, the mouse of many",
+      "m": "Thought a bigger organism is a single large cell"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Why is an onion peel stained with safranin before it is viewed under a microscope?",
+    "why": "Stain colours the parts of the cell, such as the nucleus, so that they are easy to see.",
+    "o": [
+     {
+      "t": "To kill the cells so that they stop growing",
+      "m": "Thought a stain works as a germ killer"
+     },
+     {
+      "t": "To make the cell wall thicker",
+      "m": "Thought the stain adds material to the cell"
+     },
+     {
+      "t": "To make the parts of the cell, such as the nucleus, easier to see",
+      "ok": 1
+     },
+     {
+      "t": "To make the cells look bigger",
+      "m": "Thought a stain magnifies like a lens"
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s8_repro": {
+  "tags": {
+   "te": "ప్రత్యుత్పత్తి మరియు కౌమారదశ",
+   "hi": "जनन एवं किशोरावस्था"
+  },
+  "lesson": {
+   "title": "Growing up and making new life",
+   "points": [
+    "Reproduction is asexual (one parent, as in budding of Hydra and binary fission of Amoeba) or sexual (male and female gametes fuse).",
+    "Fusion of a sperm and an egg is fertilisation and gives a zygote. It is internal in humans and external, in water, in frogs.",
+    "The zygote becomes an embryo and then a foetus. Animals that lay eggs are oviparous. Those that give birth to young ones are viviparous.",
+    "Adolescence (about 11 to 19 years) brings puberty, controlled by hormones. Whether the sperm carries X or Y decides the baby's sex."
+   ],
+   "story": "A zygote is like one grain of rice sown in a paddy field. It is just one cell, but in the right place (the uterus) it divides again and again until a whole baby grows.",
+   "example": {
+    "q": "A female frog lays eggs in a pond and a male frog releases sperms over them. Name the type of fertilisation and say what happens next.",
+    "steps": [
+     "The sperms meet the eggs outside the female's body, in water, so fertilisation is external.",
+     "The zygote develops inside the jelly-coated egg and a tadpole hatches.",
+     "The tadpole changes into an adult frog by metamorphosis."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "The fusion of a male gamete (sperm) with a female gamete (egg) is called:",
+    "why": "Fertilisation is the fusion of the sperm and the egg. It forms a zygote.",
+    "o": [
+     {
+      "t": "Budding",
+      "m": "Confused the fusion of gametes with the outgrowth method of Hydra"
+     },
+     {
+      "t": "Fertilisation",
+      "ok": 1
+     },
+     {
+      "t": "Metamorphosis",
+      "m": "Confused fusion of cells with the change of body form from tadpole to frog"
+     },
+     {
+      "t": "Ovulation",
+      "m": "Confused fertilisation with the release of an egg from the ovary"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which of these organisms reproduces by budding?",
+    "why": "Hydra forms a bud on its body that grows into a new Hydra. Amoeba divides by binary fission.",
+    "o": [
+     {
+      "t": "Frog",
+      "m": "Thought tadpoles are buds of the parent frog"
+     },
+     {
+      "t": "Hen",
+      "m": "Confused egg laying with budding"
+     },
+     {
+      "t": "Amoeba",
+      "m": "Confused budding with binary fission"
+     },
+     {
+      "t": "Hydra",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which hormone, released by the testes, brings changes such as a deeper voice and facial hair in boys?",
+    "why": "The testes release testosterone, which brings the male secondary sexual characters.",
+    "o": [
+     {
+      "t": "Testosterone",
+      "ok": 1
+     },
+     {
+      "t": "Oestrogen",
+      "m": "Swapped the male and female sex hormones"
+     },
+     {
+      "t": "Insulin",
+      "m": "Confused it with the pancreas hormone that controls blood sugar"
+     },
+     {
+      "t": "Adrenaline",
+      "m": "Confused it with the emergency hormone of the adrenal glands"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which of these animals is viviparous, that is, gives birth to young ones?",
+    "why": "A dog gives birth to its young. Hen, frog and rohu lay eggs, so they are oviparous.",
+    "o": [
+     {
+      "t": "Hen",
+      "m": "Thought that internal fertilisation in a hen means the young are born directly"
+     },
+     {
+      "t": "Frog",
+      "m": "Thought tadpoles are born directly instead of hatching from eggs"
+     },
+     {
+      "t": "Dog",
+      "ok": 1
+     },
+     {
+      "t": "Rohu fish",
+      "m": "Assumed all animals with swimming young give birth"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Lack of iodine in the diet can cause a swelling of the neck called goitre. Which gland is affected?",
+    "why": "The thyroid gland needs iodine to make its hormone, thyroxine. Lack of iodine causes goitre.",
+    "o": [
+     {
+      "t": "Pituitary gland",
+      "m": "Thought the master gland is behind every hormone problem"
+     },
+     {
+      "t": "Pancreas",
+      "m": "Confused goitre with diabetes because both are hormone problems"
+     },
+     {
+      "t": "Adrenal gland",
+      "m": "Confused it with the glands that act in emergencies"
+     },
+     {
+      "t": "Thyroid gland",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Which statement about a test-tube baby (IVF) is correct?",
+    "why": "In IVF, eggs and sperms are joined in a laboratory dish. After a few days the developing zygote is placed in the mother's uterus.",
+    "o": [
+     {
+      "t": "Fertilisation takes place outside the body, and the embryo is later placed in the mother's uterus",
+      "ok": 1
+     },
+     {
+      "t": "The baby grows entirely in a test tube for nine months",
+      "m": "Thought the whole development happens in the lab"
+     },
+     {
+      "t": "Only sperms are used; the baby grows without any egg",
+      "m": "Forgot that an egg is needed for fertilisation"
+     },
+     {
+      "t": "A body cell of the mother grows into the baby without fertilisation",
+      "m": "Confused IVF with cloning"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A student finds jelly-like eggs in a pond and, weeks later, tadpoles. Which statement is correct?",
+    "why": "Frogs show external fertilisation in water. The tadpole changes into an adult frog by metamorphosis.",
+    "o": [
+     {
+      "t": "Fertilisation was internal, and tadpoles only grow bigger to become frogs",
+      "m": "Assumed all animals have internal fertilisation and that no change of form happens"
+     },
+     {
+      "t": "Fertilisation was external, but tadpoles only grow bigger to become frogs",
+      "m": "Ignored the change of body form during metamorphosis"
+     },
+     {
+      "t": "Fertilisation was external, and tadpoles change into frogs by metamorphosis",
+      "ok": 1
+     },
+     {
+      "t": "Fertilisation was internal, and tadpoles change into frogs by metamorphosis",
+      "m": "Thought frog fertilisation takes place inside the female"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "An egg carries an X chromosome. It is fertilised by a sperm carrying a Y chromosome. The baby will be:",
+    "why": "XY gives a boy. The egg always carries X, so the sperm decides the sex of the baby.",
+    "o": [
+     {
+      "t": "A girl",
+      "m": "Counted only the mother's X chromosome in the egg"
+     },
+     {
+      "t": "A boy",
+      "ok": 1
+     },
+     {
+      "t": "Either, since the egg may carry X or Y",
+      "m": "Thought the egg can also carry a Y chromosome"
+     },
+     {
+      "t": "Not decided until puberty, when hormones decide the sex",
+      "m": "Confused sex determination with the hormone changes of adolescence"
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s8_force": {
+  "tags": {
+   "te": "బలం, పీడనం మరియు ఘర్షణ",
+   "hi": "बल, दाब और घर्षण"
+  },
+  "lesson": {
+   "title": "Push, pull and press",
+   "points": [
+    "A force is a push or a pull, measured in newtons (N). Forces in the same direction add up; forces in opposite directions subtract.",
+    "Pressure is force per unit area, P = F/A. Its unit is the pascal (Pa), and 1 Pa = 1 N/m². The same force on a smaller area gives more pressure.",
+    "Liquids and gases also exert pressure. The pressure of a liquid increases with depth.",
+    "Friction is a force that opposes motion between surfaces in contact. Rolling friction is less than sliding friction, and lubricants reduce friction."
+   ],
+   "story": "A sharp knife cuts a tomato easily because your whole push falls on a very thin edge. A blunt knife spreads the same push over a larger area, so it hardly cuts.",
+   "example": {
+    "q": "A force of 500 N acts on an area of 0.25 m². Find the pressure.",
+    "steps": [
+     "Pressure = force ÷ area.",
+     "P = 500 N ÷ 0.25 m² = 2000 N/m².",
+     "So the pressure is 2000 Pa."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Pressure is defined as the force acting on a unit:",
+    "why": "Pressure = force ÷ area, so it is the force acting on each unit of area.",
+    "o": [
+     {
+      "t": "volume",
+      "m": "Mixed up area with volume"
+     },
+     {
+      "t": "mass",
+      "m": "Confused pressure with weight"
+     },
+     {
+      "t": "length",
+      "m": "Mixed up area with length"
+     },
+     {
+      "t": "area",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Friction between two surfaces acts:",
+    "why": "Friction always opposes the motion, or the attempt at motion, between the surfaces.",
+    "o": [
+     {
+      "t": "along the direction of motion",
+      "m": "Thought friction helps the object move"
+     },
+     {
+      "t": "opposite to the direction of motion",
+      "ok": 1
+     },
+     {
+      "t": "at right angles to the surface",
+      "m": "Confused friction with the normal push of the surface"
+     },
+     {
+      "t": "only when the object is already sliding",
+      "m": "Forgot that static friction acts even before motion begins"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A school bag has wide straps because the wide straps:",
+    "why": "Wider straps give a greater area. For the same weight, a greater area gives less pressure on the shoulders.",
+    "o": [
+     {
+      "t": "make the bag weigh less",
+      "m": "Confused pressure with weight"
+     },
+     {
+      "t": "give a greater area, so the pressure on the shoulder is more",
+      "m": "Thought pressure increases when area increases"
+     },
+     {
+      "t": "give a greater area, so the pressure on the shoulder is less",
+      "ok": 1
+     },
+     {
+      "t": "add extra force, which makes the bag feel balanced",
+      "m": "Thought a wider strap adds force"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which type of friction is the least for the same two surfaces?",
+    "why": "Rolling friction is much less than sliding or static friction, which is why wheels and ball bearings are used.",
+    "o": [
+     {
+      "t": "Rolling friction",
+      "ok": 1
+     },
+     {
+      "t": "Static friction",
+      "m": "Thought an object at rest has almost no friction"
+     },
+     {
+      "t": "Sliding friction",
+      "m": "Thought any moving object has the least friction"
+     },
+     {
+      "t": "All are equal",
+      "m": "Thought friction depends only on the weight of the object"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Two forces of 30 N and 20 N act on a box in opposite directions along the same straight line. The net force is:",
+    "why": "Opposite forces subtract: 30 N − 20 N = 10 N, in the direction of the larger force.",
+    "o": [
+     {
+      "t": "10 N in the direction of the 30 N force",
+      "ok": 1
+     },
+     {
+      "t": "50 N in the direction of the 30 N force",
+      "m": "Added the forces even though they act in opposite directions"
+     },
+     {
+      "t": "10 N in the direction of the 20 N force",
+      "m": "Subtracted correctly but chose the direction of the smaller force"
+     },
+     {
+      "t": "0 N, because opposite forces always cancel",
+      "m": "Thought opposite forces are always balanced"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Ravi pushes a heavy almirah with a force of 200 N, but it does not move. What is the friction force between the floor and the almirah?",
+    "why": "The almirah stays at rest, so the forces are balanced. Static friction is 200 N, equal and opposite to the push.",
+    "o": [
+     {
+      "t": "0 N, since nothing moves",
+      "m": "Thought friction acts only on moving objects"
+     },
+     {
+      "t": "More than 200 N, since it is heavy",
+      "m": "Thought a heavier object always has a larger friction than the push"
+     },
+     {
+      "t": "200 N, opposite to his push",
+      "ok": 1
+     },
+     {
+      "t": "200 N, in the direction of his push",
+      "m": "Got the size right but thought friction acts along the push"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A force of 600 N acts on an area of 0.5 m². The pressure is:",
+    "why": "Pressure = force ÷ area = 600 ÷ 0.5 = 1200 N/m² = 1200 Pa.",
+    "o": [
+     {
+      "t": "300 Pa",
+      "m": "Multiplied force by area instead of dividing"
+     },
+     {
+      "t": "1200 Pa",
+      "ok": 1
+     },
+     {
+      "t": "1200 N",
+      "m": "Got the number but gave the unit of force instead of pressure"
+     },
+     {
+      "t": "about 0.0008 Pa",
+      "m": "Divided area by force instead of force by area"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Why is the wall of a dam made thicker at the bottom than at the top?",
+    "why": "The pressure of water increases with depth, so the bottom of the wall must withstand more pressure.",
+    "o": [
+     {
+      "t": "Water pressure is the same at all depths, so the thickness is only for looks",
+      "m": "Thought liquid pressure does not change with depth"
+     },
+     {
+      "t": "Water presses only on the bottom of the dam",
+      "m": "Thought liquid pressure acts only downwards"
+     },
+     {
+      "t": "Water pressure is greatest at the top where air presses",
+      "m": "Mixed up air pressure with the pressure inside the water"
+     },
+     {
+      "t": "Water pressure increases with depth, so the bottom faces more pressure",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s8_sound": {
+  "tags": {
+   "te": "ధ్వని",
+   "hi": "ध्वनि"
+  },
+  "lesson": {
+   "title": "Vibrations you can hear",
+   "points": [
+    "Sound is produced by vibrating objects. It needs a medium such as air, water or a solid, and cannot travel through a vacuum.",
+    "Frequency is the number of oscillations per second, measured in hertz (Hz). Time period = 1 ÷ frequency. Higher frequency means a higher pitch (shriller sound).",
+    "Amplitude decides loudness, which is measured in decibels (dB). A larger amplitude gives a louder sound.",
+    "Humans can hear frequencies from 20 Hz to 20,000 Hz. Unpleasant sound is noise, and too much of it is noise pollution."
+   ],
+   "story": "When a dholak is beaten, its skin vibrates and you hear the beat. Press your hand on the skin to stop the vibration and the sound stops at once.",
+   "example": {
+    "q": "A pendulum completes 40 oscillations in 20 seconds. Find its frequency and time period.",
+    "steps": [
+     "Frequency = oscillations per second = 40 ÷ 20 = 2 Hz.",
+     "Time period = 1 ÷ frequency = 1 ÷ 2 = 0.5 s.",
+     "Check: 2 oscillations each second, each taking half a second."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Sound is produced when an object:",
+    "why": "Sound is produced by vibrations, that is, rapid to-and-fro motion of an object.",
+    "o": [
+     {
+      "t": "vibrates",
+      "ok": 1
+     },
+     {
+      "t": "moves from one place to another",
+      "m": "Thought any motion makes sound"
+     },
+     {
+      "t": "is kept at rest",
+      "m": "Thought sound comes from still objects"
+     },
+     {
+      "t": "is heated",
+      "m": "Thought heat itself is the source of sound"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "The unit of frequency is:",
+    "why": "Frequency is measured in hertz (Hz), one oscillation per second.",
+    "o": [
+     {
+      "t": "decibel",
+      "m": "Confused the unit of loudness with the unit of frequency"
+     },
+     {
+      "t": "second",
+      "m": "Confused frequency with time period"
+     },
+     {
+      "t": "hertz",
+      "ok": 1
+     },
+     {
+      "t": "metre per second",
+      "m": "Confused frequency with speed"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "The pitch of a sound depends on its:",
+    "why": "Pitch depends on the frequency of vibration. Higher frequency gives a higher pitch.",
+    "o": [
+     {
+      "t": "amplitude",
+      "m": "Confused pitch with loudness"
+     },
+     {
+      "t": "frequency",
+      "ok": 1
+     },
+     {
+      "t": "speed in air",
+      "m": "Thought shriller sounds travel faster"
+     },
+     {
+      "t": "duration",
+      "m": "Thought a longer sound has a higher pitch"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Why can sound not travel from one point to another on the surface of the Moon?",
+    "why": "Sound needs a medium. The Moon has no air, so there is nothing for the vibrations to pass through.",
+    "o": [
+     {
+      "t": "The Moon is too cold for sound to form",
+      "m": "Thought low temperature stops sound from forming"
+     },
+     {
+      "t": "The weak gravity of the Moon stops objects from vibrating",
+      "m": "Thought gravity is needed for vibrations"
+     },
+     {
+      "t": "Sound moves too fast there to be heard",
+      "m": "Thought a very high speed makes sound inaudible"
+     },
+     {
+      "t": "There is no air there, so there is no medium for sound",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A dog whistle produces sound of frequency 25,000 Hz. Why can a person not hear it?",
+    "why": "Humans hear from 20 Hz to 20,000 Hz. 25,000 Hz is above this range, so it is ultrasound for us.",
+    "o": [
+     {
+      "t": "It is below 20 Hz, the lower limit of human hearing",
+      "m": "Mixed up infrasound with ultrasound"
+     },
+     {
+      "t": "Sound of such frequency cannot travel through air",
+      "m": "Thought air cannot carry high frequencies"
+     },
+     {
+      "t": "It is above 20,000 Hz, the upper limit of human hearing",
+      "ok": 1
+     },
+     {
+      "t": "It is too loud, so the ear blocks it",
+      "m": "Confused frequency with loudness"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A pendulum makes 60 oscillations in 30 seconds. Its frequency is:",
+    "why": "Frequency = number of oscillations ÷ time = 60 ÷ 30 = 2 Hz.",
+    "o": [
+     {
+      "t": "0.5 Hz",
+      "m": "Divided time by oscillations, which gives the time period, not frequency",
+      "g": "s7_motion"
+     },
+     {
+      "t": "2 Hz",
+      "ok": 1
+     },
+     {
+      "t": "30 Hz",
+      "m": "Took the time in seconds as the frequency"
+     },
+     {
+      "t": "90 Hz",
+      "m": "Added the two numbers instead of dividing"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Sound A has a large amplitude and low frequency. Sound B has a small amplitude and high frequency. Which statement is correct?",
+    "why": "Larger amplitude means louder sound, and higher frequency means shriller sound. So A is louder and B is shriller.",
+    "o": [
+     {
+      "t": "A is louder, and A is also shriller",
+      "m": "Linked a large amplitude with a high pitch"
+     },
+     {
+      "t": "B is louder, and A is shriller",
+      "m": "Swapped the roles of amplitude and frequency"
+     },
+     {
+      "t": "Both are equally loud, and B is shriller",
+      "m": "Ignored the effect of amplitude on loudness"
+     },
+     {
+      "t": "A is louder, and B is shriller",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Why do women and children usually have a higher-pitched voice than men?",
+    "why": "Their vocal cords are shorter, so they vibrate with a higher frequency, giving a higher pitch.",
+    "o": [
+     {
+      "t": "Their vocal cords are shorter and vibrate with a higher frequency",
+      "ok": 1
+     },
+     {
+      "t": "Their vocal cords are longer and vibrate faster",
+      "m": "Reversed the effect of vocal cord length"
+     },
+     {
+      "t": "They speak with a larger amplitude",
+      "m": "Confused pitch with loudness"
+     },
+     {
+      "t": "Sound travels faster in their throat",
+      "m": "Thought pitch depends on the speed of sound"
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s8_metal": {
+  "tags": {
+   "te": "లోహాలు, అలోహాలు మరియు ఇంధనాలు",
+   "hi": "धातु, अधातु और ईंधन"
+  },
+  "lesson": {
+   "title": "Shiny metals and fossil fuels",
+   "points": [
+    "Metals are lustrous, malleable, ductile, sonorous and good conductors of heat and electricity. Non-metals are usually dull, brittle and poor conductors.",
+    "Metal oxides are basic, while non-metal oxides are acidic. Reactive metals such as sodium react quickly with air and water, so sodium is stored in kerosene.",
+    "Metals like zinc and magnesium react with dilute acids and release hydrogen gas. A more reactive metal can displace a less reactive metal from its salt solution.",
+    "Coal, petroleum and natural gas are fossil fuels, formed over millions of years from dead plants and animals. They are exhaustible natural resources."
+   ],
+   "story": "A brass lota rings when you tap it and a steel tava carries heat from the flame to the roti. A piece of chalk, a non-metal-like material, just crumbles when you hit it. The ringing and the heat flow are the signs of a metal.",
+   "example": {
+    "q": "A rod is shiny, gives a ringing sound when struck, and the bulb in a circuit glows when the rod is joined in it. Is it a metal or a non-metal?",
+    "steps": [
+     "Shiny surface means lustre, a property of metals.",
+     "A ringing sound when struck means it is sonorous, again a property of metals.",
+     "The bulb glows, so the rod conducts electricity. All three properties show that the rod is a metal."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which metal is a liquid at room temperature?",
+    "why": "Mercury is the only metal that is liquid at room temperature. Bromine is a liquid too, but it is a non-metal.",
+    "o": [
+     {
+      "t": "Bromine",
+      "m": "Chose the liquid element without noticing that it is a non-metal"
+     },
+     {
+      "t": "Sodium",
+      "m": "Thought a very soft metal must be a liquid"
+     },
+     {
+      "t": "Mercury",
+      "ok": 1
+     },
+     {
+      "t": "Lead",
+      "m": "Thought a metal that melts easily is already liquid at room temperature"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which of these is a fossil fuel?",
+    "why": "Coal was formed from dead plants buried deep under the earth for millions of years, so it is a fossil fuel.",
+    "o": [
+     {
+      "t": "Wood",
+      "m": "Thought any fuel that comes from plants is a fossil fuel"
+     },
+     {
+      "t": "Biogas",
+      "m": "Thought every gaseous fuel is a fossil fuel like natural gas"
+     },
+     {
+      "t": "Ethanol",
+      "m": "Thought any liquid fuel is a fossil fuel like petrol"
+     },
+     {
+      "t": "Coal",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Sodium is stored under kerosene in the laboratory because sodium:",
+    "why": "Sodium reacts vigorously with oxygen and moisture in the air. Kerosene keeps these away from it.",
+    "o": [
+     {
+      "t": "reacts vigorously with oxygen and moisture in the air",
+      "ok": 1
+     },
+     {
+      "t": "evaporates quickly in air",
+      "m": "Thought a soft metal evaporates like a liquid"
+     },
+     {
+      "t": "melts at room temperature",
+      "m": "Thought the oil is needed to stop sodium from melting"
+     },
+     {
+      "t": "needs oil to stay soft and shiny",
+      "m": "Thought the oil is a food for the metal instead of a barrier from air"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Carbon dioxide gas is bubbled through water and the solution is tested with blue litmus paper. What is seen?",
+    "why": "Carbon dioxide is a non-metal oxide. It forms carbonic acid in water, so the blue litmus turns red.",
+    "o": [
+     {
+      "t": "The litmus stays blue, because the solution is basic",
+      "m": "Thought all oxides are basic, like metal oxides",
+      "g": "s7_acid"
+     },
+     {
+      "t": "The litmus turns red, because the solution is acidic",
+      "ok": 1
+     },
+     {
+      "t": "The litmus stays blue, because the solution is neutral",
+      "m": "Thought a gas dissolved in water has no effect on litmus",
+      "g": "s7_acid"
+     },
+     {
+      "t": "The litmus turns red, because the solution is basic",
+      "m": "Mixed up the colour changes of litmus for acids and bases",
+      "g": "s7_acid"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Coal is heated strongly in the absence of air and gives coke, coal tar and coal gas. This process is called:",
+    "why": "Heating coal strongly in the absence of air to get useful products is destructive distillation.",
+    "o": [
+     {
+      "t": "sublimation",
+      "m": "Confused it with a solid changing straight into a gas on heating"
+     },
+     {
+      "t": "refining",
+      "m": "Confused it with the separation of petroleum into its products"
+     },
+     {
+      "t": "combustion",
+      "m": "Thought that heating coal always means burning it in air"
+     },
+     {
+      "t": "destructive distillation",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Zinc granules are added to dilute hydrochloric acid and bubbles of a gas rise. Which gas is it and how is it recognised?",
+    "why": "Zinc reacts with dilute acid to give a salt and hydrogen. Hydrogen burns with a pop sound near a flame.",
+    "o": [
+     {
+      "t": "Oxygen, which relights a glowing splinter",
+      "m": "Thought the gas comes from the oxygen of water in the acid",
+      "g": "s7_acid"
+     },
+     {
+      "t": "Carbon dioxide, which turns lime water milky",
+      "m": "Thought every acid reaction gives carbon dioxide; that happens with carbonates",
+      "g": "s7_acid"
+     },
+     {
+      "t": "Hydrogen, which burns with a pop sound near a lighted matchstick",
+      "ok": 1
+     },
+     {
+      "t": "Chlorine, which has a sharp, pungent smell",
+      "m": "Thought the gas must come from the chloride part of the acid",
+      "g": "s7_acid"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A clean iron nail is kept in blue copper sulphate solution for about an hour. What is observed?",
+    "why": "Iron is more reactive than copper, so it displaces copper. A reddish-brown layer of copper forms on the nail and the blue colour fades to pale green.",
+    "o": [
+     {
+      "t": "Nothing happens, because iron is less reactive than copper",
+      "m": "Reversed the order of reactivity of iron and copper"
+     },
+     {
+      "t": "A reddish-brown layer forms on the nail and the blue colour of the solution fades",
+      "ok": 1
+     },
+     {
+      "t": "The nail gets a coating of iron and the solution turns a deeper blue",
+      "m": "Thought the solution gains iron instead of copper being displaced"
+     },
+     {
+      "t": "Bubbles of hydrogen rise from the nail, as in an acid",
+      "m": "Mixed up a displacement reaction with the reaction of a metal and an acid",
+      "g": "s7_chem"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Element Y is dull, brittle and a poor conductor of electricity. Its oxide dissolves in water to form an acidic solution. Element Y is most likely:",
+    "why": "Dull, brittle, a poor conductor and an acidic oxide are all properties of non-metals.",
+    "o": [
+     {
+      "t": "a non-metal, since all these are properties of non-metals",
+      "ok": 1
+     },
+     {
+      "t": "a metal, because only metals form oxides",
+      "m": "Thought that only metals combine with oxygen"
+     },
+     {
+      "t": "a metal, because brittle substances break easily like metals",
+      "m": "Confused brittleness with malleability, the property of metals"
+     },
+     {
+      "t": "impossible to say, since metals and non-metals share all properties",
+      "m": "Thought no property can tell metals from non-metals"
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s8_comb": {
+  "tags": {
+   "te": "దహనం మరియు జ్వాల",
+   "hi": "दहन और ज्वाला"
+  },
+  "lesson": {
+   "title": "How things burn",
+   "points": [
+    "Combustion is the burning of a substance in air (oxygen) to give heat and often light. Burning needs fuel, oxygen and enough heat to reach the ignition temperature.",
+    "The ignition temperature is the lowest temperature at which a substance catches fire. Substances with a very low ignition temperature, like petrol and LPG, are highly inflammable.",
+    "A candle flame has three zones: the dark inner zone, the middle luminous zone (partial combustion) and the outer non-luminous zone, which is the hottest (complete combustion).",
+    "The calorific value of a fuel is the heat in kJ produced by the complete burning of 1 kg of it. Fire is put out by cutting off the air, removing the fuel or cooling below the ignition temperature."
+   ],
+   "story": "On a chulha, the firewood needs a small flame or a matchstick to start burning, but then it keeps burning on its own. The match heats the wood up to its ignition temperature, and the air supplies oxygen.",
+   "example": {
+    "q": "A fuel has a calorific value of 45,000 kJ/kg. How much heat is produced by completely burning 2 kg of it?",
+    "steps": [
+     "Calorific value is the heat from burning 1 kg of the fuel.",
+     "Heat from 2 kg = 2 × 45,000 kJ.",
+     "So the heat produced is 90,000 kJ."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "The lowest temperature at which a substance catches fire is called its:",
+    "why": "The lowest temperature at which a substance starts burning is its ignition temperature.",
+    "o": [
+     {
+      "t": "melting point",
+      "m": "Confused the start of burning with the change from solid to liquid"
+     },
+     {
+      "t": "ignition temperature",
+      "ok": 1
+     },
+     {
+      "t": "boiling point",
+      "m": "Confused the start of burning with the change from liquid to gas"
+     },
+     {
+      "t": "calorific value",
+      "m": "Confused the temperature of catching fire with the heat given by a fuel"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which gas in the air is needed for a fuel to burn?",
+    "why": "Oxygen supports burning. A fuel cannot burn without oxygen.",
+    "o": [
+     {
+      "t": "Oxygen",
+      "ok": 1
+     },
+     {
+      "t": "Nitrogen",
+      "m": "Thought the most plentiful gas of the air is the one that supports burning"
+     },
+     {
+      "t": "Carbon dioxide",
+      "m": "Thought the gas that comes out of burning is also needed for it"
+     },
+     {
+      "t": "Hydrogen",
+      "m": "Thought a gas that burns itself must be the one that supports burning"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A goldsmith uses the outermost zone of a flame to melt gold. This is because the outermost zone:",
+    "why": "The outermost zone is non-luminous and hottest because complete combustion takes place there.",
+    "o": [
+     {
+      "t": "is the brightest and so the hottest",
+      "m": "Thought the brightest part of a flame is the hottest"
+     },
+     {
+      "t": "is the dark zone where the fuel is unburnt",
+      "m": "Mixed up the outermost zone with the innermost dark zone"
+     },
+     {
+      "t": "has the least oxygen, so it stays cool",
+      "m": "Thought the outer zone gets less air than the middle"
+     },
+     {
+      "t": "is the hottest, as complete combustion takes place there",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Why is water not used to put out a petrol fire?",
+    "why": "Petrol is lighter than water, so it floats on water and keeps burning while the water spreads it around.",
+    "o": [
+     {
+      "t": "Water is a conductor, so there may be an electric shock",
+      "m": "Applied the reason for not using water on electrical fires"
+     },
+     {
+      "t": "Water is lighter than petrol and floats above it",
+      "m": "Reversed the densities of petrol and water"
+     },
+     {
+      "t": "Petrol is lighter than water, so it floats and the fire spreads",
+      "ok": 1
+     },
+     {
+      "t": "Petrol dissolves in water and burns faster",
+      "m": "Thought petrol mixes with water"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A lighted candle is covered with a glass jar and its flame goes out after a short time. This is because:",
+    "why": "The limited air in the jar has only a little oxygen. When it is used up, the candle can no longer burn.",
+    "o": [
+     {
+      "t": "the oxygen in the jar is used up",
+      "ok": 1
+     },
+     {
+      "t": "the wax in the candle all gets burnt at once",
+      "m": "Thought the fuel runs out suddenly when the jar is placed"
+     },
+     {
+      "t": "the nitrogen in the jar puts out the flame",
+      "m": "Thought nitrogen acts as a fire extinguisher"
+     },
+     {
+      "t": "the candle is cooled by the glass jar",
+      "m": "Thought the glass cools the wax below its ignition temperature"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Oil in a pan on a stove catches fire. Which is the safest way to put out the fire?",
+    "why": "Covering the pan with a lid cuts off the supply of air. Water would make burning oil splash and spread.",
+    "o": [
+     {
+      "t": "Pour a bucket of water on it",
+      "m": "Thought water puts out every type of fire"
+     },
+     {
+      "t": "Blow hard to blow out the flame",
+      "m": "Thought blowing removes the fire like a candle, but it adds more air"
+     },
+     {
+      "t": "Add more oil so that all of it burns off",
+      "m": "Thought adding fuel will finish off the fire sooner"
+     },
+     {
+      "t": "Cover the pan with a lid to cut off the supply of air",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A family burns charcoal in an angeethi in a closed room all night with the doors and windows shut. Which poisonous gas can collect in the room?",
+    "why": "In a closed room the oxygen runs low, so charcoal burns incompletely and gives carbon monoxide, which is poisonous.",
+    "o": [
+     {
+      "t": "Carbon dioxide",
+      "m": "Thought carbon dioxide is the poisonous gas of incomplete burning"
+     },
+     {
+      "t": "Sulphur dioxide",
+      "m": "Thought sulphur dioxide is given out by burning every fuel"
+     },
+     {
+      "t": "Carbon monoxide",
+      "ok": 1
+     },
+     {
+      "t": "Oxygen",
+      "m": "Thought oxygen is produced when a fuel burns"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Burning 5 kg of a fuel completely gives 200,000 kJ of heat. What is the calorific value of the fuel?",
+    "why": "Calorific value is the heat from 1 kg of the fuel: 200,000 ÷ 5 = 40,000 kJ/kg.",
+    "o": [
+     {
+      "t": "1,000,000 kJ/kg",
+      "m": "Multiplied the heat by the mass instead of dividing"
+     },
+     {
+      "t": "40,000 kJ/kg",
+      "ok": 1
+     },
+     {
+      "t": "40,000 kJ",
+      "m": "Got the number but gave the unit of heat instead of heat per kg"
+     },
+     {
+      "t": "0.000025 kJ/kg",
+      "m": "Divided the mass by the heat instead of the heat by the mass"
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s8_light": {
+  "tags": {
+   "te": "కాంతి: పరావర్తనం, మానవ నేత్రం",
+   "hi": "प्रकाश: परावर्तन, मानव नेत्र"
+  },
+  "lesson": {
+   "title": "Bouncing light and the eye",
+   "points": [
+    "Laws of reflection: the angle of incidence equals the angle of reflection. Both are measured from the normal, and the incident ray, reflected ray and normal lie in one plane.",
+    "A smooth surface gives regular reflection. A rough surface gives diffuse reflection, which is how we see a page from any side.",
+    "White light splits into seven colours (VIBGYOR) by dispersion, as in a rainbow. Light enters the eye through the cornea and pupil, the iris controls the size of the pupil, and the lens focuses the image on the retina.",
+    "The retina has rods for dim light and cones for bright light and colour. An image stays on the retina for about 1/16 of a second, which is persistence of vision."
+   ],
+   "story": "A rubber ball thrown at a wall bounces away at the same slant it came in. A mirror does the same to a ray of light.",
+   "example": {
+    "q": "A ray of light strikes a plane mirror at an angle of incidence of 40°. Find the angle of reflection and the angle between the incident and reflected rays.",
+    "steps": [
+     "The angle of reflection equals the angle of incidence, so it is 40°.",
+     "Both angles are measured from the normal, on either side of it.",
+     "Angle between the two rays = 40° + 40° = 80°."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "A ray of light falls on a plane mirror with an angle of incidence of 35°. The angle of reflection is:",
+    "why": "By the law of reflection, the angle of reflection equals the angle of incidence, so it is 35°.",
+    "o": [
+     {
+      "t": "55°",
+      "m": "Took the angle measured from the mirror surface instead of from the normal",
+      "g": "s7_light"
+     },
+     {
+      "t": "70°",
+      "m": "Took the angle between the incident and reflected rays as the angle of reflection",
+      "g": "s7_light"
+     },
+     {
+      "t": "0°",
+      "m": "Thought the ray is reflected along the normal"
+     },
+     {
+      "t": "35°",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "On which part of the eye is the image of an object formed?",
+    "why": "The lens focuses the image on the retina, the light-sensitive screen at the back of the eye.",
+    "o": [
+     {
+      "t": "Cornea",
+      "m": "Thought the transparent front surface is the screen"
+     },
+     {
+      "t": "Pupil",
+      "m": "Thought the opening through which light enters holds the image"
+     },
+     {
+      "t": "Retina",
+      "ok": 1
+     },
+     {
+      "t": "Iris",
+      "m": "Thought the coloured muscle works as the screen"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which part of the eye adjusts the size of the pupil?",
+    "why": "The iris is a dark muscular structure that controls the size of the pupil and so the amount of light entering the eye.",
+    "o": [
+     {
+      "t": "Lens",
+      "m": "Confused changing the size of the pupil with focusing the image"
+     },
+     {
+      "t": "Iris",
+      "ok": 1
+     },
+     {
+      "t": "Cornea",
+      "m": "Thought the transparent front layer controls the opening"
+     },
+     {
+      "t": "Optic nerve",
+      "m": "Thought the nerve carries out the changes of the pupil"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Aman stands 2 m in front of a plane mirror. How far is he from his image?",
+    "why": "The image is as far behind the mirror as the object is in front. So the image is 2 m behind the mirror and Aman is 4 m from it.",
+    "o": [
+     {
+      "t": "4 m",
+      "ok": 1
+     },
+     {
+      "t": "2 m",
+      "m": "Gave only the distance from the mirror to the image"
+     },
+     {
+      "t": "1 m",
+      "m": "Halved the distance instead of doubling it"
+     },
+     {
+      "t": "0 m",
+      "m": "Thought the image forms on the surface of the mirror"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "We can see the pages of a book from any direction in a room. This is because of:",
+    "why": "A page is rough, so it reflects light in many directions. This is diffuse reflection.",
+    "o": [
+     {
+      "t": "regular reflection from a smooth surface",
+      "m": "Thought a page has a smooth surface like a mirror"
+     },
+     {
+      "t": "diffuse reflection from the rough surface",
+      "ok": 1
+     },
+     {
+      "t": "dispersion of light by the paper",
+      "m": "Mixed up reflection with the splitting of white light"
+     },
+     {
+      "t": "the paper giving out its own light",
+      "m": "Thought the page is a source of light"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A ray of light makes an angle of 30° with the surface of a plane mirror. What is the angle of reflection?",
+    "why": "The angle of incidence is measured from the normal: 90° − 30° = 60°. The angle of reflection is also 60°.",
+    "o": [
+     {
+      "t": "60°",
+      "ok": 1
+     },
+     {
+      "t": "30°",
+      "m": "Used the angle with the mirror surface as the angle of incidence",
+      "g": "s7_light"
+     },
+     {
+      "t": "120°",
+      "m": "Added the two angles from the normal instead of giving one of them"
+     },
+     {
+      "t": "15°",
+      "m": "Halved the angle with the surface"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Why do we not see colours well in dim light, such as at dusk?",
+    "why": "Cones detect colour but need bright light. Rods respond to dim light but do not detect colours.",
+    "o": [
+     {
+      "t": "Rods detect colour and do not work in dim light",
+      "m": "Swapped the jobs of rods and cones"
+     },
+     {
+      "t": "The pupil becomes smaller in dim light, so no colour enters",
+      "m": "Reversed what happens to the pupil, which becomes larger in dim light"
+     },
+     {
+      "t": "The lens becomes cloudy in dim light",
+      "m": "Confused dim light with the cloudy lens of cataract"
+     },
+     {
+      "t": "Cones need bright light, and the rods that work in dim light do not detect colour",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A film shows still pictures one after another, about 24 each second, and the motion looks smooth. Why?",
+    "why": "An image stays on the retina for about 1/16 of a second, so the pictures run into one another and seem to move.",
+    "o": [
+     {
+      "t": "The brain takes a new photograph for each picture",
+      "m": "Thought the brain, and not the retina, causes the effect"
+     },
+     {
+      "t": "The pictures on the film itself are moving",
+      "m": "Thought the pictures are really in motion"
+     },
+     {
+      "t": "An image stays on the retina for about 1/16 of a second, so the pictures blend together",
+      "ok": 1
+     },
+     {
+      "t": "The eye can see only one picture each second",
+      "m": "Thought the retina responds too slowly to see each picture"
+     }
+    ]
+   }
+  ],
+  "steps": null
+ }
+}

@@ -1,0 +1,669 @@
+[
+ {
+  "id": "m6_num",
+  "subject": "Maths",
+  "class": 6,
+  "name": "Whole numbers, factors and multiples",
+  "prereqs": []
+ },
+ {
+  "id": "m6_int",
+  "subject": "Maths",
+  "class": 6,
+  "name": "Integers (negative numbers)",
+  "prereqs": [
+   "m6_num"
+  ]
+ },
+ {
+  "id": "m6_frac",
+  "subject": "Maths",
+  "class": 6,
+  "name": "Fractions and decimals",
+  "prereqs": [
+   "m6_num"
+  ]
+ },
+ {
+  "id": "m6_ratio",
+  "subject": "Maths",
+  "class": 6,
+  "name": "Ratio and proportion",
+  "prereqs": [
+   "m6_frac"
+  ]
+ },
+ {
+  "id": "m6_alg",
+  "subject": "Maths",
+  "class": 6,
+  "name": "Patterns and basic algebra",
+  "prereqs": [
+   "m6_num"
+  ]
+ },
+ {
+  "id": "m6_geo",
+  "subject": "Maths",
+  "class": 6,
+  "name": "Basic geometry: lines, angles and shapes",
+  "prereqs": []
+ },
+ {
+  "id": "m6_mens",
+  "subject": "Maths",
+  "class": 6,
+  "name": "Perimeter and area",
+  "prereqs": [
+   "m6_num"
+  ]
+ },
+ {
+  "id": "m7_int",
+  "subject": "Maths",
+  "class": 7,
+  "name": "Operations with integers",
+  "prereqs": [
+   "m6_int"
+  ]
+ },
+ {
+  "id": "m7_frac",
+  "subject": "Maths",
+  "class": 7,
+  "name": "Operations with fractions and decimals",
+  "prereqs": [
+   "m6_frac"
+  ]
+ },
+ {
+  "id": "m7_rat",
+  "subject": "Maths",
+  "class": 7,
+  "name": "Rational numbers",
+  "prereqs": [
+   "m7_int",
+   "m7_frac"
+  ]
+ },
+ {
+  "id": "m7_ratio",
+  "subject": "Maths",
+  "class": 7,
+  "name": "Ratio, proportion and percentages",
+  "prereqs": [
+   "m6_ratio",
+   "m7_frac"
+  ]
+ },
+ {
+  "id": "m7_expr",
+  "subject": "Maths",
+  "class": 7,
+  "name": "Algebraic expressions",
+  "prereqs": [
+   "m6_alg",
+   "m7_int"
+  ]
+ },
+ {
+  "id": "m7_eq",
+  "subject": "Maths",
+  "class": 7,
+  "name": "Simple equations",
+  "prereqs": [
+   "m7_expr"
+  ]
+ },
+ {
+  "id": "m7_tri",
+  "subject": "Maths",
+  "class": 7,
+  "name": "Triangles and their properties",
+  "prereqs": [
+   "m6_geo"
+  ]
+ },
+ {
+  "id": "m7_mens",
+  "subject": "Maths",
+  "class": 7,
+  "name": "Perimeter and area of plane shapes",
+  "prereqs": [
+   "m6_mens",
+   "m7_frac"
+  ]
+ },
+ {
+  "id": "m8_sq",
+  "subject": "Maths",
+  "class": 8,
+  "name": "Squares, cubes and their roots",
+  "prereqs": [
+   "m6_num",
+   "m7_int"
+  ]
+ },
+ {
+  "id": "m8_exp",
+  "subject": "Maths",
+  "class": 8,
+  "name": "Exponents and powers",
+  "prereqs": [
+   "m7_int"
+  ]
+ },
+ {
+  "id": "m8_alg",
+  "subject": "Maths",
+  "class": 8,
+  "name": "Algebraic expressions and identities",
+  "prereqs": [
+   "m7_expr"
+  ]
+ },
+ {
+  "id": "m8_lin",
+  "subject": "Maths",
+  "class": 8,
+  "name": "Linear equations in one variable",
+  "prereqs": [
+   "m7_eq",
+   "m7_frac"
+  ]
+ },
+ {
+  "id": "m8_pct",
+  "subject": "Maths",
+  "class": 8,
+  "name": "Percentages, profit and loss, interest",
+  "prereqs": [
+   "m7_ratio"
+  ]
+ },
+ {
+  "id": "m8_mens",
+  "subject": "Maths",
+  "class": 8,
+  "name": "Mensuration: area, surface area, volume",
+  "prereqs": [
+   "m7_mens"
+  ]
+ },
+ {
+  "id": "m8_data",
+  "subject": "Maths",
+  "class": 8,
+  "name": "Data handling and probability",
+  "prereqs": [
+   "m7_frac"
+  ]
+ },
+ {
+  "id": "m8_quad",
+  "subject": "Maths",
+  "class": 8,
+  "name": "Understanding quadrilaterals",
+  "prereqs": [
+   "m7_tri"
+  ]
+ },
+ {
+  "id": "m9_num",
+  "subject": "Maths",
+  "class": 9,
+  "name": "Number systems and real numbers",
+  "prereqs": [
+   "m7_rat",
+   "m8_exp",
+   "m8_sq"
+  ]
+ },
+ {
+  "id": "m9_poly",
+  "subject": "Maths",
+  "class": 9,
+  "name": "Polynomials",
+  "prereqs": [
+   "m8_alg"
+  ]
+ },
+ {
+  "id": "m9_coord",
+  "subject": "Maths",
+  "class": 9,
+  "name": "Coordinate geometry",
+  "prereqs": [
+   "m7_int"
+  ]
+ },
+ {
+  "id": "m9_lin2",
+  "subject": "Maths",
+  "class": 9,
+  "name": "Linear equations in two variables",
+  "prereqs": [
+   "m8_lin"
+  ]
+ },
+ {
+  "id": "m9_tri",
+  "subject": "Maths",
+  "class": 9,
+  "name": "Triangles: congruence and inequalities",
+  "prereqs": [
+   "m7_tri",
+   "m8_quad"
+  ]
+ },
+ {
+  "id": "m9_mens",
+  "subject": "Maths",
+  "class": 9,
+  "name": "Surface areas and volumes",
+  "prereqs": [
+   "m8_mens"
+  ]
+ },
+ {
+  "id": "m9_stat",
+  "subject": "Maths",
+  "class": 9,
+  "name": "Statistics and probability",
+  "prereqs": [
+   "m8_data"
+  ]
+ },
+ {
+  "id": "m10_pair",
+  "subject": "Maths",
+  "class": 10,
+  "name": "Pair of linear equations in two variables",
+  "prereqs": [
+   "m9_lin2"
+  ]
+ },
+ {
+  "id": "m10_quad",
+  "subject": "Maths",
+  "class": 10,
+  "name": "Quadratic equations",
+  "prereqs": [
+   "m9_poly",
+   "m8_lin"
+  ]
+ },
+ {
+  "id": "m10_ap",
+  "subject": "Maths",
+  "class": 10,
+  "name": "Arithmetic progressions",
+  "prereqs": [
+   "m8_lin"
+  ]
+ },
+ {
+  "id": "m10_simtri",
+  "subject": "Maths",
+  "class": 10,
+  "name": "Similar triangles",
+  "prereqs": [
+   "m9_tri",
+   "m7_ratio"
+  ]
+ },
+ {
+  "id": "m10_trig",
+  "subject": "Maths",
+  "class": 10,
+  "name": "Introduction to trigonometry",
+  "prereqs": [
+   "m10_simtri",
+   "m8_sq"
+  ]
+ },
+ {
+  "id": "m10_mens",
+  "subject": "Maths",
+  "class": 10,
+  "name": "Surface areas and volumes (combined solids)",
+  "prereqs": [
+   "m9_mens"
+  ]
+ },
+ {
+  "id": "m10_prob",
+  "subject": "Maths",
+  "class": 10,
+  "name": "Probability and statistics",
+  "prereqs": [
+   "m9_stat"
+  ]
+ },
+ {
+  "id": "s6_mat",
+  "subject": "Science",
+  "class": 6,
+  "name": "Sorting materials and their properties",
+  "prereqs": []
+ },
+ {
+  "id": "s6_food",
+  "subject": "Science",
+  "class": 6,
+  "name": "Food: where it comes from and what it contains",
+  "prereqs": []
+ },
+ {
+  "id": "s6_sep",
+  "subject": "Science",
+  "class": 6,
+  "name": "Separation of substances",
+  "prereqs": [
+   "s6_mat"
+  ]
+ },
+ {
+  "id": "s6_plant",
+  "subject": "Science",
+  "class": 6,
+  "name": "Plants: parts and their functions",
+  "prereqs": []
+ },
+ {
+  "id": "s6_motion",
+  "subject": "Science",
+  "class": 6,
+  "name": "Motion and measurement of distances",
+  "prereqs": []
+ },
+ {
+  "id": "s6_light",
+  "subject": "Science",
+  "class": 6,
+  "name": "Light, shadows and reflection",
+  "prereqs": []
+ },
+ {
+  "id": "s6_elec",
+  "subject": "Science",
+  "class": 6,
+  "name": "Electricity and circuits",
+  "prereqs": []
+ },
+ {
+  "id": "s7_nutr",
+  "subject": "Science",
+  "class": 7,
+  "name": "Nutrition in plants and animals",
+  "prereqs": [
+   "s6_food",
+   "s6_plant"
+  ]
+ },
+ {
+  "id": "s7_heat",
+  "subject": "Science",
+  "class": 7,
+  "name": "Heat and temperature",
+  "prereqs": [
+   "s6_mat"
+  ]
+ },
+ {
+  "id": "s7_acid",
+  "subject": "Science",
+  "class": 7,
+  "name": "Acids, bases and salts",
+  "prereqs": [
+   "s6_mat"
+  ]
+ },
+ {
+  "id": "s7_chem",
+  "subject": "Science",
+  "class": 7,
+  "name": "Physical and chemical changes",
+  "prereqs": [
+   "s6_sep",
+   "s6_mat"
+  ]
+ },
+ {
+  "id": "s7_motion",
+  "subject": "Science",
+  "class": 7,
+  "name": "Motion and time",
+  "prereqs": [
+   "s6_motion"
+  ]
+ },
+ {
+  "id": "s7_elec",
+  "subject": "Science",
+  "class": 7,
+  "name": "Electric current and its effects",
+  "prereqs": [
+   "s6_elec"
+  ]
+ },
+ {
+  "id": "s7_light",
+  "subject": "Science",
+  "class": 7,
+  "name": "Light: reflection and mirrors",
+  "prereqs": [
+   "s6_light"
+  ]
+ },
+ {
+  "id": "s8_cell",
+  "subject": "Science",
+  "class": 8,
+  "name": "Cell structure and functions",
+  "prereqs": [
+   "s7_nutr"
+  ]
+ },
+ {
+  "id": "s8_repro",
+  "subject": "Science",
+  "class": 8,
+  "name": "Reproduction and adolescence",
+  "prereqs": [
+   "s8_cell"
+  ]
+ },
+ {
+  "id": "s8_force",
+  "subject": "Science",
+  "class": 8,
+  "name": "Force, pressure and friction",
+  "prereqs": [
+   "s7_motion"
+  ]
+ },
+ {
+  "id": "s8_sound",
+  "subject": "Science",
+  "class": 8,
+  "name": "Sound",
+  "prereqs": [
+   "s7_motion"
+  ]
+ },
+ {
+  "id": "s8_metal",
+  "subject": "Science",
+  "class": 8,
+  "name": "Metals, non-metals and fuels",
+  "prereqs": [
+   "s7_acid",
+   "s7_chem"
+  ]
+ },
+ {
+  "id": "s8_comb",
+  "subject": "Science",
+  "class": 8,
+  "name": "Combustion and flame",
+  "prereqs": [
+   "s7_chem",
+   "s7_heat"
+  ]
+ },
+ {
+  "id": "s8_light",
+  "subject": "Science",
+  "class": 8,
+  "name": "Light: reflection, the human eye",
+  "prereqs": [
+   "s7_light"
+  ]
+ },
+ {
+  "id": "s9_matter",
+  "subject": "Science",
+  "class": 9,
+  "name": "Matter in our surroundings",
+  "prereqs": [
+   "s6_mat",
+   "s7_heat"
+  ]
+ },
+ {
+  "id": "s9_atom",
+  "subject": "Science",
+  "class": 9,
+  "name": "Atoms and molecules",
+  "prereqs": [
+   "s9_matter",
+   "s8_metal"
+  ]
+ },
+ {
+  "id": "s9_cell",
+  "subject": "Science",
+  "class": 9,
+  "name": "The fundamental unit of life",
+  "prereqs": [
+   "s8_cell"
+  ]
+ },
+ {
+  "id": "s9_motion",
+  "subject": "Science",
+  "class": 9,
+  "name": "Motion",
+  "prereqs": [
+   "s8_force",
+   "s7_motion"
+  ]
+ },
+ {
+  "id": "s9_force",
+  "subject": "Science",
+  "class": 9,
+  "name": "Force and laws of motion",
+  "prereqs": [
+   "s9_motion"
+  ]
+ },
+ {
+  "id": "s9_work",
+  "subject": "Science",
+  "class": 9,
+  "name": "Work, energy and gravitation",
+  "prereqs": [
+   "s9_force"
+  ]
+ },
+ {
+  "id": "s9_sound",
+  "subject": "Science",
+  "class": 9,
+  "name": "Sound waves",
+  "prereqs": [
+   "s8_sound"
+  ]
+ },
+ {
+  "id": "s10_chem",
+  "subject": "Science",
+  "class": 10,
+  "name": "Chemical reactions and equations",
+  "prereqs": [
+   "s9_atom",
+   "s8_comb"
+  ]
+ },
+ {
+  "id": "s10_acid",
+  "subject": "Science",
+  "class": 10,
+  "name": "Acids, bases and salts",
+  "prereqs": [
+   "s10_chem",
+   "s7_acid"
+  ]
+ },
+ {
+  "id": "s10_metal",
+  "subject": "Science",
+  "class": 10,
+  "name": "Metals and non-metals",
+  "prereqs": [
+   "s10_chem",
+   "s8_metal"
+  ]
+ },
+ {
+  "id": "s10_carbon",
+  "subject": "Science",
+  "class": 10,
+  "name": "Carbon and its compounds",
+  "prereqs": [
+   "s10_chem",
+   "s9_atom"
+  ]
+ },
+ {
+  "id": "s10_life",
+  "subject": "Science",
+  "class": 10,
+  "name": "Life processes",
+  "prereqs": [
+   "s9_cell",
+   "s7_nutr"
+  ]
+ },
+ {
+  "id": "s10_light",
+  "subject": "Science",
+  "class": 10,
+  "name": "Light: reflection and refraction",
+  "prereqs": [
+   "s8_light"
+  ]
+ },
+ {
+  "id": "s10_elec",
+  "subject": "Science",
+  "class": 10,
+  "name": "Electricity",
+  "prereqs": [
+   "s7_elec",
+   "m8_lin"
+  ]
+ },
+ {
+  "id": "s10_heredity",
+  "subject": "Science",
+  "class": 10,
+  "name": "Heredity and evolution",
+  "prereqs": [
+   "s8_repro",
+   "s9_cell"
+  ]
+ }
+]

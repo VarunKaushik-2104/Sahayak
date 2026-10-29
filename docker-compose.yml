@@ -1,0 +1,18 @@
+# docker compose up --build   ->  http://localhost:8000   (PostgreSQL, demo data on)
+services:
+  db:
+    image: postgres:16-alpine
+    environment: { POSTGRES_USER: sahayak, POSTGRES_PASSWORD: sahayak, POSTGRES_DB: sahayak }
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck: { test: ["CMD-SHELL", "pg_isready -U sahayak"], interval: 5s, retries: 10 }
+  web:
+    build: .
+    depends_on: { db: { condition: service_healthy } }
+    environment:
+      DATABASE_URL: postgresql+psycopg://sahayak:sahayak@db:5432/sahayak
+      SECRET_KEY: ${SECRET_KEY:-change-me-in-any-real-deployment-0123456789abcdef}
+      SEED_DEMO: "1"
+      SMS_BACKEND: console
+    ports: ["8000:8000"]
+volumes:
+  pgdata:

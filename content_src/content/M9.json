@@ -1,0 +1,2014 @@
+{
+ "m9_num": {
+  "lesson": {
+   "title": "Rational and irrational numbers",
+   "points": [
+    "A rational number can be written as p/q with q not equal to 0. Its decimal either stops (0.25) or repeats forever (0.333...).",
+    "An irrational number has a decimal that never stops and never repeats a block, like √2 and π. The fraction 22/7 is only an approximation of π.",
+    "Rational and irrational numbers together make the real numbers, and every real number has a place on the number line.",
+    "Laws of exponents: a^m × a^n = a^(m+n) and (a^m)^n = a^(mn). To rationalise 1/(√a + √b), multiply top and bottom by (√a − √b)."
+   ],
+   "story": "Share one roti equally among 3 friends: each gets 0.333... of a roti, a decimal that repeats forever but is still the fraction 1/3. But the diagonal of a 1 m square tile is √2 m, and its decimal never settles into any pattern.",
+   "example": {
+    "q": "Express 0.666... (6 repeating) in the form p/q.",
+    "steps": [
+     "Let x = 0.666...",
+     "Multiply by 10: 10x = 6.666...",
+     "Subtract: 10x − x = 6.666... − 0.666..., so 9x = 6",
+     "x = 6/9 = 2/3"
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which of these numbers is irrational?",
+    "why": "√2 = 1.41421... never ends and never repeats, so it is irrational. 22/7 and 0.25 are fractions, and √49 = 7.",
+    "o": [
+     {
+      "t": "√2",
+      "ok": 1
+     },
+     {
+      "t": "22/7",
+      "m": "thought 22/7 is π and therefore irrational, though it is a fraction of two integers",
+      "g": "m7_rat"
+     },
+     {
+      "t": "0.25",
+      "m": "thought any number written with a decimal point is irrational",
+      "g": "m7_rat"
+     },
+     {
+      "t": "√49",
+      "m": "thought every square root is irrational without noticing 49 is a perfect square",
+      "g": "m8_sq"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is true about the decimal expansion of an irrational number?",
+    "why": "An irrational number has a decimal expansion that is non-terminating and non-repeating.",
+    "o": [
+     {
+      "t": "It ends after a few digits",
+      "m": "described the decimal of a rational number that terminates, like 0.5",
+      "g": "m7_rat"
+     },
+     {
+      "t": "It never ends but repeats a block",
+      "m": "thought any endless decimal is irrational, ignoring that repeating decimals like 0.333... are rational",
+      "g": "m7_rat"
+     },
+     {
+      "t": "It never ends and never repeats a block",
+      "ok": 1
+     },
+     {
+      "t": "It cannot be shown on the number line",
+      "m": "believed irrational numbers have no place on the number line"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the value of 2³ × 2⁴?",
+    "why": "When the bases are the same, add the powers: 2³ × 2⁴ = 2⁷ = 128.",
+    "o": [
+     {
+      "t": "4096",
+      "m": "multiplied the powers (3 × 4 = 12) instead of adding them, giving 2¹²",
+      "g": "m8_exp"
+     },
+     {
+      "t": "128",
+      "ok": 1
+     },
+     {
+      "t": "16384",
+      "m": "multiplied the bases (2 × 2 = 4) and added the powers, giving 4⁷",
+      "g": "m8_exp"
+     },
+     {
+      "t": "2",
+      "m": "subtracted the powers (4 − 3 = 1) instead of adding",
+      "g": "m8_exp"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the value of (√5 + √2)(√5 − √2)?",
+    "why": "(a + b)(a − b) = a² − b², so the product is 5 − 2 = 3.",
+    "o": [
+     {
+      "t": "7",
+      "m": "used a² + b² = 5 + 2 for the product of the two brackets"
+     },
+     {
+      "t": "√3",
+      "m": "took the square root of the difference 5 − 2",
+      "g": "m8_sq"
+     },
+     {
+      "t": "10",
+      "m": "multiplied 5 and 2 instead of squaring each term and subtracting"
+     },
+     {
+      "t": "3",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Express 0.777... (7 repeating) as a fraction.",
+    "why": "Let x = 0.777..., then 10x − x = 7, so 9x = 7 and x = 7/9.",
+    "o": [
+     {
+      "t": "7/9",
+      "ok": 1
+     },
+     {
+      "t": "7/10",
+      "m": "read 0.777... as if it were the terminating decimal 0.7",
+      "g": "m7_rat"
+     },
+     {
+      "t": "7/99",
+      "m": "used 99 in the denominator, which is for two repeating digits, not one",
+      "g": "m7_rat"
+     },
+     {
+      "t": "9/7",
+      "m": "turned the fraction upside down after getting 9x = 7",
+      "g": "m7_rat"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Rationalise the denominator of 1/(√3 + √2).",
+    "why": "Multiply top and bottom by (√3 − √2): the denominator becomes 3 − 2 = 1, so the answer is √3 − √2.",
+    "o": [
+     {
+      "t": "√3 + √2",
+      "m": "changed nothing, leaving the denominator unrationalised"
+     },
+     {
+      "t": "(√3 − √2)/5",
+      "m": "used 3 + 2 = 5 for the denominator instead of 3 − 2",
+      "g": "m8_sq"
+     },
+     {
+      "t": "√3 − √2",
+      "ok": 1
+     },
+     {
+      "t": "1/√5",
+      "m": "added the numbers under the roots, taking √3 + √2 as √5",
+      "g": "m8_sq"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "What is the value of 81^(3/4)?",
+    "why": "81^(1/4) = 3 because 3⁴ = 81. Then 3³ = 27.",
+    "o": [
+     {
+      "t": "243/4",
+      "m": "multiplied 81 by the fraction 3/4 instead of treating it as a power",
+      "g": "m8_exp"
+     },
+     {
+      "t": "27",
+      "ok": 1
+     },
+     {
+      "t": "9",
+      "m": "took the square root of 81 instead of the fourth root",
+      "g": "m8_exp"
+     },
+     {
+      "t": "3",
+      "m": "found the fourth root but forgot to raise it to the power 3",
+      "g": "m8_exp"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Which of these numbers is irrational?",
+    "why": "(√3 + 1)² = 3 + 2√3 + 1 = 4 + 2√3, which is irrational. √2 × √8 = √16 = 4, √12 ÷ √3 = √4 = 2 and (2 + √3)(2 − √3) = 4 − 3 = 1.",
+    "o": [
+     {
+      "t": "√2 × √8",
+      "m": "saw square roots and assumed the product is irrational without simplifying it to 4",
+      "g": "m8_sq"
+     },
+     {
+      "t": "√12 ÷ √3",
+      "m": "assumed a quotient of roots is irrational without simplifying it to 2",
+      "g": "m8_sq"
+     },
+     {
+      "t": "(2 + √3)(2 − √3)",
+      "m": "did not use (a + b)(a − b) = a² − b², which gives 1",
+      "g": "m8_sq"
+     },
+     {
+      "t": "(√3 + 1)²",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Express 0.3636... (36 repeating) in the form p/q in lowest terms. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "Two digits repeat. What is the first step after writing x = 0.3636...?",
+     "o": [
+      {
+       "t": "Multiply both sides by 10",
+       "m": "multiplied by 10 although two digits repeat, so the repeating parts would not line up"
+      },
+      {
+       "t": "Multiply both sides by 100",
+       "ok": 1
+      },
+      {
+       "t": "Multiply both sides by 36",
+       "m": "multiplied by the repeating block itself instead of a power of 10"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "You have x = 0.3636... and 100x = 36.3636.... What do you get on subtracting?",
+     "o": [
+      {
+       "t": "99x = 36",
+       "ok": 1
+      },
+      {
+       "t": "99x = 36.36",
+       "m": "kept the decimal part and did not cancel the repeating digits"
+      },
+      {
+       "t": "101x = 36",
+       "m": "added the two equations instead of subtracting"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is x in lowest terms?",
+     "o": [
+      {
+       "t": "9/25",
+       "m": "wrote 36/100, treating 0.3636... as the terminating decimal 0.36"
+      },
+      {
+       "t": "11/4",
+       "m": "turned the fraction upside down after simplifying 36/99"
+      },
+      {
+       "t": "4/11",
+       "ok": 1
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "సంఖ్యా వ్యవస్థలు మరియు వాస్తవ సంఖ్యలు",
+   "hi": "संख्या पद्धति और वास्तविक संख्याएँ"
+  }
+ },
+ "m9_poly": {
+  "lesson": {
+   "title": "Polynomials and their zeros",
+   "points": [
+    "A polynomial in x has only whole-number powers of x, like 3x² − 5x + 2. Its degree is the highest power.",
+    "A zero of p(x) is a number a for which p(a) = 0.",
+    "Remainder theorem: when p(x) is divided by (x − a), the remainder is p(a). Factor theorem: (x − a) is a factor of p(x) exactly when p(a) = 0.",
+    "Useful identities: (x + y)² = x² + 2xy + y², (x − y)² = x² − 2xy + y², and x² − y² = (x + y)(x − y)."
+   ],
+   "story": "When you check whether 12 divides 60, you look at the remainder. Remainder 0 means 12 is a factor. The factor theorem does the same for polynomials: if p(a) = 0, then (x − a) divides p(x) exactly.",
+   "example": {
+    "q": "Find the remainder when p(x) = x³ + 2x² − x + 5 is divided by (x − 1).",
+    "steps": [
+     "By the remainder theorem, the remainder is p(1)",
+     "p(1) = 1 + 2 − 1 + 5",
+     "p(1) = 7, so the remainder is 7"
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the degree of the polynomial 5x³ − 2x² + x − 7?",
+    "why": "The degree is the highest power of x, which is 3.",
+    "o": [
+     {
+      "t": "5",
+      "m": "took the largest coefficient as the degree",
+      "g": "m8_alg"
+     },
+     {
+      "t": "3",
+      "ok": 1
+     },
+     {
+      "t": "7",
+      "m": "took the constant term as the degree",
+      "g": "m8_alg"
+     },
+     {
+      "t": "4",
+      "m": "counted the number of terms instead of the highest power",
+      "g": "m8_alg"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which of these is a polynomial in x?",
+    "why": "x² + 3x + 1 has only whole-number powers of x. A polynomial cannot have x in a denominator, under a root, or with a negative power.",
+    "o": [
+     {
+      "t": "x² + 3x + 1",
+      "ok": 1
+     },
+     {
+      "t": "x + 1/x",
+      "m": "thought 1/x is just a fraction and allowed, though it is x to the power −1",
+      "g": "m8_alg"
+     },
+     {
+      "t": "√x + 5",
+      "m": "thought a square root of x is allowed, though it is x to the power 1/2",
+      "g": "m8_alg"
+     },
+     {
+      "t": "3x^(−2) + 1",
+      "m": "thought any power of x is allowed, including negative powers",
+      "g": "m8_alg"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the zero of the polynomial p(x) = 2x − 6?",
+    "why": "Set 2x − 6 = 0, so 2x = 6 and x = 3.",
+    "o": [
+     {
+      "t": "−3",
+      "m": "made a sign error and wrote x = −6/2",
+      "g": "m8_alg"
+     },
+     {
+      "t": "6",
+      "m": "took the constant term as the zero",
+      "g": "m8_alg"
+     },
+     {
+      "t": "3",
+      "ok": 1
+     },
+     {
+      "t": "2",
+      "m": "read the coefficient of x as the zero",
+      "g": "m8_alg"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "If p(x) = x² − 5x + 6, what is p(2)?",
+    "why": "p(2) = 2² − 5(2) + 6 = 4 − 10 + 6 = 0.",
+    "o": [
+     {
+      "t": "20",
+      "m": "substituted −2 instead of 2, getting 4 + 10 + 6",
+      "g": "m8_alg"
+     },
+     {
+      "t": "5",
+      "m": "forgot to multiply 5 by 2 and computed 4 − 5 + 6",
+      "g": "m8_alg"
+     },
+     {
+      "t": "−2",
+      "m": "treated 2² as 2 and computed 2 − 10 + 6",
+      "g": "m8_alg"
+     },
+     {
+      "t": "0",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Expand (2x + 3)².",
+    "why": "(2x + 3)² = (2x)² + 2(2x)(3) + 3² = 4x² + 12x + 9.",
+    "o": [
+     {
+      "t": "4x² + 12x + 9",
+      "ok": 1
+     },
+     {
+      "t": "4x² + 9",
+      "m": "squared each term and left out the middle term 2ab",
+      "g": "m8_alg"
+     },
+     {
+      "t": "2x² + 6x + 9",
+      "m": "did not square the 2 in 2x and halved the middle term",
+      "g": "m8_alg"
+     },
+     {
+      "t": "4x² + 6x + 9",
+      "m": "forgot the factor 2 in the middle term 2(2x)(3)",
+      "g": "m8_alg"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "What is the remainder when x³ − 2x + 4 is divided by (x − 2)?",
+    "why": "The remainder is p(2) = 8 − 4 + 4 = 8.",
+    "o": [
+     {
+      "t": "0",
+      "m": "used p(−2) = −8 + 4 + 4 instead of p(2)",
+      "g": "m8_alg"
+     },
+     {
+      "t": "6",
+      "m": "worked out 2³ as 6 instead of 8",
+      "g": "m8_exp"
+     },
+     {
+      "t": "8",
+      "ok": 1
+     },
+     {
+      "t": "16",
+      "m": "dropped the sign of −2x and computed 8 + 4 + 4",
+      "g": "m8_alg"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "For what value of k is (x − 2) a factor of x² + kx − 10?",
+    "why": "By the factor theorem p(2) = 0: 4 + 2k − 10 = 0, so 2k = 6 and k = 3.",
+    "o": [
+     {
+      "t": "−3",
+      "m": "wrote 2k = 4 − 10 = −6 and did not move the numbers across properly",
+      "g": "m8_alg"
+     },
+     {
+      "t": "3",
+      "ok": 1
+     },
+     {
+      "t": "−7",
+      "m": "moved 4 and −10 to the other side both as negatives, getting 2k = −14",
+      "g": "m8_alg"
+     },
+     {
+      "t": "6",
+      "m": "stopped at 2k = 6 and forgot to divide by 2",
+      "g": "m8_alg"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A rectangular plot has area (x² + 7x + 12) square metres and one side (x + 3) metres. What is the other side?",
+    "why": "x² + 7x + 12 = (x + 3)(x + 4), so the other side is (x + 4) metres.",
+    "o": [
+     {
+      "t": "(x + 9) m",
+      "m": "subtracted 3 from 12 to get the constant of the other side",
+      "g": "m8_alg"
+     },
+     {
+      "t": "(x + 3) m",
+      "m": "assumed the plot is a square",
+      "g": "m8_alg"
+     },
+     {
+      "t": "(x + 10) m",
+      "m": "added the known 3 to the middle coefficient 7",
+      "g": "m8_alg"
+     },
+     {
+      "t": "(x + 4) m",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Using the factor theorem, check whether (x − 1) is a factor of p(x) = x³ − 6x² + 11x − 6. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What must you calculate to apply the factor theorem for (x − 1)?",
+     "o": [
+      {
+       "t": "p(1)",
+       "ok": 1
+      },
+      {
+       "t": "p(−1)",
+       "m": "used −1 because of the minus sign in (x − 1), instead of the zero x = 1"
+      },
+      {
+       "t": "p(0)",
+       "m": "substituted 0 and looked at the constant term"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "What is p(1) = 1 − 6 + 11 − 6?",
+     "o": [
+      {
+       "t": "12",
+       "m": "ignored the minus sign of the 6x² term and added 1 + 6 + 11 − 6"
+      },
+      {
+       "t": "6",
+       "m": "forgot the last term −6 and stopped at 1 − 6 + 11"
+      },
+      {
+       "t": "0",
+       "ok": 1
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the conclusion?",
+     "o": [
+      {
+       "t": "No, since the constant term −6 is not 0",
+       "m": "looked at the constant term instead of the value p(1)"
+      },
+      {
+       "t": "Yes, since p(1) = 0",
+       "ok": 1
+      },
+      {
+       "t": "No, since p(1) = 0 means the remainder is zero",
+       "m": "thought a zero remainder means it is not a factor"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "బహుపదులు",
+   "hi": "बहुपद"
+  }
+ },
+ "m9_coord": {
+  "lesson": {
+   "title": "Locating points on a plane",
+   "points": [
+    "Two number lines cross at right angles: the horizontal x-axis and the vertical y-axis. They meet at the origin (0, 0).",
+    "A point is written (x, y). The x-value (abscissa) comes first and tells how far left or right; the y-value (ordinate) tells how far up or down.",
+    "The axes divide the plane into four quadrants. Quadrant I is (+, +), II is (−, +), III is (−, −) and IV is (+, −).",
+    "A point on the x-axis looks like (a, 0) and a point on the y-axis looks like (0, b)."
+   ],
+   "story": "In a cinema hall your ticket says row 5, seat 8. You walk to the row first and then to the seat. A point (x, y) works the same way: the order matters, so (5, 8) and (8, 5) are different places.",
+   "example": {
+    "q": "In which quadrant does the point (−4, 3) lie?",
+    "steps": [
+     "x = −4 is negative, so the point is to the left of the y-axis",
+     "y = 3 is positive, so the point is above the x-axis",
+     "Left and above is Quadrant II"
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "In the point (5, −2), what is the abscissa?",
+    "why": "The abscissa is the x-coordinate, the first number, which is 5.",
+    "o": [
+     {
+      "t": "5",
+      "ok": 1
+     },
+     {
+      "t": "−2",
+      "m": "took the y-coordinate (ordinate) as the abscissa"
+     },
+     {
+      "t": "3",
+      "m": "added the two coordinates 5 + (−2)",
+      "g": "m7_int"
+     },
+     {
+      "t": "7",
+      "m": "subtracted the two coordinates, 5 − (−2)",
+      "g": "m7_int"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "A point lying on the x-axis has which form?",
+    "why": "Every point on the x-axis has height 0, so it looks like (a, 0).",
+    "o": [
+     {
+      "t": "(0, b)",
+      "m": "thought a point on the x-axis has x equal to 0, which is the y-axis"
+     },
+     {
+      "t": "(a, 0)",
+      "ok": 1
+     },
+     {
+      "t": "(a, a)",
+      "m": "confused the x-axis with the line where x and y are equal"
+     },
+     {
+      "t": "(0, 0) only",
+      "m": "thought only the origin lies on an axis"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "In which quadrant does the point (−5, −2) lie?",
+    "why": "Both coordinates are negative, which is Quadrant III.",
+    "o": [
+     {
+      "t": "II",
+      "m": "treated the y-value as positive and looked only at the sign of x",
+      "g": "m7_int"
+     },
+     {
+      "t": "IV",
+      "m": "treated the x-value as positive and looked only at the sign of y",
+      "g": "m7_int"
+     },
+     {
+      "t": "III",
+      "ok": 1
+     },
+     {
+      "t": "I",
+      "m": "ignored both negative signs",
+      "g": "m7_int"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "To plot (4, −3) starting from the origin, you move:",
+    "why": "x = 4 means 4 units right and y = −3 means 3 units down.",
+    "o": [
+     {
+      "t": "4 units right, then 3 units down",
+      "ok": 1
+     },
+     {
+      "t": "3 units right, then 4 units down",
+      "m": "swapped the order of the coordinates"
+     },
+     {
+      "t": "4 units left, then 3 units up",
+      "m": "reversed both directions",
+      "g": "m7_int"
+     },
+     {
+      "t": "3 units left, then 4 units up",
+      "m": "swapped the coordinates and reversed both directions",
+      "g": "m7_int"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Where does the point (−2, 0) lie?",
+    "why": "y = 0 puts it on the x-axis, and x = −2 puts it on the negative side.",
+    "o": [
+     {
+      "t": "On the positive side of the x-axis",
+      "m": "ignored the negative sign of the x-value",
+      "g": "m7_int"
+     },
+     {
+      "t": "On the negative side of the y-axis",
+      "m": "mixed up which coordinate being zero places a point on which axis"
+     },
+     {
+      "t": "In Quadrant II",
+      "m": "thought a zero coordinate counts as positive and places the point in a quadrant"
+     },
+     {
+      "t": "On the negative side of the x-axis",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Three vertices of a rectangle ABCD, taken in order, are A(1, 1), B(5, 1) and C(5, 4). What are the coordinates of D?",
+    "why": "AB is horizontal and BC is vertical, so D shares the x-value of A and the y-value of C: D = (1, 4).",
+    "o": [
+     {
+      "t": "(4, 1)",
+      "m": "swapped the x and y values of D"
+     },
+     {
+      "t": "(1, 4)",
+      "ok": 1
+     },
+     {
+      "t": "(1, 5)",
+      "m": "added the 1 and 4 instead of copying the y-value of C"
+     },
+     {
+      "t": "(5, 5)",
+      "m": "took the larger of each pair of coordinates"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The points A(2, 3) and B(2, −5) lie on the same vertical line. How far apart are they?",
+    "why": "The x-values are equal, so the distance is the difference in y: 3 − (−5) = 8.",
+    "o": [
+     {
+      "t": "2",
+      "m": "added 3 and −5 to get −2 instead of finding the difference",
+      "g": "m7_int"
+     },
+     {
+      "t": "5",
+      "m": "ignored the 3 and used only the −5",
+      "g": "m7_int"
+     },
+     {
+      "t": "8",
+      "ok": 1
+     },
+     {
+      "t": "15",
+      "m": "multiplied 3 and 5 instead of finding the gap",
+      "g": "m7_int"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The point (a, b) lies in Quadrant II. In which quadrant does (b, a) lie?",
+    "why": "In Quadrant II, a is negative and b is positive. So (b, a) has a positive x and negative y, which is Quadrant IV.",
+    "o": [
+     {
+      "t": "IV",
+      "ok": 1
+     },
+     {
+      "t": "II",
+      "m": "assumed swapping the coordinates does not change the quadrant",
+      "g": "m7_int"
+     },
+     {
+      "t": "III",
+      "m": "made both coordinates negative after swapping",
+      "g": "m7_int"
+     },
+     {
+      "t": "I",
+      "m": "made both coordinates positive after swapping",
+      "g": "m7_int"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "A point has abscissa −6 and ordinate 2. Write its coordinates, name its quadrant and find its distance from the y-axis. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "How should the coordinates be written?",
+     "o": [
+      {
+       "t": "(abscissa, ordinate) = (−6, 2)",
+       "ok": 1
+      },
+      {
+       "t": "(ordinate, abscissa) = (2, −6)",
+       "m": "wrote the ordinate first, swapping x and y"
+      },
+      {
+       "t": "(−6, −2)",
+       "m": "copied the negative sign onto the ordinate as well"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "Which quadrant has x negative and y positive?",
+     "o": [
+      {
+       "t": "Quadrant I",
+       "m": "ignored the negative sign of x"
+      },
+      {
+       "t": "Quadrant II",
+       "ok": 1
+      },
+      {
+       "t": "Quadrant IV",
+       "m": "mixed up which sign belongs to x and which to y"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the distance of (−6, 2) from the y-axis?",
+     "o": [
+      {
+       "t": "2 units",
+       "m": "used the y-value, which is the distance from the x-axis"
+      },
+      {
+       "t": "−6 units",
+       "m": "gave the distance as a negative number"
+      },
+      {
+       "t": "6 units",
+       "ok": 1
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "నిరూపక జ్యామితి",
+   "hi": "निर्देशांक ज्यामिति"
+  }
+ },
+ "m9_lin2": {
+  "lesson": {
+   "title": "Equations with two unknowns",
+   "points": [
+    "A linear equation in two variables looks like ax + by + c = 0, where a and b are not both zero.",
+    "A solution is a pair (x, y) that makes the equation true. Such an equation has infinitely many solutions.",
+    "If you plot all the solutions, they lie on a straight line. Every point on the line is a solution.",
+    "The equation y = 4 gives a horizontal line and x = 4 gives a vertical line."
+   ],
+   "story": "Ravi has ₹50 to spend at a stationery shop on pencils at ₹5 each and erasers at ₹2 each. The equation 5x + 2y = 50 has many answers: 10 pencils and 0 erasers, or 8 pencils and 5 erasers, or 6 pencils and 10 erasers.",
+   "example": {
+    "q": "Find y when x = 3 in the equation 2x + 3y = 12.",
+    "steps": [
+     "Put x = 3: 2(3) + 3y = 12",
+     "6 + 3y = 12, so 3y = 6",
+     "y = 2, so (3, 2) is a solution"
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which of these is a linear equation in two variables?",
+    "why": "3x + 2y = 7 has two variables, each to the power 1. x² + y = 5 and xy = 6 are not linear, and 2x + 3 = 9 has one variable.",
+    "o": [
+     {
+      "t": "3x + 2y = 7",
+      "ok": 1
+     },
+     {
+      "t": "x² + y = 5",
+      "m": "thought any equation with two letters is linear, ignoring the x²",
+      "g": "m8_lin"
+     },
+     {
+      "t": "2x + 3 = 9",
+      "m": "did not notice it has only one variable",
+      "g": "m8_lin"
+     },
+     {
+      "t": "xy = 6",
+      "m": "thought a product of the two variables still counts as linear",
+      "g": "m8_lin"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "How many solutions does a linear equation in two variables have?",
+    "why": "Each choice of x gives a matching y, so there are infinitely many solutions.",
+    "o": [
+     {
+      "t": "Exactly one",
+      "m": "carried over the idea from one-variable equations that there is one answer",
+      "g": "m8_lin"
+     },
+     {
+      "t": "Exactly two",
+      "m": "thought two variables means two solutions",
+      "g": "m8_lin"
+     },
+     {
+      "t": "Infinitely many",
+      "ok": 1
+     },
+     {
+      "t": "None",
+      "m": "thought one equation cannot be solved for two unknowns",
+      "g": "m8_lin"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which pair (x, y) is a solution of 2x + 3y = 12?",
+    "why": "For (3, 2): 2(3) + 3(2) = 6 + 6 = 12. The others give 13, 15 and 8.",
+    "o": [
+     {
+      "t": "(2, 3)",
+      "m": "swapped x and y, which gives 4 + 9 = 13"
+     },
+     {
+      "t": "(3, 2)",
+      "ok": 1
+     },
+     {
+      "t": "(6, 1)",
+      "m": "matched 2x to 12 and ignored the 3y term, giving 12 + 3 = 15",
+      "g": "m8_lin"
+     },
+     {
+      "t": "(4, 0)",
+      "m": "put y = 0 and divided 12 by the coefficient of y instead of x",
+      "g": "m8_lin"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "If (2, k) is a solution of x + 3y = 11, what is k?",
+    "why": "Put x = 2: 2 + 3k = 11, so 3k = 9 and k = 3.",
+    "o": [
+     {
+      "t": "9",
+      "m": "found 3k = 9 but forgot to divide by 3",
+      "g": "m8_lin"
+     },
+     {
+      "t": "13/3",
+      "m": "added 2 to 11 instead of subtracting it",
+      "g": "m8_lin"
+     },
+     {
+      "t": "11/3",
+      "m": "forgot to subtract the x-term 2 before dividing by 3",
+      "g": "m8_lin"
+     },
+     {
+      "t": "3",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What does the graph of the equation y = 4 look like?",
+    "why": "Every point on it has y = 4, so it is a horizontal line passing through (0, 4).",
+    "o": [
+     {
+      "t": "A horizontal line through (0, 4)",
+      "ok": 1
+     },
+     {
+      "t": "A vertical line through (4, 0)",
+      "m": "mixed up which axis y = 4 is parallel to"
+     },
+     {
+      "t": "A line through the origin",
+      "m": "thought every line in the plane passes through (0, 0)"
+     },
+     {
+      "t": "A single point (0, 4)",
+      "m": "thought an equation with one variable gives only one point",
+      "g": "m8_lin"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Sita buys 3 pens at ₹6 each and 2 notebooks for a total of ₹40. What is the cost of one notebook?",
+    "why": "3 pens cost 18. So 2 notebooks cost 40 − 18 = 22, and one notebook costs ₹11.",
+    "o": [
+     {
+      "t": "₹22",
+      "m": "found the cost of both notebooks and forgot to divide by 2",
+      "g": "m8_lin"
+     },
+     {
+      "t": "₹17",
+      "m": "subtracted only one pen (₹6) instead of three pens",
+      "g": "m8_lin"
+     },
+     {
+      "t": "₹11",
+      "ok": 1
+     },
+     {
+      "t": "₹8",
+      "m": "divided ₹40 by the 5 items, assuming every item costs the same",
+      "g": "m8_lin"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Where does the graph of 2x + y = 10 cut the x-axis?",
+    "why": "On the x-axis y = 0, so 2x = 10 and x = 5. The point is (5, 0).",
+    "o": [
+     {
+      "t": "(0, 10)",
+      "m": "put x = 0 instead of y = 0, which gives the y-axis crossing"
+     },
+     {
+      "t": "(5, 0)",
+      "ok": 1
+     },
+     {
+      "t": "(10, 0)",
+      "m": "put y = 0 but forgot to divide by 2",
+      "g": "m8_lin"
+     },
+     {
+      "t": "(0, 5)",
+      "m": "put x = 0 and then divided 10 by 2"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Two solutions of x − y = 2 are (4, 2) and (a, −1). What is a?",
+    "why": "Put y = −1: a − (−1) = 2, so a + 1 = 2 and a = 1.",
+    "o": [
+     {
+      "t": "1",
+      "ok": 1
+     },
+     {
+      "t": "3",
+      "m": "treated subtracting −1 as subtracting 1, writing a − 1 = 2",
+      "g": "m7_int"
+     },
+     {
+      "t": "−3",
+      "m": "wrote a = −1 − 2 by moving the terms with the wrong signs",
+      "g": "m7_int"
+     },
+     {
+      "t": "2",
+      "m": "assumed x equals the right-hand side 2",
+      "g": "m8_lin"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Find the value of k if (1, 2) is a solution of the equation 3x + ky = 7. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Put x = 1 and y = 2 in the equation",
+       "ok": 1
+      },
+      {
+       "t": "Put x = 2 and y = 1 in the equation",
+       "m": "swapped the order of the coordinates"
+      },
+      {
+       "t": "Put k = 0 and solve for x",
+       "m": "removed the unknown k instead of substituting the given solution"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "After substituting you get 3 + 2k = 7. What is 2k?",
+     "o": [
+      {
+       "t": "10",
+       "m": "added 3 to 7 instead of subtracting it"
+      },
+      {
+       "t": "4",
+       "ok": 1
+      },
+      {
+       "t": "7",
+       "m": "ignored the 3 on the left side"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is k?",
+     "o": [
+      {
+       "t": "4",
+       "m": "found 2k = 4 and forgot to divide by 2"
+      },
+      {
+       "t": "5",
+       "m": "divided 10 by 2 after adding 3 to 7"
+      },
+      {
+       "t": "2",
+       "ok": 1
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "రెండు చరరాశులలో రేఖీయ సమీకరణాలు",
+   "hi": "दो चरों वाले रैखिक समीकरण"
+  }
+ },
+ "m9_tri": {
+  "lesson": {
+   "title": "Congruent triangles and inequalities",
+   "points": [
+    "Two triangles are congruent when they match exactly in all sides and angles. The valid rules are SAS, ASA, AAS, SSS and RHS.",
+    "Equal angles alone (AAA) or two sides with a non-included angle (SSA) do not prove congruence.",
+    "In a triangle, angles opposite equal sides are equal, and the larger side lies opposite the larger angle.",
+    "The sum of any two sides of a triangle is greater than the third side."
+   ],
+   "story": "A tailor cuts two identical blouse pieces using the same paper pattern. They fit exactly on top of each other, so they are congruent. Rangoli stencils work the same way.",
+   "example": {
+    "q": "In triangle ABC, AB = AC and ∠B = 50°. Find ∠A.",
+    "steps": [
+     "AB = AC, so the angles opposite them are equal: ∠C = ∠B = 50°",
+     "Angle sum: ∠A + 50° + 50° = 180°",
+     "∠A = 80°"
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which of these is enough to prove that two triangles are congruent?",
+    "why": "SAS says two sides and the angle between them. Equal angles (AAA), a non-included angle (SSA) and equal perimeters do not fix the triangle.",
+    "o": [
+     {
+      "t": "Two sides and the angle between them equal",
+      "ok": 1
+     },
+     {
+      "t": "All three angles equal",
+      "m": "thought equal angles guarantee the same size, but they only give the same shape"
+     },
+     {
+      "t": "Two sides and an angle not between them equal",
+      "m": "thought it does not matter where the equal angle lies"
+     },
+     {
+      "t": "The perimeters are equal",
+      "m": "thought triangles with the same perimeter must be identical"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "In triangle ABC, AB = AC. Which two angles are equal?",
+    "why": "Angles opposite equal sides are equal. AC lies opposite ∠B and AB lies opposite ∠C, so ∠B = ∠C.",
+    "o": [
+     {
+      "t": "∠A and ∠B",
+      "m": "picked angles next to the vertex instead of the angles opposite the equal sides",
+      "g": "m7_tri"
+     },
+     {
+      "t": "∠A and ∠C",
+      "m": "picked angles next to the vertex instead of the angles opposite the equal sides",
+      "g": "m7_tri"
+     },
+     {
+      "t": "∠B and ∠C",
+      "ok": 1
+     },
+     {
+      "t": "All three angles",
+      "m": "confused an isosceles triangle with an equilateral triangle",
+      "g": "m7_tri"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "In triangle ABC, AB = AC and ∠B = 65°. What is ∠A?",
+    "why": "∠C = ∠B = 65°, so ∠A = 180° − 130° = 50°.",
+    "o": [
+     {
+      "t": "65°",
+      "m": "assumed ∠A is equal to the base angles too",
+      "g": "m7_tri"
+     },
+     {
+      "t": "50°",
+      "ok": 1
+     },
+     {
+      "t": "115°",
+      "m": "subtracted only one base angle from 180°",
+      "g": "m7_tri"
+     },
+     {
+      "t": "130°",
+      "m": "added the two base angles and forgot to subtract from 180°",
+      "g": "m7_tri"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Can a triangle have sides 3 cm, 4 cm and 8 cm?",
+    "why": "3 + 4 = 7, which is less than 8, so the two shorter sides cannot meet. No triangle is possible.",
+    "o": [
+     {
+      "t": "Yes, because all the sides are positive lengths",
+      "m": "thought any three positive lengths make a triangle"
+     },
+     {
+      "t": "Yes, since 4 + 8 is greater than 3",
+      "m": "checked only one pair of sides and not the pair with the longest side"
+     },
+     {
+      "t": "No, since all the sides are different",
+      "m": "thought a triangle needs at least two equal sides"
+     },
+     {
+      "t": "No, since 3 + 4 is less than 8",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "In triangle PQR, ∠P = 70° and ∠Q = 50°. Which side is the longest?",
+    "why": "∠R = 180° − 120° = 60°. The largest angle is ∠P = 70°, so the side opposite it, QR, is the longest.",
+    "o": [
+     {
+      "t": "QR",
+      "ok": 1
+     },
+     {
+      "t": "PR",
+      "m": "picked the side opposite the smallest angle (∠Q)",
+      "g": "m7_tri"
+     },
+     {
+      "t": "PQ",
+      "m": "chose the side lying between the two given angles",
+      "g": "m7_tri"
+     },
+     {
+      "t": "It cannot be found",
+      "m": "thought the third angle must be given before comparing sides",
+      "g": "m7_tri"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Two sides of a triangle are 5 cm and 9 cm. Which could be the third side?",
+    "why": "The third side must be greater than 9 − 5 = 4 and less than 9 + 5 = 14. Only 7 cm fits.",
+    "o": [
+     {
+      "t": "4 cm",
+      "m": "allowed a third side equal to 9 − 5, but a triangle needs it strictly greater"
+     },
+     {
+      "t": "7 cm",
+      "ok": 1
+     },
+     {
+      "t": "14 cm",
+      "m": "added the two sides and allowed the sum, which gives a flat figure"
+     },
+     {
+      "t": "3 cm",
+      "m": "assumed any length smaller than both sides works"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "In triangles ABC and DEF, AB = DE, BC = EF and ∠A = ∠D. What can we conclude?",
+    "why": "The equal angle ∠A is not between the equal sides AB and BC, so SAS does not apply. Nothing definite follows.",
+    "o": [
+     {
+      "t": "They are congruent by SAS",
+      "m": "treated a non-included angle as the included angle"
+     },
+     {
+      "t": "They are congruent by SSS",
+      "m": "counted the equal angle as if it were a third equal side"
+     },
+     {
+      "t": "Congruence cannot be proved from this",
+      "ok": 1
+     },
+     {
+      "t": "They are congruent by ASA",
+      "m": "mixed up the order of sides and angles in the ASA rule"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "In triangle ABC, ∠A : ∠B : ∠C = 2 : 3 : 4. Which side is the longest?",
+    "why": "The largest angle is ∠C (4 parts out of 9 = 80°). The side opposite ∠C is AB, so AB is longest.",
+    "o": [
+     {
+      "t": "AB",
+      "ok": 1
+     },
+     {
+      "t": "BC",
+      "m": "picked the side opposite the smallest angle ∠A",
+      "g": "m7_tri"
+     },
+     {
+      "t": "AC",
+      "m": "picked the side opposite the middle angle ∠B",
+      "g": "m7_tri"
+     },
+     {
+      "t": "It cannot be decided without the actual angles",
+      "m": "thought the ratio is not enough to compare the angles",
+      "g": "m7_tri"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "In isosceles triangle ABC with AB = AC, ∠B = (2x + 10)° and ∠C = (3x − 20)°. Find x and ∠A. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Equate ∠B and ∠C because they are opposite the equal sides",
+       "ok": 1
+      },
+      {
+       "t": "Equate ∠A and ∠B because AB is one of the equal sides",
+       "m": "paired the angle at the vertex with a base angle"
+      },
+      {
+       "t": "Add ∠B and ∠C and set the sum equal to 180°",
+       "m": "forgot that ∠A is the third angle of the triangle"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "Solve 2x + 10 = 3x − 20 for x.",
+     "o": [
+      {
+       "t": "x = 10",
+       "m": "moved the 10 across with the wrong sign"
+      },
+      {
+       "t": "x = 30",
+       "ok": 1
+      },
+      {
+       "t": "x = −30",
+       "m": "got −x = −30 but forgot to divide by −1"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is ∠A? (∠B = 70°)",
+     "o": [
+      {
+       "t": "70°",
+       "m": "gave the base angle instead of ∠A"
+      },
+      {
+       "t": "110°",
+       "m": "subtracted only one base angle from 180°"
+      },
+      {
+       "t": "40°",
+       "ok": 1
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "త్రిభుజాలు: సర్వసమానత్వం మరియు అసమానతలు",
+   "hi": "त्रिभुज: सर्वांगसमता और असमिकाएँ"
+  }
+ },
+ "m9_mens": {
+  "lesson": {
+   "title": "Area and volume of solids",
+   "points": [
+    "Cuboid: total surface area = 2(lb + bh + hl) and volume = lbh. Cube: total surface area = 6a² and volume = a³.",
+    "Cylinder: curved surface area = 2πrh, total surface area = 2πr(r + h) and volume = πr²h.",
+    "Cone: slant height l = √(r² + h²), curved surface area = πrl and volume = (1/3)πr²h.",
+    "Sphere: surface area = 4πr² and volume = (4/3)πr³. Hemisphere: curved area = 2πr², total area = 3πr² and volume = (2/3)πr³."
+   ],
+   "story": "A water tank in your village is a cylinder. The paint needed for its outside wall depends on its surface area, while the water it holds depends on its volume. Area is measured in square units and volume in cubic units.",
+   "example": {
+    "q": "Find the volume of a cylinder of radius 7 cm and height 10 cm (take π = 22/7).",
+    "steps": [
+     "V = πr²h",
+     "V = 22/7 × 7 × 7 × 10",
+     "V = 1540 cm³"
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the formula for the volume of a cone?",
+    "why": "A cone holds one third of a cylinder with the same base and height: V = (1/3)πr²h.",
+    "o": [
+     {
+      "t": "πr²h",
+      "m": "used the cylinder formula and left out the one third",
+      "g": "m8_mens"
+     },
+     {
+      "t": "πrl",
+      "m": "used the curved surface area formula instead of volume",
+      "g": "m8_mens"
+     },
+     {
+      "t": "(1/3)πr²h",
+      "ok": 1
+     },
+     {
+      "t": "(4/3)πr³",
+      "m": "used the volume formula of a sphere",
+      "g": "m8_mens"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is the total surface area of a cube of side 5 cm?",
+    "why": "A cube has 6 equal faces: 6 × 5² = 6 × 25 = 150 cm².",
+    "o": [
+     {
+      "t": "150 cm²",
+      "ok": 1
+     },
+     {
+      "t": "125 cm²",
+      "m": "calculated the volume 5³ instead of the surface area",
+      "g": "m8_mens"
+     },
+     {
+      "t": "100 cm²",
+      "m": "counted only 4 faces",
+      "g": "m8_mens"
+     },
+     {
+      "t": "25 cm²",
+      "m": "found the area of one face only",
+      "g": "m8_mens"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A cuboid measures 10 cm × 6 cm × 5 cm. What is its total surface area?",
+    "why": "2(lb + bh + hl) = 2(60 + 30 + 50) = 2 × 140 = 280 cm².",
+    "o": [
+     {
+      "t": "300 cm²",
+      "m": "multiplied the three lengths, which is the volume",
+      "g": "m8_mens"
+     },
+     {
+      "t": "280 cm²",
+      "ok": 1
+     },
+     {
+      "t": "140 cm²",
+      "m": "forgot to multiply by 2 because faces come in pairs",
+      "g": "m8_mens"
+     },
+     {
+      "t": "21 cm²",
+      "m": "added the three lengths",
+      "g": "m8_mens"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A cylinder has radius 7 cm and height 10 cm. What is its curved surface area? (π = 22/7)",
+    "why": "CSA = 2πrh = 2 × 22/7 × 7 × 10 = 440 cm².",
+    "o": [
+     {
+      "t": "1540 cm²",
+      "m": "used the volume formula πr²h instead of the curved surface area",
+      "g": "m8_mens"
+     },
+     {
+      "t": "220 cm²",
+      "m": "forgot the factor 2 in 2πrh",
+      "g": "m8_mens"
+     },
+     {
+      "t": "748 cm²",
+      "m": "used the total surface area 2πr(r + h) instead of the curved surface only",
+      "g": "m8_mens"
+     },
+     {
+      "t": "440 cm²",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the volume of a sphere of radius 6 cm?",
+    "why": "V = (4/3)π(6)³ = (4/3) × 216π = 288π cm³.",
+    "o": [
+     {
+      "t": "288π cm³",
+      "ok": 1
+     },
+     {
+      "t": "144π cm³",
+      "m": "used the surface area formula 4πr² instead of the volume",
+      "g": "m8_mens"
+     },
+     {
+      "t": "48π cm³",
+      "m": "squared the radius instead of cubing it in (4/3)πr³",
+      "g": "m8_mens"
+     },
+     {
+      "t": "864π cm³",
+      "m": "used 4πr³ and forgot to divide by 3",
+      "g": "m8_mens"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A cone has radius 7 cm and height 24 cm. What is its curved surface area? (π = 22/7)",
+    "why": "Slant height l = √(7² + 24²) = √625 = 25 cm. CSA = πrl = 22/7 × 7 × 25 = 550 cm².",
+    "o": [
+     {
+      "t": "528 cm²",
+      "m": "used the height 24 cm instead of the slant height 25 cm",
+      "g": "m8_mens"
+     },
+     {
+      "t": "704 cm²",
+      "m": "found the total surface area πr(l + r) instead of the curved area",
+      "g": "m8_mens"
+     },
+     {
+      "t": "550 cm²",
+      "ok": 1
+     },
+     {
+      "t": "1232 cm²",
+      "m": "found the volume of the cone instead of its curved area",
+      "g": "m8_mens"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A cylindrical water tank has radius 7 m and height 5 m. How many litres can it hold? (π = 22/7, 1 m³ = 1000 litres)",
+    "why": "V = 22/7 × 7 × 7 × 5 = 770 m³ = 770 × 1000 = 7,70,000 litres.",
+    "o": [
+     {
+      "t": "770 litres",
+      "m": "forgot to convert cubic metres to litres",
+      "g": "m8_mens"
+     },
+     {
+      "t": "7,70,000 litres",
+      "ok": 1
+     },
+     {
+      "t": "77,000 litres",
+      "m": "used 1 m³ = 100 litres",
+      "g": "m8_mens"
+     },
+     {
+      "t": "220 litres",
+      "m": "found the curved surface area 220 m² instead of the volume",
+      "g": "m8_mens"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A metal cube of side 4 cm is melted and recast into a cuboid with a base of 8 cm × 4 cm. What is the height of the cuboid?",
+    "why": "Volume is unchanged: 4³ = 64 cm³. Height = 64 ÷ (8 × 4) = 64 ÷ 32 = 2 cm.",
+    "o": [
+     {
+      "t": "2 cm",
+      "ok": 1
+     },
+     {
+      "t": "3 cm",
+      "m": "equated surface areas (96 ÷ 32) instead of volumes",
+      "g": "m8_mens"
+     },
+     {
+      "t": "4 cm",
+      "m": "assumed the height stays the same as the side of the cube",
+      "g": "m8_mens"
+     },
+     {
+      "t": "8 cm",
+      "m": "divided the volume by only one side of the base",
+      "g": "m8_mens"
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Find the volume of a cone of base radius 7 cm and height 12 cm (π = 22/7). Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "Which formula should you use?",
+     "o": [
+      {
+       "t": "V = (1/3)πr²h",
+       "ok": 1
+      },
+      {
+       "t": "V = πr²h",
+       "m": "used the cylinder formula and left out the one third"
+      },
+      {
+       "t": "V = πrl",
+       "m": "used the curved surface area formula instead of volume"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "Which substitution is correct?",
+     "o": [
+      {
+       "t": "(1/3) × 22/7 × 7² × 12",
+       "ok": 1
+      },
+      {
+       "t": "(1/3) × 22/7 × 7 × 12",
+       "m": "did not square the radius"
+      },
+      {
+       "t": "(1/3) × 22/7 × 7² × 12²",
+       "m": "squared the height instead of the radius only"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the volume?",
+     "o": [
+      {
+       "t": "1848 cm³",
+       "m": "forgot to multiply by one third"
+      },
+      {
+       "t": "616 cm³",
+       "ok": 1
+      },
+      {
+       "t": "88 cm³",
+       "m": "forgot to square the radius"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "ఉపరితల వైశాల్యాలు మరియు ఘనపరిమాణాలు",
+   "hi": "पृष्ठीय क्षेत्रफल और आयतन"
+  }
+ },
+ "m9_stat": {
+  "lesson": {
+   "title": "Mean, median, mode and chance",
+   "points": [
+    "Mean = sum of all values ÷ number of values. Median is the middle value after arranging in order; for an even count, average the two middle values. Mode is the value that occurs most often.",
+    "In a histogram the bars touch each other because the class intervals are continuous.",
+    "Empirical probability = number of times the event happened ÷ total number of trials.",
+    "A probability is always between 0 and 1, including both."
+   ],
+   "story": "A batter scores 30, 45, 12, 45 and 28 in five matches. The mean tells his average, the median shows his typical score, and the mode, 45, is the score he made most often.",
+   "example": {
+    "q": "Find the mean, median and mode of the runs 30, 45, 12, 45, 28.",
+    "steps": [
+     "Mean = (30 + 45 + 12 + 45 + 28) ÷ 5 = 160 ÷ 5 = 32",
+     "Arrange in order: 12, 28, 30, 45, 45. The middle value is 30, so the median is 30",
+     "45 appears twice, so the mode is 45"
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the mode of the data 5, 8, 8, 9, 12, 12, 12?",
+    "why": "12 appears three times, more than any other value, so the mode is 12.",
+    "o": [
+     {
+      "t": "9",
+      "m": "gave the middle value (median) instead of the most frequent value",
+      "g": "m8_data"
+     },
+     {
+      "t": "8",
+      "m": "picked the first value that repeats instead of the one repeating most",
+      "g": "m8_data"
+     },
+     {
+      "t": "5",
+      "m": "picked the smallest value in the list",
+      "g": "m8_data"
+     },
+     {
+      "t": "12",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which of these can be the probability of an event?",
+    "why": "A probability lies between 0 and 1, so 0.35 is possible. 1.4 is above 1, −0.2 is negative and 35 is not a fraction of the trials.",
+    "o": [
+     {
+      "t": "0.35",
+      "ok": 1
+     },
+     {
+      "t": "1.4",
+      "m": "thought a probability can be greater than 1"
+     },
+     {
+      "t": "−0.2",
+      "m": "thought a probability can be negative"
+     },
+     {
+      "t": "35",
+      "m": "gave a percentage without converting it to a number between 0 and 1"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the mean of 12, 15, 17, 21, 25?",
+    "why": "Sum = 90 and there are 5 values, so the mean is 90 ÷ 5 = 18.",
+    "o": [
+     {
+      "t": "17",
+      "m": "gave the middle value (median) instead of the mean",
+      "g": "m8_data"
+     },
+     {
+      "t": "18",
+      "ok": 1
+     },
+     {
+      "t": "90",
+      "m": "added the values and forgot to divide",
+      "g": "m8_data"
+     },
+     {
+      "t": "22.5",
+      "m": "divided the sum by 4 instead of 5",
+      "g": "m8_data"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the median of 7, 3, 9, 5, 11, 4?",
+    "why": "Arrange in order: 3, 4, 5, 7, 9, 11. With 6 values take the average of the 3rd and 4th: (5 + 7) ÷ 2 = 6.",
+    "o": [
+     {
+      "t": "6",
+      "ok": 1
+     },
+     {
+      "t": "7",
+      "m": "took the middle two values of the unsorted list (9 and 5) without arranging first",
+      "g": "m8_data"
+     },
+     {
+      "t": "6.5",
+      "m": "found the mean 39 ÷ 6 instead of the median",
+      "g": "m8_data"
+     },
+     {
+      "t": "5",
+      "m": "took only the lower of the two middle values",
+      "g": "m8_data"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A coin is tossed 50 times and shows heads 30 times. What is the empirical probability of getting tails?",
+    "why": "Tails came 50 − 30 = 20 times, so the probability is 20/50 = 2/5.",
+    "o": [
+     {
+      "t": "3/5",
+      "m": "gave the probability of heads instead of tails"
+     },
+     {
+      "t": "1/2",
+      "m": "used the theoretical value and ignored the actual trial results"
+     },
+     {
+      "t": "2/5",
+      "ok": 1
+     },
+     {
+      "t": "20",
+      "m": "gave the number of tails instead of the fraction of trials"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The mean of 5 numbers is 20. A sixth number 32 is added. What is the new mean?",
+    "why": "The sum of the 5 numbers is 100. The new sum is 132 and the new mean is 132 ÷ 6 = 22.",
+    "o": [
+     {
+      "t": "22",
+      "ok": 1
+     },
+     {
+      "t": "26",
+      "m": "averaged the old mean 20 with the new number 32",
+      "g": "m8_data"
+     },
+     {
+      "t": "20",
+      "m": "thought adding a number does not change the mean",
+      "g": "m8_data"
+     },
+     {
+      "t": "132",
+      "m": "found the new total and forgot to divide by 6",
+      "g": "m8_data"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "In a survey of 40 students, the favourite sport is cricket for 18, kabaddi for 10, football for 8 and hockey for 4. A student is chosen at random. What is the probability that the favourite is kabaddi or hockey?",
+    "why": "Favourable students = 10 + 4 = 14 out of 40, so the probability is 14/40 = 7/20.",
+    "o": [
+     {
+      "t": "1/4",
+      "m": "counted only kabaddi (10/40) and left out hockey"
+     },
+     {
+      "t": "7/20",
+      "ok": 1
+     },
+     {
+      "t": "1/10",
+      "m": "counted only hockey (4/40) and left out kabaddi"
+     },
+     {
+      "t": "7/13",
+      "m": "used 26 (cricket plus football) as the total instead of 40"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "The mean of the five numbers 4, 7, x, 9, 12 is 9. What is x?",
+    "why": "The total must be 5 × 9 = 45. The known numbers add to 32, so x = 45 − 32 = 13.",
+    "o": [
+     {
+      "t": "9",
+      "m": "assumed the missing value equals the mean",
+      "g": "m8_data"
+     },
+     {
+      "t": "4",
+      "m": "used 4 numbers instead of 5, getting 36 − 32",
+      "g": "m8_data"
+     },
+     {
+      "t": "45",
+      "m": "gave the required total instead of the missing number",
+      "g": "m8_data"
+     },
+     {
+      "t": "13",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": {
+   "q": "Find the median of the marks 14, 9, 21, 17, 12, 8. Show your steps.",
+   "parts": [
+    {
+     "label": "Method",
+     "prompt": "What is the first step?",
+     "o": [
+      {
+       "t": "Arrange the marks in order",
+       "ok": 1
+      },
+      {
+       "t": "Add all the marks and divide by 6",
+       "m": "found the mean instead of the median"
+      },
+      {
+       "t": "Pick the mark that occurs most often",
+       "m": "looked for the mode instead of the median"
+      }
+     ]
+    },
+    {
+     "label": "Working",
+     "prompt": "The ordered marks are 8, 9, 12, 14, 17, 21. With 6 values, which values give the median?",
+     "o": [
+      {
+       "t": "The 3rd and 4th values",
+       "ok": 1
+      },
+      {
+       "t": "The 3rd value only",
+       "m": "took only the lower middle value"
+      },
+      {
+       "t": "The 6th value",
+       "m": "took the last value in the ordered list"
+      }
+     ]
+    },
+    {
+     "label": "Answer",
+     "prompt": "What is the median?",
+     "o": [
+      {
+       "t": "12",
+       "m": "gave the 3rd value only instead of averaging 12 and 14"
+      },
+      {
+       "t": "13",
+       "ok": 1
+      },
+      {
+       "t": "13.5",
+       "m": "gave the mean 81 ÷ 6 instead of the median"
+      }
+     ]
+    }
+   ]
+  },
+  "tags": {
+   "te": "సాంఖ్యక శాస్త్రం మరియు సంభావ్యత",
+   "hi": "सांख्यिकी और प्रायिकता"
+  }
+ }
+}

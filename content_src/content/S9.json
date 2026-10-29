@@ -1,0 +1,1555 @@
+{
+ "s9_matter": {
+  "tags": {
+   "te": "మన చుట్టూ ఉన్న పదార్థం",
+   "hi": "हमारे आस-पास के पदार्थ"
+  },
+  "lesson": {
+   "title": "Particles, states and heat",
+   "points": [
+    "Matter is anything that has mass and occupies space, and it is made of very tiny particles.",
+    "The particles have gaps between them, keep moving all the time, and attract each other.",
+    "In a solid the particles are packed tightly and only vibrate; in a liquid they slide past each other; in a gas they are far apart and move freely.",
+    "Temperature in kelvin is K = °C + 273. Ice melts at 273 K (0°C) and water boils at 373 K (100°C), and the temperature stays fixed while the state changes."
+   ],
+   "story": "When you stir sugar into nimbu pani, the sugar seems to vanish but the drink turns sweet. The sugar particles have spread into the gaps between the water particles.",
+   "example": {
+    "q": "Convert 27°C to kelvin and say in which state water is at that temperature.",
+    "steps": [
+     "Use K = °C + 273.",
+     "27 + 273 = 300 K.",
+     "Water melts at 273 K and boils at 373 K. Since 300 K lies between these, water is a liquid."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which statement about the particles of matter is correct?",
+    "why": "Particles of matter attract each other. This force is strongest in solids and weakest in gases.",
+    "o": [
+     {
+      "t": "Particles of a solid are completely at rest",
+      "m": "Believed solid particles do not move at all, instead of vibrating about fixed positions",
+      "g": "s6_mat"
+     },
+     {
+      "t": "There is no space between particles of a solid",
+      "m": "Thought a solid is packed with no gaps because it feels hard",
+      "g": "s6_mat"
+     },
+     {
+      "t": "They attract each other",
+      "ok": 1
+     },
+     {
+      "t": "Particles of a liquid are fixed in one place",
+      "m": "Mixed up liquids with solids and ignored that liquid particles slide past each other",
+      "g": "s6_mat"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is 100°C in kelvin?",
+    "why": "K = °C + 273, so 100 + 273 = 373 K.",
+    "o": [
+     {
+      "t": "373 K",
+      "ok": 1
+     },
+     {
+      "t": "273 K",
+      "m": "Used the offset 273 as the answer and forgot to add the Celsius reading"
+     },
+     {
+      "t": "100 K",
+      "m": "Thought kelvin and Celsius readings are the same number"
+     },
+     {
+      "t": "173 K",
+      "m": "Subtracted 100 from 273 instead of adding"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "An LPG gas cylinder can hold a large amount of gas squeezed into a small volume. Why can gases be compressed so easily?",
+    "why": "Gas particles are very far apart, so there is plenty of empty space that pressure can squeeze out.",
+    "o": [
+     {
+      "t": "The particles of gas themselves shrink under pressure",
+      "m": "Thought the particles become smaller when compressed instead of moving closer together",
+      "g": "s6_mat"
+     },
+     {
+      "t": "There are large spaces between gas particles",
+      "ok": 1
+     },
+     {
+      "t": "Gas particles attract each other very strongly",
+      "m": "Thought strong attraction makes a gas easy to squeeze; actually it is weakest in gases",
+      "g": "s6_mat"
+     },
+     {
+      "t": "Gas particles are at rest and can be packed together",
+      "m": "Thought gas particles do not move, so they can be stacked like solids",
+      "g": "s6_mat"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Ice at 0°C is heated and starts to melt. The thermometer reading stays at 0°C until all the ice melts. Where does the heat go?",
+    "why": "The heat (latent heat of fusion) is used to overcome the forces of attraction between particles, so the state changes without a rise in temperature.",
+    "o": [
+     {
+      "t": "It is used to raise the temperature of the ice",
+      "m": "Thought heat always raises the temperature, even during a change of state",
+      "g": "s7_heat"
+     },
+     {
+      "t": "It is lost to the surroundings and wasted",
+      "m": "Thought the thermometer does not rise because the heat escapes",
+      "g": "s7_heat"
+     },
+     {
+      "t": "It makes each particle of ice grow bigger",
+      "m": "Thought heat expands the particles themselves instead of loosening the attraction between them",
+      "g": "s6_mat"
+     },
+     {
+      "t": "It breaks the forces holding the particles together",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "On a very humid day, wet clothes dry slowly. What is the reason?",
+    "why": "Humid air already holds a lot of water vapour, so less extra water can evaporate into it and the rate of evaporation decreases.",
+    "o": [
+     {
+      "t": "The air already has a lot of water vapour, so evaporation is slower",
+      "ok": 1
+     },
+     {
+      "t": "Evaporation stops completely when the air is humid",
+      "m": "Thought evaporation must stop completely rather than slow down"
+     },
+     {
+      "t": "Water becomes heavier in humid weather",
+      "m": "Thought humidity changes the water in the clothes instead of the surrounding air"
+     },
+     {
+      "t": "Humid air is always colder than dry air",
+      "m": "Assumed humid air must be colder, which would make clothes dry slower, instead of linking it to vapour already in the air",
+      "g": "s7_heat"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Water kept in a matka (earthen pot) stays cool in summer. What is the reason?",
+    "why": "Water seeps through tiny pores and evaporates. Evaporation takes latent heat from the water inside, which cools it.",
+    "o": [
+     {
+      "t": "The clay absorbs all the heat and stores it",
+      "m": "Thought the clay simply soaks up heat, ignoring that evaporation cools",
+      "g": "s7_heat"
+     },
+     {
+      "t": "Cold air from the surroundings enters the pot through the pores",
+      "m": "Thought cool air flows into the pot instead of heat leaving by evaporation",
+      "g": "s7_heat"
+     },
+     {
+      "t": "Water evaporating from the pores takes heat from the water inside",
+      "ok": 1
+     },
+     {
+      "t": "The pot makes the water particles move faster so they feel cold",
+      "m": "Thought faster-moving particles feel colder, the opposite of what happens",
+      "g": "s7_heat"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Water at 0°C and ice at 0°C are both taken in the same mass. Which statement is correct?",
+    "why": "Water at 0°C has absorbed the latent heat of fusion, so it has more energy than ice at the same temperature.",
+    "o": [
+     {
+      "t": "Both have the same energy because the temperature is the same",
+      "m": "Thought equal temperature means equal energy and ignored the heat absorbed during melting",
+      "g": "s7_heat"
+     },
+     {
+      "t": "Water at 0°C has more energy because it has absorbed latent heat",
+      "ok": 1
+     },
+     {
+      "t": "Ice has more energy because it is solid and compact",
+      "m": "Thought a solid must hold more energy because it feels heavier and tightly packed",
+      "g": "s7_heat"
+     },
+     {
+      "t": "Energy cannot be compared at the same temperature",
+      "m": "Thought the comparison is impossible without a temperature difference",
+      "g": "s7_heat"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Camphor is heated in a china dish covered with an inverted funnel. After some time, a white solid collects on the inner walls of the funnel. Which changes took place?",
+    "why": "Camphor sublimes (solid to gas) and the vapour cools on the funnel wall and turns back directly into a solid.",
+    "o": [
+     {
+      "t": "Solid to liquid, then liquid back to solid",
+      "m": "Assumed every solid must melt first and ignored sublimation",
+      "g": "s6_mat"
+     },
+     {
+      "t": "Liquid to gas, then gas back to liquid",
+      "m": "Thought the white solid was a liquid that formed because camphor was a liquid at the start",
+      "g": "s6_mat"
+     },
+     {
+      "t": "Solid to gas and the gas stays as gas",
+      "m": "Forgot that the vapour cools on the cold funnel wall and turns back into a solid",
+      "g": "s6_mat"
+     },
+     {
+      "t": "Solid to gas, then gas back to solid",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s9_atom": {
+  "tags": {
+   "te": "పరమాణువులు మరియు అణువులు",
+   "hi": "परमाणु एवं अणु"
+  },
+  "lesson": {
+   "title": "Counting the tiny particles",
+   "points": [
+    "Lavoisier's law of conservation of mass says mass is neither created nor destroyed in a chemical reaction. Proust's law of constant proportions says a compound always has its elements in a fixed mass ratio, for example hydrogen to oxygen in water is 1 : 8.",
+    "An atom is the smallest particle of an element; a molecule is a group of atoms joined together, such as O₂ (two atoms) or O₃ (three atoms).",
+    "Atomic masses are measured in u (H = 1, C = 12, N = 14, O = 16, Na = 23, Cl = 35.5). The molecular mass is the sum of the atomic masses in the formula.",
+    "One mole is 6.022 × 10²³ particles. The mass of one mole in grams equals the atomic or molecular mass, so moles = given mass ÷ molar mass."
+   ],
+   "story": "A shopkeeper sells eggs by the dozen and not one by one. Chemists do the same with a mole, which is a fixed 'packet' of 6.022 × 10²³ particles.",
+   "example": {
+    "q": "How many moles are there in 22 g of carbon dioxide, CO₂? (C = 12 u, O = 16 u)",
+    "steps": [
+     "Molar mass of CO₂ = 12 + 2 × 16 = 44 g.",
+     "Moles = given mass ÷ molar mass = 22 ÷ 44.",
+     "So there are 0.5 mole of CO₂."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Which scientist stated the law of conservation of mass?",
+    "why": "Antoine Lavoisier showed that the total mass of reactants equals the total mass of products.",
+    "o": [
+     {
+      "t": "John Dalton",
+      "m": "Confused the law with Dalton's atomic theory, which explained it"
+     },
+     {
+      "t": "Antoine Lavoisier",
+      "ok": 1
+     },
+     {
+      "t": "Joseph Proust",
+      "m": "Confused it with Proust's law of constant proportions"
+     },
+     {
+      "t": "Amedeo Avogadro",
+      "m": "Linked the name with the mole and Avogadro's number instead of this law"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "How many atoms are there in one molecule of ozone, O₃?",
+    "why": "The subscript 3 shows that one ozone molecule has three oxygen atoms, so its atomicity is 3.",
+    "o": [
+     {
+      "t": "2",
+      "m": "Confused ozone with ordinary oxygen, O₂"
+     },
+     {
+      "t": "1",
+      "m": "Thought ozone is a single-atom (monoatomic) species"
+     },
+     {
+      "t": "4",
+      "m": "Confused ozone with phosphorus, P₄"
+     },
+     {
+      "t": "3",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the molecular mass of water, H₂O? (H = 1 u, O = 16 u)",
+    "why": "Molecular mass = 2 × 1 + 16 = 18 u.",
+    "o": [
+     {
+      "t": "18 u",
+      "ok": 1
+     },
+     {
+      "t": "17 u",
+      "m": "Added 1 + 16 and ignored the subscript 2 on hydrogen"
+     },
+     {
+      "t": "33 u",
+      "m": "Swapped the subscripts and calculated as H₁O₂ = 1 + 32"
+     },
+     {
+      "t": "10 u",
+      "m": "Added the atomic numbers (1 + 1 + 8) instead of the atomic masses"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "How many moles of water are there in 36 g of water? (Molar mass of water = 18 g)",
+    "why": "Moles = given mass ÷ molar mass = 36 ÷ 18 = 2 moles.",
+    "o": [
+     {
+      "t": "0.5 mole",
+      "m": "Inverted the formula and divided molar mass by the given mass"
+     },
+     {
+      "t": "18 mole",
+      "m": "Subtracted 18 from 36 instead of dividing"
+     },
+     {
+      "t": "2 mole",
+      "ok": 1
+     },
+     {
+      "t": "648 mole",
+      "m": "Multiplied the given mass by the molar mass"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Magnesium has valency 2 and chlorine has valency 1. What is the formula of magnesium chloride?",
+    "why": "Criss-crossing the valencies gives Mg₁Cl₂, which is written MgCl₂.",
+    "o": [
+     {
+      "t": "MgCl",
+      "m": "Ignored the valency of magnesium and joined one atom of each"
+     },
+     {
+      "t": "MgCl₂",
+      "ok": 1
+     },
+     {
+      "t": "Mg₂Cl",
+      "m": "Attached each valency to its own atom instead of criss-crossing them"
+     },
+     {
+      "t": "Mg₂Cl₂",
+      "m": "Used the same subscript 2 for both elements"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "How many atoms are present in 0.5 mole of oxygen gas, O₂? (Avogadro number = 6.022 × 10²³)",
+    "why": "0.5 mole of O₂ has 3.011 × 10²³ molecules, and each molecule has 2 atoms, giving 6.022 × 10²³ atoms.",
+    "o": [
+     {
+      "t": "3.011 × 10²³",
+      "m": "Counted molecules and forgot that each O₂ molecule has two atoms"
+     },
+     {
+      "t": "1.2044 × 10²⁴",
+      "m": "Doubled for the two atoms but ignored the 0.5 mole"
+     },
+     {
+      "t": "6.022 × 10²²",
+      "m": "Divided the Avogadro number by 10 instead of using 0.5 and 2 correctly"
+     },
+     {
+      "t": "6.022 × 10²³",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "In water, hydrogen and oxygen are always present in a mass ratio of 1 : 8. How much hydrogen is there in 9 g of water?",
+    "why": "The 9 parts of water split as 1 part hydrogen and 8 parts oxygen, so 9 g of water has 1 g of hydrogen.",
+    "o": [
+     {
+      "t": "1 g",
+      "ok": 1
+     },
+     {
+      "t": "8 g",
+      "m": "Took the oxygen share as the hydrogen share"
+     },
+     {
+      "t": "4.5 g",
+      "m": "Assumed hydrogen and oxygen are present in equal amounts"
+     },
+     {
+      "t": "2 g",
+      "m": "Used the number of hydrogen atoms (2) as its mass"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "10 g of calcium carbonate is strongly heated in a closed container. It gives 5.6 g of calcium oxide and carbon dioxide gas. What is the mass of carbon dioxide formed?",
+    "why": "By conservation of mass, total mass of products = 10 g, so carbon dioxide = 10 − 5.6 = 4.4 g.",
+    "o": [
+     {
+      "t": "5.6 g",
+      "m": "Assumed both products have the same mass"
+     },
+     {
+      "t": "15.6 g",
+      "m": "Added the two given masses instead of subtracting"
+     },
+     {
+      "t": "4.4 g",
+      "ok": 1
+     },
+     {
+      "t": "10 g",
+      "m": "Thought each product separately must equal the mass of the reactant"
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s9_cell": {
+  "tags": {
+   "te": "జీవన ప్రాథమిక ప్రమాణం",
+   "hi": "जीवन की मौलिक इकाई"
+  },
+  "lesson": {
+   "title": "The cell and its parts",
+   "points": [
+    "The cell is the basic structural and functional unit of life. Robert Hooke first saw cells in a slice of cork in 1665.",
+    "Cells without a true nucleus (nuclear membrane) are prokaryotic, like bacteria. Cells with a membrane-bound nucleus are eukaryotic.",
+    "Organelles do different jobs: mitochondria release energy, the Golgi apparatus packages materials, ribosomes make proteins, lysosomes digest waste, and plant cells also have a cell wall, chloroplasts and a large vacuole.",
+    "The plasma membrane is selectively permeable. Water moves through it by osmosis, from higher water concentration to lower water concentration."
+   ],
+   "story": "A cell is like a tiny kirana shop: the shutter lets only some things in and out, the counter packs goods, and the generator in the back gives power to everything.",
+   "example": {
+    "q": "A plant cell is placed in a strong salt solution. What happens to it?",
+    "steps": [
+     "The salt solution has less free water than the cell sap, so it is hypertonic.",
+     "Water moves out of the cell through the plasma membrane by osmosis.",
+     "The cell contents shrink and the membrane pulls away from the cell wall (plasmolysis)."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "Who first observed cells in a thin slice of cork?",
+    "why": "Robert Hooke observed the box-like compartments in cork in 1665 and named them cells.",
+    "o": [
+     {
+      "t": "Robert Brown",
+      "m": "Confused him with the discoverer of the nucleus"
+     },
+     {
+      "t": "Anton van Leeuwenhoek",
+      "m": "Confused cork cells with the living cells Leeuwenhoek first saw in pond water"
+     },
+     {
+      "t": "Robert Hooke",
+      "ok": 1
+     },
+     {
+      "t": "Rudolf Virchow",
+      "m": "Confused him with the statement that new cells come from existing cells"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which cell organelle is called the powerhouse of the cell?",
+    "why": "Mitochondria release energy from food as ATP, so they are called the powerhouse of the cell.",
+    "o": [
+     {
+      "t": "Mitochondria",
+      "ok": 1
+     },
+     {
+      "t": "Golgi apparatus",
+      "m": "Confused packaging and dispatch of materials with energy release"
+     },
+     {
+      "t": "Lysosome",
+      "m": "Confused waste disposal with energy production"
+     },
+     {
+      "t": "Ribosome",
+      "m": "Confused protein making with energy release"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which structure is present in a plant cell but absent in an animal cell?",
+    "why": "Plant cells have a rigid cell wall made of cellulose outside the plasma membrane. Animal cells do not.",
+    "o": [
+     {
+      "t": "Plasma membrane",
+      "m": "Thought only plant cells have a boundary layer, though every cell has a plasma membrane",
+      "g": "s8_cell"
+     },
+     {
+      "t": "Nucleus",
+      "m": "Thought animal cells have no nucleus, though all eukaryotic cells have one",
+      "g": "s8_cell"
+     },
+     {
+      "t": "Mitochondria",
+      "m": "Thought only plants need energy release, though animal cells also have mitochondria",
+      "g": "s8_cell"
+     },
+     {
+      "t": "Cell wall",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "Which feature do bacterial cells lack?",
+    "why": "Bacteria are prokaryotes. Their genetic material lies in a nucleoid without a nuclear membrane.",
+    "o": [
+     {
+      "t": "Genetic material (DNA)",
+      "m": "Thought a cell without a proper nucleus has no DNA at all",
+      "g": "s8_cell"
+     },
+     {
+      "t": "A membrane-bound nucleus",
+      "ok": 1
+     },
+     {
+      "t": "A cell membrane",
+      "m": "Thought the absence of organelles means there is no boundary around the cell",
+      "g": "s8_cell"
+     },
+     {
+      "t": "Ribosomes",
+      "m": "Thought a cell with no membrane-bound organelles cannot make proteins",
+      "g": "s8_cell"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A plant cell is kept in a very concentrated sugar solution. What happens?",
+    "why": "The solution outside has less free water, so water leaves the cell by osmosis and the cell shrinks.",
+    "o": [
+     {
+      "t": "Water moves into the cell and it bursts",
+      "m": "Reversed the direction of osmosis"
+     },
+     {
+      "t": "Nothing happens because the cell wall stops water",
+      "m": "Thought the cell wall blocks water movement, though water passes through the cell wall and membrane"
+     },
+     {
+      "t": "Water moves out of the cell and it shrinks",
+      "ok": 1
+     },
+     {
+      "t": "Sugar rushes into the cell and it swells",
+      "m": "Thought the sugar and not the water is what moves, and that the cell must swell"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A chemical stops the lysosomes of a cell from working. What is most likely to build up inside the cell?",
+    "why": "Lysosomes digest foreign material and worn-out organelles, so these would pile up if lysosomes failed.",
+    "o": [
+     {
+      "t": "Worn-out organelles and foreign material",
+      "ok": 1
+     },
+     {
+      "t": "Excess proteins from the ribosomes",
+      "m": "Confused lysosomes with ribosomes, which make proteins",
+      "g": "s8_cell"
+     },
+     {
+      "t": "Excess energy as ATP",
+      "m": "Confused lysosomes with mitochondria, which release energy",
+      "g": "s8_cell"
+     },
+     {
+      "t": "Extra water in the vacuole",
+      "m": "Confused lysosomes with vacuoles, which store water and substances",
+      "g": "s8_cell"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Dry raisins are soaked in water and swell up after some time. What is the reason?",
+    "why": "Raisins have a lower water concentration than the water outside, so water enters through their membranes by osmosis.",
+    "o": [
+     {
+      "t": "The cell wall of the raisin pumps in water using energy",
+      "m": "Thought the cell wall actively pulls water in, instead of water moving by osmosis"
+     },
+     {
+      "t": "Sugar moves out of the raisins and leaves space for air",
+      "m": "Reversed the process and thought sugar moving out causes swelling"
+     },
+     {
+      "t": "The raisins absorb water vapour from the air only",
+      "m": "Ignored osmosis and thought only vapour from air is involved"
+     },
+     {
+      "t": "Water moves in from outside where it is more concentrated",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A cell makes a protein and sends it out. In which order do the organelles take part?",
+    "why": "Ribosomes on the rough ER make the protein, and the Golgi apparatus then packages and sends it out.",
+    "o": [
+     {
+      "t": "Golgi apparatus, then ribosome",
+      "m": "Reversed the order and thought packaging comes before the protein is made",
+      "g": "s8_cell"
+     },
+     {
+      "t": "Ribosome on rough ER, then Golgi apparatus",
+      "ok": 1
+     },
+     {
+      "t": "Lysosome, then ribosome",
+      "m": "Thought lysosomes help in making proteins, though they digest waste",
+      "g": "s8_cell"
+     },
+     {
+      "t": "Mitochondria, then nucleus",
+      "m": "Mixed up energy release and the control centre with the protein production line",
+      "g": "s8_cell"
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s9_motion": {
+  "tags": {
+   "te": "చలనం",
+   "hi": "गति"
+  },
+  "lesson": {
+   "title": "Describing motion",
+   "points": [
+    "Distance is the total path length and is a scalar. Displacement is the shortest straight-line change in position and is a vector, so it can even be zero.",
+    "Speed = distance ÷ time, and velocity = displacement ÷ time. Acceleration is the change in velocity per unit time, a = (v − u) ÷ t, measured in m/s².",
+    "The three equations for uniform acceleration are v = u + at, s = ut + ½at² and v² = u² + 2as.",
+    "Motion in a circle at constant speed is accelerated motion because the direction, and so the velocity, keeps changing."
+   ],
+   "story": "A cricketer runs one full lap of the ground and stops where he started. His odometer-like distance is big, yet his displacement is zero.",
+   "example": {
+    "q": "A car starts from rest and moves with an acceleration of 2 m/s² for 5 s. Find its final velocity and the distance covered.",
+    "steps": [
+     "u = 0, a = 2 m/s², t = 5 s. Use v = u + at: v = 0 + 2 × 5 = 10 m/s.",
+     "Use s = ut + ½at² = 0 + ½ × 2 × 5² = 25 m.",
+     "The car reaches 10 m/s and covers 25 m."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the SI unit of velocity?",
+    "why": "Velocity is displacement per unit time, so its SI unit is metre per second (m/s).",
+    "o": [
+     {
+      "t": "m/s",
+      "ok": 1
+     },
+     {
+      "t": "m/s²",
+      "m": "Gave the unit of acceleration"
+     },
+     {
+      "t": "km/h",
+      "m": "Used an everyday unit that is not the SI unit",
+      "g": "s7_motion"
+     },
+     {
+      "t": "m",
+      "m": "Gave the unit of displacement and left out the time",
+      "g": "s7_motion"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which one of these quantities is a vector?",
+    "why": "Displacement has both magnitude and direction, so it is a vector. Distance, speed and time are scalars.",
+    "o": [
+     {
+      "t": "Distance",
+      "m": "Thought distance has a direction because it is measured along a path",
+      "g": "s7_motion"
+     },
+     {
+      "t": "Speed",
+      "m": "Thought speed has a direction because a vehicle moves in one",
+      "g": "s7_motion"
+     },
+     {
+      "t": "Time",
+      "m": "Thought any measured quantity that changes is a vector",
+      "g": "s7_motion"
+     },
+     {
+      "t": "Displacement",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A bus covers 180 km in 4 hours. What is its average speed?",
+    "why": "Average speed = total distance ÷ total time = 180 ÷ 4 = 45 km/h.",
+    "o": [
+     {
+      "t": "720 km/h",
+      "m": "Multiplied distance by time instead of dividing",
+      "g": "s7_motion"
+     },
+     {
+      "t": "45 km/h",
+      "ok": 1
+     },
+     {
+      "t": "176 km/h",
+      "m": "Subtracted the time from the distance",
+      "g": "s7_motion"
+     },
+     {
+      "t": "90 km/h",
+      "m": "Divided the distance by 2 instead of by the time",
+      "g": "s7_motion"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A scooter speeds up from 10 m/s to 20 m/s in 5 s. What is its acceleration?",
+    "why": "a = (v − u) ÷ t = (20 − 10) ÷ 5 = 2 m/s².",
+    "o": [
+     {
+      "t": "4 m/s²",
+      "m": "Divided the final velocity alone by the time instead of the change in velocity",
+      "g": "s7_motion"
+     },
+     {
+      "t": "6 m/s²",
+      "m": "Added the two velocities instead of subtracting them",
+      "g": "s7_motion"
+     },
+     {
+      "t": "2 m/s²",
+      "ok": 1
+     },
+     {
+      "t": "0.5 m/s²",
+      "m": "Divided time by the change in velocity, inverting the formula",
+      "g": "s7_motion"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "An athlete runs exactly one full lap of a 400 m circular track and stops at the starting point. What is the displacement?",
+    "why": "Displacement is the straight-line distance from start to end. Start and end are the same point, so it is zero.",
+    "o": [
+     {
+      "t": "400 m",
+      "m": "Treated displacement as the same as the distance travelled",
+      "g": "s7_motion"
+     },
+     {
+      "t": "200 m",
+      "m": "Took the straight-line distance across the track instead of between start and end",
+      "g": "s7_motion"
+     },
+     {
+      "t": "800 m",
+      "m": "Doubled the distance by counting the return as well",
+      "g": "s7_motion"
+     },
+     {
+      "t": "0 m",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A train starts from rest and accelerates uniformly at 0.5 m/s² for 20 s. How far does it travel?",
+    "why": "s = ut + ½at² = 0 + ½ × 0.5 × 20² = 100 m.",
+    "o": [
+     {
+      "t": "200 m",
+      "m": "Left out the ½ in the equation"
+     },
+     {
+      "t": "100 m",
+      "ok": 1
+     },
+     {
+      "t": "10 m",
+      "m": "Gave the final velocity (0.5 × 20) as the distance"
+     },
+     {
+      "t": "5 m",
+      "m": "Used ½at without squaring the time"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A car moving at 20 m/s is braked and slows down uniformly at 5 m/s² until it stops. What distance does it cover while stopping?",
+    "why": "Using v² = u² + 2as with v = 0: 0 = 400 − 2 × 5 × s, so s = 40 m.",
+    "o": [
+     {
+      "t": "80 m",
+      "m": "Used u² ÷ a and left out the factor 2 in 2as"
+     },
+     {
+      "t": "4 m",
+      "m": "Calculated the stopping time (u ÷ a) and gave it as the distance"
+     },
+     {
+      "t": "40 m",
+      "ok": 1
+     },
+     {
+      "t": "100 m",
+      "m": "Multiplied the speed by the retardation"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A car moves around a circular road at a constant speed of 60 km/h. Which statement is correct?",
+    "why": "The direction changes at every instant, so the velocity changes. A changing velocity means the motion is accelerated even though the speed is constant.",
+    "o": [
+     {
+      "t": "Its velocity keeps changing, so it is accelerating",
+      "ok": 1
+     },
+     {
+      "t": "Its velocity is constant because the speed is constant",
+      "m": "Treated speed and velocity as the same and ignored the change of direction",
+      "g": "s7_motion"
+     },
+     {
+      "t": "Its acceleration is zero because it does not speed up",
+      "m": "Thought acceleration only means a change in the speed",
+      "g": "s7_motion"
+     },
+     {
+      "t": "Its displacement always equals the distance it travels",
+      "m": "Thought displacement equals distance even on a curved path",
+      "g": "s7_motion"
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s9_force": {
+  "tags": {
+   "te": "బలం మరియు గమన నియమాలు",
+   "hi": "बल तथा गति के नियम"
+  },
+  "lesson": {
+   "title": "Newton's three laws",
+   "points": [
+    "First law: a body stays at rest or in uniform motion in a straight line unless an unbalanced force acts on it. This tendency is inertia, and a heavier body has more inertia.",
+    "Momentum is p = mv. Second law: the force is the rate of change of momentum, and for a constant mass F = ma. One newton is 1 kg m/s².",
+    "Third law: to every action there is an equal and opposite reaction. The two forces act on two different bodies.",
+    "When bodies interact, the total momentum before equals the total momentum after (conservation of momentum), as in the recoil of a gun."
+   ],
+   "story": "When a bus brakes suddenly, you lurch forward. The bus stops but your body wants to keep moving, which is inertia.",
+   "example": {
+    "q": "A force acts on a 1000 kg car and gives it an acceleration of 3 m/s². Find the force.",
+    "steps": [
+     "m = 1000 kg and a = 3 m/s².",
+     "Use F = ma.",
+     "F = 1000 × 3 = 3000 N."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the name of the property of a body to resist any change in its state of rest or motion?",
+    "why": "This property is called inertia, and it depends on the mass of the body.",
+    "o": [
+     {
+      "t": "Momentum",
+      "m": "Confused resisting a change with the quantity of motion (mass × velocity)",
+      "g": "s9_motion"
+     },
+     {
+      "t": "Acceleration",
+      "m": "Confused resistance to change with the rate of change of velocity",
+      "g": "s9_motion"
+     },
+     {
+      "t": "Friction",
+      "m": "Thought that only friction resists a change in motion"
+     },
+     {
+      "t": "Inertia",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Which of these is the SI unit of force?",
+    "why": "The SI unit of force is the newton (N), equal to 1 kg m/s².",
+    "o": [
+     {
+      "t": "newton",
+      "ok": 1
+     },
+     {
+      "t": "kg m/s",
+      "m": "Gave the unit of momentum"
+     },
+     {
+      "t": "joule",
+      "m": "Gave the unit of work and energy"
+     },
+     {
+      "t": "kilogram",
+      "m": "Gave the unit of mass instead of force"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What force is needed to give a 5 kg trolley an acceleration of 3 m/s²?",
+    "why": "F = ma = 5 × 3 = 15 N.",
+    "o": [
+     {
+      "t": "8 N",
+      "m": "Added the mass and the acceleration"
+     },
+     {
+      "t": "1.7 N",
+      "m": "Divided mass by acceleration"
+     },
+     {
+      "t": "15 N",
+      "ok": 1
+     },
+     {
+      "t": "0.6 N",
+      "m": "Divided acceleration by mass"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "When a bus suddenly brakes, the passengers jerk forward. What is the reason?",
+    "why": "The passengers' bodies tend to keep moving forward in their state of motion (inertia) while the bus slows down.",
+    "o": [
+     {
+      "t": "The brakes push the passengers forward",
+      "m": "Thought a forward force acts on the passengers when the brakes are applied",
+      "g": "s9_motion"
+     },
+     {
+      "t": "Their bodies tend to continue moving forward due to inertia",
+      "ok": 1
+     },
+     {
+      "t": "Gravity pulls the passengers forward",
+      "m": "Thought gravity acts horizontally in the direction of the bus"
+     },
+     {
+      "t": "The mass of the passengers increases when the bus stops",
+      "m": "Thought that braking changes the mass of the passengers"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A gun recoils backwards when a bullet is fired. Which law and reason explain this?",
+    "why": "By the third law the bullet exerts an equal and opposite force on the gun, which pushes the gun backwards.",
+    "o": [
+     {
+      "t": "Only the gun exerts a force and the bullet exerts none",
+      "m": "Thought a force acts in only one direction, not as a pair"
+     },
+     {
+      "t": "The reaction force is smaller because the gun is heavier",
+      "m": "Thought the reaction force depends on the mass and is not equal to the action"
+     },
+     {
+      "t": "Air resistance pushes the gun backwards",
+      "m": "Thought a push from the air and not the bullet causes the recoil"
+     },
+     {
+      "t": "The bullet pushes the gun back with an equal and opposite force",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A 1000 kg car speeds up from 10 m/s to 20 m/s in 5 s. What is the net force on it?",
+    "why": "a = (20 − 10) ÷ 5 = 2 m/s², so F = ma = 1000 × 2 = 2000 N.",
+    "o": [
+     {
+      "t": "2000 N",
+      "ok": 1
+     },
+     {
+      "t": "4000 N",
+      "m": "Used the final velocity alone (20 ÷ 5) as the acceleration",
+      "g": "s9_motion"
+     },
+     {
+      "t": "6000 N",
+      "m": "Added the two velocities instead of subtracting them",
+      "g": "s9_motion"
+     },
+     {
+      "t": "500 N",
+      "m": "Divided the mass by the acceleration instead of multiplying",
+      "g": "s9_motion"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A bullet of mass 20 g is fired at 100 m/s from a gun of mass 4 kg. What is the recoil velocity of the gun?",
+    "why": "Momentum is conserved: 0.02 × 100 = 4 × v, so v = 0.5 m/s (backwards).",
+    "o": [
+     {
+      "t": "500 m/s",
+      "m": "Used 20 g without converting to kilograms"
+     },
+     {
+      "t": "25 m/s",
+      "m": "Divided the bullet's velocity by the gun's mass and ignored the bullet's mass"
+     },
+     {
+      "t": "0.5 m/s",
+      "ok": 1
+     },
+     {
+      "t": "2 m/s",
+      "m": "Gave the momentum of the bullet as the velocity of the gun"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A cricketer pulls his hands backwards while catching a fast ball. Why does this reduce the force on his hands?",
+    "why": "The ball's momentum change is fixed, so increasing the time of stopping reduces the force (F = change in momentum ÷ time).",
+    "o": [
+     {
+      "t": "It reduces the momentum that the ball originally had",
+      "m": "Thought the cricketer reduces the ball's momentum before the catch",
+      "g": "s9_motion"
+     },
+     {
+      "t": "It increases the time over which the ball stops, so the force is smaller",
+      "ok": 1
+     },
+     {
+      "t": "It makes the ball lighter so a smaller force is needed",
+      "m": "Thought the way of catching changes the mass of the ball"
+     },
+     {
+      "t": "It makes the reaction force smaller than the action force",
+      "m": "Thought action and reaction can be unequal if the catch is soft"
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s9_work": {
+  "tags": {
+   "te": "పని, శక్తి మరియు గురుత్వాకర్షణ",
+   "hi": "कार्य, ऊर्जा और गुरुत्वाकर्षण"
+  },
+  "lesson": {
+   "title": "Gravity, work and energy",
+   "points": [
+    "Newton's law of gravitation: every two bodies attract each other with a force F = G m₁m₂ ÷ d². Force grows with the masses and falls with the square of the distance. G = 6.67 × 10⁻¹¹ N m²/kg².",
+    "Near the Earth all freely falling bodies have the same acceleration g = 9.8 m/s². Mass stays the same everywhere, but weight (mg) on the Moon is about one-sixth of that on Earth.",
+    "Work = force × displacement in the direction of the force, W = Fs, in joules. Kinetic energy is ½mv², potential energy is mgh, and energy changes form without being lost.",
+    "Power is the rate of doing work, P = W ÷ t, measured in watts (1 W = 1 J/s)."
+   ],
+   "story": "A coconut falling from a tree gains speed as it drops. Its stored energy mgh at the top turns into movement energy ½mv² near the ground.",
+   "example": {
+    "q": "A boy lifts a 5 kg bag through 2 m. Find the work done against gravity. (g = 10 m/s²)",
+    "steps": [
+     "The force needed equals the weight: F = mg = 5 × 10 = 50 N.",
+     "Displacement s = 2 m in the direction of the force.",
+     "W = F × s = 50 × 2 = 100 J."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What is the SI unit of work?",
+    "why": "Work = force × displacement, and its SI unit is the joule (J).",
+    "o": [
+     {
+      "t": "joule",
+      "ok": 1
+     },
+     {
+      "t": "watt",
+      "m": "Confused work with power, which is measured in watts"
+     },
+     {
+      "t": "newton",
+      "m": "Gave the unit of the force instead of the work",
+      "g": "s9_force"
+     },
+     {
+      "t": "pascal",
+      "m": "Gave the unit of pressure"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "What is the value of acceleration due to gravity (g) near the Earth's surface?",
+    "why": "Near the Earth's surface g is about 9.8 m/s².",
+    "o": [
+     {
+      "t": "6.67 × 10⁻¹¹ m/s²",
+      "m": "Gave the value of the universal gravitational constant G instead"
+     },
+     {
+      "t": "1.6 m/s²",
+      "m": "Gave the approximate value for the Moon"
+     },
+     {
+      "t": "0.98 m/s²",
+      "m": "Placed the decimal point wrongly"
+     },
+     {
+      "t": "9.8 m/s²",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the potential energy of a 10 kg object kept at a height of 5 m? (g = 10 m/s²)",
+    "why": "PE = mgh = 10 × 10 × 5 = 500 J.",
+    "o": [
+     {
+      "t": "50 J",
+      "m": "Multiplied only the mass and height and forgot g"
+     },
+     {
+      "t": "500 J",
+      "ok": 1
+     },
+     {
+      "t": "15 J",
+      "m": "Added mass and height instead of multiplying"
+     },
+     {
+      "t": "250 J",
+      "m": "Used ½ as in the kinetic-energy formula"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "What is the kinetic energy of a 2 kg ball moving at 3 m/s?",
+    "why": "KE = ½mv² = ½ × 2 × 3² = 9 J.",
+    "o": [
+     {
+      "t": "18 J",
+      "m": "Left out the ½ in the formula"
+     },
+     {
+      "t": "6 J",
+      "m": "Multiplied m × v and gave the momentum value"
+     },
+     {
+      "t": "9 J",
+      "ok": 1
+     },
+     {
+      "t": "3 J",
+      "m": "Did not square the velocity"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "An astronaut has a mass of 60 kg on Earth. What are his mass and weight on the Moon?",
+    "why": "Mass does not change with place, but weight is mg and g on the Moon is about one-sixth of that on Earth, so his weight is about one-sixth.",
+    "o": [
+     {
+      "t": "Mass stays 60 kg and weight is about one-sixth of that on Earth",
+      "ok": 1
+     },
+     {
+      "t": "Mass becomes 10 kg and weight is one-sixth of that on Earth",
+      "m": "Thought mass also reduces on the Moon, mixing up mass and weight"
+     },
+     {
+      "t": "Both mass and weight stay the same as on Earth",
+      "m": "Thought weight does not change with place, ignoring the change in g"
+     },
+     {
+      "t": "Mass stays 60 kg and weight becomes six times more",
+      "m": "Reversed the ratio of the gravity of the Moon and Earth"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "Two bodies attract each other with a gravitational force F. If both masses are doubled and the distance between them is also doubled, what is the new force?",
+    "why": "F is proportional to m₁m₂ ÷ d². The numerator becomes 4 times and d² also becomes 4 times, so F is unchanged.",
+    "o": [
+     {
+      "t": "It becomes 4F",
+      "m": "Doubled both masses but ignored the change in distance",
+      "g": "s9_force"
+     },
+     {
+      "t": "It remains F",
+      "ok": 1
+     },
+     {
+      "t": "It becomes F/4",
+      "m": "Applied the doubling of distance only and ignored the doubled masses",
+      "g": "s9_force"
+     },
+     {
+      "t": "It becomes 2F",
+      "m": "Treated the force as depending on only one mass doubling"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A pump lifts 100 kg of water to a height of 10 m in 20 s. What is the power of the pump? (g = 10 m/s²)",
+    "why": "Work = mgh = 100 × 10 × 10 = 10 000 J. Power = 10 000 ÷ 20 = 500 W.",
+    "o": [
+     {
+      "t": "10 000 W",
+      "m": "Gave the work done as the power and did not divide by time"
+     },
+     {
+      "t": "50 W",
+      "m": "Forgot g while calculating the work"
+     },
+     {
+      "t": "500 W",
+      "ok": 1
+     },
+     {
+      "t": "5 W",
+      "m": "Divided only the mass by the time"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A ball is dropped from the top of a tower and reaches the ground in 3 s. How high is the tower? (g = 10 m/s², initial velocity = 0)",
+    "why": "s = ut + ½gt² = 0 + ½ × 10 × 3² = 45 m.",
+    "o": [
+     {
+      "t": "90 m",
+      "m": "Left out the ½ in the equation of motion",
+      "g": "s9_force"
+     },
+     {
+      "t": "30 m",
+      "m": "Calculated the final velocity (g × t) and gave it as the height",
+      "g": "s9_force"
+     },
+     {
+      "t": "15 m",
+      "m": "Used ½gt without squaring the time",
+      "g": "s9_force"
+     },
+     {
+      "t": "45 m",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": null
+ },
+ "s9_sound": {
+  "tags": {
+   "te": "ధ్వని",
+   "hi": "ध्वनि"
+  },
+  "lesson": {
+   "title": "How sound travels",
+   "points": [
+    "Sound is produced by vibrating bodies and travels as a longitudinal wave of compressions and rarefactions. It needs a material medium and cannot travel through a vacuum.",
+    "Sound travels fastest in solids, slower in liquids and slowest in gases, and it moves faster when the temperature rises.",
+    "Frequency (Hz) decides the pitch, and amplitude decides the loudness. The wave speed is v = f × λ. Humans hear from 20 Hz to 20 000 Hz; below this is infrasound and above it is ultrasound.",
+    "An echo is the reflection of sound, and the sound must travel to the obstacle and back, so the time is t = 2d ÷ v. SONAR uses ultrasound to measure the depth of the sea."
+   ],
+   "story": "When you shout towards the walls of an empty hall at your school, your own voice comes back after a short gap. That is an echo, sound bouncing back from the wall.",
+   "example": {
+    "q": "A sound wave has a frequency of 200 Hz and a wavelength of 1.7 m. Find its speed.",
+    "steps": [
+     "Use v = f × λ.",
+     "v = 200 × 1.7.",
+     "v = 340 m/s."
+    ]
+   }
+  },
+  "questions": [
+   {
+    "lvl": 1,
+    "q": "What type of wave is a sound wave in air?",
+    "why": "Particles of air vibrate back and forth along the direction in which the wave moves, so sound in air is a longitudinal wave.",
+    "o": [
+     {
+      "t": "Transverse wave",
+      "m": "Thought sound is like ripples on water or waves on a rope",
+      "g": "s8_sound"
+     },
+     {
+      "t": "Electromagnetic wave",
+      "m": "Thought sound behaves like light and does not need a medium",
+      "g": "s8_sound"
+     },
+     {
+      "t": "Longitudinal wave",
+      "ok": 1
+     },
+     {
+      "t": "Both transverse and longitudinal",
+      "m": "Thought air carries both kinds of wave like solids may",
+      "g": "s8_sound"
+     }
+    ]
+   },
+   {
+    "lvl": 1,
+    "q": "Through which of these can sound NOT travel?",
+    "why": "Sound needs a medium made of particles, so it cannot travel through a vacuum.",
+    "o": [
+     {
+      "t": "A vacuum",
+      "ok": 1
+     },
+     {
+      "t": "Water",
+      "m": "Believed sound only travels in air and not in liquids",
+      "g": "s8_sound"
+     },
+     {
+      "t": "A steel rod",
+      "m": "Believed solids block sound",
+      "g": "s8_sound"
+     },
+     {
+      "t": "Air with some dust in it",
+      "m": "Thought the presence of dust or impurities would stop sound",
+      "g": "s8_sound"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A source vibrates at 200 Hz and produces waves of wavelength 1.7 m. What is the speed of the wave?",
+    "why": "v = f × λ = 200 × 1.7 = 340 m/s.",
+    "o": [
+     {
+      "t": "117.6 m/s",
+      "m": "Divided the frequency by the wavelength"
+     },
+     {
+      "t": "201.7 m/s",
+      "m": "Added the frequency and the wavelength"
+     },
+     {
+      "t": "0.0085 m/s",
+      "m": "Divided the wavelength by the frequency"
+     },
+     {
+      "t": "340 m/s",
+      "ok": 1
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "A guitar string is plucked harder. Which property of the sound increases?",
+    "why": "A harder pluck gives the string a larger amplitude, which makes the sound louder. The frequency (pitch) does not change.",
+    "o": [
+     {
+      "t": "Pitch",
+      "m": "Confused loudness with pitch",
+      "g": "s8_sound"
+     },
+     {
+      "t": "Loudness",
+      "ok": 1
+     },
+     {
+      "t": "Frequency",
+      "m": "Thought a larger vibration also means more vibrations per second",
+      "g": "s8_sound"
+     },
+     {
+      "t": "Speed of sound in air",
+      "m": "Thought a stronger source makes sound travel faster",
+      "g": "s8_sound"
+     }
+    ]
+   },
+   {
+    "lvl": 2,
+    "q": "If you put your ear on a railway track, you can hear an approaching train before you hear it through the air. Why?",
+    "why": "Sound travels faster in a solid like steel than in air, so it reaches your ear sooner through the track.",
+    "o": [
+     {
+      "t": "Sound travels faster in steel than in air",
+      "ok": 1
+     },
+     {
+      "t": "Sound travels faster in air than in steel",
+      "m": "Thought sound is faster in gases than in solids",
+      "g": "s8_sound"
+     },
+     {
+      "t": "The steel track makes the sound louder, so it is heard earlier",
+      "m": "Mixed up loudness with speed of the sound",
+      "g": "s8_sound"
+     },
+     {
+      "t": "Sound travels at the same speed in steel and in air",
+      "m": "Thought the speed does not depend on the medium",
+      "g": "s8_sound"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A girl claps near a wall that is 85 m away. After how much time will she hear the echo? (speed of sound in air = 340 m/s)",
+    "why": "The sound travels 2 × 85 = 170 m to the wall and back. Time = 170 ÷ 340 = 0.5 s.",
+    "o": [
+     {
+      "t": "0.25 s",
+      "m": "Used only the one-way distance and forgot the return trip"
+     },
+     {
+      "t": "4 s",
+      "m": "Divided the speed by the distance, inverting the formula"
+     },
+     {
+      "t": "0.5 s",
+      "ok": 1
+     },
+     {
+      "t": "1 s",
+      "m": "Doubled the distance twice"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A ship sends an ultrasound pulse down and receives the echo from the sea bed after 4 s. If the speed of sound in sea water is 1500 m/s, what is the depth of the sea?",
+    "why": "The pulse goes down and back, so depth = (1500 × 4) ÷ 2 = 3000 m.",
+    "o": [
+     {
+      "t": "6000 m",
+      "m": "Used the full time as if the pulse went one way only"
+     },
+     {
+      "t": "3000 m",
+      "ok": 1
+     },
+     {
+      "t": "375 m",
+      "m": "Divided the speed by the time"
+     },
+     {
+      "t": "1500 m",
+      "m": "Gave the speed value as the distance"
+     }
+    ]
+   },
+   {
+    "lvl": 3,
+    "q": "A source produces sound of frequency 15 Hz and another produces 30 kHz. Which statement is correct for a normal human ear?",
+    "why": "The audible range is 20 Hz to 20 kHz. 15 Hz is infrasound and 30 kHz is ultrasound, so neither can be heard.",
+    "o": [
+     {
+      "t": "Both can be heard",
+      "m": "Thought all vibrating sources can be heard by a human ear",
+      "g": "s8_sound"
+     },
+     {
+      "t": "Only 30 kHz can be heard because it has a higher frequency",
+      "m": "Thought the higher the frequency, the more audible the sound",
+      "g": "s8_sound"
+     },
+     {
+      "t": "Only 15 Hz can be heard because it is a low sound",
+      "m": "Thought any low-pitched sound is audible regardless of the range",
+      "g": "s8_sound"
+     },
+     {
+      "t": "Neither can be heard",
+      "ok": 1
+     }
+    ]
+   }
+  ],
+  "steps": null
+ }
+}
