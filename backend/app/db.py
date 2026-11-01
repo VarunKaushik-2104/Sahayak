@@ -20,6 +20,10 @@ def make_engine(url: str):
         kw["connect_args"] = {"check_same_thread": False}
         if ":memory:" in url:
             kw["poolclass"] = StaticPool
+    if url.startswith("postgres://"):
+        url = "postgresql+psycopg://" + url[len("postgres://"):]
+    elif url.startswith("postgresql://"):
+        url = "postgresql+psycopg://" + url[len("postgresql://"):]
     eng = create_engine(url, **kw)
     if url.startswith("sqlite"):
         @event.listens_for(eng, "connect")
