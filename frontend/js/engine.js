@@ -197,7 +197,11 @@ async function sync(p){
     if(r.rejected.length)log(`${r.rejected.length} items were not accepted by the server.`);
   }catch(e){
     p.syncErr=e.status===401?'auth':'offline';
-    if(e.status===401)authLost();
+    if(e.status===401){
+      /* the saved session was rejected (for example the server was restarted with a new key). Sign in again quietly with the PIN typed this session. */
+      if(await relogin()){_syncing=false;return sync(p)}
+      authLost();
+    }
   }finally{_syncing=false;saveProfile();if(typeof render==='function'&&S.auth==='student')render()}
 }
 function toggleNet(){

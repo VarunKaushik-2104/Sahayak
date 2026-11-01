@@ -6,3 +6,5 @@ __pycache__/
 .env
 node_modules/
 demo/*.webm
+backend/.secret_key
+.secret_key

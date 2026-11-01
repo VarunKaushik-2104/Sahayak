@@ -83,39 +83,42 @@ async function startSession(tok,pin){
 async function refreshProfile(){
   const p=PROFILE;if(!p||!canNet(p))return;
   try{await sync(p);const m=await API.get('/student/me');applyServer(p,m);p.syncErr=null;saveProfile()}
-  catch(e){if(e.status===401)authLost()}
+  catch(e){if(e.status===401){if(await relogin())return refreshProfile();authLost()}}
 }
-function authLost(){SESS.clear();API.token=null;S.auth=null;PROFILE=null;LG.err='Your session ended. Please sign in again.';render()}
-function signOut(){SESS.clear();API.token=null;PROFILE=null;S.auth=null;S.td=null;S.pn=null;LG.err='';LG.step=0;LG.devCode='';render();loadDemoProfiles()}
+function authLost(){if(PROFILE)LG.pid=PROFILE.id;SESS.clear();API.token=null;S.auth=null;PROFILE=null;LG.role='student';LG.err='Your session ended. Enter your PIN to continue. Answers saved on this phone are kept and will be sent.';render()}
+function signOut(){SESS.clear();API.token=null;API.pin=null;API.uid=null;PROFILE=null;S.auth=null;S.td=null;S.pn=null;LG.err='';LG.step=0;LG.devCode='';render();loadDemoProfiles()}
 document.addEventListener('submit',async e=>{
   if(e.target.id!=='loginform')return;
   e.preventDefault();if(LG.busy)return;
-  const r=LG.role,v1=($('f1')||{}).value||'',v0=($('f0')||{}).value||'';
+  /* read the form first: render() below rebuilds it, which would empty the fields */
+  const r=LG.role,v1=($('f1')||{}).value||'',v0=($('f0')||{}).value||'',nameV=($('nn')||{}).value||'',pinV=($('np')||{}).value||'';
+  const bad=m=>Object.assign(new Error(m),{status:422});   /* a mistake in the form, not a network failure */
   LG.err='';LG.busy=true;render();
   try{
     if(r==='student'&&LG.creating){
-      const d=LG.draft;d.name=($('nn')?$('nn').value:d.name).trim();const pin=($('np')||{}).value||'';
-      if(!d.name)throw new Error('Please enter a name.');
-      if(!/^\d{4}$/.test(pin))throw new Error('The PIN must be 4 digits.');
+      const d=LG.draft;d.name=nameV.trim();const pin=pinV;
+      if(!d.name)throw bad('Please enter a name.');
+      if(!/^\d{4}$/.test(pin))throw bad('The PIN must be 4 digits.');
       const tok=await API.post('/auth/register-student',{name:d.name,pin,board:d.board,cls:d.cls,lang:d.lang});
-      LG.creating=false;await startSession(tok,pin);
+      LG.creating=false;API.pin=pin;API.uid=tok.user.id;await startSession(tok,pin);
     }else if(r==='student'){
-      if(!LG.pid)throw new Error('Pick a profile, or create one.');
-      if(!/^\d{4}$/.test(v1.trim()))throw new Error('The PIN is 4 digits.');
+      if(!LG.pid)throw bad('Pick a profile, or create one.');
+      if(!/^\d{4}$/.test(v1.trim()))throw bad('The PIN is 4 digits.');
       let tok=null,viaDevice=false;
       try{tok=await API.post('/auth/student/login',{student_id:LG.pid,pin:v1.trim()})}
       catch(err){
         if(!isOffline(err))throw err;
         const d=await DEV.check(LG.pid,v1.trim()).catch(()=>null);
-        if(!d)throw new Error('You are offline, and this PIN does not match the one saved on this phone.');
+        if(!d)throw bad('You are offline, and this PIN does not match the one saved on this phone.');
         tok={access_token:d.token,role:'student',expires_in:Math.max(60,(d.exp-Date.now())/1000),user:d.user};
         viaDevice=true;
       }
+      API.pin=v1.trim();API.uid=LG.pid;
       await startSession(tok,viaDevice?null:v1.trim());
       if(viaDevice)log('Signed in offline with the PIN saved on this phone.');
     }else if(LG.step===0){
       LG.mobile=v0.replace(/\D/g,'').slice(-10);
-      if(LG.mobile.length!==10)throw new Error('Enter a 10-digit mobile number.');
+      if(LG.mobile.length!==10)throw bad('Enter a 10-digit mobile number.');
       const o=await API.post('/auth/otp/request',{mobile:LG.mobile,role:r});
       LG.devCode=o.dev_code||'';LG.step=1;
     }else{

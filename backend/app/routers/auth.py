@@ -67,7 +67,7 @@ def student_login(body: StudentLogin, db: Session = Depends(get_db)):
         lu = u.locked_until if u.locked_until.tzinfo else u.locked_until.replace(tzinfo=now.tzinfo)
         if lu > now:
             mins = max(1, int((lu - now).total_seconds() // 60) + 1)
-            raise HTTPException(status.HTTP_429_TOO_MANY_REQUESTS, f"Too many wrong PINs. Try again in {mins} minutes.")
+            raise HTTPException(status.HTTP_429_TOO_MANY_REQUESTS, f"Too many wrong PINs. Try again in {mins} {'minute' if mins == 1 else 'minutes'}.")
     if not verify_secret(body.pin, u.pin_hash):
         u.failed_pins += 1
         if u.failed_pins >= settings.pin_max_failures:
