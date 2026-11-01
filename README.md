@@ -3,6 +3,9 @@
 **Find the gap behind the gap.** Adaptive learning for Classes 6 to 10 (Maths and Science) for CBSE (NCERT), ICSE and the Telangana State Board.
 
 Built by **Team WIN R**, Gokaraju Lailavathi Engineering College, for **Code Kernel '26** (X-Kernel, GRIET Hyderabad, with Canvas Classes). Problem: *Adaptive Learning for Classes 6 to 10*.
+## 🚀 Live Demo
+
+**Try Sahayak here:** https://sahayak-ypqu.onrender.com
 
 | | |
 |---|---|
