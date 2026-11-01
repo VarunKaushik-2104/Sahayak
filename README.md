@@ -7,11 +7,11 @@ Built by **Team WIN R**, Gokaraju Lailavathi Engineering College, for **Code Ker
 
 **Try Sahayak here:** https://sahayak-ypqu.onrender.com
 
-| | |
-|---|---|
-| Demo video (2:56, male voice-over with captions) | [`demo/sahayak_demo.mp4`](demo/sahayak_demo.mp4) |
-| Architecture diagram | [`docs/architecture.png`](docs/architecture.png) · [`.svg`](docs/architecture.svg) |
-| Deployed link | none yet: see [Deploy](#deploy) [Live Demo Link](#https://sahayak-ypqu.onrender.com/) |
+### 📹 Project Demo
+[Watch Demo Video](demo/sahayak_demo.mp4)
+
+### 🏗️ Architecture
+[View Architecture Diagram](docs/architecture.png)
 
 ![architecture](docs/architecture.png)
 
