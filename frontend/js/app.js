@@ -24,7 +24,7 @@ function fmtSync(iso){
 
 /* ---------- Sign in ---------- */
 const LG={role:'student',pid:null,err:'',creating:false,busy:false,step:0,mobile:'',devCode:'',demo:[],
-  draft:{name:'',pin:'',board:'TELANGANA',cls:8,lang:'en'}};
+  draft:{name:'',pin:'',board:'TELANGANA',cls:8,lang:'en',schoolCode:''}};
 const deviceProfiles=()=>{
   const l=DEV.list().map(x=>({id:x.id,name:x.name,cls:x.cls,board:x.board}));
   LG.demo.forEach(d=>{if(!l.some(x=>x.id===d.id))l.push(d)});
@@ -44,8 +44,9 @@ function vLogin(){
       <div><label class="k">Board</label><div class="chips">${BOARDS.map(b=>chip('dboard',b,esc(BNAME(b)),d.board===b)).join('')}</div></div>
       <div><label class="k">Class</label><div class="chips">${[6,7,8,9,10].map(n=>chip('dcls',n,n,d.cls===n)).join('')}</div></div>
       <div><label class="k">Language</label><div class="chips">${[['en','English'],['te','తెలుగు'],['hi','हिन्दी']].map(([v,l])=>chip('dlang',v,l,d.lang===v)).join('')}</div></div>
+      <div><label class="k" for="sc">School code (optional)</label><input id="sc" class="in" value="${esc(d.schoolCode||'')}" autocomplete="off" placeholder="Enter your school code"></div>
       <div><label class="k" for="np">Choose a 4-digit PIN</label><input id="np" class="in" type="password" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="4 digits"></div>
-      <p class="note">Only what is needed: a first name, board, class, language. Needs a connection once.</p>`;
+      <p class="note">Enter the code provided by your school to join its teacher dashboard. Leave blank for self-study.</p>`;
     btn='Create profile';
   }else if(r==='student'){
     form=`<div><label class="k">Who is using this phone?</label><div class="profiles">${P.map(p=>`<button type="button" class="chip" data-a="lprofile" data-v="${p.id}" aria-pressed="${LG.pid===p.id}"><span class="av">${esc(p.name[0])}</span>${esc(p.name)} · Class ${p.cls}</button>`).join('')}
@@ -91,7 +92,7 @@ document.addEventListener('submit',async e=>{
   if(e.target.id!=='loginform')return;
   e.preventDefault();if(LG.busy)return;
   /* read the form first: render() below rebuilds it, which would empty the fields */
-  const r=LG.role,v1=($('f1')||{}).value||'',v0=($('f0')||{}).value||'',nameV=($('nn')||{}).value||'',pinV=($('np')||{}).value||'';
+  const r=LG.role,v1=($('f1')||{}).value||'',v0=($('f0')||{}).value||'',nameV=($('nn')||{}).value||'',pinV=($('np')||{}).value||'',schoolCodeV=($('sc')||{}).value||'';
   const bad=m=>Object.assign(new Error(m),{status:422});   /* a mistake in the form, not a network failure */
   LG.err='';LG.busy=true;render();
   try{
@@ -99,7 +100,7 @@ document.addEventListener('submit',async e=>{
       const d=LG.draft;d.name=nameV.trim();const pin=pinV;
       if(!d.name)throw bad('Please enter a name.');
       if(!/^\d{4}$/.test(pin))throw bad('The PIN must be 4 digits.');
-      const tok=await API.post('/auth/register-student',{name:d.name,pin,board:d.board,cls:d.cls,lang:d.lang});
+      const tok=await API.post('/auth/register-student',{name:d.name,pin,board:d.board,cls:d.cls,lang:d.lang,school_code:schoolCodeV.trim()||null});
       LG.creating=false;API.pin=pin;API.uid=tok.user.id;await startSession(tok,pin);
     }else if(r==='student'){
       if(!LG.pid)throw bad('Pick a profile, or create one.');
