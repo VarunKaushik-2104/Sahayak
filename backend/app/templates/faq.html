@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="crumbs"><a href="/">Home</a> / FAQ</p>
+<section><h1>Questions and answers</h1>
+<p class="lead">Short answers about what Sahayak is, how it decides what to practise, and what it does with data.</p>
+<dl class="faq">{% for q,a in faq %}<details><summary>{{ q }}</summary><p>{{ a }}</p></details>{% endfor %}</dl></section>
+<section><p>Something missing? <a href="/contact">Send a question</a>.</p></section>
+{% endblock %}

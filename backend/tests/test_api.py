@@ -4,7 +4,7 @@ from sqlalchemy import select
 
 from app import clock
 from app.models import Attempt, User
-from conftest import login_otp, login_student
+from conftest import login_staff, login_student
 
 T = "m8_alg"
 
@@ -60,30 +60,6 @@ def test_register_unknown_school_code(client):
     assert r.status_code == 404
 
 
-def test_otp_flow_expiry_reuse_and_no_enumeration(client):
-    unknown = client.post("/api/auth/otp/request", json={"mobile": "9111111111", "role": "teacher"}).json()
-    assert unknown["sent"] and "dev_code" not in unknown                         # same shape, no hint the number is unknown
-    code = client.post("/api/auth/otp/request", json={"mobile": "90000 00002", "role": "teacher"}).json()["dev_code"]
-    wrong = "000000" if code != "000000" else "111111"
-    assert client.post("/api/auth/otp/verify", json={"mobile": "9000000002", "role": "teacher", "code": wrong}).status_code == 401
-    ok = client.post("/api/auth/otp/verify", json={"mobile": "9000000002", "role": "teacher", "code": code})
-    assert ok.status_code == 200 and ok.json()["user"]["name"] == "Ms. Lakshmi"
-    assert client.post("/api/auth/otp/verify", json={"mobile": "9000000002", "role": "teacher", "code": code}).status_code == 401   # one use
-    code2 = client.post("/api/auth/otp/request", json={"mobile": "9000000002", "role": "teacher"}).json()["dev_code"]
-    clock.set_now(datetime.now(timezone.utc) + timedelta(minutes=6))
-    assert client.post("/api/auth/otp/verify", json={"mobile": "9000000002", "role": "teacher", "code": code2}).status_code == 401   # expired
-
-
-def test_otp_request_rate_limited(client):
-    codes = [client.post("/api/auth/otp/request", json={"mobile": "9000000002", "role": "teacher"}).status_code for _ in range(4)]
-    assert codes == [200, 200, 200, 429]
-
-
-def test_otp_role_is_checked(client):
-    r = client.post("/api/auth/otp/request", json={"mobile": "9000000002", "role": "parent"}).json()
-    assert "dev_code" not in r          # that number is a teacher, not a parent
-
-
 def test_tokens_expire_and_garbage_is_rejected(client):
     h = login_student(client)
     assert client.get("/api/student/me", headers=h).status_code == 200
@@ -94,7 +70,7 @@ def test_tokens_expire_and_garbage_is_rejected(client):
 
 
 def test_roles_are_separated(client):
-    s, t, p = login_student(client), login_otp(client, "9000000002", "teacher"), login_otp(client, "9000000003", "parent")
+    s, t, p = login_student(client), login_staff(client, "teacher"), login_staff(client, "parent")
     q = {"board": "TELANGANA", "cls": 8, "subject": "Maths"}
     assert client.get("/api/teacher/class", params=q, headers=s).status_code == 403
     assert client.get("/api/teacher/class", params=q, headers=p).status_code == 403
@@ -246,7 +222,7 @@ Q = {"board": "TELANGANA", "cls": 8, "subject": "Maths"}
 
 
 def test_teacher_dashboard(client):
-    t = login_otp(client, "9000000002", "teacher")
+    t = login_staff(client, "teacher")
     d = client.get("/api/teacher/class", params=Q, headers=t).json()
     names = [r["name"] for r in d["rows"]]
     assert names[-1] != "Ravi K." and "Ravi K." in names and len(names) == 8
@@ -259,7 +235,7 @@ def test_teacher_dashboard(client):
 
 
 def test_syncing_clears_the_stale_flag_and_moves_the_row(client, cur):
-    t = login_otp(client, "9000000002", "teacher")
+    t = login_staff(client, "teacher")
     s = login_student(client)
     row = lambda: next(r for r in client.get("/api/teacher/class", params=Q, headers=t).json()["rows"] if r["name"] == "Ravi K.")
     assert row()["stale"]
@@ -269,8 +245,8 @@ def test_syncing_clears_the_stale_flag_and_moves_the_row(client, cur):
 
 
 def test_teacher_sets_test_and_everyone_follows(client):
-    t = login_otp(client, "9000000002", "teacher")
-    s, p = login_student(client), login_otp(client, "9000000003", "parent")
+    t = login_staff(client, "teacher")
+    s, p = login_student(client), login_staff(client, "parent")
     chs = client.get("/api/content/chapters", params=Q, headers=t).json()
     new = (clock.today() + timedelta(days=3)).isoformat()
     r = client.put("/api/teacher/test", json={**Q, "name": "Weekly Test", "date": new, "chapters": [chs[3]["name"]]}, headers=t)
@@ -285,7 +261,7 @@ def test_teacher_sets_test_and_everyone_follows(client):
 
 
 def test_teacher_moves_a_student_and_sends_practice(client):
-    t = login_otp(client, "9000000002", "teacher")
+    t = login_staff(client, "teacher")
     s = login_student(client)
     d = client.get("/api/teacher/class", params=Q, headers=t).json()
     ravi = next(r for r in d["rows"] if r["name"] == "Ravi K.")
@@ -303,7 +279,7 @@ def test_teacher_cannot_touch_another_school(client, db):
     db.add(other); db.flush()
     stranger = User(role="student", name="Out", school_id=other.id, board="TELANGANA", cls=8, is_sample=True)
     db.add(stranger); db.commit()
-    t = login_otp(client, "9000000002", "teacher")
+    t = login_staff(client, "teacher")
     assert client.put("/api/teacher/group", json={"student_id": stranger.id, "group": "basics"}, headers=t).status_code == 404
     names = [r["name"] for r in client.get("/api/teacher/class", params=Q, headers=t).json()["rows"]]
     assert "Out" not in names
@@ -311,7 +287,7 @@ def test_teacher_cannot_touch_another_school(client, db):
 
 # ---------------- parent ----------------
 def test_parent_note_languages_and_privacy(client):
-    p = login_otp(client, "9000000003", "parent")
+    p = login_staff(client, "parent")
     kids = client.get("/api/parent/children", headers=p).json()
     assert [k["name"] for k in kids] == ["Ravi K."]
     kid = kids[0]["id"]
@@ -322,13 +298,13 @@ def test_parent_note_languages_and_privacy(client):
     assert client.get("/api/parent/note", params={"student_id": kid, "lang": "fr"}, headers=p).status_code == 422
     for banned in ("Ananya", "Imran", "rank", "score"):
         assert banned.lower() not in en["text"].lower()
-    rows = client.get("/api/teacher/class", params=Q, headers=login_otp(client, "9000000002", "teacher")).json()["rows"]
+    rows = client.get("/api/teacher/class", params=Q, headers=login_staff(client, "teacher")).json()["rows"]
     other = next(r["id"] for r in rows if r["sample"])
     assert client.get("/api/parent/note", params={"student_id": other}, headers=p).status_code == 403
 
 
 def test_parent_note_reflects_practice_minutes(client, cur):
-    s, p = login_student(client), login_otp(client, "9000000003", "parent")
+    s, p = login_student(client), login_staff(client, "parent")
     kid = client.get("/api/parent/children", headers=p).json()[0]["id"]
     evs = [ev(f"c-1000{i}", *qa(cur, i=i % 8)) for i in range(10)]
     client.post("/api/sync", json={"events": evs}, headers=s)

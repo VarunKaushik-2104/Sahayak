@@ -4,7 +4,6 @@ os.environ["DATABASE_URL"] = "sqlite:///:memory:"
 os.environ["SECRET_KEY"] = "test-secret-key-test-secret-key-0123456789"
 os.environ["PBKDF2_ROUNDS"] = "1000"
 os.environ["SEED_DEMO"] = "1"
-os.environ["SMS_BACKEND"] = "console"
 
 import pytest
 from fastapi.testclient import TestClient
@@ -26,7 +25,7 @@ def client():
     Base.metadata.drop_all(engine)
     clock.set_now(None)
     from app import routers
-    routers.auth._otp_hits.clear()
+    routers.feedback._hits.clear()
     with TestClient(app) as c:     # runs the lifespan: create tables and seed the demo
         yield c
     clock.set_now(None)
@@ -46,8 +45,10 @@ def login_student(client, student_id=None, pin="1234"):
     return {"Authorization": "Bearer " + r.json()["access_token"]}
 
 
-def login_otp(client, mobile, role):
-    code = client.post("/api/auth/otp/request", json={"mobile": mobile, "role": role}).json()["dev_code"]
-    r = client.post("/api/auth/otp/verify", json={"mobile": mobile, "role": role, "code": code})
+def login_staff(client, role):
+    """Sign in as the seeded demo teacher or parent (email + password)."""
+    from app.seed import DEMO_PARENT_EMAIL, DEMO_PASSWORD, DEMO_TEACHER_EMAIL
+    email = DEMO_TEACHER_EMAIL if role == "teacher" else DEMO_PARENT_EMAIL
+    r = client.post("/api/auth/login", json={"email": email, "password": DEMO_PASSWORD, "role": role})
     assert r.status_code == 200, r.text
     return {"Authorization": "Bearer " + r.json()["access_token"]}

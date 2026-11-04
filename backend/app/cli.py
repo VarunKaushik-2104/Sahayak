@@ -1,16 +1,16 @@
 """Small admin commands.
 
-    python -m app.cli seed                 create/refresh the demo school, users and sample class
     python -m app.cli check-content        validate the curriculum graph and questions
-    python -m app.cli add-teacher NAME MOBILE SCHOOL_CODE
-    python -m app.cli add-parent NAME MOBILE STUDENT_ID
+    python -m app.cli stats                how many schools, students, answers and messages are stored
+    python -m app.cli feedback             print the messages sent through the contact form
+    python -m app.cli purge-demo           delete sample/demo rows (the live site does this on start)
+    python -m app.cli seed                 development only: create the demo school, users and sample class
 """
 import sys
 
 from .content import get_curriculum
 from .db import SessionLocal, init_db
-from .models import ParentChild, School, User
-from .security import normalise_mobile
+from .models import School, User
 
 
 def main(argv: list[str]) -> int:
@@ -28,18 +28,20 @@ def main(argv: list[str]) -> int:
         if cmd == "seed":
             from .seed import seed_demo
             print("created" if seed_demo(db, cur) else "refreshed")
-        elif cmd == "add-teacher" and len(args) == 3:
-            school = db.query(School).filter_by(code=args[2].upper()).first() or School(name=args[2], code=args[2].upper())
-            db.add(school); db.flush()
-            db.add(User(role="teacher", name=args[0], mobile=normalise_mobile(args[1]), school_id=school.id)); db.commit()
-            print("teacher added")
-        elif cmd == "add-parent" and len(args) == 3:
-            kid = db.get(User, int(args[2]))
-            if not kid or kid.role != "student":
-                print("no such student"); return 1
-            p = User(role="parent", name=args[0], mobile=normalise_mobile(args[1]), school_id=kid.school_id)
-            db.add(p); db.flush(); db.add(ParentChild(parent_id=p.id, student_id=kid.id)); db.commit()
-            print("parent added")
+        elif cmd == "purge-demo":
+            from .seed import purge_demo
+            print("removed", purge_demo(db), "demo users")
+        elif cmd == "stats":
+            from sqlalchemy import func, select
+            from .models import Attempt, Feedback
+            n = lambda m, *w: db.scalar(select(func.count()).select_from(m).where(*w)) or 0
+            print({"schools": n(School, School.code != "SELF"), "students": n(User, User.role == "student"), "teachers": n(User, User.role == "teacher"),
+                   "parents": n(User, User.role == "parent"), "answers": n(Attempt), "messages": n(Feedback)})
+        elif cmd == "feedback":
+            from sqlalchemy import select
+            from .models import Feedback
+            for f in db.scalars(select(Feedback).order_by(Feedback.id.desc()).limit(50)):
+                print(f"[{f.created_at:%Y-%m-%d %H:%M}] {f.name or '-'} <{f.email or '-'}>: {f.message}")
         else:
             print(__doc__); return 2
     return 0

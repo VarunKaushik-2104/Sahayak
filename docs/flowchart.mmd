@@ -1,0 +1,27 @@
+%%{init: {"theme":"base","themeVariables":{"fontFamily":"Arial, sans-serif","fontSize":"15px","primaryColor":"#EEF2FB","primaryBorderColor":"#2443C4","primaryTextColor":"#14213D","lineColor":"#2443C4"},"flowchart":{"curve":"linear","nodeSpacing":34,"rankSpacing":46,"htmlLabels":true}}}%%
+flowchart TD
+  A["Visitor, search engine or AI assistant"] --> B["Public website: server-rendered pages built from curriculum.json<br/>home, how it works, 30 syllabus pages, 73 topic pages, FAQ, privacy<br/>title, canonical, JSON-LD, sitemap.xml, robots.txt, llms.txt"]
+  B -->|"Open the app"| C["/app/ : installable offline-first web app<br/>syllabus and question bank are cached on the phone"]
+  C --> D{"Who is signing in?"}
+  D -->|Teacher| T["Sign up: email, password, school name<br/>creates school code and staff code"]
+  D -->|Student| S["Create profile: name, board, class, PIN, school code<br/>creates a family code"]
+  D -->|Parent| P["Sign up: email, password, family code<br/>links to that child only"]
+  S --> L1["5-question placement check"]
+  L1 --> L2["Practise a chapter<br/>the phone picks the next question"]
+  L2 --> L3{"Wrong answer points to an earlier topic that is weak?"}
+  L3 -->|yes| L4["Trace back: practise the prerequisite<br/>return when mastery reaches 70%"]
+  L4 --> L2
+  L3 -->|no| L5
+  L2 --> L5["Answer saved in the outbox on the phone<br/>works with no internet"]
+  L5 -->|"online: POST /api/sync"| V1["Server checks the token and skips answers already received"]
+  V1 --> V2["Server re-marks every answer from its own question bank"]
+  V2 --> V3["Updates mastery per topic, study minutes and mistake counts"]
+  V3 --> DB[("Database<br/>SQLite locally, PostgreSQL on Render")]
+  DB -->|"school code match"| O1["Teacher dashboard<br/>heatmap, groups, briefing, worksheets, test date"]
+  DB -->|"family code link"| O2["Parent note in English, Hindi or Telugu<br/>no marks, no rank, own child only"]
+  T --> O1
+  P --> O2
+  O1 -->|"test date and chapters"| L2
+  X["Student can delete the account<br/>all rows are removed"] -.-> DB
+  classDef io fill:#FFF1CC,stroke:#B87A00,color:#14213D;
+  class A,X io;

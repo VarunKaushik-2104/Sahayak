@@ -7,4 +7,4 @@ cd "$(dirname "$0")"
 pip install -q -r backend/requirements.txt
 echo "Open on the phone (same Wi-Fi): http://$(hostname -I 2>/dev/null | awk '{print $1}' || ipconfig getifaddr en0):8000"
 cd backend
-SEED_DEMO=1 python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
+python -m uvicorn app.main:app --host 0.0.0.0 --port 8000

@@ -11,11 +11,6 @@ const UI={
 };
 const BNAME=b=>DATA.B[b].label;
 const SENDMSG=p=>pending(p)?(canNet(p)?'Saved. Sending to your teacher now.':'Saved on this phone. It will be sent when you are back online.'):'Saved and sent to your teacher.';
-const TRY={
-  student:'<b>Try it:</b> run the placement check, open a chapter and practise, then tap <b>Prepare for this test</b> and take a mock. Switch the phone to Offline and answer more: the outbox fills, and everything sends when you go back online.',
-  teacher:'<b>You are the teacher.</b> Pick a board, class and subject. You see the class, the morning briefing and worksheets, set the test date and chapters, and move students between groups. Students and parents only ever see their own data.',
-  parent:'<b>You are the parent.</b> You see a plain note about your own child, with the test date, in your language. No marks, no rank, no other children.'
-};
 function fmtSync(iso){
   if(!iso)return 'never';
   const d=new Date(iso),days=Math.floor((Date.now()-d)/864e5);
@@ -23,7 +18,7 @@ function fmtSync(iso){
 }
 
 /* ---------- Sign in ---------- */
-const LG={role:'student',pid:null,err:'',creating:false,busy:false,step:0,mobile:'',devCode:'',demo:[],
+const LG={role:'student',pid:null,err:'',creating:false,busy:false,mode:'in',join:false,demo:[],f:{},
   draft:{name:'',pin:'',board:'TELANGANA',cls:8,lang:'en',schoolCode:''}};
 const deviceProfiles=()=>{
   const l=DEV.list().map(x=>({id:x.id,name:x.name,cls:x.cls,board:x.board}));
@@ -34,43 +29,48 @@ async function loadDemoProfiles(){try{LG.demo=await API.get('/auth/demo-profiles
 function vLogin(){
   const r=LG.role,P=deviceProfiles();
   if(!LG.pid||!P.some(p=>p.id===LG.pid))LG.pid=P[0]&&P[0].id;
-  const roles=[['student','Student','Own profile and a 4-digit PIN, even on a shared phone'],['teacher','Teacher','Mobile number and a one-time code'],['parent','Parent','Mobile number and a one-time code']];
+  const roles=[['student','Student','A profile and a 4-digit PIN, even on a shared phone'],['teacher','Teacher','Email and password. Creates your school and its code'],['parent','Parent','Email and password. Needs the family code from your child']];
   const cards=roles.map(([k,t,d])=>`<button class="role" data-a="lrole" data-v="${k}" aria-pressed="${r===k}"><h3>${t}</h3><span class="note">${d}</span></button>`).join('');
   const chip=(a,v,l,on)=>`<button type="button" class="chip" data-a="${a}" data-v="${v}" aria-pressed="${on}">${l}</button>`;
+  const fld=(id,label,type,ph,extra='')=>`<div><label class="k" for="${id}">${label}</label><input id="${id}" class="in" type="${type}" placeholder="${ph}" autocomplete="off" value="${esc((LG.f||{})[id]||'')}" ${extra}></div>`;
   let form='',btn='';
-  if(r==='student'&&LG.creating){
+  const mk=r==='student'&&(LG.creating||!P.length);
+  if(mk){
     const d=LG.draft;
     form=`<div><label class="k" for="nn">Name</label><input id="nn" class="in" value="${esc(d.name)}" autocomplete="off" placeholder="First name"></div>
       <div><label class="k">Board</label><div class="chips">${BOARDS.map(b=>chip('dboard',b,esc(BNAME(b)),d.board===b)).join('')}</div></div>
       <div><label class="k">Class</label><div class="chips">${[6,7,8,9,10].map(n=>chip('dcls',n,n,d.cls===n)).join('')}</div></div>
       <div><label class="k">Language</label><div class="chips">${[['en','English'],['te','తెలుగు'],['hi','हिन्दी']].map(([v,l])=>chip('dlang',v,l,d.lang===v)).join('')}</div></div>
-      <div><label class="k" for="sc">School code (optional)</label><input id="sc" class="in" value="${esc(d.schoolCode||'')}" autocomplete="off" placeholder="Enter your school code"></div>
+      <div><label class="k" for="sc">School code (optional)</label><input id="sc" class="in" value="${esc(d.schoolCode||'')}" autocomplete="off" autocapitalize="characters" placeholder="Ask your teacher"></div>
       <div><label class="k" for="np">Choose a 4-digit PIN</label><input id="np" class="in" type="password" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="4 digits"></div>
-      <p class="note">Enter the code provided by your school to join its teacher dashboard. Leave blank for self-study.</p>`;
+      <p class="note">Enter your school's code to appear on your teacher's dashboard. Leave it blank to study on your own; you can join later. Needs a connection once.</p>
+      ${P.length?'<button type="button" class="back" data-a="lback">← Back to profiles</button>':''}`;
     btn='Create profile';
   }else if(r==='student'){
     form=`<div><label class="k">Who is using this phone?</label><div class="profiles">${P.map(p=>`<button type="button" class="chip" data-a="lprofile" data-v="${p.id}" aria-pressed="${LG.pid===p.id}"><span class="av">${esc(p.name[0])}</span>${esc(p.name)} · Class ${p.cls}</button>`).join('')}
       <button type="button" class="chip" data-a="lnew">+ New profile</button></div></div>
       <div><label class="k" for="f1">PIN</label><input id="f1" class="in" type="password" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="4 digits"></div>
-      <p class="demo">Demo student: Ravi K., PIN 1234. Five wrong PINs lock the profile for 5 minutes.</p>`;
+      <p class="note">Five wrong PINs lock the profile for 5 minutes.</p>`;
     btn='Sign in as student';
-  }else if(LG.step===0){
-    form=`<div><label class="k" for="f0">Mobile number</label><input id="f0" class="in" type="tel" inputmode="numeric" autocomplete="off" value="${esc(LG.mobile)}" placeholder="10 digits"></div>
-      <p class="demo">Demo number: ${r==='teacher'?'90000 00002':'90000 00003'}</p>`;
-    btn='Send code';
   }else{
-    form=`<div><label class="k" for="f1">One-time code sent to ${esc(LG.mobile)}</label><input id="f1" class="in" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="6 digits"></div>
-      ${LG.devCode?`<p class="demo">Demo code: ${esc(LG.devCode)}. A real deployment sends this by SMS.</p>`:''}
-      <button type="button" class="back" data-a="lback">← Use a different number</button>`;
-    btn='Sign in as '+r;
+    const up=LG.mode==='up',tch=r==='teacher';
+    form=`<div class="chips">${chip('lmode','in','Sign in',!up)}${chip('lmode','up','Create account',up)}</div>`;
+    if(up)form+=fld('sn','Your name','text',tch?'e.g. Mr. Rao':'e.g. Mrs. Rao','maxlength="60"');
+    form+=fld('se','Email','email','name@example.com','autocomplete="email" inputmode="email"');
+    form+=fld('sp','Password'+(up?' (at least 8 characters)':''),'password','','autocomplete="'+(up?'new-password':'current-password')+'"');
+    if(up&&tch)form+=`<div class="chips">${chip('ljoin','new','Start a new school',!LG.join)}${chip('ljoin','join','Join a colleague’s school',LG.join)}</div>`+
+      (LG.join?fld('sk','Staff code','text','8 letters and digits from your colleague','autocapitalize="characters" maxlength="20"'):fld('ss','School name','text','e.g. Greenfield High School','maxlength="100"'))+
+      `<p class="note">${LG.join?'Your colleague finds the staff code on their dashboard.':'You get a school code to give students, and a staff code for colleagues.'}</p>`;
+    if(up&&!tch)form+=fld('sf','Family code','text','6 letters and digits','autocapitalize="characters" maxlength="12"')+'<p class="note">Your child sees the family code on their Sahayak home screen.</p>';
+    btn=up?'Create '+r+' account':'Sign in as '+r;
   }
-  return `<div class="login"><div><h2>Sign in</h2><p class="sub">Each role sees only what it should. Sessions are signed tokens from the server; PINs and codes are stored hashed.</p></div>
+  return `<div class="login"><div><h2>Sign in</h2><p class="sub">Each role sees only what it should. PINs and passwords are stored hashed.</p></div>
     <div class="roles">${cards}</div>
     <form id="loginform" class="card" autocomplete="off">${form}${LG.err?`<p class="err" role="alert">${esc(LG.err)}</p>`:''}
       <button class="btn" type="submit"${LG.busy?' disabled':''}>${LG.busy?'Please wait…':btn}</button></form></div>`;
 }
 async function startSession(tok,pin){
-  API.token=tok.access_token;SESS.save(tok);LG.err='';
+  API.token=tok.access_token;SESS.save(tok);LG.err='';S.who=tok.user.name;
   if(tok.role==='student'){
     if(pin)await DEV.remember(tok.user,pin,tok);
     PROFILE=LS.get('sahayak.p.'+tok.user.id)||blankProfile(tok.user);
@@ -87,16 +87,18 @@ async function refreshProfile(){
   catch(e){if(e.status===401){if(await relogin())return refreshProfile();authLost()}}
 }
 function authLost(){if(PROFILE)LG.pid=PROFILE.id;SESS.clear();API.token=null;S.auth=null;PROFILE=null;LG.role='student';LG.err='Your session ended. Enter your PIN to continue. Answers saved on this phone are kept and will be sent.';render()}
-function signOut(){SESS.clear();API.token=null;API.pin=null;API.uid=null;PROFILE=null;S.auth=null;S.td=null;S.pn=null;LG.err='';LG.step=0;LG.devCode='';render();loadDemoProfiles()}
+function signOut(){SESS.clear();API.token=null;API.pin=null;API.uid=null;PROFILE=null;S.auth=null;S.td=null;S.pn=null;LG.err='';LG.mode='in';S.who='';render();loadDemoProfiles()}
 document.addEventListener('submit',async e=>{
   if(e.target.id!=='loginform')return;
   e.preventDefault();if(LG.busy)return;
   /* read the form first: render() below rebuilds it, which would empty the fields */
-  const r=LG.role,v1=($('f1')||{}).value||'',v0=($('f0')||{}).value||'',nameV=($('nn')||{}).value||'',pinV=($('np')||{}).value||'',schoolCodeV=($('sc')||{}).value||'';
+  const g=id=>(($(id)||{}).value||'').trim();
+  const r=LG.role,v1=($('f1')||{}).value||'',nameV=($('nn')||{}).value||'',pinV=($('np')||{}).value||'',schoolCodeV=($('sc')||{}).value||'',F={n:g('sn'),e:g('se'),p:($('sp')||{}).value||'',s:g('ss'),k:g('sk'),f:g('sf')};
   const bad=m=>Object.assign(new Error(m),{status:422});   /* a mistake in the form, not a network failure */
+  LG.f={sn:F.n,se:F.e,ss:F.s,sk:F.k,sf:F.f};   /* keep what was typed (never the password) if the server says no */
   LG.err='';LG.busy=true;render();
   try{
-    if(r==='student'&&LG.creating){
+    if(r==='student'&&(LG.creating||!deviceProfiles().length)){
       const d=LG.draft;d.name=nameV.trim();const pin=pinV;
       if(!d.name)throw bad('Please enter a name.');
       if(!/^\d{4}$/.test(pin))throw bad('The PIN must be 4 digits.');
@@ -117,16 +119,27 @@ document.addEventListener('submit',async e=>{
       API.pin=v1.trim();API.uid=LG.pid;
       await startSession(tok,viaDevice?null:v1.trim());
       if(viaDevice)log('Signed in offline with the PIN saved on this phone.');
-    }else if(LG.step===0){
-      LG.mobile=v0.replace(/\D/g,'').slice(-10);
-      if(LG.mobile.length!==10)throw bad('Enter a 10-digit mobile number.');
-      const o=await API.post('/auth/otp/request',{mobile:LG.mobile,role:r});
-      LG.devCode=o.dev_code||'';LG.step=1;
     }else{
-      const tok=await API.post('/auth/otp/verify',{mobile:LG.mobile,role:r,code:v1.trim()});
-      LG.step=0;LG.devCode='';await startSession(tok,null);
+      if(!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(F.e))throw bad('Enter a valid email address.');
+      if(LG.mode==='up'){
+        if(!F.n)throw bad('Please enter your name.');
+        if(F.p.length<8)throw bad('The password needs at least 8 characters.');
+        let tok;
+        if(r==='teacher'){
+          if(LG.join&&!F.k)throw bad('Enter the staff code from your colleague.');
+          if(!LG.join&&!F.s)throw bad('Enter your school\u2019s name.');
+          tok=await API.post('/auth/register-teacher',{name:F.n,email:F.e,password:F.p,...(LG.join?{staff_code:F.k}:{school_name:F.s})});
+        }else{
+          if(!F.f)throw bad('Enter the family code from your child\u2019s screen.');
+          tok=await API.post('/auth/register-parent',{name:F.n,email:F.e,password:F.p,link_code:F.f});
+        }
+        await startSession(tok,null);
+      }else{
+        if(!F.p)throw bad('Enter your password.');
+        await startSession(await API.post('/auth/login',{email:F.e,password:F.p,role:r}),null);
+      }
     }
-  }catch(err){LG.err=isOffline(err)?'No connection. Teachers and parents need to be online to sign in.':err.message}
+  }catch(err){LG.err=isOffline(err)?'No connection. Teachers and parents need to be online to sign in or create an account.':err.message}
   LG.busy=false;render();
 });
 
@@ -136,7 +149,7 @@ const tname=(t,p)=>tn(t,p.lang);
 function topBar(p){
   const U=UI[p.lang];
   return `<div class="bar"><span>${esc(p.name)} · Class ${p.cls} · ${esc(BNAME(p.board))}</span>
-    <button class="pill ${p.online?'on':'off'}" data-a="net" aria-label="Toggle connection">${p.online?U.online:U.offline}${pending(p)?` · ${pending(p)} to send`:''}</button></div>`;
+    <button class="pill ${p.online?'on':'off'}" data-a="net" aria-label="Switch between online and offline mode" title="Offline mode keeps answers on this phone and saves mobile data">${p.online?U.online:U.offline}${pending(p)?` · ${pending(p)} to send`:''}</button></div>`;
 }
 function weakPre(p,ch){
   const own=new Set(ch.topics);
@@ -264,11 +277,13 @@ function qView(p){
   return `<span class="kind">${label} · ${esc(tname(q.t,p))}</span><div class="q">${esc(q.q)}</div><div class="opts">${opts}</div>${f}`;
 }
 function doneView(p){
-  const D=S.D,s=D.testRes.filter(Boolean).length;
+  const D=S.D,results=D.testRes.map((r,i)=>typeof r==='boolean'?{ok:r,question:D.testQ[i]?.q||'',picked:'',right:'',why:'',slip:''}:r),s=results.filter(r=>r.ok).length;
+  const review=results.map((r,i)=>`<div class="rrow"><b>Q${i+1}</b><span><strong>${r.ok?'✓ Correct':'✗ Incorrect'}</strong> · ${esc(r.question||'Question')}<br><span class="note">Your answer: ${esc(r.picked||'Not recorded')}</span>${!r.ok?`<br><span class="note">Correct answer: <b>${esc(r.right||'Not available')}</b></span>`:''}${r.why?`<br><span class="note">Explanation: ${esc(r.why)}</span>`:''}${!r.ok&&r.slip?`<br><span class="note">What to review: ${esc(r.slip)}</span>`:''}</span><span class="pill ${r.ok?'on':'off'}">${r.ok?'1/1':'0/1'}</span></div>`).join('');
   const up=Object.keys(p.P).filter(t=>p.P[t]-(D.startP[t]??.5)>=.03).map(t=>`${tname(t,p)} ${pc(D.startP[t]??.5)} to ${pc(p.P[t])}`);
   const ts=D.ctopics,weakest=ts.slice().sort((a,b)=>(p.P[a]??.5)-(p.P[b]??.5))[0],wp=p.P[weakest]??.5;
   const tomorrow=wp>=.85?'A harder set, and you can help a classmate.':wp>=.6?`More mixed practice on ${tname(weakest,p)}.`:(allPre(weakest).length&&(p.P[weakestPre(p,weakest)]??.5)<.6?`A short revision of ${tname(weakestPre(p,weakest),p)} first.`:`More practice on ${tname(weakest,p)}.`);
   return `<div class="lesson"><span class="kind">Check result</span><h3>${s} of ${D.testQ.length} correct</h3><p>${up.length?up.slice(0,4).map(esc).join('. ')+'.':'Mastery stayed about the same.'}</p></div>
+    <div class="lesson"><span class="kind">Question-by-question review</span><div class="rlist">${review}</div></div>
     <div class="lesson"><span class="kind">Next</span><p>${esc(tomorrow)}</p></div>
     <p class="note">${SENDMSG(p)}</p>
     <div class="two"><button class="btn sec" data-a="again">Practise again</button><button class="btn" data-a="nav" data-v="home">Back to chapters</button></div>`;
@@ -299,29 +314,46 @@ function vStudent(){
   const p=me();if(!p)return '';
   const wait=pending(p);
   return `<div class="stage"><section class="phone" aria-label="Student phone">${phone(p)}</section>
-    <section class="card"><h2>What the engine is doing</h2>
-      <p class="note">The phone decides the next question on its own, even offline. It reads the kind of mistake, not just right or wrong, and follows it back through the prerequisite topics, even from earlier classes. Newest line is on top. Students would not see this panel.</p>
+    <section class="card"><h2>How Sahayak decided</h2>
+      <p class="note">The phone decides the next question on its own, even offline. It reads the kind of mistake, not just right or wrong, and follows it back through the prerequisite topics, even from earlier classes. Newest line is on top.</p>
       <ul class="log">${S.log.map(l=>`<li>${esc(l)}</li>`).join('')||'<li>Waiting for the first answer.</li>'}</ul>
       <div class="legend"><span><i class="m-bad"></i>Below 45%</span><span><i class="m-warn"></i>45 to 69%</span><span><i class="m-good"></i>70% and above</span></div>
       <p class="note" id="outbox"><b>Outbox:</b> ${wait} ${wait===1?'item':'items'} waiting. Last sync: ${p.syncedAt?new Date(p.syncedAt).toLocaleTimeString('en-IN',{hour:'numeric',minute:'2-digit',second:'2-digit'}):'not yet'}${p.syncErr==='offline'?' (server not reachable, will retry)':''}.</p>
-      <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn sec sm" data-a="syncnow"${canNet(p)?'':' disabled'}>Sync now</button></div></section></div>`;
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn sec sm" data-a="syncnow"${canNet(p)?'':' disabled'}>Sync now</button></div></section>
+    <section class="card"><h2>Your account</h2>
+      <div><h3>School</h3>${p.school?`<p>Joined <b>${esc(p.school.name)}</b>. Your teacher can see your progress.</p><button class="btn sec sm" data-a="leaveschool"${canNet(p)?'':' disabled'}>Leave this school</button>`
+        :`<p class="note">Not joined to a school. Enter the code from your teacher to appear on their dashboard.</p><div style="display:flex;gap:8px;flex-wrap:wrap"><input id="jsc" class="in" style="flex:1;min-width:140px;margin:0" placeholder="School code" autocomplete="off" autocapitalize="characters" maxlength="20"><button class="btn sm" data-a="joinschool"${canNet(p)?'':' disabled'}>Join school</button></div>`}</div>
+      <div><h3>Family code</h3><p class="note">A parent enters this when they create their Sahayak account, to read a note about you.</p>
+        <p class="code" aria-label="Family code">${esc(p.linkCode||'Connect once to get your code')}</p>
+        <p class="note">${p.parents?p.parents+(p.parents===1?' parent follows':' parents follow')+' your progress.':'No parent is linked yet.'}</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn sec sm" data-a="newcode"${canNet(p)?'':' disabled'}>Get a new code</button><button class="btn sec sm" data-a="unparents"${canNet(p)&&p.parents?'':' disabled'}>Remove all parents</button></div></div>
+      ${S.acct?`<p class="${S.acct.err?'err':'note'}" role="status">${esc(S.acct.msg)}</p>`:''}
+      <div><button class="btn sec sm" data-a="delacct"${canNet(p)?'':' disabled'}>Delete my account and all my answers</button></div></section></div>`;
 }
 
 /* ---------- Teacher ---------- */
 async function loadTeacher(quiet){
   if(!quiet){S.tload=true;render()}
-  try{S.td=await API.get(`/teacher/class?board=${S.tb}&cls=${S.tc}&subject=${encodeURIComponent(S.ts)}`);S.terr=''}
+  try{S.sch=await API.get('/teacher/school').catch(()=>S.sch||null);S.td=await API.get(`/teacher/class?board=${S.tb}&cls=${S.tc}&subject=${encodeURIComponent(S.ts)}`);S.terr=''}
   catch(e){S.terr=e.status===401?'':e.message;if(e.status===401)authLost()}
   S.tload=false;if(S.auth==='teacher')render();
 }
 const editing=()=>/^(INPUT|SELECT|TEXTAREA)$/.test((document.activeElement||{}).tagName||'');
 setInterval(()=>{if(S.auth==='teacher'&&!editing()&&!S.tload)loadTeacher(true)},20000);
+function schoolCard(){
+  const c=S.sch;if(!c)return '';
+  const cl=c.classes.length?`<p class="note">${c.students} ${c.students===1?'student has':'students have'} joined: ${c.classes.map(x=>`${esc(BNAME(x.board))} class ${x.cls} (${x.students})`).join(', ')}.</p>`:'<p class="note">No student has joined yet.</p>';
+  return `<section class="card"><h2>${esc(c.name)}</h2>
+    <div><h3>School code, for students</h3><p class="code" aria-label="School code">${esc(c.code)}</p></div>
+    <div><h3>Staff code, for colleagues</h3><p class="code" aria-label="Staff code">${esc(c.staff_code||'')}</p><p class="note">Colleagues use it to create a teacher account in this school. Keep it to staff.</p></div>
+    ${cl}${S.acct?`<p class="${S.acct.err?'err':'note'}" role="status">${esc(S.acct.msg)}</p>`:''}</section>`;
+}
 function vTeacher(){
   const b=S.tb,c=S.tc,s=S.ts,d=S.td;
   const sel=(id,opts,val)=>`<select id="${id}" class="in" style="width:auto;margin:0">${opts.map(([v,l])=>`<option value="${v}"${String(v)===String(val)?' selected':''}>${esc(l)}</option>`).join('')}</select>`;
   const selectors=`<div class="chips" style="align-items:center">${sel('tb',BOARDS.map(x=>[x,BNAME(x)]),b)}${sel('tc',[6,7,8,9,10].map(x=>[x,'Class '+x]),c)}${sel('ts',SUBJECTS.map(x=>[x,x]),s)}</div>`;
   if(!d||S.tload&&!d)return `<section class="card"><h2>Class view</h2>${selectors}<p class="note">${S.terr?esc(S.terr):'Loading the class…'}</p></section>`;
-  if(d.empty||(d.scope&&(d.scope.board!==b||d.scope.cls!==c||d.scope.subject!==s)))return `<section class="card"><h2>Class view</h2>${selectors}<p class="note">${d.empty?'No students in this class yet.':'Loading the class…'}</p></section>`;
+  if(d.empty||(d.scope&&(d.scope.board!==b||d.scope.cls!==c||d.scope.subject!==s)))return `<section class="card"><h2>Class view</h2>${selectors}${d.empty?`<p class="note">No students in this class yet.</p><p>Give your students your school code <b class="code">${esc(S.sch?S.sch.code:'')}</b>. They type it when they create a profile (or later, from their home screen), choose this board and class, and they appear here once they answer questions.</p>`:'<p class="note">Loading the class…</p>'}</section>${schoolCard()}`;
   const rows=d.rows,N=rows.length,t=d.test;
   const names=Object.fromEntries(rows.map(r=>[r.id,r.name]));
   const low=rows.filter(r=>r.test_ready<.6).length;
@@ -332,7 +364,7 @@ function vTeacher(){
   const hchip=(v,l)=>`<button class="chip" data-a="heat" data-v="${v}" aria-pressed="${S.heat===v}">${l}</button>`;
   const heat=`<div class="chips">${hchip('topic','By topic')}${hchip('chapter','By chapter')}</div>
     <div class="scroll"><table><thead><tr><th>Student</th>${cols.map(x=>`<th>${esc(x.label)}</th>`).join('')}<th>Last sync</th></tr></thead><tbody>${body}</tbody></table></div>
-    <div class="legend"><span><i class="m-bad"></i>Below 45</span><span><i class="m-warn"></i>45 to 69</span><span><i class="m-good"></i>70 and above</span><span>Mastery %. Columns marked C7 or C6 are earlier-class basics. Highlighted rows are real accounts; the others are sample classmates.</span></div>`;
+    <div class="legend"><span><i class="m-bad"></i>Below 45</span><span><i class="m-warn"></i>45 to 69</span><span><i class="m-good"></i>70 and above</span><span>Mastery %. Columns marked C7 or C6 are earlier-class basics.</span></div>`;
   const grp=['extend','practise','basics'].map(k=>{const g=d.groups[k],mem=rows.filter(r=>r.group===k);
     return `<div class="grp"><h3>${esc(g.title)} <small>${mem.length} students</small></h3>
     <div class="who">${mem.map(r=>`<label>${esc(r.name)}<select data-sel="${r.id}" aria-label="Move ${esc(r.name)}">${['extend','practise','basics'].map(o=>`<option value="${o}"${o===k?' selected':''}>${esc(d.groups[o].title)}</option>`).join('')}</select></label>`).join('')||'<span class="note">No one right now</span>'}</div>
@@ -345,14 +377,14 @@ function vTeacher(){
     <div><label class="k">Chapters in the test</label><div class="chks">${t.available_chapters.map(n=>`<label><input type="checkbox" data-tch="${esc(n)}"${t.chapters.includes(n)?' checked':''}>${esc(n)}</label>`).join('')}</div></div>
     ${S.terr?`<p class="err" role="alert">${esc(S.terr)}</p>`:''}
     <p class="note">${low} of ${N} below 60% ready. ${mocks||'No mock result from a real profile has reached this dashboard yet.'}</p></section>`;
-  const after=`<section class="card"><h2>After the test</h2><p class="note">The teacher enters marks or scans answer sheets. The briefing then targets the chapters that lost the most marks. Class averages below are from current mastery.</p>
+  const after=`<section class="card"><h2>After the test</h2><p class="note">Class averages come from current mastery, with the topic that holds most students back in each chapter.</p>
     <div class="scroll"><table style="min-width:0"><thead><tr><th>Chapter</th><th>Class avg</th><th style="text-align:left">Most marks lost to</th></tr></thead><tbody>
     ${d.after_test.map(x=>`<tr><td class="nm">${esc(x.chapter)}</td><td class="${mc(x.class_avg)}">${Math.round(x.class_avg*100)}%</td><td class="sy">${esc(x.most_marks_lost_to)}</td></tr>`).join('')}</tbody></table></div></section>`;
   return `<div class="tgrid"><div style="display:flex;flex-direction:column;gap:16px;min-width:0">
       <section class="card"><h2>Class view</h2>${selectors}${heat}</section>
-      <section class="card"><h2>Worksheets for tomorrow</h2><p class="note">Three levels instead of one sheet for 40 students. Students without a phone get the paper sheet, and the teacher scans it back in the morning.</p>${sheets}</section>${after}</div>
+      <section class="card"><h2>Worksheets for tomorrow</h2><p class="note">Three levels instead of one sheet for the whole class, built from the gaps found in each group.</p>${sheets}</section>${after}</div>
     <div style="display:flex;flex-direction:column;gap:16px;min-width:0">
-      <section class="card"><h2>Morning briefing</h2>${brief}</section>${testCard}
+      ${schoolCard()}<section class="card"><h2>Morning briefing</h2>${brief}</section>${testCard}
       <section class="card"><h2>Suggested groups</h2><p class="note">The engine suggests. The teacher decides: move anyone with the menu beside their name.</p>${grp}${S.hwNote?`<p class="note">${esc(S.hwNote)}</p>`:''}</section></div></div>`;
 }
 async function saveTest(patch){
@@ -366,7 +398,7 @@ async function saveTest(patch){
 async function loadParent(){
   try{
     if(!S.pkids.length){S.pkids=await API.get('/parent/children');S.pk=S.pk||(S.pkids[0]&&S.pkids[0].id)}
-    if(S.pk)S.pn=await API.get(`/parent/note?student_id=${S.pk}&lang=${S.pLang}`);
+    S.pn=S.pk?await API.get(`/parent/note?student_id=${S.pk}&lang=${S.pLang}`):null;
     S.perr='';
   }catch(e){S.perr=e.status===401?'':e.message;if(e.status===401)authLost()}
   if(S.auth==='parent')render();
@@ -375,24 +407,48 @@ function vParent(){
   const n=S.pn,lg=S.pLang;
   const chip=(v,l)=>`<button class="chip" data-a="plang" data-v="${v}" aria-pressed="${lg===v}">${l}</button>`;
   const kids=S.pkids.length>1?`<div class="chips">${S.pkids.map(x=>`<button class="chip" data-a="child" data-v="${x.id}" aria-pressed="${x.id===S.pk}">${esc(x.name)}</button>`).join('')}</div>`:'';
-  if(!n)return `<div class="pstage"><section class="wa"><div class="wa-h"><span>Sahayak</span></div><p class="note">${S.perr?esc(S.perr):'Loading the weekly note…'}</p></section></div>`;
+  const addKid=`<section class="card"><h2>Add a child</h2><p class="note">Enter the family code shown on your child\u2019s Sahayak home screen.</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><input id="ack" class="in" style="flex:1;min-width:140px;margin:0" placeholder="Family code" autocomplete="off" autocapitalize="characters" maxlength="12"><button class="btn sm" data-a="addchild">Add child</button></div>
+      ${S.acct?`<p class="${S.acct.err?'err':'note'}" role="status">${esc(S.acct.msg)}</p>`:''}
+      ${S.pkids.length?`<div class="chips">${S.pkids.map(x=>`<button class="btn sec sm" data-a="rmchild" data-v="${x.id}">Stop following ${esc(x.name)}</button>`).join('')}</div>`:''}
+      <div><button class="btn sec sm" data-a="delacct">Delete my account</button></div></section>`;
+  if(!n)return `<div class="pstage"><section class="wa"><div class="wa-h"><span>Sahayak</span></div><p class="note">${S.perr?esc(S.perr):S.pkids.length?'Loading the weekly note…':'No child is linked to this account yet. Add your child with the family code on the right.'}</p></section>${addKid}</div>`;
   const mins=n.minutes_by_day,mx=Math.max(15,...mins.map(m=>m.minutes));
   const bars=mins.map(m=>`<div class="${m.minutes?'':'zero'}"><span>${m.minutes}</span><i style="height:${Math.max(2,Math.round(m.minutes/mx*88))}px"></i><span>${WD[pd(m.date).getDay()].slice(0,2)}</span></div>`).join('');
   return `<div class="pstage"><section class="wa"><div class="wa-h"><span>Sahayak · ${esc(n.student.name)} · Class ${n.student.cls} ${esc(n.student.subject)}</span></div>${kids}
       <div class="chips">${chip('en','English')}${chip('te','తెలుగు')}${chip('hi','हिन्दी')}</div>
-      <div class="bubble" lang="${lg}">${esc(n.text)}<span class="t">Preview of Sunday’s message</span></div>
+      <div class="bubble" lang="${lg}">${esc(n.text)}</div>
       <p class="note">Based on the last sync: ${esc(fmtSync(n.last_sync))}.${lg!=='en'?' Hindi and Telugu text is a draft for review.':''}</p></section>
     <section class="card"><h2>Minutes of practice, last 7 days</h2><div class="bars" role="img" aria-label="Minutes practised each day">${bars}</div>
-      <h3>What parents see</h3><p>A plain-language note in their own language, including the test date. No marks, no rank, and no other child’s name. The server only lets a parent read children linked to their own account.</p></section></div>`;
+      <h3>What parents see</h3><p>A plain-language note in their own language, including the test date. No marks, no rank, and no other child’s name. The server only lets a parent read children linked to their own account.</p></section>${addKid}</div>`;
+}
+
+/* ---------- Account actions (school, family code, parents, delete) ---------- */
+async function acctAction(a,v){
+  const say=(msg,err)=>{S.acct={msg,err:!!err};render()};
+  try{
+    if(a==='joinschool'){const code=(($('jsc')||{}).value||'').trim();if(!code)return say('Enter the school code first.',1);
+      await API.post('/student/join-school',{code});S.acct=null;await refreshProfile();render();return}
+    if(a==='leaveschool'){await API.del('/student/school');S.acct=null;await refreshProfile();render();return}
+    if(a==='newcode'){const r=await API.post('/student/link-code');PROFILE.linkCode=r.link_code;saveProfile();S.acct=null;render();return}
+    if(a==='unparents'){if(!confirm('Remove every parent\u2019s access? They will need your new family code to follow you again.'))return;
+      await API.del('/student/parents');S.acct=null;await refreshProfile();render();return}
+    if(a==='addchild'){const code=(($('ack')||{}).value||'').trim();if(!code)return say('Enter the family code first.',1);
+      await API.post('/parent/children',{code});S.pkids=[];S.pk=null;S.acct=null;await loadParent();return}
+    if(a==='rmchild'){await API.del('/parent/children/'+v);S.pkids=[];S.pk=null;S.pn=null;S.acct=null;await loadParent();return}
+    if(a==='delacct'){
+      if(!confirm(S.auth==='student'?'Delete your account and every answer saved on the server? This cannot be undone.':'Delete your account? This cannot be undone.'))return;
+      const id=API.uid||(PROFILE&&PROFILE.id);await API.del('/auth/me');if(S.auth==='student'&&id)DEV.forget(id);signOut();
+    }
+  }catch(err){say(isOffline(err)?'No connection. Try again when you are online.':err.message,1)}
 }
 
 /* ---------- Shell ---------- */
 function render(){
   const A=S.auth;
-  const who=A==='student'&&PROFILE?PROFILE.name+' (student)':A==='teacher'?'Ms. Lakshmi (teacher)':A==='parent'?'Parent':'';
+  const who=A==='student'&&PROFILE?PROFILE.name+' (student)':A?(S.who||'')+' ('+A+')':'';
   $('me').innerHTML=A?`<span class="note">Signed in as ${esc(who)}</span><button class="btn sec sm" data-a="signout">Sign out</button>`:'';
-  $('tabs').hidden=true;$('loop').hidden=true;$('try').hidden=!A;
-  if(A)$('try').innerHTML=TRY[A];
+  $('tabs').hidden=true;$('loop').hidden=true;$('try').hidden=true;
   $('app').innerHTML=!A?vLogin():A==='student'?vStudent():A==='teacher'?vTeacher():vParent();
 }
 function planGo(){
@@ -426,14 +482,17 @@ document.addEventListener('click',e=>{
   else if(a==='dans')diagAnswer(Number(b.dataset.i));
   else if(a==='dnext')diagNext();
   else if(a==='heat')S.heat=v;
-  else if(a==='lrole'){LG.role=v;LG.err='';LG.creating=false;LG.step=0;LG.devCode=''}
+  else if(a==='lrole'){LG.role=v;LG.err='';LG.creating=false;LG.mode='in';LG.join=false;LG.f={}}
+  else if(a==='lmode'){LG.mode=v;LG.err=''}
+  else if(a==='ljoin'){LG.join=v==='join';LG.err=''}
   else if(a==='lprofile'){LG.pid=Number(v);LG.err=''}
   else if(a==='lnew'){LG.creating=true;LG.err=''}
-  else if(a==='lback'){LG.step=0;LG.devCode='';LG.err=''}
+  else if(a==='lback'){LG.creating=false;LG.err=''}
   else if(a==='dboard')LG.draft.board=v;
   else if(a==='dcls')LG.draft.cls=Number(v);
   else if(a==='dlang')LG.draft.lang=v;
   else if(a==='signout'){signOut();return}
+  else if(a==='joinschool'||a==='leaveschool'||a==='newcode'||a==='unparents'||a==='addchild'||a==='rmchild'||a==='delacct'){acctAction(a,v);return}
   else if(a==='hw'){
     API.post('/teacher/assign',{board:S.tb,cls:S.tc,subject:S.ts,group:v}).then(r=>{S.hwNote='Sent: '+r.text;render()}).catch(err=>{S.terr=err.message;render()});return}
   else if(a==='plang'){S.pLang=v;loadParent();return}
@@ -467,7 +526,7 @@ setInterval(()=>{
 (async function start(){
   const s=SESS.load();
   if(s){
-    API.token=s.token;
+    API.token=s.token;S.who=s.user&&s.user.name||'';
     if(s.role==='student'){PROFILE=LS.get('sahayak.p.'+s.user.id)||blankProfile(s.user);S.auth='student';render();refreshProfile().then(render)}
     else if(s.role==='teacher'){S.auth='teacher';render();loadTeacher()}
     else{S.auth='parent';render();loadParent()}

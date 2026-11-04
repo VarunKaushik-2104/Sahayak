@@ -11,8 +11,7 @@ services:
     environment:
       DATABASE_URL: postgresql+psycopg://sahayak:sahayak@db:5432/sahayak
       SECRET_KEY: ${SECRET_KEY:-change-me-in-any-real-deployment-0123456789abcdef}
-      SEED_DEMO: "1"
-      SMS_BACKEND: console
+      SITE_URL: http://localhost:8000
     ports: ["8000:8000"]
 volumes:
   pgdata:

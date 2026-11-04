@@ -58,7 +58,7 @@ function blankProfile(u){
 const saveProfile=()=>{if(PROFILE)LS.set('sahayak.p.'+PROFILE.id,PROFILE)};
 function applyServer(p,m){
   p.name=m.name;p.board=m.board;p.cls=m.cls;p.lang=p.lang||m.lang;p.tests=m.tests;p.groups=m.groups;p.assignment=m.assignment;
-  p.misc={...m.misc};p.mins={...m.minutes};
+  p.misc={...m.misc};p.mins={...m.minutes};p.school=m.school||null;p.linkCode=m.link_code||'';p.parents=m.parents||0;
   if(m.last_mock)p.lastMock={score:m.last_mock.score,total:m.last_mock.total,name:m.last_mock.name,subj:m.last_mock.subject};
   rebase(p,m.P);p.syncedAt=Date.now();
 }
@@ -153,7 +153,7 @@ function answer(i){
   queue(p,{cid:uid(),type:'answer',kind:D.phase==='test'?'check':'practice',qid:q.qid,pick:o.t,ts:new Date().toISOString(),lt:q.t,lok:ok,lm:ok?null:o.m});
   log(`${T[q.t].name}: ${ok?'correct':'wrong'}. Mastery ${pc(before)} to ${pc(p.P[q.t])}.`);
   if(D.phase==='test'){
-    D.testRes.push(ok);D.testI++;
+    D.testRes.push({ok,qid:q.qid,topic:q.t,question:q.q,picked:o.t,right:q.o.find(x=>x.ok)?.t||'',why:q.why||'',slip:ok?'':(o.m||'')});D.testI++;
     if(D.testI>=D.testQ.length){D.phase='done';D.q=null;log('Check finished. Results saved on the phone.');syncSoon(0)}else D.q=D.testQ[D.testI];
     saveProfile();return;
   }

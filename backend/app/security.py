@@ -35,8 +35,19 @@ def verify_secret(secret: str, stored: str | None) -> bool:
     return hmac.compare_digest(again, stored)
 
 
-def make_otp() -> str:
-    return f"{secrets.randbelow(900000) + 100000}"
+CODE_ALPHABET = "ABCDEFGHJKMNPQRSTUVWXYZ23456789"      # no 0/O, 1/I/L: codes get read aloud and copied by hand
+
+
+def make_code(n: int = 6) -> str:
+    return "".join(secrets.choice(CODE_ALPHABET) for _ in range(n))
+
+
+def normalise_code(raw: str | None) -> str:
+    return "".join(c for c in (raw or "").upper() if c.isalnum())
+
+
+def normalise_email(raw: str) -> str:
+    return raw.strip().lower()
 
 
 def make_token(user_id: int, role: str) -> tuple[str, int]:
@@ -52,8 +63,3 @@ def read_token(token: str) -> dict:
     if data["exp"] < int(clock.now().timestamp()):   # use our clock so tests can move time
         raise jwt.ExpiredSignatureError("token expired")
     return data
-
-
-def normalise_mobile(raw: str) -> str:
-    digits = "".join(c for c in raw if c.isdigit())
-    return digits[-10:]

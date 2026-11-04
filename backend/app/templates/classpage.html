@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="crumbs"><a href="/">Home</a> / <a href="/curriculum">Syllabus</a> / {{ board.label }} / Class {{ cls }} {{ subject }}</p>
+<section>
+  <h1>{{ board.label }} Class {{ cls }} {{ subject }}: chapters and topics</h1>
+  <p class="lead">{{ chapters|length }} chapters. Each links to the topics Sahayak practises, and each topic lists what a student should know before it.</p>
+</section>
+<section>
+  {% for ch in chapters %}
+  <h3 style="margin-top:18px">{{ ch.name }}</h3>
+  <ul class="links">{% for t in ch.topics %}<li><a href="/topics/{{ t.id }}">{{ t.name }}{% if t.cls != cls %} <span class="muted">(Class {{ t.cls }})</span>{% endif %}</a></li>{% endfor %}</ul>
+  {% endfor %}
+</section>
+<section>
+  <p>Other classes: {% for c in [6,7,8,9,10] if c != cls %}<a href="/curriculum/{{ board.slug }}/class-{{ c }}/{{ subject|lower }}">Class {{ c }}</a>{{ ", " if not loop.last }}{% endfor %}.
+  Other subject: <a href="/curriculum/{{ board.slug }}/class-{{ cls }}/{{ other_subject|lower }}">{{ other_subject }}</a>.</p>
+  <div class="row"><a class="btn" href="/app/">Practise this in the app</a></div>
+</section>
+{% endblock %}

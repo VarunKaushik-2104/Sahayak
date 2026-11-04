@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<link rel="canonical" href="{{ site }}{{ path }}">
+<meta name="robots" content="{{ 'noindex,follow' if noindex else 'index,follow,max-snippet:-1,max-image-preview:large' }}">
+<meta name="theme-color" content="#2443C4">
+<meta property="og:type" content="{{ og_type|default('website') }}">
+<meta property="og:site_name" content="Sahayak">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ site }}{{ path }}">
+<meta property="og:image" content="{{ site }}/static/og.png">
+<meta property="og:image:alt" content="Sahayak: adaptive learning for Classes 6 to 10">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/app/icon.svg" type="image/svg+xml">
+<link rel="alternate" type="text/plain" href="{{ site }}/llms.txt" title="llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Hind:wght@400;600&family=Noto+Sans+Telugu:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/site.css?v={{ asset_v }}">
+{% for j in jsonld %}<script type="application/ld+json">{{ j|tojson_ld }}</script>
+{% endfor %}
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="/"><img src="/app/icon.svg" width="30" height="30" alt="">Sahayak</a>
+  <nav class="main" aria-label="Main">
+    {% for href,label in [('/how-it-works','How it works'),('/curriculum','Syllabus'),('/for-teachers','For teachers'),('/for-parents','For parents'),('/faq','FAQ')] %}
+    <a href="{{ href }}"{% if path==href or path.startswith(href~'/') %} aria-current="page"{% endif %}>{{ label }}</a>{% endfor %}
+  </nav>
+  <a class="btn sm" href="/app/">Open the app</a>
+</header>
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+<footer class="bot">
+  <div class="cols">
+    <div><h2>Sahayak</h2><p>Adaptive learning for Classes 6 to 10, in Maths and Science, for CBSE, ICSE and the Telangana State Board. Free to use, no advertising, no tracking scripts.</p></div>
+    <div><h2>Learn more</h2><ul><li><a href="/how-it-works">How it works</a></li><li><a href="/curriculum">Syllabus and topics</a></li><li><a href="/faq">Questions and answers</a></li><li><a href="/about">About the project</a></li></ul></div>
+    <div><h2>Use it</h2><ul><li><a href="/app/">Open the app</a></li><li><a href="/for-teachers">Set up a class</a></li><li><a href="/for-parents">Follow your child</a></li><li><a href="/privacy">Privacy and data</a></li><li><a href="/contact">Contact</a></li></ul></div>
+  </div>
+</footer>
+</div>
+</body>
+</html>

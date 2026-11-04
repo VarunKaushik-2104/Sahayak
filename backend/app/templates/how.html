@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="crumbs"><a href="/">Home</a> / How it works</p>
+<section>
+  <h1>How Sahayak finds what a student is missing</h1>
+  <p class="lead">Sahayak keeps a probability for every topic that a student knows it. Each answer updates that number. Wrong answers also say <em>why</em>, which decides what is practised next.</p>
+</section>
+
+<section>
+  <h2>The prerequisite map</h2>
+  <p>Every one of the {{ n_topics }} topics lists the topics it depends on. Fractions come before ratio; polynomials come before quadratic equations. The map crosses classes, so a Class 10 topic can lead back to Class 7. One shared map serves all three boards: only the chapter lists differ between CBSE, ICSE and the Telangana State Board.</p>
+  <p>Browse it on the <a href="/topics">topic index</a>. Each topic page names what it builds on and what builds on it.</p>
+</section>
+
+<section>
+  <h2>Questions written around mistakes</h2>
+  <p>Each topic has {{ per_topic }} or more multiple-choice questions at three difficulty levels. Every wrong option carries a label for the specific misunderstanding it represents, for example "added the denominators", and some also name an earlier topic to revisit. A right answer teaches nothing new; a wrong answer with a label tells the app exactly where to look.</p>
+</section>
+
+<section>
+  <h2>Estimating mastery</h2>
+  <p>The estimate for each topic uses Bayesian knowledge tracing with damped updates: after a right answer the probability goes up, after a wrong one it goes down, and a single slip or guess never swings it far. The numbers used are a slip chance of 0.10, a guess chance of 0.22 and a learning rate of 0.12. They are sensible starting values, not fitted to a large student data set yet.</p>
+  <table><thead><tr><th>Estimate</th><th>What the student gets</th></tr></thead><tbody>
+    <tr><td>Below 40%</td><td>Easy questions (level 1)</td></tr>
+    <tr><td>40% to 70%</td><td>Medium questions (level 2)</td></tr>
+    <tr><td>70% and above</td><td>Harder questions (level 3)</td></tr></tbody></table>
+</section>
+
+<section>
+  <h2>Tracing back, then returning</h2>
+  <p>When a wrong answer points to an earlier topic and that topic's estimate is below 75%, Sahayak moves there. If the label gives no topic, it picks the weakest prerequisite below 60%. Once the earlier topic reaches 70%, the student returns to the chapter they started with. Practice runs up to 8 questions, then a 3-question check.</p>
+  <div class="example"><p><strong>Example.</strong> A student picks "x³ − x = 0" as a quadratic equation. The label says they believe any equation with a power of x is quadratic. That points to polynomials in Class 9, so the next questions are about degree and terms of a polynomial, before returning to quadratics.</p></div>
+</section>
+
+<section>
+  <h2>Works offline, stays accurate</h2>
+  <p>The phone runs the same engine in JavaScript and stores the syllabus. Answers wait in an outbox. When the phone reaches the server, the server marks every answer again from the question bank, so a changed app or a forged request cannot raise a student's numbers. Each answer has a unique ID, so sending it twice does nothing. The server's result is the one the teacher and parent see.</p>
+</section>
+
+<section>
+  <h2>What the teacher and parent see</h2>
+  <p>The teacher gets a heatmap, groups (extend, practise, basics) and worksheets built from the class's own gaps for the test they set. The parent gets one note about their own child, in English, Hindi or Telugu. <a href="/for-teachers">Teachers</a> · <a href="/for-parents">Parents</a></p>
+</section>
+{% endblock %}

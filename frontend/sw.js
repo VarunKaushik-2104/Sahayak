@@ -1,6 +1,6 @@
 
 /* Offline shell. The app and syllabus are cached; API requests go to the network. */
-const C = 'sahayak-v5';
+const C = 'sahayak-v6';
 
 const SHELL = [
   './',
@@ -40,7 +40,7 @@ self.addEventListener('fetch', e => {
       u.pathname !== '/api/content/bundle') return;
 
   e.respondWith(
-    (u.pathname === '/js/app.js'
+    (u.pathname === '/app/js/app.js'
       ? fetch(new Request(r, { cache: 'reload' }))
       : fetch(r)
     )

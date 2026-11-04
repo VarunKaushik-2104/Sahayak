@@ -18,17 +18,21 @@ class School(Base):
     __tablename__ = "schools"
     id: Mapped[int] = mapped_column(primary_key=True)
     name: Mapped[str] = mapped_column(String(120))
-    code: Mapped[str] = mapped_column(String(20), unique=True)
+    code: Mapped[str] = mapped_column(String(20), unique=True)               # students type this to join
+    staff_code: Mapped[str | None] = mapped_column(String(20), unique=True, nullable=True)   # colleagues use this to join as teachers
+    created_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), default=_now, nullable=True)
 
 
 class User(Base):
-    """One table for the three roles. Students carry board, class and language; staff and parents sign in by mobile + OTP."""
+    """One table for the three roles. Students carry board, class, language and a 4-digit PIN; teachers and parents sign in with email + password."""
     __tablename__ = "users"
     id: Mapped[int] = mapped_column(primary_key=True)
     role: Mapped[str] = mapped_column(String(10), index=True)          # student | teacher | parent
     name: Mapped[str] = mapped_column(String(80))
     school_id: Mapped[int | None] = mapped_column(ForeignKey("schools.id"), nullable=True, index=True)
-    mobile: Mapped[str | None] = mapped_column(String(15), nullable=True, index=True)
+    email: Mapped[str | None] = mapped_column(String(120), nullable=True)
+    password_hash: Mapped[str | None] = mapped_column(String(200), nullable=True)
+    link_code: Mapped[str | None] = mapped_column(String(12), nullable=True)   # students: a parent enters this to see their child's note
     pin_hash: Mapped[str | None] = mapped_column(String(200), nullable=True)
     failed_pins: Mapped[int] = mapped_column(Integer, default=0)
     locked_until: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
@@ -40,7 +44,9 @@ class User(Base):
     is_sample: Mapped[bool] = mapped_column(Boolean, default=False)    # demo classmates with no login
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
 
-    __table_args__ = (Index("ix_users_class", "school_id", "board", "cls"),)
+    __table_args__ = (Index("ix_users_class", "school_id", "board", "cls"),
+                      Index("ux_users_email_role", "email", "role", unique=True),
+                      Index("ux_users_link_code", "link_code", unique=True))
 
 
 class ParentChild(Base):
@@ -49,15 +55,14 @@ class ParentChild(Base):
     student_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), primary_key=True)
 
 
-class OtpCode(Base):
-    __tablename__ = "otp_codes"
+class Feedback(Base):
+    """A message from the contact page or the app. Stored so it can be read and answered."""
+    __tablename__ = "feedback"
     id: Mapped[int] = mapped_column(primary_key=True)
-    mobile: Mapped[str] = mapped_column(String(15), index=True)
-    role: Mapped[str] = mapped_column(String(10))
-    code_hash: Mapped[str] = mapped_column(String(200))
-    expires_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
-    attempts: Mapped[int] = mapped_column(Integer, default=0)
-    used: Mapped[bool] = mapped_column(Boolean, default=False)
+    name: Mapped[str | None] = mapped_column(String(80), nullable=True)
+    email: Mapped[str | None] = mapped_column(String(120), nullable=True)
+    message: Mapped[str] = mapped_column(String(2000))
+    user_id: Mapped[int | None] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"), nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
 
 

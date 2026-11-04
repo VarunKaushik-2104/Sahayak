@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="crumbs"><a href="/">Home</a> / <a href="/topics">Topics</a> / {{ t.name }}</p>
+<section>
+  <h1>{{ t.name }}</h1>
+  <p class="muted"><span class="pill">Class {{ t.cls }}</span><span class="pill">{{ t.sub }}</span>{% if t.hi %}<span class="pill" lang="hi">{{ t.hi }}</span>{% endif %}{% if t.te %}<span class="pill" lang="te">{{ t.te }}</span>{% endif %}</p>
+  <p><span class="answer">{{ summary }}</span></p>
+  <div class="row"><a class="btn" href="/app/">Practise {{ t.name|lower }}</a></div>
+</section>
+<section>
+  <h2>Key ideas</h2>
+  <ul class="plain">{% for p in lesson.points %}<li>{{ p }}</li>{% endfor %}</ul>
+  {% if lesson.story %}<p><strong>In everyday life.</strong> {{ lesson.story }}</p>{% endif %}
+  {% if lesson.example %}<div class="example"><p><strong>Worked example.</strong> {{ lesson.example.q }}</p>
+    <ol class="plain" style="margin:0;padding-left:1.3em">{% for s in lesson.example.steps %}<li>{{ s }}</li>{% endfor %}</ol></div>{% endif %}
+</section>
+<section>
+  <h2>Know these first</h2>
+  {% if pre %}<p>{{ t.name }} builds on:</p><ul class="links">{% for p in pre %}<li><a href="/topics/{{ p.id }}">{{ p.name }} <span class="muted">(Class {{ p.cls }})</span></a></li>{% endfor %}</ul>
+  {% else %}<p>{{ t.name }} has no prerequisite topics in Sahayak's map. It is a starting point.</p>{% endif %}
+  {% if nxt %}<h3 style="margin-top:22px">What this leads to</h3><ul class="links">{% for p in nxt %}<li><a href="/topics/{{ p.id }}">{{ p.name }} <span class="muted">(Class {{ p.cls }})</span></a></li>{% endfor %}</ul>{% endif %}
+</section>
+{% if mistakes %}<section>
+  <h2>Mistakes students commonly make</h2>
+  <p>Each wrong answer in Sahayak's questions on this topic matches one of these. When a student picks one, the app knows what to explain.</p>
+  <ul class="plain">{% for m in mistakes %}<li>A student {{ m }}.</li>{% endfor %}</ul>
+</section>{% endif %}
+{% if sample %}<section>
+  <h2>Try a question</h2>
+  <p><strong>{{ sample.q }}</strong></p>
+  <ul class="plain">{% for o in sample.o %}<li>{{ o.t }}</li>{% endfor %}</ul>
+  <details><summary>Show the answer</summary><p><strong>{{ sample.right }}.</strong> {{ sample.why }}</p></details>
+</section>{% endif %}
+<section>
+  <h2>Where it appears in the syllabus</h2>
+  {% if chapters %}<ul class="plain">{% for c in chapters %}<li>{{ c.board }}, Class {{ c.cls }}: <a href="{{ c.url }}">{{ c.chapter }}</a></li>{% endfor %}</ul>
+  {% else %}<p>This topic is a prerequisite that sits underneath chapters in later classes.</p>{% endif %}
+</section>
+{% endblock %}

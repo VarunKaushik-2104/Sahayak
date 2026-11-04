@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="crumbs"><a href="/">Home</a> / Topics</p>
+<section><h1>All {{ n_topics }} topics</h1>
+<p class="lead">Sahayak's prerequisite graph, by subject and class. Open a topic to see what it builds on, the key ideas and the common mistakes.</p></section>
+{% for s in subjects %}<section><h2>{{ s }}</h2>
+  {% for c in [6,7,8,9,10] %}<h3 style="margin-top:14px">Class {{ c }}</h3>
+  <ul class="links">{% for t in groups[s][c] %}<li><a href="/topics/{{ t.id }}">{{ t.name }}</a></li>{% endfor %}</ul>{% endfor %}
+</section>{% endfor %}
+{% endblock %}

@@ -12,7 +12,7 @@ const API={
     }
     return data;
   },
-  get(p){return API.call('GET',p)},post(p,b){return API.call('POST',p,b)},put(p,b){return API.call('PUT',p,b)},patch(p,b){return API.call('PATCH',p,b)}
+  get(p){return API.call('GET',p)},post(p,b){return API.call('POST',p,b)},put(p,b){return API.call('PUT',p,b)},patch(p,b){return API.call('PATCH',p,b)},del(p){return API.call('DELETE',p)}
 };
 const isOffline=e=>!e.status;
 /* kept in memory only, never stored: lets the app renew an expired session without asking for the PIN again */
@@ -34,6 +34,7 @@ const SESS={
 const DEV={
   key:'sahayak.devices',
   list(){return LS.get(DEV.key)||[]},
+  forget(id){LS.set(DEV.key,DEV.list().filter(x=>x.id!==id));LS.del('sahayak.p.'+id)},
   remember(u,pin,tok){
     return DEV.hash(pin).then(h=>{
       const l=DEV.list().filter(x=>x.id!==u.id);

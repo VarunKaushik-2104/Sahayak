@@ -11,5 +11,4 @@ echo.
 echo On the phone (same Wi-Fi) open  http://THAT-ADDRESS:8000
 echo If Windows asks about the firewall, allow it on PRIVATE networks.
 cd backend
-set SEED_DEMO=1
 python -m uvicorn app.main:app --host 0.0.0.0 --port 8000

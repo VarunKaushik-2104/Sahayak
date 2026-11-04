@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="crumbs"><a href="/">Home</a> / Privacy and data</p>
+<section>
+  <h1>Privacy and data</h1>
+  <p class="lead">Sahayak collects the least it needs to adapt practice and report progress. This page lists exactly what is stored, where, and who can see it.</p>
+</section>
+<section>
+  <h2>What is stored</h2>
+  <div class="scroll"><table><thead><tr><th>Who</th><th>Stored</th><th>Seen by</th></tr></thead><tbody>
+  <tr><th scope="row">Student</th><td>First name, board, class, language, a 4-digit PIN (stored only as a salted hash), answers with times, topic mastery, mock test results, study minutes, school joined, family code</td><td>The student; teachers of the school they joined; the note (not the data) to linked parents</td></tr>
+  <tr><th scope="row">Teacher</th><td>Name, email, password (salted hash), school name and codes, tests and groups they set</td><td>The teacher</td></tr>
+  <tr><th scope="row">Parent</th><td>Name, email, password (salted hash), which children are linked</td><td>The parent</td></tr>
+  <tr><th scope="row">Contact form</th><td>The message, and the name and email if given</td><td>The Sahayak team</td></tr>
+  </tbody></table></div>
+  <p>Not collected: phone numbers, surnames, photos, location, device identifiers, or any payment details.</p>
+</section>
+<section>
+  <h2>Where it lives</h2>
+  <p>On the student's phone, answers and the syllabus are kept in the browser's local storage so the app works offline. On the server, everything above is kept in a database (PostgreSQL on the hosted site). Sign-in uses a signed token kept in local storage. Sahayak sets no cookies, shows no advertising and loads no analytics or tracking scripts. The only outside request is the page typeface from Google Fonts.</p>
+</section>
+<section>
+  <h2>Your controls</h2>
+  <ul class="plain">
+    <li>A student joins a school only by typing its code, and can leave it from the home screen.</li>
+    <li>A student can remove every parent's access, and can delete their account with all their answers.</li>
+    <li>Teachers and parents can delete their accounts from the app.</li>
+    <li>A teacher sees only students who joined with that school's code. A parent sees only linked children, and never marks or rank.</li>
+  </ul>
+  <p>Many students are under 18. Sahayak is best started by a teacher or a parent who knows the student is using it.</p>
+</section>
+{% endblock %}

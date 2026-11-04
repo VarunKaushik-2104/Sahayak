@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from fastapi import APIRouter, Depends, HTTPException, Query
+from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from .. import clock
@@ -10,7 +11,7 @@ from ..db import get_db
 from ..deps import curriculum, require_role
 from ..engine import teacher as tch
 from ..engine.mastery import get, mean
-from ..models import Assignment, GroupOverride, TestPlan, User
+from ..models import Assignment, GroupOverride, School, TestPlan, User
 from ..schemas import AssignIn, GroupIn, TestIn
 from ..services import state
 
@@ -25,6 +26,17 @@ def _scope(board: str, cls: int, subject: str) -> None:
 
 def _short(name: str, n: int) -> str:
     return name if len(name) <= n else name[: n - 1] + "…"
+
+
+@router.get("/school")
+def school(user: User = Teacher, db: Session = Depends(get_db)):
+    """The school this teacher belongs to, its two codes, and how many real students have joined."""
+    sch = db.get(School, user.school_id)
+    counts = db.execute(select(User.board, User.cls, func.count()).where(User.role == "student", User.school_id == sch.id, User.is_sample.is_(False))
+                        .group_by(User.board, User.cls)).all()
+    return {"name": sch.name, "code": sch.code, "staff_code": sch.staff_code,
+            "students": sum(n for _, _, n in counts),
+            "classes": [{"board": b, "cls": c, "students": n} for b, c, n in sorted(counts, key=lambda x: (x[0], x[1]))]}
 
 
 @router.get("/class")

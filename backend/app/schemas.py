@@ -1,6 +1,7 @@
 """Request and response bodies."""
 from __future__ import annotations
 
+import re
 from datetime import date, datetime
 from typing import Literal
 
@@ -28,18 +29,61 @@ class RegisterStudent(BaseModel):
         return v
 
 
+def _clean_email(v: str) -> str:
+    v = v.strip().lower()
+    if len(v) > 120 or not re.fullmatch(r"[^@\s]+@[^@\s]+\.[^@\s]{2,}", v):
+        raise ValueError("Enter a valid email address")
+    return v
+
+
+def _clean_name(v: str) -> str:
+    v = " ".join(v.split())
+    if not v:
+        raise ValueError("name is empty")
+    return v
+
+
+class _Account(BaseModel):
+    name: str = Field(min_length=1, max_length=60)
+    email: str
+    password: str = Field(min_length=8, max_length=128)
+
+    _e = field_validator("email")(classmethod(lambda cls, v: _clean_email(v)))
+    _n = field_validator("name")(classmethod(lambda cls, v: _clean_name(v)))
+
+
+class RegisterTeacher(_Account):
+    """Start a new school (school_name), or join a colleague's school with its staff code."""
+    school_name: str | None = Field(default=None, max_length=100)
+    staff_code: str | None = Field(default=None, max_length=20)
+
+
+class RegisterParent(_Account):
+    link_code: str = Field(min_length=4, max_length=12)
+
+
+class StaffLogin(BaseModel):
+    email: str
+    password: str = Field(min_length=1, max_length=128)
+    role: Literal["teacher", "parent"]
+
+    _e = field_validator("email")(classmethod(lambda cls, v: _clean_email(v)))
+
+
+class CodeIn(BaseModel):
+    code: str = Field(min_length=4, max_length=20)
+
+
+class FeedbackIn(BaseModel):
+    name: str | None = Field(default=None, max_length=80)
+    email: str | None = Field(default=None, max_length=120)
+    message: str = Field(min_length=5, max_length=2000)
+    website: str | None = Field(default=None, max_length=200)     # honeypot: real people leave it empty
+
+
 class StudentLogin(BaseModel):
     student_id: int
     pin: str = Field(pattern=r"^\d{4}$")
-
-
-class OtpRequest(BaseModel):
-    mobile: str = Field(min_length=10, max_length=15)
-    role: Literal["teacher", "parent"]
-
-
-class OtpVerify(OtpRequest):
-    code: str = Field(pattern=r"^\d{6}$")
 
 
 class TokenOut(BaseModel):

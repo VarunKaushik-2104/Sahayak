@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="crumbs"><a href="/">Home</a> / About</p>
+<section>
+  <h1>About Sahayak</h1>
+  <p class="lead">Sahayak (సహాయక్, सहायक: "helper") is a free web app that finds the earlier topic behind a student's mistake and practises it. It was built by Team WIN R, students at Gokaraju Lailavathi Engineering College, for the Adaptive Learning for Classes 6 to 10 challenge at Code Kernel '26.</p>
+</section>
+<section>
+  <h2>What is built</h2>
+  <ul class="plain">
+    <li>A Python (FastAPI) server with a database for students, schools, answers and mastery.</li>
+    <li>An installable offline-first web app for students, with a teacher dashboard and a parent view.</li>
+    <li>{{ n_topics }} topics and {{ n_questions }} questions, with chapter lists for CBSE, ICSE and the Telangana State Board.</li>
+    <li>This website, with one page for every topic.</li>
+  </ul>
+  <p>The code is open: <a href="https://github.com/VarunKaushik-2104/Sahayak">github.com/VarunKaushik-2104/Sahayak</a>.</p>
+</section>
+<section>
+  <h2>What has not been proven yet</h2>
+  <ul class="plain">
+    <li>The mastery model uses sensible default numbers. They have not been fitted to a large set of real student answers, and no classroom trial has been run.</li>
+    <li>Questions and lessons were written for this project and checked in a blind review. A teacher should still read them before use.</li>
+    <li>Chapter names come from public pages and need a teacher's check each year.</li>
+    <li>Hindi and Telugu text is a draft for native-speaker review.</li>
+    <li>Only Maths and Science, Classes 6 to 10, are covered.</li>
+  </ul>
+  <p>Teachers or students who want to help review content: <a href="/contact">get in touch</a>.</p>
+</section>
+{% endblock %}

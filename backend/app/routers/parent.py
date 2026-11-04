@@ -4,6 +4,7 @@ from __future__ import annotations
 from datetime import timedelta
 
 from fastapi import APIRouter, Depends, HTTPException, Query
+from sqlalchemy import delete, select
 from sqlalchemy.orm import Session
 
 from .. import clock
@@ -12,6 +13,8 @@ from ..db import get_db
 from ..deps import curriculum, require_role
 from ..engine.parent import LANGS, build_note
 from ..models import ParentChild, User
+from ..schemas import CodeIn
+from ..security import normalise_code
 from ..services import state
 
 router = APIRouter(prefix="/parent", tags=["parent"])
@@ -21,6 +24,24 @@ Parent = Depends(require_role("parent"))
 @router.get("/children")
 def children(user: User = Parent, db: Session = Depends(get_db)):
     return [{"id": c.id, "name": c.name, "cls": c.cls, "board": c.board, "subject": c.subject} for c in state.children_of(db, user.id)]
+
+
+@router.post("/children", status_code=201)
+def add_child(body: CodeIn, user: User = Parent, db: Session = Depends(get_db)):
+    """Link another child with the family code shown on that child's own screen."""
+    kid = db.scalar(select(User).where(User.role == "student", User.link_code == normalise_code(body.code)))
+    if not kid:
+        raise HTTPException(404, "That family code was not found. Your child can see it on their Sahayak home screen.")
+    if db.get(ParentChild, (user.id, kid.id)) is None:
+        db.add(ParentChild(parent_id=user.id, student_id=kid.id))
+        db.commit()
+    return {"id": kid.id, "name": kid.name, "cls": kid.cls, "board": kid.board, "subject": kid.subject}
+
+
+@router.delete("/children/{student_id}", status_code=204)
+def remove_child(student_id: int, user: User = Parent, db: Session = Depends(get_db)):
+    db.execute(delete(ParentChild).where(ParentChild.parent_id == user.id, ParentChild.student_id == student_id))
+    db.commit()
 
 
 @router.get("/note")

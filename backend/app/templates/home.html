@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <div>
+    <h1>Find the gap behind the wrong answer</h1>
+    <p class="lead">Sahayak is a free adaptive learning app for students in Classes 6 to 10. It reads <em>which mistake</em> a student made, follows it back through earlier topics, even from earlier classes, and practises exactly that gap.</p>
+    <p class="muted">Maths and Science for CBSE (NCERT), ICSE and the Telangana State Board. It works offline after the first visit.</p>
+    <div class="row"><a class="btn" href="/app/">Start learning</a><a class="btn line" href="/for-teachers">Set up a class</a></div>
+  </div>
+  <figure class="nb" style="margin:0" aria-label="Example of a mistake traced back to an earlier topic">
+    <p class="tag">Class {{ ex.cls }} · {{ ex.topic }}</p>
+    <p class="q">{{ ex.q }}</p>
+    <span class="opt">○ {{ ex.right }}</span>
+    <span class="opt">● <span class="pick">{{ ex.wrong }}</span></span>
+    <p class="why">The answer picked suggests the student {{ ex.misconception }}.</p>
+    <p class="trace">Next: {{ ex.gap }} <i>(Class {{ ex.gap_cls }})</i></p>
+  </figure>
+</section>
+
+<section>
+  <h2>A wrong answer is information</h2>
+  <p>A mark of 4 out of 10 says a student struggled. It does not say why. Every wrong option in Sahayak's {{ n_questions }} questions was written to match one specific misunderstanding, so each answer tells the app what to practise next.</p>
+  <div class="cols">
+    <div><h3>It finds the root, not the symptom</h3><p>A student stuck on quadratic equations may really be missing polynomials from Class 9 or linear equations from Class 8. Sahayak follows its prerequisite map of {{ n_topics }} topics back until the gap is found.</p></div>
+    <div><h3>It fits how classes are taught in India</h3><p>Chapters follow the NCERT, ICSE and Telangana State Board lists. Students prepare for the unit test their teacher has set, by date, then take a mock test.</p></div>
+    <div><h3>It keeps working without data</h3><p>The syllabus and questions are stored on the phone. Answers are saved first and sent to the teacher when the phone is next online.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>How a student uses it</h2>
+  <ol class="steps">
+    <li><h3>Take the 5-question placement check</h3><p>It starts at medium difficulty and gives a first picture of what the student knows across topics, including earlier classes.</p></li>
+    <li><h3>Practise a chapter</h3><p>Questions get easier or harder as the student answers. A wrong answer with a known cause sends the student to the earlier topic behind it, then back.</p></li>
+    <li><h3>Prepare for the test</h3><p>The revision plan counts the days to the teacher's test date and puts the weakest basics first. A timed mock test closes the loop.</p></li>
+  </ol>
+  <p style="margin-top:22px"><a href="/how-it-works">Read the full method</a></p>
+</section>
+
+<section>
+  <h2>Built for three people</h2>
+  <div class="cols">
+    <div><h3>Students</h3><p>A first name, board, class and a 4-digit PIN. No phone number needed. Several students can share one phone.</p><p><a href="/app/">Create a student profile</a></p></div>
+    <div><h3>Teachers</h3><p>A heatmap of the class by chapter and topic, groups to teach next, a morning briefing and worksheets. <a href="/for-teachers">See what teachers get</a></p></div>
+    <div><h3>Parents</h3><p>A plain note in English, Hindi or Telugu about their own child: what is going well, what needs time, and when the test is. No marks, no rank. <a href="/for-parents">See what parents get</a></p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Common questions</h2>
+  <dl class="faq">
+  {% for q,a in faq[:4] %}<details><summary>{{ q }}</summary><p>{{ a }}</p></details>{% endfor %}
+  </dl>
+  <p style="margin-top:16px"><a href="/faq">All questions and answers</a></p>
+</section>
+{% endblock %}

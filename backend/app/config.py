@@ -47,23 +47,20 @@ class Settings:
     secret_is_ephemeral: bool = field(default_factory=lambda: not os.getenv("SECRET_KEY") and not _SECRET_FILE_OK[0])
     token_hours_staff: int = field(default_factory=lambda: int(os.getenv("TOKEN_HOURS_STAFF", "12")))
     token_days_student: int = field(default_factory=lambda: int(os.getenv("TOKEN_DAYS_STUDENT", "30")))
-    # SMS backend: "console" returns the OTP in the API response (demo only). A real provider plugs in via app.sms.
-    sms_backend: str = field(default_factory=lambda: os.getenv("SMS_BACKEND", "console"))
-    seed_demo: bool = field(default_factory=lambda: _bool("SEED_DEMO", True))
+    # Demo data is for local development only. It is OFF unless SEED_DEMO=1, and sample rows are purged on start when it is off.
+    seed_demo: bool = field(default_factory=lambda: _bool("SEED_DEMO", False))
+    # Public address of the site (canonical links, sitemap, structured data). Falls back to the request's own host.
+    site_url: str = field(default_factory=lambda: os.getenv("SITE_URL", "").rstrip("/"))
+    contact_email: str = field(default_factory=lambda: os.getenv("CONTACT_EMAIL", ""))
     timezone: str = field(default_factory=lambda: os.getenv("APP_TIMEZONE", "Asia/Kolkata"))
     cors_origins: list[str] = field(default_factory=lambda: [o for o in os.getenv("CORS_ORIGINS", "").split(",") if o])
     curriculum_path: Path = field(default_factory=lambda: Path(os.getenv("CURRICULUM_PATH", BASE_DIR / "data" / "curriculum.json")))
     frontend_dir: Path = field(default_factory=lambda: Path(os.getenv("FRONTEND_DIR", REPO_DIR / "frontend")))
     pin_max_failures: int = 5
     pin_lock_minutes: float = field(default_factory=lambda: float(os.getenv("PIN_LOCK_MINUTES", "5")))
-    otp_minutes: int = 5
-    otp_max_attempts: int = 5
-    otp_requests_per_minute: int = 3
+    staff_max_failures: int = 5
+    feedback_per_hour: int = 5
     pbkdf2_rounds: int = field(default_factory=lambda: int(os.getenv("PBKDF2_ROUNDS", "200000")))
-
-    @property
-    def demo_otp_visible(self) -> bool:
-        return self.sms_backend == "console"
 
 
 settings = Settings()

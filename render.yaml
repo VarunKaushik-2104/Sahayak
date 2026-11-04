@@ -10,10 +10,10 @@ services:
         generateValue: true
       - key: DATABASE_URL
         fromDatabase: { name: sahayak-db, property: connectionString }
-      - key: SEED_DEMO
-        value: "1"
-      - key: SMS_BACKEND
-        value: console
+      - key: SITE_URL
+        value: https://sahayak-ypqu.onrender.com   # change to your own address; used for canonical links and the sitemap
+      - key: CONTACT_EMAIL
+        sync: false                                 # optional: shown on the contact page
 databases:
   - name: sahayak-db
     plan: free

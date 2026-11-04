@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="crumbs"><a href="/">Home</a> / For teachers</p>
+<section>
+  <h1>See the gaps in your class before the test</h1>
+  <p class="lead">Students practise on their own phones, even offline. You get one view of who is ready for your test, which basics are missing, and what to teach or set next.</p>
+  <div class="row"><a class="btn" href="/app/">Create a teacher account</a></div>
+</section>
+<section>
+  <h2>Set up in three steps</h2>
+  <ol class="steps">
+    <li><h3>Create your account and school</h3><p>Sign up with your email and your school's name. Sahayak gives your school a student code and a separate staff code for colleagues.</p></li>
+    <li><h3>Give students the school code</h3><p>Students type it when they create a profile, or add it later from their home screen. They appear on your dashboard as soon as they join.</p></li>
+    <li><h3>Choose the test</h3><p>Pick the board, class and subject, then the test date and chapters. Every student's revision plan and every parent's note follows it.</p></li>
+  </ol>
+</section>
+<section>
+  <h2>What the dashboard shows</h2>
+  <div class="cols">
+    <div><h3>Class heatmap</h3><p>Mastery for each student by chapter or by topic, with a "test ready" column. Prerequisite topics from earlier classes appear next to the chapters that need them.</p></div>
+    <div><h3>Groups</h3><p>Students are placed in Extend, Practise or Basics from their numbers. You can move anyone, and send practice to a group's phones.</p></div>
+    <div><h3>Morning briefing</h3><p>A short list of what to do first: the topic most of the class is missing, who has not synced for days, and who is ready for more.</p></div>
+    <div><h3>Worksheets</h3><p>Built from the gaps found in each group for the test you set.</p></div>
+    <div><h3>After the test</h3><p>Which chapters to revisit with the whole class, based on the same data.</p></div>
+    <div><h3>Your school only</h3><p>You see only students who joined with your school's code. Students never see each other's results.</p></div>
+  </div>
+</section>
+<section>
+  <h2>Before you rely on it</h2>
+  <p>Questions and lessons were written for this project and reviewed, but a teacher should read them before using them with a class. Chapter lists should be checked against the current year's syllabus. See <a href="/about">About</a> for what has and has not been tested.</p>
+</section>
+{% endblock %}

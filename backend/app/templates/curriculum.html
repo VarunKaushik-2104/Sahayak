@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="crumbs"><a href="/">Home</a> / Syllabus</p>
+<section>
+  <h1>Syllabus: Classes 6 to 10, Maths and Science</h1>
+  <p class="lead">Chapter lists for CBSE (NCERT), ICSE and the Telangana State Board, each mapped to topics in one shared prerequisite graph of {{ n_topics }} topics.</p>
+  <p class="muted">Chapter names were gathered from public textbook and syllabus pages. A teacher should confirm them against the current year's syllabus.</p>
+</section>
+{% for b in boards %}
+<section>
+  <h2>{{ b.label }}</h2>
+  <div class="scroll"><table><thead><tr><th>Class</th><th>Maths</th><th>Science</th></tr></thead><tbody>
+  {% for c in [6,7,8,9,10] %}<tr><th scope="row">Class {{ c }}</th>
+    {% for s in subjects %}<td><a href="/curriculum/{{ b.slug }}/class-{{ c }}/{{ s|lower }}">{{ b.counts[c][s] }} chapters</a></td>{% endfor %}</tr>{% endfor %}
+  </tbody></table></div>
+</section>
+{% endfor %}
+<section>
+  <h2>Every topic</h2>
+  <p>Each topic page lists what to know first, the key ideas, a worked example and the mistakes students commonly make. <a href="/topics">Browse all {{ n_topics }} topics</a></p>
+</section>
+{% endblock %}

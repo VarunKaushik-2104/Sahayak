@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="crumbs"><a href="/">Home</a> / Contact</p>
+<section>
+  <h1>Contact</h1>
+  <p class="lead">Questions, corrections to a chapter or question, or interest in a trial in your school: send a message and it is saved for the team to read.</p>
+  <form class="contact" id="fb" method="post" action="/api/feedback">
+    <label>Your name (optional)<input name="name" maxlength="80" autocomplete="name"></label>
+    <label>Email, if you want a reply (optional)<input name="email" type="email" maxlength="120" autocomplete="email"></label>
+    <label>Message<textarea name="message" required minlength="5" maxlength="2000" rows="6"></textarea></label>
+    <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div><button class="btn" type="submit">Send message</button></div>
+    <p id="fb-msg" role="status"></p>
+  </form>
+  {% if contact_email %}<p>Or write to <a href="mailto:{{ contact_email }}">{{ contact_email }}</a>.</p>{% endif %}
+</section>
+<script>
+document.getElementById('fb').addEventListener('submit',async e=>{
+  e.preventDefault();const f=e.target,m=document.getElementById('fb-msg'),d=Object.fromEntries(new FormData(f));
+  m.textContent='Sending…';
+  try{const r=await fetch('/api/feedback',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});
+    if(r.ok){f.reset();m.textContent='Sent. Thank you.'}else{const j=await r.json().catch(()=>({}));m.textContent=(typeof j.detail==='string'?j.detail:'Check the message is at least 5 characters, and the email is valid.')}}
+  catch(_){m.textContent='Could not send. Check your connection and try again.'}
+});
+</script>
+{% endblock %}

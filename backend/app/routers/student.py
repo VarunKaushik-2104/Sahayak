@@ -4,7 +4,7 @@ from __future__ import annotations
 from datetime import date
 
 from fastapi import APIRouter, Depends, HTTPException, Query
-from sqlalchemy import select
+from sqlalchemy import delete, func, select
 from sqlalchemy.orm import Session
 
 from .. import clock
@@ -13,9 +13,10 @@ from ..db import get_db
 from ..deps import curriculum, require_role
 from ..engine import mock as mock_engine
 from ..engine.planner import build_plan, chapter_mastery, readiness
-from ..models import Assignment, MockResult, User
-from ..schemas import MockSubmit, ProfilePatch, SyncEvent, SyncIn
+from ..models import Assignment, MockResult, ParentChild, School, User
+from ..schemas import CodeIn, MockSubmit, ProfilePatch, SyncEvent, SyncIn
 from ..services import state
+from .auth import _self_study_school, school_by_code, unique_code
 from ..services.sync import apply_events
 
 router = APIRouter(tags=["student"])
@@ -32,6 +33,8 @@ def me(user: User = Student, db: Session = Depends(get_db), cur: Curriculum = De
         tv = state.test_view(cur, tp, today)
         tests[s] = state.public_test(tv)
         groups[s] = state.student_group(db, cur, user, tv)
+    if not user.link_code:      # profiles made before family codes existed get one on next sign-in
+        user.link_code = unique_code(db, User, User.link_code, 6)
     db.commit()
     # the newest practice a teacher sent to this student's group
     asg = None
@@ -50,7 +53,45 @@ def me(user: User = Student, db: Session = Depends(get_db), cur: Curriculum = De
         "last_mock": {"score": last_mock.score, "total": last_mock.total, "name": last_mock.name, "subject": last_mock.subject,
                       "when": last_mock.taken_at.isoformat()} if last_mock else None,
         "content_version": cur.version, "server_time": clock.now().isoformat(),
+        "school": _school_info(db, user), "link_code": user.link_code,
+        "parents": db.scalar(select(func.count()).select_from(ParentChild).where(ParentChild.student_id == user.id)) or 0,
     }
+
+
+def _school_info(db: Session, user: User) -> dict | None:
+    sch = db.get(School, user.school_id) if user.school_id else None
+    return None if sch is None or sch.code == "SELF" else {"name": sch.name, "code": sch.code}
+
+
+@router.post("/student/join-school")
+def join_school(body: CodeIn, user: User = Student, db: Session = Depends(get_db)):
+    """Join a school after signing up. The student then appears on that school's teacher dashboard."""
+    sch = school_by_code(db, body.code)
+    user.school_id = sch.id
+    db.commit()
+    return {"school": {"name": sch.name, "code": sch.code}}
+
+
+@router.delete("/student/school", status_code=204)
+def leave_school(user: User = Student, db: Session = Depends(get_db)):
+    user.school_id = _self_study_school(db).id
+    db.commit()
+
+
+@router.post("/student/link-code")
+def new_link_code(user: User = Student, db: Session = Depends(get_db)):
+    """A new family code. Parents already linked stay linked; only new sign-ups need the new code."""
+    user.link_code = unique_code(db, User, User.link_code, 6)
+    db.commit()
+    return {"link_code": user.link_code}
+
+
+@router.delete("/student/parents", status_code=204)
+def unlink_parents(user: User = Student, db: Session = Depends(get_db)):
+    """The student removes every parent's access."""
+    db.execute(delete(ParentChild).where(ParentChild.student_id == user.id))
+    user.link_code = unique_code(db, User, User.link_code, 6)
+    db.commit()
 
 
 @router.patch("/student/me")

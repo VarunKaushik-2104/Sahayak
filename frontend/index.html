@@ -1,4 +1,6 @@
-<title>Sahayak</title>
+<title>Sahayak app: practise Classes 6 to 10 Maths and Science</title>
+<meta name="description" content="Sign in to Sahayak: adaptive practice that traces mistakes back to earlier topics. Works offline.">
+<meta name="robots" content="noindex">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#2443C4">
@@ -160,6 +162,7 @@ footer{font-size:.8rem;color:var(--muted);max-width:90ch}
 .role[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 -3px 0 var(--accent)}
 .in{font:inherit;width:100%;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);margin-top:4px}
 .err{color:var(--bad);margin:0;font-size:.9rem}
+.code{font-family:var(--font-mono);font-size:1.5rem;letter-spacing:.14em;background:var(--mark-bg);color:var(--ink);padding:6px 12px;border-radius:8px;margin:4px 0;display:inline-block;user-select:all}
 .demo{font-family:var(--font-mono);font-size:.82rem;background:var(--mark-bg);color:var(--ink);padding:6px 10px;border-radius:6px;margin:0}
 .profiles{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
 .profiles .chip{display:inline-flex;gap:8px;align-items:center}
@@ -179,14 +182,14 @@ form.card{gap:14px}
   <div class="head">
     <div>
       <h1>Sahayak</h1>
-      <p class="sub">Adaptive learning for Classes 6 to 10, Maths and Science, for CBSE, ICSE and the Telangana State Board. Study chapter by chapter, prepare for tests by date, and practise for marks. The student phone works offline. Sample classmates only, no real student data.</p>
+      <p class="sub">Adaptive learning for Classes 6 to 10, Maths and Science, for CBSE, ICSE and the Telangana State Board. Study chapter by chapter, prepare for tests by date, and practise for marks. The student phone works offline.</p>
     </div>
-    <div class="me-bar"><span class="tag">BUILD · CODE KERNEL '26</span><span id="me" class="me-bar"></span></div>
+    <div class="me-bar"><a class="btn sec sm" href="/" style="text-decoration:none">About Sahayak</a><span id="me" class="me-bar"></span></div>
   </div>
   <nav class="loop" id="loop" aria-label="A day in the loop"></nav>
   <p class="try" id="try"></p>
   <div class="tabs" id="tabs" role="tablist"></div>
   <main id="app"></main>
-  <footer>Chapter names were gathered from public textbook and syllabus pages and need a teacher’s check before real use. Each chapter maps to topics in one shared prerequisite graph, so gaps from earlier classes are found whatever the board. Questions and lessons were written for this project and checked in a blind review, but a teacher should still review them. Hindi and Telugu text is a draft for review. Answers are saved on this phone first and synced to the server when a connection is available.</footer>
+  <footer>Chapter names were gathered from public textbook and syllabus pages and need a teacher’s check each year. <a href="/privacy">Privacy and data</a> · <a href="/faq">FAQ</a> · <a href="/contact">Contact</a>. Each chapter maps to topics in one shared prerequisite graph, so gaps from earlier classes are found whatever the board. Questions and lessons were written for this project and checked in a blind review, but a teacher should still review them. Hindi and Telugu text is a draft for review. Answers are saved on this phone first and synced to the server when a connection is available.</footer>
 </div>
 <script src="js/boot.js"></script>
